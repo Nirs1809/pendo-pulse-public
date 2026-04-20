@@ -84,11 +84,10 @@ const widgets = [
     { group: { group: ["day"], fields: [{ newVisitors: { count: null } }] } },
     { sort: ["day"] },
   ]],
-  ["pulse-top-accounts", [
+  ["pulse-by-hierarchy", [
     { source: { visitors: null } },
-    { filter: `${APP}.lastvisit != null && metadata.auto.accountids != null` },
-    { unwind: { field: "metadata.auto.accountids" } },
-    { group: { group: ["metadata.auto.accountids"], fields: [{ visitors: { count: null } }] } },
+    { filter: `${APP}.lastvisit != null && metadata.agent.hierarchy != null` },
+    { group: { group: ["metadata.agent.hierarchy"], fields: [{ visitors: { count: null } }] } },
     { sort: ["-visitors"] }, { limit: 10 },
   ]],
   ["pulse-top-browsers", [
@@ -102,7 +101,9 @@ const widgets = [
     { filter: `${APP}.lastvisit != null` },
     { select: {
         visitorId: "visitorId",
-        account: "metadata.auto.accountid",
+        name: "metadata.agent.full_name",
+        title: "metadata.agent.title",
+        hierarchy: "metadata.agent.hierarchy",
         firstVisit: `${APP}.firstvisit`,
         lastVisit: `${APP}.lastvisit`,
       } },

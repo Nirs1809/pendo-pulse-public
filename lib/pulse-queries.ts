@@ -162,23 +162,22 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
 
-  // ─── Row 3: Pulse accounts + browsers ────────────────────────────────
+  // ─── Row 3: who uses Pulse ───────────────────────────────────────────
   {
-    id: "pulse-top-accounts",
-    title: "Top accounts on Pulse",
-    subtitle: "By visitor count",
+    id: "pulse-by-hierarchy",
+    title: "Pulse visitors by hierarchy",
+    subtitle: "From agent.hierarchy metadata",
     kind: "bar",
     colSpan: 2,
     hints: { xField: "name", yField: "visitors" },
     build: () => [
       { source: { visitors: null } },
       {
-        filter: `${APP}.lastvisit != null && metadata.auto.accountids != null`,
+        filter: `${APP}.lastvisit != null && metadata.agent.hierarchy != null`,
       },
-      { unwind: { field: "metadata.auto.accountids" } },
       {
         group: {
-          group: ["metadata.auto.accountids"],
+          group: ["metadata.agent.hierarchy"],
           fields: [{ visitors: { count: null } }],
         },
       },
@@ -187,7 +186,7 @@ export const PULSE_WIDGETS: PulseWidget[] = [
     ],
     transform: (rows) =>
       rows.map((r) => ({
-        name: String(deep(r, "metadata.auto.accountids") ?? "—"),
+        name: prettyLabel(String(deep(r, "metadata.agent.hierarchy") ?? "—")),
         visitors: Number(r.visitors ?? 0),
       })),
   },
@@ -232,7 +231,9 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       {
         select: {
           visitorId: "visitorId",
-          account: "metadata.auto.accountid",
+          name: "metadata.agent.full_name",
+          title: "metadata.agent.title",
+          hierarchy: "metadata.agent.hierarchy",
           firstVisit: `${APP}.firstvisit`,
           lastVisit: `${APP}.lastvisit`,
         },
@@ -243,16 +244,30 @@ export const PULSE_WIDGETS: PulseWidget[] = [
     transform: (rows) =>
       rows.map((r) => ({
         Visitor: String(r.visitorId ?? "—"),
-        Account: String(r.account ?? "—"),
+        Name: String(r.name ?? "—"),
+        Title: String(r.title ?? "—"),
+        Hierarchy: prettyLabel(String(r.hierarchy ?? "—")),
         "First visit": r.firstVisit
           ? new Date(Number(r.firstVisit)).toISOString().slice(0, 10)
           : "—",
         "Last visit": r.lastVisit
-          ? new Date(Number(r.lastVisit)).toISOString().slice(0, 16).replace("T", " ")
+          ? new Date(Number(r.lastVisit))
+              .toISOString()
+              .slice(0, 16)
+              .replace("T", " ")
           : "—",
       })),
   },
 ];
+
+function prettyLabel(s: string): string {
+  if (!s || s === "—") return s;
+  // snake_case -> Title Case
+  return s
+    .split("_")
+    .map((w) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .join(" ");
+}
 
 // Re-exported so the page can pass it around.
 export type { PulseContext };
