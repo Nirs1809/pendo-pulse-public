@@ -105,26 +105,33 @@ export default async function Page() {
   if (stickinessWidget) renderOrder.push(stickinessWidget);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-10 md:px-8">
-      <header className="mb-8 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+    <main className="mx-auto max-w-7xl px-4 py-12 md:px-8">
+      <header className="mb-10 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-xs uppercase tracking-wide text-brand">
-            Pendo · Sub {SUB} · App {APP_ID}
-          </p>
-          <h1 className="mt-1 text-2xl font-semibold tracking-tight text-gray-900">
+          <span className="kicker">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-pendo-pink" />
+            Pulse · Subscription {SUB}
+          </span>
+          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-pendo-ink md:text-5xl">
             Pulse Business KPIs
           </h1>
-          <p className="mt-1 max-w-2xl text-sm text-gray-600">
+          <p className="mt-3 max-w-2xl text-sm text-pendo-body/80">
             A public mirror of the Pulse dashboard, scoped to the Pulse app
             only. Data is pulled live from the Pendo Integration API and
-            cached for 1 hour. Anyone with this link can view — no Pendo
+            cached for one hour. Anyone with this link can view — no Pendo
             login required.
           </p>
         </div>
-        <div className="text-xs text-gray-500">
-          <div>Refreshes hourly.</div>
+        <div className="text-right font-display text-xs text-pendo-body/70">
+          <div className="flex items-center justify-end gap-1.5">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pendo-pink opacity-50" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-pendo-pink" />
+            </span>
+            Live · refreshes hourly
+          </div>
           <a
-            className="text-brand hover:underline"
+            className="mt-1 inline-flex items-center gap-1 font-medium text-pendo-pink transition hover:text-pendo-wine"
             href={`https://app.pendo.io/s/${SUB}/dashboards/${DASHBOARD_ID}`}
             target="_blank"
             rel="noreferrer noopener"
@@ -136,10 +143,23 @@ export default async function Page() {
 
       <DashboardGrid widgets={renderOrder} />
 
-      <footer className="mt-10 border-t border-gray-100 pt-4 text-xs text-gray-500">
-        Built with the Pendo Aggregation API. Widgets are scoped to app
-        ID <code>{APP_ID}</code> — change via the <code>PENDO_APP_ID</code>
-        env var. The integration key never leaves the server.
+      <footer className="mt-14 border-t border-pendo-mist pt-5 text-xs text-pendo-body/60">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <span>
+            Built with the Pendo Aggregation API. App ID{" "}
+            <code className="rounded bg-pendo-beige px-1">{APP_ID}</code> —
+            change via <code>PENDO_APP_ID</code>. The integration key never
+            leaves the server.
+          </span>
+          <a
+            href="https://www.pendo.io/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-display font-semibold text-pendo-wine hover:text-pendo-pink"
+          >
+            pendo.io ↗
+          </a>
+        </div>
       </footer>
     </main>
   );

@@ -73,8 +73,8 @@ export function TableWidget({ title, subtitle, rows }: TableWidgetProps) {
                       key={c}
                       onClick={() => onHeaderClick(c)}
                       className={
-                        "cursor-pointer select-none border-b border-gray-100 py-2 pr-4 font-medium transition-colors hover:text-gray-900 " +
-                        (active ? "text-gray-900" : "")
+                        "cursor-pointer select-none border-b border-pendo-mist py-2 pr-4 font-display font-medium transition-colors hover:text-pendo-pink " +
+                        (active ? "text-pendo-pink" : "")
                       }
                       aria-sort={
                         active
@@ -96,13 +96,16 @@ export function TableWidget({ title, subtitle, rows }: TableWidgetProps) {
             </thead>
             <tbody>
               {sorted.map((row, i) => (
-                <tr key={i} className="border-b border-gray-50 last:border-0">
+                <tr
+                  key={i}
+                  className="border-b border-pendo-mist/50 transition-colors last:border-0 hover:bg-pendo-palepink/40"
+                >
                   {columns.map((c) => {
                     const v = row[c];
                     return (
                       <td
                         key={c}
-                        className="py-2 pr-4 align-top text-gray-800"
+                        className="py-2 pr-4 align-top text-pendo-body"
                       >
                         {typeof v === "number"
                           ? formatValue(v)
@@ -130,9 +133,9 @@ function SortArrow({
   dir: "asc" | "desc";
 }) {
   if (!active) {
-    return <span className="text-gray-300">↕</span>;
+    return <span className="text-pendo-mist">↕</span>;
   }
   return (
-    <span className="text-brand">{dir === "asc" ? "↑" : "↓"}</span>
+    <span className="text-pendo-pink">{dir === "asc" ? "↑" : "↓"}</span>
   );
 }

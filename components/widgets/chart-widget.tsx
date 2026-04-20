@@ -34,15 +34,17 @@ export interface ChartWidgetProps {
   rows: Array<Record<string, unknown>>;
 }
 
+// Pendo brand palette. Lead with hot pink, then deep wine, then the
+// softer accent tones, falling back to neutrals for a 6th+ series.
 const PALETTE = [
-  "#FF4A00",
-  "#6366F1",
-  "#10B981",
-  "#F59E0B",
-  "#EC4899",
-  "#0EA5E9",
-  "#8B5CF6",
-  "#84CC16",
+  "#DE2864",
+  "#7A2133",
+  "#FF69B4",
+  "#E4B4BE",
+  "#2B0007",
+  "#101010",
+  "#FFB3C6",
+  "#2A2A2A",
 ];
 
 export function ChartWidget({
@@ -107,20 +109,29 @@ function renderChart(
     );
   }
 
+  const axisTick = { fontSize: 11, fill: "#7a2133" };
+  const gridStroke = "#eceee7";
+
   if (kind === "bar") {
     return (
       <BarChart data={rows} margin={{ top: 8, right: 16, left: 0, bottom: 8 }}>
-        <CartesianGrid stroke="#f1f5f9" vertical={false} />
-        <XAxis
-          dataKey={fields.xField}
-          tick={{ fontSize: 11, fill: "#6b7280" }}
-        />
+        <CartesianGrid stroke={gridStroke} vertical={false} />
+        <XAxis dataKey={fields.xField} tick={axisTick} stroke="#eceee7" />
         <YAxis
-          tick={{ fontSize: 11, fill: "#6b7280" }}
+          tick={axisTick}
+          stroke="#eceee7"
           tickFormatter={(v) => formatCompact(Number(v))}
         />
-        <Tooltip />
-        <Bar dataKey={fields.yField} fill={PALETTE[0]} radius={[4, 4, 0, 0]} />
+        <Tooltip
+          contentStyle={{
+            border: "1px solid #eceee7",
+            borderRadius: 10,
+            background: "#fff",
+            fontSize: 12,
+          }}
+          cursor={{ fill: "#ffe4e9" }}
+        />
+        <Bar dataKey={fields.yField} fill={PALETTE[0]} radius={[6, 6, 0, 0]} />
       </BarChart>
     );
   }
@@ -128,22 +139,28 @@ function renderChart(
   // default: line
   return (
     <LineChart data={rows} margin={{ top: 8, right: 16, left: 0, bottom: 8 }}>
-      <CartesianGrid stroke="#f1f5f9" vertical={false} />
-      <XAxis
-        dataKey={fields.xField}
-        tick={{ fontSize: 11, fill: "#6b7280" }}
-      />
+      <CartesianGrid stroke={gridStroke} vertical={false} />
+      <XAxis dataKey={fields.xField} tick={axisTick} stroke="#eceee7" />
       <YAxis
-        tick={{ fontSize: 11, fill: "#6b7280" }}
+        tick={axisTick}
+        stroke="#eceee7"
         tickFormatter={(v) => formatCompact(Number(v))}
       />
-      <Tooltip />
+      <Tooltip
+        contentStyle={{
+          border: "1px solid #eceee7",
+          borderRadius: 10,
+          background: "#fff",
+          fontSize: 12,
+        }}
+      />
       <Line
         type="monotone"
         dataKey={fields.yField}
         stroke={PALETTE[0]}
-        strokeWidth={2}
-        dot={false}
+        strokeWidth={2.5}
+        dot={{ r: 2.5, fill: PALETTE[0], stroke: PALETTE[0] }}
+        activeDot={{ r: 5, fill: PALETTE[0] }}
       />
     </LineChart>
   );
