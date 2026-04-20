@@ -218,7 +218,38 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
 
-  // ─── Row 4: recent activity table ────────────────────────────────────
+  // ─── Row 4: department distribution ──────────────────────────────────
+  {
+    id: "pulse-by-department",
+    title: "Pulse visitors by department role",
+    subtitle: "From agent.department_role metadata",
+    kind: "bar",
+    colSpan: 3,
+    hints: { xField: "name", yField: "visitors" },
+    build: () => [
+      { source: { visitors: null } },
+      {
+        filter: `${APP}.lastvisit != null && metadata.agent.department_role != null`,
+      },
+      {
+        group: {
+          group: ["metadata.agent.department_role"],
+          fields: [{ visitors: { count: null } }],
+        },
+      },
+      { sort: ["-visitors"] },
+      { limit: 20 },
+    ],
+    transform: (rows) =>
+      rows.map((r) => ({
+        name: prettyLabel(
+          String(deep(r, "metadata.agent.department_role") ?? "—"),
+        ),
+        visitors: Number(r.visitors ?? 0),
+      })),
+  },
+
+  // ─── Row 5: recent activity table ────────────────────────────────────
   {
     id: "pulse-recent-visitors",
     title: "Most recently active Pulse visitors",
@@ -265,6 +296,9 @@ const LABEL_ACRONYMS = new Set([
   "se",
   "sdr",
   "csm",
+  "cse",
+  "tam",
+  "ps",
   "ae",
   "pm",
   "vp",

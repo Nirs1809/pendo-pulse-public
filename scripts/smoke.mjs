@@ -90,6 +90,12 @@ const widgets = [
     { group: { group: ["metadata.agent.hierarchy"], fields: [{ visitors: { count: null } }] } },
     { sort: ["-visitors"] }, { limit: 10 },
   ]],
+  ["pulse-by-department", [
+    { source: { visitors: null } },
+    { filter: `${APP}.lastvisit != null && metadata.agent.department_role != null` },
+    { group: { group: ["metadata.agent.department_role"], fields: [{ visitors: { count: null } }] } },
+    { sort: ["-visitors"] }, { limit: 20 },
+  ]],
   ["pulse-top-browsers", [
     { source: { visitors: null } },
     { filter: `${APP}.lastbrowsername != null && ${APP}.lastbrowsername != "unknown"` },
