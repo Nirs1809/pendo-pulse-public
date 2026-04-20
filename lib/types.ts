@@ -5,19 +5,34 @@ export interface AggregationResult {
 
 export type WidgetKind = "kpi" | "line" | "bar" | "pie" | "table";
 
+export interface PulseContext {
+  featureNames: Map<string, string>;
+  pageNames: Map<string, string>;
+  guides: Array<Record<string, unknown>>;
+  features: Array<Record<string, unknown>>;
+  pages: Array<Record<string, unknown>>;
+}
+
 export interface PulseWidget {
   id: string;
   title: string;
   subtitle?: string;
   kind: WidgetKind;
-  // Returns the aggregation pipeline to run.
-  build: () => unknown[];
-  // Shapes the raw rows before handing them to the renderer.
-  // Also responsible for swapping IDs for human names.
+
+  // Supply ONE of these. `build` runs through Pendo /aggregation; `run`
+  // is for widgets that need to call other endpoints or compute locally
+  // (e.g. guide-state pie, derived from /guide).
+  build?: () => unknown[];
+  run?: (
+    ctx: PulseContext,
+  ) => Promise<Array<Record<string, unknown>>> | Array<Record<string, unknown>>;
+
+  // Transform the rows returned by Pendo before rendering.
   transform?: (
     rows: Array<Record<string, unknown>>,
     ctx: PulseContext,
   ) => Promise<Array<Record<string, unknown>>> | Array<Record<string, unknown>>;
+
   hints?: {
     xField?: string;
     yField?: string;
@@ -26,9 +41,4 @@ export interface PulseWidget {
     format?: "number" | "percent" | "duration";
   };
   colSpan?: 1 | 2 | 3;
-}
-
-export interface PulseContext {
-  featureNames: Map<string, string>;
-  pageNames: Map<string, string>;
 }

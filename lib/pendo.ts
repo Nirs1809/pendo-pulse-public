@@ -1,25 +1,16 @@
-import type { AggregationResult } from "./types";
+import type { AggregationResult, PulseContext } from "./types";
 
 /**
  * Minimal Pendo REST client.
  *
- * Background:
- *   Pendo's public REST API (v1) exposes /feature, /page, /guide, /report
- *   and a powerful /aggregation endpoint — but it does NOT expose a
- *   "dashboard" resource. The dashboard you see at
- *     https://app.pendo.io/s/<sub>/dashboards/<id>
- *   is a UI layout only. The reports on it store a high-level "definition"
- *   (what the user picked in the UI) rather than a runnable aggregation
- *   pipeline. Pendo's own frontend compiles that definition into a pipeline
- *   at render time.
+ * The public REST API does not expose dashboards. Widgets in this app
+ * therefore hand-author pipelines against /aggregation directly
+ * (see lib/pulse-queries.ts). This module wraps the REST calls plus
+ * the metadata fetches (features / pages / guides) that we use both
+ * for name-resolution and for the guide-state pie.
  *
- *   Because we can't run that compiler from outside, this client takes a
- *   different approach: we hand-author the aggregation pipelines that
- *   reproduce the widgets on the Pulse dashboard and submit them directly
- *   to /aggregation. See lib/pulse-queries.ts.
- *
- *   All Pendo calls happen server-side — the integration key must never
- *   reach the browser.
+ * All calls happen server-side — the integration key must never reach
+ * the browser.
  */
 
 const BASE = process.env.PENDO_API_BASE ?? "https://app.pendo.io/api/v1";
@@ -89,37 +80,28 @@ export async function runAggregation(
       }),
     },
   );
-
   return { rows: raw.results ?? [], raw };
 }
 
-// ─── Metadata helpers (names for feature/page IDs) ────────────────────────
+// ─── Context: names + guide catalog ──────────────────────────────────────
 
-let featureCache: Map<string, string> | null = null;
-let pageCache: Map<string, string> | null = null;
+export async function buildPulseContext(): Promise<PulseContext> {
+  const [features, pages, guides] = await Promise.all([
+    pendoFetch<Array<Record<string, unknown>>>(`/feature`).catch(() => []),
+    pendoFetch<Array<Record<string, unknown>>>(`/page`).catch(() => []),
+    pendoFetch<Array<Record<string, unknown>>>(`/guide`).catch(() => []),
+  ]);
 
-export async function getFeatureNames(): Promise<Map<string, string>> {
-  if (featureCache) return featureCache;
-  const feats = await pendoFetch<Array<Record<string, unknown>>>(`/feature`);
-  const map = new Map<string, string>();
-  for (const f of feats) {
+  const featureNames = new Map<string, string>();
+  for (const f of features) {
     const id = String(f.id ?? "");
-    const name = String(f.name ?? id);
-    if (id) map.set(id, name);
+    if (id) featureNames.set(id, String(f.name ?? id));
   }
-  featureCache = map;
-  return map;
-}
-
-export async function getPageNames(): Promise<Map<string, string>> {
-  if (pageCache) return pageCache;
-  const pages = await pendoFetch<Array<Record<string, unknown>>>(`/page`);
-  const map = new Map<string, string>();
+  const pageNames = new Map<string, string>();
   for (const p of pages) {
     const id = String(p.id ?? "");
-    const name = String(p.name ?? id);
-    if (id) map.set(id, name);
+    if (id) pageNames.set(id, String(p.name ?? id));
   }
-  pageCache = map;
-  return map;
+
+  return { features, pages, guides, featureNames, pageNames };
 }

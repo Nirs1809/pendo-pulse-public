@@ -1,200 +1,294 @@
-import type { PulseWidget } from "./types";
+import type { PulseContext, PulseWidget } from "./types";
 
 /**
  * The curated Pulse dashboard.
  *
- * Each widget hand-authors an aggregation pipeline against Pendo's public
- * /aggregation endpoint. This is necessary because Pendo's REST API does
- * not expose dashboards or the compiled pipelines behind individual
- * reports — only the raw primitives.
- *
- * Pipelines here use relative time windows: the pipeline builder runs at
- * request time so "last 90 days" is always current.
+ * Every widget either (a) hand-authors a Pendo /aggregation pipeline via
+ * `build()` or (b) computes rows locally from pre-fetched metadata via
+ * `run(ctx)`. This layout was derived empirically by probing the live
+ * Pendo API — the original "events" source in this sub is sparse, but
+ * the visitor / account / guide surfaces are rich, so the widgets here
+ * lean on those.
  */
 
-function daysAgoMs(days: number): number {
-  return Date.now() - days * 86_400_000;
+const DAY_MS = 86_400_000;
+const ms = (days: number) => Date.now() - days * DAY_MS;
+
+// Fields returned by groupBy on a nested metadata path come back as a
+// nested object. This helper plucks the leaf value.
+function deep(obj: unknown, path: string): unknown {
+  return path.split(".").reduce<unknown>((acc, key) => {
+    if (acc && typeof acc === "object" && key in (acc as Record<string, unknown>)) {
+      return (acc as Record<string, unknown>)[key];
+    }
+    return undefined;
+  }, obj);
 }
 
-const LAST_30D = () => ({ first: daysAgoMs(30), last: "now()" as const, period: "dayRange" as const });
-const LAST_90D = () => ({ first: daysAgoMs(90), last: "now()" as const, period: "dayRange" as const });
-const LAST_90D_WEEKLY = () => ({ first: daysAgoMs(90), last: "now()" as const, period: "weekRange" as const });
-
 export const PULSE_WIDGETS: PulseWidget[] = [
+  // ─── Row 1: topline KPIs ─────────────────────────────────────────────
   {
-    id: "totals-90d",
-    title: "Total visitors (90d)",
+    id: "total-visitors",
+    title: "Total visitors",
+    subtitle: "All-time",
     kind: "kpi",
-    hints: { valueField: "visitors" },
+    hints: { valueField: "total" },
     build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
+      { source: { visitors: null } },
+      { reduce: { total: { count: null } } },
+    ],
+  },
+  {
+    id: "total-accounts",
+    title: "Total accounts",
+    subtitle: "All-time",
+    kind: "kpi",
+    hints: { valueField: "total" },
+    build: () => [
+      { source: { accounts: null } },
+      { reduce: { total: { count: null } } },
+    ],
+  },
+  {
+    id: "active-30d",
+    title: "Active visitors",
+    subtitle: "Last 30 days",
+    kind: "kpi",
+    hints: { valueField: "total" },
+    build: () => [
+      { source: { visitors: null } },
+      { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+      { reduce: { total: { count: null } } },
+    ],
+  },
+  {
+    id: "active-7d",
+    title: "Active visitors",
+    subtitle: "Last 7 days",
+    kind: "kpi",
+    hints: { valueField: "total" },
+    build: () => [
+      { source: { visitors: null } },
+      { filter: `metadata.auto.lastvisit >= ${ms(7)}` },
+      { reduce: { total: { count: null } } },
+    ],
+  },
+  {
+    id: "total-guides",
+    title: "Total guides",
+    subtitle: "All states",
+    kind: "kpi",
+    hints: { valueField: "total" },
+    run: (ctx) => [{ total: ctx.guides.length }],
+  },
+  {
+    id: "published-guides",
+    title: "Published guides",
+    subtitle: "state=public",
+    kind: "kpi",
+    hints: { valueField: "total" },
+    run: (ctx) => [
       {
-        reduce: {
-          visitors: { count: "visitorId" },
-          accounts: { count: "accountId" },
-          events: { count: null },
-        },
+        total: ctx.guides.filter((g) => g.state === "public").length,
       },
     ],
   },
+
+  // ─── Row 2: activity over time ───────────────────────────────────────
   {
-    id: "total-accounts-90d",
-    title: "Total accounts (90d)",
-    kind: "kpi",
-    hints: { valueField: "accounts" },
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { reduce: { accounts: { count: "accountId" } } },
-    ],
-  },
-  {
-    id: "total-events-90d",
-    title: "Total events (90d)",
-    kind: "kpi",
-    hints: { valueField: "events" },
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { reduce: { events: { count: null } } },
-    ],
-  },
-  {
-    id: "weekly-visitors",
-    title: "Weekly visitors (90d)",
-    subtitle: "Unique visitors per week",
+    id: "dau-30d",
+    title: "Daily active visitors",
+    subtitle: "Last 30 days",
     kind: "line",
-    colSpan: 2,
-    hints: { xField: "week", yField: "visitors" },
+    colSpan: 3,
+    hints: { xField: "date", yField: "visitors" },
     build: () => [
-      { source: { events: null, timeSeries: LAST_90D_WEEKLY() } },
+      { source: { visitors: null } },
+      { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+      {
+        eval: {
+          day: "metadata.auto.lastvisit - metadata.auto.lastvisit % 86400000",
+        },
+      },
+      { group: { group: ["day"], fields: [{ visitors: { count: null } }] } },
+      { sort: ["day"] },
+    ],
+    transform: (rows) =>
+      rows.map((r) => ({
+        date: new Date(Number(r.day)).toISOString().slice(5, 10),
+        visitors: Number(r.visitors ?? 0),
+      })),
+  },
+  {
+    id: "new-visitors-90d",
+    title: "New visitors per day",
+    subtitle: "Last 90 days (by firstvisit)",
+    kind: "line",
+    colSpan: 3,
+    hints: { xField: "date", yField: "newVisitors" },
+    build: () => [
+      { source: { visitors: null } },
+      { filter: `metadata.auto.firstvisit >= ${ms(90)}` },
+      {
+        eval: {
+          day: "metadata.auto.firstvisit - metadata.auto.firstvisit % 86400000",
+        },
+      },
       {
         group: {
           group: ["day"],
-          fields: [
-            { visitors: { count: "visitorId" } },
-            { accounts: { count: "accountId" } },
-            { events: { count: null } },
-          ],
+          fields: [{ newVisitors: { count: null } }],
         },
       },
       { sort: ["day"] },
     ],
     transform: (rows) =>
       rows.map((r) => ({
-        week: typeof r.day === "number"
-          ? new Date(r.day as number).toISOString().slice(0, 10)
-          : String(r.day ?? ""),
-        visitors: Number(r.visitors ?? 0),
-        accounts: Number(r.accounts ?? 0),
+        date: new Date(Number(r.day)).toISOString().slice(5, 10),
+        newVisitors: Number(r.newVisitors ?? 0),
       })),
   },
+
+  // ─── Row 3: top accounts & hosts ─────────────────────────────────────
   {
-    id: "daily-events-30d",
-    title: "Daily events (30d)",
+    id: "top-accounts",
+    title: "Top accounts",
+    subtitle: "By visitor count",
     kind: "bar",
     colSpan: 2,
-    hints: { xField: "day", yField: "events" },
+    hints: { xField: "name", yField: "visitors" },
     build: () => [
-      { source: { events: null, timeSeries: LAST_30D() } },
+      { source: { visitors: null } },
+      { filter: "metadata.auto.accountids != null" },
+      { unwind: { field: "metadata.auto.accountids" } },
       {
         group: {
-          group: ["day"],
-          fields: [{ events: { count: null } }],
+          group: ["metadata.auto.accountids"],
+          fields: [{ visitors: { count: null } }],
         },
       },
-      { sort: ["day"] },
+      { sort: ["-visitors"] },
+      { limit: 10 },
     ],
     transform: (rows) =>
       rows.map((r) => ({
-        day: typeof r.day === "number"
-          ? new Date(r.day as number).toISOString().slice(5, 10)
-          : String(r.day ?? ""),
-        events: Number(r.events ?? 0),
-      })),
-  },
-  {
-    id: "top-features-90d",
-    title: "Top features (90d)",
-    subtitle: "Ranked by click count",
-    kind: "bar",
-    colSpan: 2,
-    hints: { xField: "name", yField: "clicks" },
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { filter: "featureId != null" },
-      {
-        group: {
-          group: ["featureId"],
-          fields: [
-            { clicks: { count: null } },
-            { visitors: { count: "visitorId" } },
-          ],
-        },
-      },
-      { sort: ["-clicks"] },
-      { limit: 10 },
-    ],
-    transform: (rows, ctx) =>
-      rows.map((r) => ({
-        name: ctx.featureNames.get(String(r.featureId)) ?? String(r.featureId),
-        clicks: Number(r.clicks ?? 0),
+        name: String(deep(r, "metadata.auto.accountids") ?? "—"),
         visitors: Number(r.visitors ?? 0),
       })),
   },
   {
-    id: "top-pages-90d",
-    title: "Top pages (90d)",
-    subtitle: "Ranked by views",
-    kind: "bar",
-    colSpan: 2,
-    hints: { xField: "name", yField: "views" },
+    id: "top-browsers",
+    title: "Top browsers",
+    subtitle: "By visitor count (excl. synthetic)",
+    kind: "pie",
+    colSpan: 1,
+    hints: { labelField: "name", valueField: "visitors" },
     build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { filter: "pageId != null" },
+      { source: { visitors: null } },
+      { filter: 'metadata.auto.lastbrowsername != null && metadata.auto.lastbrowsername != "unknown"' },
       {
         group: {
-          group: ["pageId"],
-          fields: [
-            { views: { count: null } },
-            { visitors: { count: "visitorId" } },
-          ],
+          group: ["metadata.auto.lastbrowsername"],
+          fields: [{ visitors: { count: null } }],
         },
       },
-      { sort: ["-views"] },
+      { sort: ["-visitors"] },
+      { limit: 8 },
+    ],
+    transform: (rows) =>
+      rows.map((r) => ({
+        name: String(deep(r, "metadata.auto.lastbrowsername") ?? "Unknown"),
+        visitors: Number(r.visitors ?? 0),
+      })),
+  },
+
+  // ─── Row 4: hosts + guide states ─────────────────────────────────────
+  {
+    id: "top-hosts",
+    title: "Top hosts",
+    subtitle: "Last-seen domain (excl. synthetic)",
+    kind: "bar",
+    colSpan: 2,
+    hints: { xField: "name", yField: "visitors" },
+    build: () => [
+      { source: { visitors: null } },
+      { filter: 'metadata.auto.lastservername != null && !startsWith(metadata.auto.lastservername, "__")' },
+      {
+        group: {
+          group: ["metadata.auto.lastservername"],
+          fields: [{ visitors: { count: null } }],
+        },
+      },
+      { sort: ["-visitors"] },
       { limit: 10 },
     ],
-    transform: (rows, ctx) =>
+    transform: (rows) =>
       rows.map((r) => ({
-        name: ctx.pageNames.get(String(r.pageId)) ?? String(r.pageId),
-        views: Number(r.views ?? 0),
+        name: truncate(
+          String(deep(r, "metadata.auto.lastservername") ?? "—"),
+          32,
+        ),
         visitors: Number(r.visitors ?? 0),
       })),
   },
   {
-    id: "top-accounts-90d",
-    title: "Most active accounts (90d)",
-    subtitle: "Ranked by event count",
+    id: "guides-by-state",
+    title: "Guides by state",
+    subtitle: `${0} total`,
+    kind: "pie",
+    colSpan: 1,
+    hints: { labelField: "name", valueField: "count" },
+    run: (ctx) => {
+      const tally = new Map<string, number>();
+      for (const g of ctx.guides) {
+        const state = String(g.state ?? "unknown");
+        tally.set(state, (tally.get(state) ?? 0) + 1);
+      }
+      return [...tally.entries()]
+        .map(([name, count]) => ({ name: prettyState(name), count }))
+        .sort((a, b) => b.count - a.count);
+    },
+  },
+
+  // ─── Row 5: accounts table ───────────────────────────────────────────
+  {
+    id: "accounts-table",
+    title: "Accounts overview",
+    subtitle: "Identified accounts in this subscription",
     kind: "table",
     colSpan: 3,
     build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { filter: "accountId != null" },
+      { source: { accounts: null } },
       {
-        group: {
-          group: ["accountId"],
-          fields: [
-            { events: { count: null } },
-            { visitors: { count: "visitorId" } },
-          ],
+        select: {
+          accountId: "accountId",
+          firstVisit: "metadata.auto.firstvisit",
+          lastVisit: "metadata.auto.lastvisit",
         },
       },
-      { sort: ["-events"] },
-      { limit: 20 },
     ],
     transform: (rows) =>
       rows.map((r) => ({
         Account: String(r.accountId ?? "—"),
-        Events: Number(r.events ?? 0),
-        Visitors: Number(r.visitors ?? 0),
+        "First visit": r.firstVisit
+          ? new Date(Number(r.firstVisit)).toISOString().slice(0, 10)
+          : "—",
+        "Last visit": r.lastVisit
+          ? new Date(Number(r.lastVisit)).toISOString().slice(0, 10)
+          : "—",
       })),
   },
 ];
+
+function prettyState(s: string): string {
+  const t = s.replace(/^_+|_+$/g, "");
+  if (!t) return "Unknown";
+  return t.charAt(0).toUpperCase() + t.slice(1);
+}
+
+function truncate(s: string, n: number): string {
+  return s.length > n ? s.slice(0, n - 1) + "…" : s;
+}
+
+// Re-declared here so the page code doesn't have to import it.
+export type { PulseContext };

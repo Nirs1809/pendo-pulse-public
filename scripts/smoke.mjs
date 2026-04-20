@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Smoke test: runs each widget's aggregation pipeline against the real
- * Pendo API and prints row counts. Useful locally before deploying.
+ * Smoke test: runs each widget's pipeline against the real Pendo API
+ * and prints row counts / samples. Run before deploying:
  *
  *   PENDO_INTEGRATION_KEY=... node scripts/smoke.mjs
  */
@@ -9,7 +9,6 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
-// Load .env.local into process.env
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 try {
   const text = readFileSync(resolve(root, ".env.local"), "utf8");
@@ -26,112 +25,108 @@ if (!KEY) {
   process.exit(1);
 }
 
-// Minimal port of lib/pulse-queries.ts so this script has no build step.
-const daysAgoMs = (d) => Date.now() - d * 86_400_000;
-const LAST_30D = () => ({ first: daysAgoMs(30), last: "now()", period: "dayRange" });
-const LAST_90D = () => ({ first: daysAgoMs(90), last: "now()", period: "dayRange" });
-const LAST_90D_WEEKLY = () => ({ first: daysAgoMs(90), last: "now()", period: "weekRange" });
+const DAY_MS = 86_400_000;
+const ms = (days) => Date.now() - days * DAY_MS;
 
 const widgets = [
-  {
-    id: "totals-90d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { reduce: { visitors: { count: "visitorId" }, accounts: { count: "accountId" }, events: { count: null } } },
-    ],
-  },
-  {
-    id: "total-accounts-90d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { reduce: { accounts: { count: "accountId" } } },
-    ],
-  },
-  {
-    id: "total-events-90d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { reduce: { events: { count: null } } },
-    ],
-  },
-  {
-    id: "weekly-visitors",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D_WEEKLY() } },
-      { group: { group: ["day"], fields: [{ visitors: { count: "visitorId" } }, { accounts: { count: "accountId" } }, { events: { count: null } }] } },
-      { sort: ["day"] },
-    ],
-  },
-  {
-    id: "daily-events-30d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_30D() } },
-      { group: { group: ["day"], fields: [{ events: { count: null } }] } },
-      { sort: ["day"] },
-    ],
-  },
-  {
-    id: "top-features-90d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { filter: "featureId != null" },
-      { group: { group: ["featureId"], fields: [{ clicks: { count: null } }, { visitors: { count: "visitorId" } }] } },
-      { sort: ["-clicks"] },
-      { limit: 10 },
-    ],
-  },
-  {
-    id: "top-pages-90d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { filter: "pageId != null" },
-      { group: { group: ["pageId"], fields: [{ views: { count: null } }, { visitors: { count: "visitorId" } }] } },
-      { sort: ["-views"] },
-      { limit: 10 },
-    ],
-  },
-  {
-    id: "top-accounts-90d",
-    build: () => [
-      { source: { events: null, timeSeries: LAST_90D() } },
-      { filter: "accountId != null" },
-      { group: { group: ["accountId"], fields: [{ events: { count: null } }, { visitors: { count: "visitorId" } }] } },
-      { sort: ["-events"] },
-      { limit: 20 },
-    ],
-  },
+  ["total-visitors", [
+    { source: { visitors: null } },
+    { reduce: { total: { count: null } } },
+  ]],
+  ["total-accounts", [
+    { source: { accounts: null } },
+    { reduce: { total: { count: null } } },
+  ]],
+  ["active-30d", [
+    { source: { visitors: null } },
+    { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+    { reduce: { total: { count: null } } },
+  ]],
+  ["active-7d", [
+    { source: { visitors: null } },
+    { filter: `metadata.auto.lastvisit >= ${ms(7)}` },
+    { reduce: { total: { count: null } } },
+  ]],
+  ["dau-30d", [
+    { source: { visitors: null } },
+    { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+    { eval: { day: "metadata.auto.lastvisit - metadata.auto.lastvisit % 86400000" } },
+    { group: { group: ["day"], fields: [{ visitors: { count: null } }] } },
+    { sort: ["day"] },
+  ]],
+  ["new-visitors-90d", [
+    { source: { visitors: null } },
+    { filter: `metadata.auto.firstvisit >= ${ms(90)}` },
+    { eval: { day: "metadata.auto.firstvisit - metadata.auto.firstvisit % 86400000" } },
+    { group: { group: ["day"], fields: [{ newVisitors: { count: null } }] } },
+    { sort: ["day"] },
+  ]],
+  ["top-accounts", [
+    { source: { visitors: null } },
+    { filter: "metadata.auto.accountids != null" },
+    { unwind: { field: "metadata.auto.accountids" } },
+    { group: { group: ["metadata.auto.accountids"], fields: [{ visitors: { count: null } }] } },
+    { sort: ["-visitors"] }, { limit: 10 },
+  ]],
+  ["top-browsers", [
+    { source: { visitors: null } },
+    { filter: 'metadata.auto.lastbrowsername != null && metadata.auto.lastbrowsername != "unknown"' },
+    { group: { group: ["metadata.auto.lastbrowsername"], fields: [{ visitors: { count: null } }] } },
+    { sort: ["-visitors"] }, { limit: 8 },
+  ]],
+  ["top-hosts", [
+    { source: { visitors: null } },
+    { filter: 'metadata.auto.lastservername != null && !startsWith(metadata.auto.lastservername, "__")' },
+    { group: { group: ["metadata.auto.lastservername"], fields: [{ visitors: { count: null } }] } },
+    { sort: ["-visitors"] }, { limit: 10 },
+  ]],
+  ["accounts-table", [
+    { source: { accounts: null } },
+    { select: { accountId: "accountId", firstVisit: "metadata.auto.firstvisit", lastVisit: "metadata.auto.lastvisit" } },
+  ]],
 ];
 
-async function run(widget) {
+async function run(name, pipeline) {
   const res = await fetch(`${BASE}/aggregation`, {
     method: "POST",
     headers: { "content-type": "application/json", "x-pendo-integration-key": KEY },
     body: JSON.stringify({
       response: { mimeType: "application/json" },
-      request: { name: widget.id, pipeline: widget.build() },
+      request: { name, pipeline },
     }),
   });
-  const body = await res.text();
-  if (!res.ok) return { ok: false, status: res.status, body: body.slice(0, 200) };
-  const j = JSON.parse(body);
+  const text = await res.text();
+  if (!res.ok) return { ok: false, status: res.status, body: text.slice(0, 200) };
+  const j = JSON.parse(text);
   return { ok: true, rows: j.results?.length ?? 0, sample: j.results?.[0] };
 }
 
+async function guidesCount() {
+  const res = await fetch(`${BASE}/guide`, {
+    headers: { "x-pendo-integration-key": KEY },
+  });
+  if (!res.ok) return -1;
+  const j = await res.json();
+  return Array.isArray(j) ? j.length : -1;
+}
+
 let ok = 0, bad = 0;
-for (const w of widgets) {
+for (const [name, pipe] of widgets) {
   try {
-    const r = await run(w);
+    const r = await run(name, pipe);
     if (r.ok) {
-      console.log(`✓ ${w.id.padEnd(22)} rows=${r.rows}  ${r.sample ? JSON.stringify(r.sample) : ""}`);
+      console.log(`✓ ${name.padEnd(22)} rows=${String(r.rows).padStart(4)}  ${r.sample ? JSON.stringify(r.sample).slice(0, 140) : ""}`);
       ok++;
     } else {
-      console.log(`✗ ${w.id}  HTTP ${r.status}  ${r.body}`);
+      console.log(`✗ ${name.padEnd(22)} HTTP ${r.status}  ${r.body}`);
       bad++;
     }
   } catch (e) {
-    console.log(`✗ ${w.id}  ${e.message}`);
+    console.log(`✗ ${name.padEnd(22)} ${e.message}`);
     bad++;
   }
 }
-console.log(`\n${ok} passed, ${bad} failed`);
+const gc = await guidesCount();
+console.log(`✓ ${"guides (meta)".padEnd(22)} count=${gc}`);
+console.log(`\n${ok} aggregation widgets passed, ${bad} failed`);
 process.exit(bad ? 1 : 0);

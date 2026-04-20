@@ -3,17 +3,15 @@ import {
   type RenderedWidget,
 } from "@/components/dashboard-grid";
 import {
-  getFeatureNames,
-  getPageNames,
+  buildPulseContext,
   isConfigured,
   PendoApiError,
   runAggregation,
 } from "@/lib/pendo";
 import { PULSE_WIDGETS } from "@/lib/pulse-queries";
-import type { PulseContext } from "@/lib/types";
 
-// Revalidate the page hourly. Underlying Pendo fetches are also tagged
-// "pendo" so `revalidateTag('pendo')` forces a refresh between windows.
+// Revalidate the page hourly. Underlying Pendo fetches are tagged "pendo"
+// so `revalidateTag('pendo')` forces a refresh between windows.
 export const revalidate = 3600;
 
 const SUB = process.env.PENDO_SUBSCRIPTION_ID ?? "5389416346288128";
@@ -25,29 +23,30 @@ export default async function Page() {
     return <SetupNeeded />;
   }
 
-  let ctx: PulseContext = {
+  // Pre-fetch metadata once; every widget gets the same context.
+  const ctx = await buildPulseContext().catch((): Awaited<
+    ReturnType<typeof buildPulseContext>
+  > => ({
+    features: [],
+    pages: [],
+    guides: [],
     featureNames: new Map(),
     pageNames: new Map(),
-  };
-
-  try {
-    const [featureNames, pageNames] = await Promise.all([
-      getFeatureNames(),
-      getPageNames(),
-    ]);
-    ctx = { featureNames, pageNames };
-  } catch {
-    // Keep empty maps — widgets will fall back to raw IDs.
-  }
+  }));
 
   const rendered: RenderedWidget[] = await Promise.all(
     PULSE_WIDGETS.map(async (widget) => {
       try {
-        const { rows } = await runAggregation(widget.id, widget.build());
-        const shaped = widget.transform
-          ? await widget.transform(rows, ctx)
-          : rows;
-        return { widget, rows: shaped };
+        let rows: Array<Record<string, unknown>> = [];
+        if (widget.build) {
+          rows = (await runAggregation(widget.id, widget.build())).rows;
+        } else if (widget.run) {
+          rows = await widget.run(ctx);
+        }
+        if (widget.transform) {
+          rows = await widget.transform(rows, ctx);
+        }
+        return { widget, rows };
       } catch (err) {
         const message =
           err instanceof PendoApiError
@@ -66,16 +65,16 @@ export default async function Page() {
             Pendo · Sub {SUB}
           </p>
           <h1 className="mt-1 text-2xl font-semibold tracking-tight text-gray-900">
-            Pulse Dashboard
+            Pulse Business KPIs
           </h1>
           <p className="mt-1 max-w-2xl text-sm text-gray-600">
             A public mirror of the Pulse dashboard. Data is pulled live from
-            the Pendo Aggregation API and cached for 1 hour. Anyone with this
+            the Pendo Integration API and cached for 1 hour. Anyone with this
             link can view — no Pendo login required.
           </p>
         </div>
         <div className="text-xs text-gray-500">
-          <div>Refreshes hourly.</div>
+          <div>{ctx.guides.length} guides · refreshes hourly.</div>
           <a
             className="text-brand hover:underline"
             href={`https://app.pendo.io/s/${SUB}/dashboards/${DASHBOARD_ID}`}
