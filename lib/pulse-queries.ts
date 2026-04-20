@@ -1,21 +1,26 @@
 import type { PulseContext, PulseWidget } from "./types";
 
 /**
- * The curated Pulse dashboard.
+ * The curated Pulse dashboard — scoped to the single Pendo app called
+ * "Pulse" (default app id 6561780136607744).
  *
- * Every widget either (a) hand-authors a Pendo /aggregation pipeline via
- * `build()` or (b) computes rows locally from pre-fetched metadata via
- * `run(ctx)`. This layout was derived empirically by probing the live
- * Pendo API — the original "events" source in this sub is sparse, but
- * the visitor / account / guide surfaces are rich, so the widgets here
- * lean on those.
+ * Pendo stores per-app visitor metadata under `metadata.auto_<appId>.*`.
+ * For example:
+ *   metadata.auto                     ← rolled up across all apps
+ *   metadata.auto_6561780136607744    ← Pulse only
+ *   metadata.auto__323232             ← a different (test) app
+ *   metadata.auto_5670889358295040    ← a lovable.app project
+ *
+ * Filtering / grouping on the per-app key is what makes a widget
+ * "Pulse-only". Override the default via PENDO_APP_ID env var.
  */
+
+const APP_ID = process.env.PENDO_APP_ID ?? "6561780136607744";
+const APP = `metadata.auto_${APP_ID}`;
 
 const DAY_MS = 86_400_000;
 const ms = (days: number) => Date.now() - days * DAY_MS;
 
-// Fields returned by groupBy on a nested metadata path come back as a
-// nested object. This helper plucks the leaf value.
 function deep(obj: unknown, path: string): unknown {
   return path.split(".").reduce<unknown>((acc, key) => {
     if (acc && typeof acc === "object" && key in (acc as Record<string, unknown>)) {
@@ -26,88 +31,81 @@ function deep(obj: unknown, path: string): unknown {
 }
 
 export const PULSE_WIDGETS: PulseWidget[] = [
-  // ─── Row 1: topline KPIs ─────────────────────────────────────────────
+  // ─── Row 1: topline Pulse KPIs ────────────────────────────────────────
   {
-    id: "total-visitors",
-    title: "Total visitors",
-    subtitle: "All-time",
+    id: "pulse-total-visitors",
+    title: "Pulse visitors",
+    subtitle: "All-time, app-scoped",
     kind: "kpi",
     hints: { valueField: "total" },
     build: () => [
       { source: { visitors: null } },
+      { filter: `${APP}.lastvisit != null` },
       { reduce: { total: { count: null } } },
     ],
   },
   {
-    id: "total-accounts",
-    title: "Total accounts",
-    subtitle: "All-time",
-    kind: "kpi",
-    hints: { valueField: "total" },
-    build: () => [
-      { source: { accounts: null } },
-      { reduce: { total: { count: null } } },
-    ],
-  },
-  {
-    id: "active-30d",
+    id: "pulse-active-30d",
     title: "Active visitors",
     subtitle: "Last 30 days",
     kind: "kpi",
     hints: { valueField: "total" },
     build: () => [
       { source: { visitors: null } },
-      { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+      { filter: `${APP}.lastvisit >= ${ms(30)}` },
       { reduce: { total: { count: null } } },
     ],
   },
   {
-    id: "active-7d",
+    id: "pulse-active-7d",
     title: "Active visitors",
     subtitle: "Last 7 days",
     kind: "kpi",
     hints: { valueField: "total" },
     build: () => [
       { source: { visitors: null } },
-      { filter: `metadata.auto.lastvisit >= ${ms(7)}` },
+      { filter: `${APP}.lastvisit >= ${ms(7)}` },
       { reduce: { total: { count: null } } },
     ],
   },
   {
-    id: "total-guides",
-    title: "Total guides",
-    subtitle: "All states",
+    id: "pulse-active-1d",
+    title: "Active visitors",
+    subtitle: "Last 24 hours",
     kind: "kpi",
     hints: { valueField: "total" },
-    run: (ctx) => [{ total: ctx.guides.length }],
-  },
-  {
-    id: "published-guides",
-    title: "Published guides",
-    subtitle: "state=public",
-    kind: "kpi",
-    hints: { valueField: "total" },
-    run: (ctx) => [
-      {
-        total: ctx.guides.filter((g) => g.state === "public").length,
-      },
+    build: () => [
+      { source: { visitors: null } },
+      { filter: `${APP}.lastvisit >= ${ms(1)}` },
+      { reduce: { total: { count: null } } },
     ],
   },
-
-  // ─── Row 2: activity over time ───────────────────────────────────────
   {
-    id: "dau-30d",
-    title: "Daily active visitors",
+    id: "pulse-new-30d",
+    title: "New visitors",
+    subtitle: "Last 30 days",
+    kind: "kpi",
+    hints: { valueField: "total" },
+    build: () => [
+      { source: { visitors: null } },
+      { filter: `${APP}.firstvisit >= ${ms(30)}` },
+      { reduce: { total: { count: null } } },
+    ],
+  },
+  // ─── Row 2: activity over time (Pulse only) ──────────────────────────
+  {
+    id: "pulse-dau-30d",
+    title: "Daily active Pulse visitors",
     subtitle: "Last 30 days",
     kind: "line",
     colSpan: 3,
     hints: { xField: "date", yField: "visitors" },
     build: () => [
       { source: { visitors: null } },
-      { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+      { filter: `${APP}.lastvisit >= ${ms(30)}` },
       {
         eval: {
-          day: "metadata.auto.lastvisit - metadata.auto.lastvisit % 86400000",
+          day: `${APP}.lastvisit - ${APP}.lastvisit % ${DAY_MS}`,
         },
       },
       { group: { group: ["day"], fields: [{ visitors: { count: null } }] } },
@@ -120,18 +118,18 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
   {
-    id: "new-visitors-90d",
-    title: "New visitors per day",
+    id: "pulse-new-visitors-90d",
+    title: "New Pulse visitors per day",
     subtitle: "Last 90 days (by firstvisit)",
-    kind: "line",
+    kind: "bar",
     colSpan: 3,
     hints: { xField: "date", yField: "newVisitors" },
     build: () => [
       { source: { visitors: null } },
-      { filter: `metadata.auto.firstvisit >= ${ms(90)}` },
+      { filter: `${APP}.firstvisit >= ${ms(90)}` },
       {
         eval: {
-          day: "metadata.auto.firstvisit - metadata.auto.firstvisit % 86400000",
+          day: `${APP}.firstvisit - ${APP}.firstvisit % ${DAY_MS}`,
         },
       },
       {
@@ -149,17 +147,19 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
 
-  // ─── Row 3: top accounts & hosts ─────────────────────────────────────
+  // ─── Row 3: Pulse accounts + browsers ────────────────────────────────
   {
-    id: "top-accounts",
-    title: "Top accounts",
+    id: "pulse-top-accounts",
+    title: "Top accounts on Pulse",
     subtitle: "By visitor count",
     kind: "bar",
     colSpan: 2,
     hints: { xField: "name", yField: "visitors" },
     build: () => [
       { source: { visitors: null } },
-      { filter: "metadata.auto.accountids != null" },
+      {
+        filter: `${APP}.lastvisit != null && metadata.auto.accountids != null`,
+      },
       { unwind: { field: "metadata.auto.accountids" } },
       {
         group: {
@@ -177,18 +177,20 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
   {
-    id: "top-browsers",
-    title: "Top browsers",
-    subtitle: "By visitor count (excl. synthetic)",
+    id: "pulse-top-browsers",
+    title: "Browsers on Pulse",
+    subtitle: "By visitor count",
     kind: "pie",
     colSpan: 1,
     hints: { labelField: "name", valueField: "visitors" },
     build: () => [
       { source: { visitors: null } },
-      { filter: 'metadata.auto.lastbrowsername != null && metadata.auto.lastbrowsername != "unknown"' },
+      {
+        filter: `${APP}.lastbrowsername != null && ${APP}.lastbrowsername != "unknown"`,
+      },
       {
         group: {
-          group: ["metadata.auto.lastbrowsername"],
+          group: [`${APP}.lastbrowsername`],
           fields: [{ visitors: { count: null } }],
         },
       },
@@ -197,98 +199,45 @@ export const PULSE_WIDGETS: PulseWidget[] = [
     ],
     transform: (rows) =>
       rows.map((r) => ({
-        name: String(deep(r, "metadata.auto.lastbrowsername") ?? "Unknown"),
+        name: String(deep(r, `${APP}.lastbrowsername`) ?? "Unknown"),
         visitors: Number(r.visitors ?? 0),
       })),
   },
 
-  // ─── Row 4: hosts + guide states ─────────────────────────────────────
+  // ─── Row 4: recent activity table ────────────────────────────────────
   {
-    id: "top-hosts",
-    title: "Top hosts",
-    subtitle: "Last-seen domain (excl. synthetic)",
-    kind: "bar",
-    colSpan: 2,
-    hints: { xField: "name", yField: "visitors" },
-    build: () => [
-      { source: { visitors: null } },
-      { filter: 'metadata.auto.lastservername != null && !startsWith(metadata.auto.lastservername, "__")' },
-      {
-        group: {
-          group: ["metadata.auto.lastservername"],
-          fields: [{ visitors: { count: null } }],
-        },
-      },
-      { sort: ["-visitors"] },
-      { limit: 10 },
-    ],
-    transform: (rows) =>
-      rows.map((r) => ({
-        name: truncate(
-          String(deep(r, "metadata.auto.lastservername") ?? "—"),
-          32,
-        ),
-        visitors: Number(r.visitors ?? 0),
-      })),
-  },
-  {
-    id: "guides-by-state",
-    title: "Guides by state",
-    subtitle: `${0} total`,
-    kind: "pie",
-    colSpan: 1,
-    hints: { labelField: "name", valueField: "count" },
-    run: (ctx) => {
-      const tally = new Map<string, number>();
-      for (const g of ctx.guides) {
-        const state = String(g.state ?? "unknown");
-        tally.set(state, (tally.get(state) ?? 0) + 1);
-      }
-      return [...tally.entries()]
-        .map(([name, count]) => ({ name: prettyState(name), count }))
-        .sort((a, b) => b.count - a.count);
-    },
-  },
-
-  // ─── Row 5: accounts table ───────────────────────────────────────────
-  {
-    id: "accounts-table",
-    title: "Accounts overview",
-    subtitle: "Identified accounts in this subscription",
+    id: "pulse-recent-visitors",
+    title: "Most recently active Pulse visitors",
+    subtitle: "Top 25 by lastvisit",
     kind: "table",
     colSpan: 3,
     build: () => [
-      { source: { accounts: null } },
+      { source: { visitors: null } },
+      { filter: `${APP}.lastvisit != null` },
       {
         select: {
-          accountId: "accountId",
-          firstVisit: "metadata.auto.firstvisit",
-          lastVisit: "metadata.auto.lastvisit",
+          visitorId: "visitorId",
+          account: "metadata.auto.accountid",
+          firstVisit: `${APP}.firstvisit`,
+          lastVisit: `${APP}.lastvisit`,
         },
       },
+      { sort: ["-lastVisit"] },
+      { limit: 25 },
     ],
     transform: (rows) =>
       rows.map((r) => ({
-        Account: String(r.accountId ?? "—"),
+        Visitor: String(r.visitorId ?? "—"),
+        Account: String(r.account ?? "—"),
         "First visit": r.firstVisit
           ? new Date(Number(r.firstVisit)).toISOString().slice(0, 10)
           : "—",
         "Last visit": r.lastVisit
-          ? new Date(Number(r.lastVisit)).toISOString().slice(0, 10)
+          ? new Date(Number(r.lastVisit)).toISOString().slice(0, 16).replace("T", " ")
           : "—",
       })),
   },
 ];
 
-function prettyState(s: string): string {
-  const t = s.replace(/^_+|_+$/g, "");
-  if (!t) return "Unknown";
-  return t.charAt(0).toUpperCase() + t.slice(1);
-}
-
-function truncate(s: string, n: number): string {
-  return s.length > n ? s.slice(0, n - 1) + "…" : s;
-}
-
-// Re-declared here so the page code doesn't have to import it.
+// Re-exported so the page can pass it around.
 export type { PulseContext };

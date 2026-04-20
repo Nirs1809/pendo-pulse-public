@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 /**
- * Smoke test: runs each widget's pipeline against the real Pendo API
+ * Smoke test: runs each Pulse-scoped pipeline against the real Pendo API
  * and prints row counts / samples. Run before deploying:
  *
  *   PENDO_INTEGRATION_KEY=... node scripts/smoke.mjs
+ *
+ * The app scope defaults to Pulse (6561780136607744). Override with
+ * PENDO_APP_ID=<appId>.
  */
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -20,6 +23,8 @@ try {
 
 const KEY = process.env.PENDO_INTEGRATION_KEY;
 const BASE = process.env.PENDO_API_BASE || "https://app.pendo.io/api/v1";
+const APP_ID = process.env.PENDO_APP_ID || "6561780136607744";
+const APP = `metadata.auto_${APP_ID}`;
 if (!KEY) {
   console.error("PENDO_INTEGRATION_KEY is not set");
   process.exit(1);
@@ -29,60 +34,78 @@ const DAY_MS = 86_400_000;
 const ms = (days) => Date.now() - days * DAY_MS;
 
 const widgets = [
-  ["total-visitors", [
+  ["pulse-total-visitors", [
     { source: { visitors: null } },
+    { filter: `${APP}.lastvisit != null` },
     { reduce: { total: { count: null } } },
   ]],
-  ["total-accounts", [
-    { source: { accounts: null } },
+  ["pulse-active-30d", [
+    { source: { visitors: null } },
+    { filter: `${APP}.lastvisit >= ${ms(30)}` },
     { reduce: { total: { count: null } } },
   ]],
-  ["active-30d", [
+  ["pulse-active-7d", [
     { source: { visitors: null } },
-    { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
+    { filter: `${APP}.lastvisit >= ${ms(7)}` },
     { reduce: { total: { count: null } } },
   ]],
-  ["active-7d", [
+  ["pulse-active-1d", [
     { source: { visitors: null } },
-    { filter: `metadata.auto.lastvisit >= ${ms(7)}` },
+    { filter: `${APP}.lastvisit >= ${ms(1)}` },
     { reduce: { total: { count: null } } },
   ]],
-  ["dau-30d", [
+  ["pulse-new-30d", [
     { source: { visitors: null } },
-    { filter: `metadata.auto.lastvisit >= ${ms(30)}` },
-    { eval: { day: "metadata.auto.lastvisit - metadata.auto.lastvisit % 86400000" } },
+    { filter: `${APP}.firstvisit >= ${ms(30)}` },
+    { reduce: { total: { count: null } } },
+  ]],
+  ["pulse-dau-30d", [
+    { source: { visitors: null } },
+    { filter: `${APP}.lastvisit >= ${ms(30)}` },
+    { eval: { day: `${APP}.lastvisit - ${APP}.lastvisit % ${DAY_MS}` } },
     { group: { group: ["day"], fields: [{ visitors: { count: null } }] } },
     { sort: ["day"] },
   ]],
-  ["new-visitors-90d", [
+  ["pulse-new-visitors-90d", [
     { source: { visitors: null } },
-    { filter: `metadata.auto.firstvisit >= ${ms(90)}` },
-    { eval: { day: "metadata.auto.firstvisit - metadata.auto.firstvisit % 86400000" } },
+    { filter: `${APP}.firstvisit >= ${ms(90)}` },
+    { eval: { day: `${APP}.firstvisit - ${APP}.firstvisit % ${DAY_MS}` } },
     { group: { group: ["day"], fields: [{ newVisitors: { count: null } }] } },
     { sort: ["day"] },
   ]],
-  ["top-accounts", [
+  ["pulse-top-accounts", [
     { source: { visitors: null } },
-    { filter: "metadata.auto.accountids != null" },
+    { filter: `${APP}.lastvisit != null && metadata.auto.accountids != null` },
     { unwind: { field: "metadata.auto.accountids" } },
     { group: { group: ["metadata.auto.accountids"], fields: [{ visitors: { count: null } }] } },
     { sort: ["-visitors"] }, { limit: 10 },
   ]],
-  ["top-browsers", [
+  ["pulse-top-browsers", [
     { source: { visitors: null } },
-    { filter: 'metadata.auto.lastbrowsername != null && metadata.auto.lastbrowsername != "unknown"' },
-    { group: { group: ["metadata.auto.lastbrowsername"], fields: [{ visitors: { count: null } }] } },
+    { filter: `${APP}.lastbrowsername != null && ${APP}.lastbrowsername != "unknown"` },
+    { group: { group: [`${APP}.lastbrowsername`], fields: [{ visitors: { count: null } }] } },
     { sort: ["-visitors"] }, { limit: 8 },
   ]],
-  ["top-hosts", [
+  ["pulse-recent-visitors", [
     { source: { visitors: null } },
-    { filter: 'metadata.auto.lastservername != null && !startsWith(metadata.auto.lastservername, "__")' },
-    { group: { group: ["metadata.auto.lastservername"], fields: [{ visitors: { count: null } }] } },
-    { sort: ["-visitors"] }, { limit: 10 },
+    { filter: `${APP}.lastvisit != null` },
+    { select: {
+        visitorId: "visitorId",
+        account: "metadata.auto.accountid",
+        firstVisit: `${APP}.firstvisit`,
+        lastVisit: `${APP}.lastvisit`,
+      } },
+    { sort: ["-lastVisit"] }, { limit: 25 },
   ]],
-  ["accounts-table", [
-    { source: { accounts: null } },
-    { select: { accountId: "accountId", firstVisit: "metadata.auto.firstvisit", lastVisit: "metadata.auto.lastvisit" } },
+  ["stickiness-dau", [
+    { source: { visitors: null } },
+    { filter: `${APP}.lastvisit >= ${ms(1)}` },
+    { reduce: { total: { count: null } } },
+  ]],
+  ["stickiness-mau", [
+    { source: { visitors: null } },
+    { filter: `${APP}.lastvisit >= ${ms(30)}` },
+    { reduce: { total: { count: null } } },
   ]],
 ];
 
@@ -101,32 +124,23 @@ async function run(name, pipeline) {
   return { ok: true, rows: j.results?.length ?? 0, sample: j.results?.[0] };
 }
 
-async function guidesCount() {
-  const res = await fetch(`${BASE}/guide`, {
-    headers: { "x-pendo-integration-key": KEY },
-  });
-  if (!res.ok) return -1;
-  const j = await res.json();
-  return Array.isArray(j) ? j.length : -1;
-}
+console.log(`Smoke testing Pulse app ${APP_ID}\n`);
 
 let ok = 0, bad = 0;
 for (const [name, pipe] of widgets) {
   try {
     const r = await run(name, pipe);
     if (r.ok) {
-      console.log(`✓ ${name.padEnd(22)} rows=${String(r.rows).padStart(4)}  ${r.sample ? JSON.stringify(r.sample).slice(0, 140) : ""}`);
+      console.log(`✓ ${name.padEnd(26)} rows=${String(r.rows).padStart(4)}  ${r.sample ? JSON.stringify(r.sample).slice(0, 120) : ""}`);
       ok++;
     } else {
-      console.log(`✗ ${name.padEnd(22)} HTTP ${r.status}  ${r.body}`);
+      console.log(`✗ ${name.padEnd(26)} HTTP ${r.status}  ${r.body}`);
       bad++;
     }
   } catch (e) {
-    console.log(`✗ ${name.padEnd(22)} ${e.message}`);
+    console.log(`✗ ${name.padEnd(26)} ${e.message}`);
     bad++;
   }
 }
-const gc = await guidesCount();
-console.log(`✓ ${"guides (meta)".padEnd(22)} count=${gc}`);
-console.log(`\n${ok} aggregation widgets passed, ${bad} failed`);
+console.log(`\n${ok} passed, ${bad} failed`);
 process.exit(bad ? 1 : 0);
