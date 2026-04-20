@@ -260,12 +260,29 @@ export const PULSE_WIDGETS: PulseWidget[] = [
   },
 ];
 
+const LABEL_ACRONYMS = new Set([
+  "ic",
+  "se",
+  "sdr",
+  "csm",
+  "ae",
+  "pm",
+  "vp",
+  "api",
+  "ui",
+  "ux",
+  "hr",
+]);
+
 function prettyLabel(s: string): string {
   if (!s || s === "—") return s;
-  // snake_case -> Title Case
   return s
     .split("_")
-    .map((w) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .map((w) => {
+      if (!w) return w;
+      if (LABEL_ACRONYMS.has(w.toLowerCase())) return w.toUpperCase();
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    })
     .join(" ");
 }
 
