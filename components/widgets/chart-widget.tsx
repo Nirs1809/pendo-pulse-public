@@ -16,9 +16,23 @@ import {
   YAxis,
 } from "recharts";
 
-import type { PulseWidget } from "@/lib/types";
 import { formatCompact } from "@/lib/utils";
 import { WidgetCard } from "./widget-card";
+
+type ChartKind = "line" | "bar" | "pie";
+
+export interface ChartWidgetProps {
+  title: string;
+  subtitle?: string;
+  kind: ChartKind;
+  hints?: {
+    xField?: string;
+    yField?: string;
+    labelField?: string;
+    valueField?: string;
+  };
+  rows: Array<Record<string, unknown>>;
+}
 
 const PALETTE = [
   "#FF4A00",
@@ -32,27 +46,27 @@ const PALETTE = [
 ];
 
 export function ChartWidget({
-  widget,
+  title,
+  subtitle,
+  kind,
+  hints,
   rows,
-}: {
-  widget: PulseWidget;
-  rows: Array<Record<string, unknown>>;
-}) {
-  const xField = widget.hints?.xField ?? "day";
-  const yField = widget.hints?.yField ?? "value";
-  const labelField = widget.hints?.labelField ?? "name";
-  const valueField = widget.hints?.valueField ?? "value";
+}: ChartWidgetProps) {
+  const xField = hints?.xField ?? "day";
+  const yField = hints?.yField ?? "value";
+  const labelField = hints?.labelField ?? "name";
+  const valueField = hints?.valueField ?? "value";
 
   const empty = rows.length === 0;
 
   return (
-    <WidgetCard title={widget.title} subtitle={widget.subtitle} className="min-h-[280px]">
+    <WidgetCard title={title} subtitle={subtitle} className="min-h-[280px]">
       {empty ? (
         <EmptyChart />
       ) : (
         <div className="h-64 w-full">
           <ResponsiveContainer width="100%" height="100%">
-            {renderChart(widget.kind, rows, {
+            {renderChart(kind, rows, {
               xField,
               yField,
               labelField,
@@ -66,7 +80,7 @@ export function ChartWidget({
 }
 
 function renderChart(
-  kind: PulseWidget["kind"],
+  kind: ChartKind,
   rows: Array<Record<string, unknown>>,
   fields: {
     xField: string;
