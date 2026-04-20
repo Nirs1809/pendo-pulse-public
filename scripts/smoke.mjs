@@ -60,10 +60,21 @@ const widgets = [
     { reduce: { total: { count: null } } },
   ]],
   ["pulse-dau-30d", [
-    { source: { visitors: null } },
-    { filter: `${APP}.lastvisit >= ${ms(30)}` },
-    { eval: { day: `${APP}.lastvisit - ${APP}.lastvisit % ${DAY_MS}` } },
-    { group: { group: ["day"], fields: [{ visitors: { count: null } }] } },
+    {
+      source: {
+        events: { appId: Number(APP_ID) },
+        timeSeries: { first: ms(30), last: "now()", period: "dayRange" },
+      },
+    },
+    {
+      group: {
+        group: ["day"],
+        fields: [
+          { visitors: { count: "visitorId" } },
+          { events: { count: null } },
+        ],
+      },
+    },
     { sort: ["day"] },
   ]],
   ["pulse-new-visitors-90d", [

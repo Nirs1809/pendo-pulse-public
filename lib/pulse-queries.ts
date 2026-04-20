@@ -94,6 +94,10 @@ export const PULSE_WIDGETS: PulseWidget[] = [
   },
   // ─── Row 2: activity over time (Pulse only) ──────────────────────────
   {
+    // True DAU: query the Pulse-scoped event stream and count distinct
+    // visitors per day. Using `metadata.auto_<appId>.lastvisit` to bucket
+    // would undercount earlier days because each visitor's lastvisit is
+    // their most recent day only.
     id: "pulse-dau-30d",
     title: "Daily active Pulse visitors",
     subtitle: "Last 30 days",
@@ -101,14 +105,25 @@ export const PULSE_WIDGETS: PulseWidget[] = [
     colSpan: 3,
     hints: { xField: "date", yField: "visitors" },
     build: () => [
-      { source: { visitors: null } },
-      { filter: `${APP}.lastvisit >= ${ms(30)}` },
       {
-        eval: {
-          day: `${APP}.lastvisit - ${APP}.lastvisit % ${DAY_MS}`,
+        source: {
+          events: { appId: Number(APP_ID) },
+          timeSeries: {
+            first: ms(30),
+            last: "now()",
+            period: "dayRange",
+          },
         },
       },
-      { group: { group: ["day"], fields: [{ visitors: { count: null } }] } },
+      {
+        group: {
+          group: ["day"],
+          fields: [
+            { visitors: { count: "visitorId" } },
+            { events: { count: null } },
+          ],
+        },
+      },
       { sort: ["day"] },
     ],
     transform: (rows) =>
