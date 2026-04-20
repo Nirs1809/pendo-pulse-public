@@ -60,14 +60,15 @@ export default async function Page() {
     }),
   );
 
-  // Derived stickiness KPI: DAU / MAU. Pulled on the page because it is a
-  // single scalar computed from two other queries we already know how to run.
+  // Derived stickiness KPI: WAU / MAU. Captures the share of monthly
+  // actives who came back within the last week — a more forgiving and
+  // commonly-reported stickiness metric than DAU/MAU.
   let stickinessWidget: RenderedWidget | null = null;
   try {
-    const [dau, mau] = await Promise.all([
-      runAggregation("stickiness-dau", [
+    const [wau, mau] = await Promise.all([
+      runAggregation("stickiness-wau", [
         { source: { visitors: null } },
-        { filter: `${APP}.lastvisit >= ${Date.now() - DAY_MS}` },
+        { filter: `${APP}.lastvisit >= ${Date.now() - 7 * DAY_MS}` },
         { reduce: { total: { count: null } } },
       ]),
       runAggregation("stickiness-mau", [
@@ -76,13 +77,13 @@ export default async function Page() {
         { reduce: { total: { count: null } } },
       ]),
     ]);
-    const dauCount = Number(dau.rows[0]?.total ?? 0);
+    const wauCount = Number(wau.rows[0]?.total ?? 0);
     const mauCount = Number(mau.rows[0]?.total ?? 0);
-    const pct = mauCount > 0 ? dauCount / mauCount : 0;
+    const pct = mauCount > 0 ? wauCount / mauCount : 0;
     const widget: PulseWidget = {
       id: "pulse-stickiness",
       title: "Stickiness",
-      subtitle: `DAU ${dauCount} / MAU ${mauCount}`,
+      subtitle: `WAU ${wauCount} / MAU ${mauCount}`,
       kind: "kpi",
       hints: { valueField: "pct", format: "percent" },
     };
