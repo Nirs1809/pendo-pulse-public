@@ -11,6 +11,8 @@ export interface PulseContext {
   guides: Array<Record<string, unknown>>;
   features: Array<Record<string, unknown>>;
   pages: Array<Record<string, unknown>>;
+  // visitorId -> events in the Pulse app over the last 30 days
+  pulseEventCounts: Map<string, number>;
 }
 
 export interface PulseWidget {

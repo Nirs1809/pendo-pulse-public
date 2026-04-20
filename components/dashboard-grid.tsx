@@ -36,7 +36,11 @@ export function DashboardGrid({ widgets }: { widgets: RenderedWidget[] }) {
           ) : widget.kind === "kpi" ? (
             <KpiWidget widget={widget} rows={rows} />
           ) : widget.kind === "table" ? (
-            <TableWidget widget={widget} rows={rows} />
+            <TableWidget
+              title={widget.title}
+              subtitle={widget.subtitle}
+              rows={rows}
+            />
           ) : (
             // Only pass serializable fields to the client chart component —
             // `widget.build` / `widget.transform` are functions and cannot

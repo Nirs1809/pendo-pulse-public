@@ -83,13 +83,34 @@ export async function runAggregation(
   return { rows: raw.results ?? [], raw };
 }
 
-// ─── Context: names + guide catalog ──────────────────────────────────────
+// ─── Context: names + guide catalog + Pulse event counts ────────────────
+
+const DAY_MS = 86_400_000;
 
 export async function buildPulseContext(): Promise<PulseContext> {
-  const [features, pages, guides] = await Promise.all([
+  const appId = Number(process.env.PENDO_APP_ID ?? "6561780136607744");
+  const since = Date.now() - 30 * DAY_MS;
+
+  const [features, pages, guides, eventRows] = await Promise.all([
     pendoFetch<Array<Record<string, unknown>>>(`/feature`).catch(() => []),
     pendoFetch<Array<Record<string, unknown>>>(`/page`).catch(() => []),
     pendoFetch<Array<Record<string, unknown>>>(`/guide`).catch(() => []),
+    runAggregation("ctx-pulse-events-per-visitor", [
+      {
+        source: {
+          events: { appId },
+          timeSeries: { first: since, last: "now()", period: "dayRange" },
+        },
+      },
+      {
+        group: {
+          group: ["visitorId"],
+          fields: [{ events: { count: null } }],
+        },
+      },
+    ])
+      .then((r) => r.rows)
+      .catch(() => []),
   ]);
 
   const featureNames = new Map<string, string>();
@@ -103,5 +124,18 @@ export async function buildPulseContext(): Promise<PulseContext> {
     if (id) pageNames.set(id, String(p.name ?? id));
   }
 
-  return { features, pages, guides, featureNames, pageNames };
+  const pulseEventCounts = new Map<string, number>();
+  for (const r of eventRows) {
+    const id = String(r.visitorId ?? "");
+    if (id) pulseEventCounts.set(id, Number(r.events ?? 0));
+  }
+
+  return {
+    features,
+    pages,
+    guides,
+    featureNames,
+    pageNames,
+    pulseEventCounts,
+  };
 }

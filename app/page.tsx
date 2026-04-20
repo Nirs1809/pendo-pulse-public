@@ -35,6 +35,7 @@ export default async function Page() {
     guides: [],
     featureNames: new Map(),
     pageNames: new Map(),
+    pulseEventCounts: new Map(),
   }));
 
   const widgetResults: RenderedWidget[] = await Promise.all(

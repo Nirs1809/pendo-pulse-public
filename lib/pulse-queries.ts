@@ -253,7 +253,7 @@ export const PULSE_WIDGETS: PulseWidget[] = [
   {
     id: "pulse-recent-visitors",
     title: "Most recently active Pulse visitors",
-    subtitle: "Top 25 by lastvisit",
+    subtitle: "Top 25 by lastvisit · click a header to sort",
     kind: "table",
     colSpan: 3,
     build: () => [
@@ -272,22 +272,26 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       { sort: ["-lastVisit"] },
       { limit: 25 },
     ],
-    transform: (rows) =>
-      rows.map((r) => ({
-        Visitor: String(r.visitorId ?? "—"),
-        Name: String(r.name ?? "—"),
-        Title: String(r.title ?? "—"),
-        Hierarchy: prettyLabel(String(r.hierarchy ?? "—")),
-        "First visit": r.firstVisit
-          ? new Date(Number(r.firstVisit)).toISOString().slice(0, 10)
-          : "—",
-        "Last visit": r.lastVisit
-          ? new Date(Number(r.lastVisit))
-              .toISOString()
-              .slice(0, 16)
-              .replace("T", " ")
-          : "—",
-      })),
+    transform: (rows, ctx) =>
+      rows.map((r) => {
+        const id = String(r.visitorId ?? "");
+        return {
+          Visitor: id || "—",
+          Name: String(r.name ?? "—"),
+          Title: String(r.title ?? "—"),
+          Hierarchy: prettyLabel(String(r.hierarchy ?? "—")),
+          "Events (30d)": ctx.pulseEventCounts.get(id) ?? 0,
+          "First visit": r.firstVisit
+            ? new Date(Number(r.firstVisit)).toISOString().slice(0, 10)
+            : "—",
+          "Last visit": r.lastVisit
+            ? new Date(Number(r.lastVisit))
+                .toISOString()
+                .slice(0, 16)
+                .replace("T", " ")
+            : "—",
+        };
+      }),
   },
 ];
 
