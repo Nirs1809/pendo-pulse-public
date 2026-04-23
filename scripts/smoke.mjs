@@ -96,11 +96,11 @@ const widgets = [
     { group: { group: ["metadata.agent.department_role"], fields: [{ visitors: { count: null } }] } },
     { sort: ["-visitors"] }, { limit: 20 },
   ]],
-  ["pulse-titles-14d", [
+  ["pulse-dept-14d", [
     { source: { visitors: null } },
-    { filter: `${APP}.lastvisit >= ${ms(14)} && metadata.agent.title != null` },
-    { group: { group: ["metadata.agent.title"], fields: [{ visitors: { count: null } }] } },
-    { sort: ["-visitors"] }, { limit: 100 },
+    { filter: `${APP}.lastvisit >= ${ms(14)} && metadata.agent.department_role != null` },
+    { group: { group: ["metadata.agent.department_role"], fields: [{ visitors: { count: null } }] } },
+    { sort: ["-visitors"] }, { limit: 50 },
   ]],
   ["pulse-top-browsers", [
     { source: { visitors: null } },

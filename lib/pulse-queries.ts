@@ -249,30 +249,32 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
 
-  // ─── Row 5: titles logging in ────────────────────────────────────────
+  // ─── Row 5: department roles logging in · last 14 days ──────────────
   {
-    id: "pulse-titles-14d",
-    title: "Titles logging in to Pulse · last 14 days",
+    id: "pulse-dept-14d",
+    title: "Department roles logging in to Pulse · last 14 days",
     subtitle: "Click a column to sort",
     kind: "table",
     colSpan: 3,
     build: () => [
       { source: { visitors: null } },
       {
-        filter: `${APP}.lastvisit >= ${ms(14)} && metadata.agent.title != null`,
+        filter: `${APP}.lastvisit >= ${ms(14)} && metadata.agent.department_role != null`,
       },
       {
         group: {
-          group: ["metadata.agent.title"],
+          group: ["metadata.agent.department_role"],
           fields: [{ visitors: { count: null } }],
         },
       },
       { sort: ["-visitors"] },
-      { limit: 100 },
+      { limit: 50 },
     ],
     transform: (rows) =>
       rows.map((r) => ({
-        Title: String(deep(r, "metadata.agent.title") ?? "—"),
+        "Department role": prettyLabel(
+          String(deep(r, "metadata.agent.department_role") ?? "—"),
+        ),
         Visitors: Number(r.visitors ?? 0),
       })),
   },
