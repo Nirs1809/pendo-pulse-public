@@ -249,7 +249,35 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
 
-  // ─── Row 5: recent activity table ────────────────────────────────────
+  // ─── Row 5: titles logging in ────────────────────────────────────────
+  {
+    id: "pulse-titles-14d",
+    title: "Titles logging in to Pulse · last 14 days",
+    subtitle: "Click a column to sort",
+    kind: "table",
+    colSpan: 3,
+    build: () => [
+      { source: { visitors: null } },
+      {
+        filter: `${APP}.lastvisit >= ${ms(14)} && metadata.agent.title != null`,
+      },
+      {
+        group: {
+          group: ["metadata.agent.title"],
+          fields: [{ visitors: { count: null } }],
+        },
+      },
+      { sort: ["-visitors"] },
+      { limit: 100 },
+    ],
+    transform: (rows) =>
+      rows.map((r) => ({
+        Title: String(deep(r, "metadata.agent.title") ?? "—"),
+        Visitors: Number(r.visitors ?? 0),
+      })),
+  },
+
+  // ─── Row 6: recent activity table ────────────────────────────────────
   {
     id: "pulse-recent-visitors",
     title: "Most recently active Pulse visitors",
