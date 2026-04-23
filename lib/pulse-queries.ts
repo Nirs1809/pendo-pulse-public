@@ -271,12 +271,23 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       { limit: 50 },
     ],
     transform: (rows) =>
-      rows.map((r) => ({
-        "Department role": prettyLabel(
+      rows.map((r) => {
+        const pretty = prettyLabel(
           String(deep(r, "metadata.agent.department_role") ?? "—"),
-        ),
-        Visitors: Number(r.visitors ?? 0),
-      })),
+        );
+        const visitors = Number(r.visitors ?? 0);
+        const target = DEPT_TARGETS[pretty];
+        const row: Record<string, unknown> = {
+          "Department role": pretty,
+          Visitors: visitors,
+          Target: target ?? "—",
+        };
+        row["% of target"] =
+          target && target > 0
+            ? Math.round((visitors / target) * 1000) / 10
+            : "—";
+        return row;
+      }),
   },
 
   // ─── Row 6: recent activity table ────────────────────────────────────
@@ -324,6 +335,17 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       }),
   },
 ];
+
+/**
+ * Target headcount per department role for the Pulse adoption KPI table.
+ * Keys match the `prettyLabel`-cased value (e.g. "Customer Engineer",
+ * "CSM", "TAM"). Anything absent renders "—" in the target / % columns.
+ *
+ * Add more targets here as they are defined.
+ */
+const DEPT_TARGETS: Record<string, number> = {
+  "Customer Engineer": 100,
+};
 
 const LABEL_ACRONYMS = new Set([
   "ic",

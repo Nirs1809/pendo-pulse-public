@@ -20,13 +20,11 @@ export function TableWidget({ title, subtitle, rows }: TableWidgetProps) {
     const set = new Set<string>();
     if (!rows.length) return set;
     for (const c of columns) {
-      const sample = rows.slice(0, 5).map((r) => r[c]);
-      if (sample.every((v) => typeof v === "number" || !Number.isNaN(Number(v)))) {
-        // A column is numeric if all five samples parse as a number. Strings
-        // like "2026-04-20" will fail this because of the "-", so dates stay
-        // lexicographic-sorted, which gives the right chronological order.
-        if (sample.some((v) => typeof v === "number")) set.add(c);
-      }
+      // A column counts as numeric if at least one non-null cell is a real
+      // number. "—" placeholders for missing values are ignored instead of
+      // disqualifying the column; they sort to the end.
+      const anyNumber = rows.some((r) => typeof r[c] === "number");
+      if (anyNumber) set.add(c);
     }
     return set;
   }, [rows, columns]);
@@ -36,12 +34,16 @@ export function TableWidget({ title, subtitle, rows }: TableWidgetProps) {
     const isNum = numericCols.has(sortCol);
     const factor = dir === "asc" ? 1 : -1;
     const arr = rows.slice();
+    const missing = (v: unknown) =>
+      v == null || v === "—" || (isNum && typeof v !== "number");
     arr.sort((a, b) => {
       const av = a[sortCol];
       const bv = b[sortCol];
-      if (av == null && bv == null) return 0;
-      if (av == null) return 1;
-      if (bv == null) return -1;
+      const am = missing(av);
+      const bm = missing(bv);
+      if (am && bm) return 0;
+      if (am) return 1;
+      if (bm) return -1;
       if (isNum) return (Number(av) - Number(bv)) * factor;
       return String(av).localeCompare(String(bv)) * factor;
     });
@@ -102,16 +104,21 @@ export function TableWidget({ title, subtitle, rows }: TableWidgetProps) {
                 >
                   {columns.map((c) => {
                     const v = row[c];
+                    const isPct = c.includes("%");
                     return (
                       <td
                         key={c}
                         className="py-2 pr-4 align-top text-pendo-body"
                       >
-                        {typeof v === "number"
-                          ? formatValue(v)
-                          : v == null
-                            ? "—"
-                            : String(v)}
+                        {v == null || v === "—" ? (
+                          "—"
+                        ) : isPct && typeof v === "number" ? (
+                          <PercentCell value={v} />
+                        ) : typeof v === "number" ? (
+                          formatValue(v)
+                        ) : (
+                          String(v)
+                        )}
                       </td>
                     );
                   })}
@@ -122,6 +129,32 @@ export function TableWidget({ title, subtitle, rows }: TableWidgetProps) {
         </div>
       )}
     </WidgetCard>
+  );
+}
+
+function PercentCell({ value }: { value: number }) {
+  // Clamp for the bar width; show the real number in text.
+  const clamped = Math.max(0, Math.min(100, value));
+  const tone =
+    value >= 100
+      ? "bg-pendo-pink"
+      : value >= 60
+        ? "bg-pendo-pink/80"
+        : value >= 30
+          ? "bg-pendo-softpink"
+          : "bg-pendo-palepink";
+  return (
+    <div className="flex min-w-[140px] items-center gap-2">
+      <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-pendo-mist">
+        <div
+          className={`h-full rounded-full ${tone}`}
+          style={{ width: `${clamped}%` }}
+        />
+      </div>
+      <span className="tabular-nums text-right text-pendo-ink">
+        {value.toLocaleString(undefined, { maximumFractionDigits: 1 })}%
+      </span>
+    </div>
   );
 }
 
