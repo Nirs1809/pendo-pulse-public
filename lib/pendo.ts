@@ -91,21 +91,32 @@ export async function buildPulseContext(): Promise<PulseContext> {
   const appId = Number(process.env.PENDO_APP_ID ?? "6561780136607744");
   const since = Date.now() - 30 * DAY_MS;
 
-  const [features, pages, guides, eventRows] = await Promise.all([
+  // The `events` source returns one row per (visitor, day) so counting
+  // it gave us "active days" rather than real interactions. We instead
+  // sum the per-visitor click + page-view counts from the two granular
+  // event streams Pendo exposes.
+  const ts = { first: since, last: "now()" as const, period: "dayRange" as const };
+  const [features, pages, guides, clickRows, viewRows] = await Promise.all([
     pendoFetch<Array<Record<string, unknown>>>(`/feature`).catch(() => []),
     pendoFetch<Array<Record<string, unknown>>>(`/page`).catch(() => []),
     pendoFetch<Array<Record<string, unknown>>>(`/guide`).catch(() => []),
-    runAggregation("ctx-pulse-events-per-visitor", [
-      {
-        source: {
-          events: { appId },
-          timeSeries: { first: since, last: "now()", period: "dayRange" },
-        },
-      },
+    runAggregation("ctx-pulse-feature-clicks-per-visitor", [
+      { source: { featureEvents: { appId }, timeSeries: ts } },
       {
         group: {
           group: ["visitorId"],
-          fields: [{ events: { count: null } }],
+          fields: [{ clicks: { count: null } }],
+        },
+      },
+    ])
+      .then((r) => r.rows)
+      .catch(() => []),
+    runAggregation("ctx-pulse-page-views-per-visitor", [
+      { source: { pageEvents: { appId }, timeSeries: ts } },
+      {
+        group: {
+          group: ["visitorId"],
+          fields: [{ views: { count: null } }],
         },
       },
     ])
@@ -125,9 +136,21 @@ export async function buildPulseContext(): Promise<PulseContext> {
   }
 
   const pulseEventCounts = new Map<string, number>();
-  for (const r of eventRows) {
+  for (const r of clickRows) {
     const id = String(r.visitorId ?? "");
-    if (id) pulseEventCounts.set(id, Number(r.events ?? 0));
+    if (!id) continue;
+    pulseEventCounts.set(
+      id,
+      (pulseEventCounts.get(id) ?? 0) + Number(r.clicks ?? 0),
+    );
+  }
+  for (const r of viewRows) {
+    const id = String(r.visitorId ?? "");
+    if (!id) continue;
+    pulseEventCounts.set(
+      id,
+      (pulseEventCounts.get(id) ?? 0) + Number(r.views ?? 0),
+    );
   }
 
   return {
