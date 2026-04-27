@@ -1,0 +1,39 @@
+name: Revalidate Pendo data hourly
+
+# Vercel's Hobby tier limits cron jobs to once per day, so we use a free
+# GitHub Actions hourly schedule instead. Every run hits the project's
+# /api/revalidate endpoint, which calls revalidateTag('pendo') and forces
+# the next page load to pull fresh data from Pendo.
+#
+# Required repository secret (Settings → Secrets and variables → Actions):
+#   REVALIDATE_SECRET   matches REVALIDATE_SECRET on Vercel
+#
+# Optional repository variable:
+#   REVALIDATE_URL      defaults to https://pendo-pulse-public.vercel.app
+
+on:
+  schedule:
+    # Top of every hour (UTC).
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Hit revalidate endpoint
+        env:
+          REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
+          REVALIDATE_URL: ${{ vars.REVALIDATE_URL || 'https://pendo-pulse-public.vercel.app' }}
+        run: |
+          if [ -z "$REVALIDATE_SECRET" ]; then
+            echo "REVALIDATE_SECRET is not set in repository secrets" >&2
+            exit 1
+          fi
+          status=$(curl -sS -o /tmp/body -w "%{http_code}" \
+            -X POST \
+            "$REVALIDATE_URL/api/revalidate?secret=$REVALIDATE_SECRET")
+          echo "HTTP $status"
+          cat /tmp/body
+          [ "$status" = "200" ]
