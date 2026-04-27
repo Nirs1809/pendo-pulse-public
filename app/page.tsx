@@ -2,6 +2,7 @@ import {
   DashboardGrid,
   type RenderedWidget,
 } from "@/components/dashboard-grid";
+import { LastRefreshed } from "@/components/last-refreshed";
 import {
   buildPulseContext,
   isConfigured,
@@ -26,6 +27,9 @@ export default async function Page() {
   if (!isConfigured()) {
     return <SetupNeeded />;
   }
+
+  // Stamp now — re-evaluates every time ISR rebuilds the page (≤ 1 hour).
+  const renderedAt = new Date().toISOString();
 
   const ctx = await buildPulseContext().catch((): Awaited<
     ReturnType<typeof buildPulseContext>
@@ -128,10 +132,13 @@ export default async function Page() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pendo-pink opacity-50" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-pendo-pink" />
             </span>
-            Live · refreshes hourly
+            <LastRefreshed iso={renderedAt} />
+          </div>
+          <div className="mt-0.5 text-pendo-body/50">
+            Auto-refresh every hour
           </div>
           <a
-            className="mt-1 inline-flex items-center gap-1 font-medium text-pendo-pink transition hover:text-pendo-wine"
+            className="mt-2 inline-flex items-center gap-1 font-medium text-pendo-pink transition hover:text-pendo-wine"
             href={`https://app.pendo.io/s/${SUB}/dashboards/${DASHBOARD_ID}`}
             target="_blank"
             rel="noreferrer noopener"
