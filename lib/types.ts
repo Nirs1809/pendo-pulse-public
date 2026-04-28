@@ -13,6 +13,17 @@ export interface PulseContext {
   pages: Array<Record<string, unknown>>;
   // visitorId -> events in the Pulse app over the last 30 days
   pulseEventCounts: Map<string, number>;
+  // prettyLabel(department_role) -> visitor rows seen in Pulse last 14 days
+  pulseVisitorsByDept: Record<string, Array<Record<string, unknown>>>;
+  // Canary feature usage rows (already shaped for the table widget)
+  canaryFeatureUsage: Array<Record<string, unknown>>;
+}
+
+export interface ExpandableSpec {
+  // Column whose value is the lookup key into rowsByKey
+  keyColumn: string;
+  // Map of key -> child rows to show when the parent row is expanded
+  rowsByKey: Record<string, Array<Record<string, unknown>>>;
 }
 
 export interface PulseWidget {

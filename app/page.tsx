@@ -40,6 +40,8 @@ export default async function Page() {
     featureNames: new Map(),
     pageNames: new Map(),
     pulseEventCounts: new Map(),
+    pulseVisitorsByDept: {},
+    canaryFeatureUsage: [],
   }));
 
   const widgetResults: RenderedWidget[] = await Promise.all(
@@ -54,7 +56,15 @@ export default async function Page() {
         if (widget.transform) {
           rows = await widget.transform(rows, ctx);
         }
-        return { widget, rows };
+        const result: RenderedWidget = { widget, rows };
+        // Wire the dept-role table to expand into the per-role visitor list.
+        if (widget.id === "pulse-dept-14d") {
+          result.expandable = {
+            keyColumn: "Department role",
+            rowsByKey: ctx.pulseVisitorsByDept,
+          };
+        }
+        return result;
       } catch (err) {
         const message =
           err instanceof PendoApiError

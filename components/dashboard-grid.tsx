@@ -1,4 +1,4 @@
-import type { PulseWidget } from "@/lib/types";
+import type { ExpandableSpec, PulseWidget } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { ChartWidget } from "./widgets/chart-widget";
 import { ErrorWidget } from "./widgets/error-widget";
@@ -9,6 +9,9 @@ export interface RenderedWidget {
   widget: PulseWidget;
   rows: Array<Record<string, unknown>>;
   error?: string;
+  // Optional: when present, table rows whose key matches a key in
+  // `rowsByKey` get an expand chevron that reveals the child rows.
+  expandable?: ExpandableSpec;
 }
 
 const spanClass = (w: PulseWidget) =>
@@ -29,7 +32,7 @@ export function DashboardGrid({ widgets }: { widgets: RenderedWidget[] }) {
 
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {widgets.map(({ widget, rows, error }) => (
+      {widgets.map(({ widget, rows, error, expandable }) => (
         <div key={widget.id} className={cn(spanClass(widget))}>
           {error ? (
             <ErrorWidget widget={widget} message={error} />
@@ -40,6 +43,7 @@ export function DashboardGrid({ widgets }: { widgets: RenderedWidget[] }) {
               title={widget.title}
               subtitle={widget.subtitle}
               rows={rows}
+              expandable={expandable}
             />
           ) : (
             // Only pass serializable fields to the client chart component —

@@ -91,14 +91,25 @@ export async function buildPulseContext(): Promise<PulseContext> {
   const appId = Number(process.env.PENDO_APP_ID ?? "6561780136607744");
   const since = Date.now() - 30 * DAY_MS;
 
-  // The `events` source returns one row per (visitor, day) so counting
-  // it gave us "active days" rather than real interactions. We instead
-  // sum the per-visitor click + page-view counts from the two granular
-  // event streams Pendo exposes.
   const ts = { first: since, last: "now()" as const, period: "dayRange" as const };
-  const [features, pages, guides, clickRows, viewRows] = await Promise.all([
-    pendoFetch<Array<Record<string, unknown>>>(`/feature`).catch(() => []),
-    pendoFetch<Array<Record<string, unknown>>>(`/page`).catch(() => []),
+  const since14 = Date.now() - 14 * DAY_MS;
+
+  // Use ?appId so we get the Pulse-scoped feature catalog (59 features)
+  // rather than the integration-key default (only 13 test-app features).
+  const [
+    features,
+    pages,
+    guides,
+    clickRows,
+    viewRows,
+    deptVisitorRows,
+  ] = await Promise.all([
+    pendoFetch<Array<Record<string, unknown>>>(
+      `/feature?appId=${appId}`,
+    ).catch(() => []),
+    pendoFetch<Array<Record<string, unknown>>>(`/page?appId=${appId}`).catch(
+      () => [],
+    ),
     pendoFetch<Array<Record<string, unknown>>>(`/guide`).catch(() => []),
     runAggregation("ctx-pulse-feature-clicks-per-visitor", [
       { source: { featureEvents: { appId }, timeSeries: ts } },
@@ -119,6 +130,25 @@ export async function buildPulseContext(): Promise<PulseContext> {
           fields: [{ views: { count: null } }],
         },
       },
+    ])
+      .then((r) => r.rows)
+      .catch(() => []),
+    runAggregation("ctx-pulse-dept-visitors-14d", [
+      { source: { visitors: null } },
+      {
+        filter: `metadata.auto_${appId}.lastvisit >= ${since14} && metadata.agent.department_role != null`,
+      },
+      {
+        select: {
+          visitorId: "visitorId",
+          name: "metadata.agent.full_name",
+          title: "metadata.agent.title",
+          hierarchy: "metadata.agent.hierarchy",
+          role: "metadata.agent.department_role",
+          lastVisit: `metadata.auto_${appId}.lastvisit`,
+        },
+      },
+      { sort: ["-lastVisit"] },
     ])
       .then((r) => r.rows)
       .catch(() => []),
@@ -153,6 +183,85 @@ export async function buildPulseContext(): Promise<PulseContext> {
     );
   }
 
+  // Group dept-role visitors by pretty-cased role for the expandable table.
+  const pulseVisitorsByDept: Record<
+    string,
+    Array<Record<string, unknown>>
+  > = {};
+  for (const r of deptVisitorRows) {
+    const rawRole = String(r.role ?? "");
+    if (!rawRole) continue;
+    const key = prettyDeptLabel(rawRole);
+    if (!pulseVisitorsByDept[key]) pulseVisitorsByDept[key] = [];
+    pulseVisitorsByDept[key].push({
+      Visitor: String(r.visitorId ?? "—"),
+      Name: String(r.name ?? "—"),
+      Title: String(r.title ?? "—"),
+      Hierarchy: prettyDeptLabel(String(r.hierarchy ?? "—")),
+      "Events (30d)": pulseEventCounts.get(String(r.visitorId ?? "")) ?? 0,
+      "Last visit": r.lastVisit
+        ? new Date(Number(r.lastVisit))
+            .toISOString()
+            .slice(0, 16)
+            .replace("T", " ")
+        : "—",
+    });
+  }
+
+  // Canary feature usage: filter by /canary/i in the feature name and run
+  // a single per-feature aggregation (no-op if there are no Canary features).
+  const canaryFeatures = features.filter((f) =>
+    /canary/i.test(String(f.name ?? "")),
+  );
+  let canaryFeatureUsage: Array<Record<string, unknown>> = [];
+  if (canaryFeatures.length > 0) {
+    const idFilter = canaryFeatures
+      .map((f) => `featureId == "${String(f.id)}"`)
+      .join(" || ");
+    const r = await runAggregation("ctx-canary-usage-30d", [
+      { source: { featureEvents: { appId }, timeSeries: ts } },
+      { filter: idFilter },
+      {
+        group: {
+          group: ["featureId"],
+          fields: [
+            { clicks: { count: null } },
+            { visitors: { count: "visitorId" } },
+          ],
+        },
+      },
+      { sort: ["-clicks"] },
+    ]).catch(() => ({ rows: [] }));
+
+    const nameById = new Map(
+      canaryFeatures.map((f) => [String(f.id), String(f.name)]),
+    );
+    const seen = new Set<string>();
+    for (const row of r.rows) {
+      const id = String(row.featureId ?? "");
+      seen.add(id);
+      canaryFeatureUsage.push({
+        Feature: nameById.get(id) ?? id,
+        Clicks: Number(row.clicks ?? 0),
+        Visitors: Number(row.visitors ?? 0),
+      });
+    }
+    // Surface zero-activity Canary features explicitly so it's clear
+    // which ones haven't been touched yet.
+    for (const f of canaryFeatures) {
+      if (!seen.has(String(f.id))) {
+        canaryFeatureUsage.push({
+          Feature: String(f.name ?? f.id),
+          Clicks: 0,
+          Visitors: 0,
+        });
+      }
+    }
+    canaryFeatureUsage.sort(
+      (a, b) => Number(b.Clicks ?? 0) - Number(a.Clicks ?? 0),
+    );
+  }
+
   return {
     features,
     pages,
@@ -160,5 +269,33 @@ export async function buildPulseContext(): Promise<PulseContext> {
     featureNames,
     pageNames,
     pulseEventCounts,
+    pulseVisitorsByDept,
+    canaryFeatureUsage,
   };
+}
+
+// Pretty-label for snake_case role strings; preserves common acronyms.
+const DEPT_ACRONYMS = new Set([
+  "ic",
+  "se",
+  "sdr",
+  "csm",
+  "cse",
+  "tam",
+  "ps",
+  "ae",
+  "pm",
+  "vp",
+]);
+
+function prettyDeptLabel(s: string): string {
+  if (!s || s === "—") return s;
+  return s
+    .split("_")
+    .map((w) => {
+      if (!w) return w;
+      if (DEPT_ACRONYMS.has(w.toLowerCase())) return w.toUpperCase();
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    })
+    .join(" ");
 }

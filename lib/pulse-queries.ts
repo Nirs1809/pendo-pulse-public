@@ -290,6 +290,17 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       }),
   },
 
+  // ─── Row 5b: Canary feature usage ────────────────────────────────────
+  {
+    id: "canary-features",
+    title: "Canary feature usage · last 30 days",
+    subtitle:
+      "Auto-detected by feature names containing 'Canary'. Empty until features are tagged.",
+    kind: "table",
+    colSpan: 3,
+    run: (ctx) => ctx.canaryFeatureUsage,
+  },
+
   // ─── Row 6: recent activity table ────────────────────────────────────
   {
     id: "pulse-recent-visitors",
