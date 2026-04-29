@@ -58,7 +58,7 @@ export default async function Page() {
         }
         const result: RenderedWidget = { widget, rows };
         // Wire the dept-role table to expand into the per-role visitor list.
-        if (widget.id === "pulse-dept-14d") {
+        if (widget.id === "pulse-dept-30d") {
           result.expandable = {
             keyColumn: "Department role",
             rowsByKey: ctx.pulseVisitorsByDept,

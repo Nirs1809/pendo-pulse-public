@@ -249,17 +249,17 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       })),
   },
 
-  // ─── Row 5: department roles logging in · last 14 days ──────────────
+  // ─── Row 5: department roles logging in · last 30 days ──────────────
   {
-    id: "pulse-dept-14d",
-    title: "Department roles logging in to Pulse · last 14 days",
-    subtitle: "Click a column to sort",
+    id: "pulse-dept-30d",
+    title: "Department roles logging in to Pulse · last 30 days",
+    subtitle: "Click a row to expand the user list · click a column to sort",
     kind: "table",
     colSpan: 3,
     build: () => [
       { source: { visitors: null } },
       {
-        filter: `${APP}.lastvisit >= ${ms(14)} && metadata.agent.department_role != null`,
+        filter: `${APP}.lastvisit >= ${ms(30)} && metadata.agent.department_role != null`,
       },
       {
         group: {

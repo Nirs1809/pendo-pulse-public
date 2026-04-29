@@ -92,7 +92,6 @@ export async function buildPulseContext(): Promise<PulseContext> {
   const since = Date.now() - 30 * DAY_MS;
 
   const ts = { first: since, last: "now()" as const, period: "dayRange" as const };
-  const since14 = Date.now() - 14 * DAY_MS;
 
   // Use ?appId so we get the Pulse-scoped feature catalog (59 features)
   // rather than the integration-key default (only 13 test-app features).
@@ -133,10 +132,10 @@ export async function buildPulseContext(): Promise<PulseContext> {
     ])
       .then((r) => r.rows)
       .catch(() => []),
-    runAggregation("ctx-pulse-dept-visitors-14d", [
+    runAggregation("ctx-pulse-dept-visitors-30d", [
       { source: { visitors: null } },
       {
-        filter: `metadata.auto_${appId}.lastvisit >= ${since14} && metadata.agent.department_role != null`,
+        filter: `metadata.auto_${appId}.lastvisit >= ${since} && metadata.agent.department_role != null`,
       },
       {
         select: {
