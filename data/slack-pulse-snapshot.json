@@ -1,0 +1,260 @@
+{
+  "generatedAt": "2026-04-30T07:30:00Z",
+  "query": "pulse",
+  "windowDays": 11,
+  "range": {
+    "newest": "2026-04-30T06:22:05Z",
+    "oldest": "2026-04-20T16:44:32Z"
+  },
+  "totals": {
+    "messages": 80,
+    "channels": 21,
+    "authors": 21
+  },
+  "daily": [
+    { "date": "2026-04-20", "count": 5 },
+    { "date": "2026-04-21", "count": 4 },
+    { "date": "2026-04-22", "count": 4 },
+    { "date": "2026-04-23", "count": 17 },
+    { "date": "2026-04-24", "count": 1 },
+    { "date": "2026-04-26", "count": 3 },
+    { "date": "2026-04-27", "count": 5 },
+    { "date": "2026-04-28", "count": 14 },
+    { "date": "2026-04-29", "count": 18 },
+    { "date": "2026-04-30", "count": 9 }
+  ],
+  "topChannels": [
+    { "channel": "DM · Direct messages", "kind": "dm", "count": 19 },
+    { "channel": "#pulse-external", "kind": "channel", "count": 10 },
+    { "channel": "#tiffany-novus-test", "kind": "channel", "count": 8 },
+    { "channel": "#retos-dev", "kind": "channel", "count": 6 },
+    { "channel": "Group DM · Various", "kind": "group_dm", "count": 6 },
+    { "channel": "#data-gtm-intelligence", "kind": "channel", "count": 4 },
+    { "channel": "#prov-testing", "kind": "channel", "count": 4 },
+    { "channel": "#temp-pulse-feedback", "kind": "channel", "count": 3 },
+    { "channel": "#ce-pod-squad", "kind": "channel", "count": 2 },
+    { "channel": "#canary-data-test", "kind": "channel", "count": 2 },
+    { "channel": "#ce-all", "kind": "channel", "count": 1 },
+    { "channel": "#demand-gen-weekly-updates", "kind": "channel", "count": 1 },
+    { "channel": "#aa-category-insights", "kind": "channel", "count": 1 },
+    { "channel": "#biz-ops", "kind": "channel", "count": 1 },
+    { "channel": "#client-ig-group-europe-gmbh", "kind": "channel", "count": 1 },
+    { "channel": "#team-apex", "kind": "channel", "count": 1 },
+    { "channel": "#mutiny-pendo", "kind": "channel", "count": 1 },
+    { "channel": "#nooks-pendo-dialer-trial", "kind": "channel", "count": 1 }
+  ],
+  "topAuthors": [
+    { "author": "Nir Sebastian Shmuely", "count": 24 },
+    { "author": "Tiffany Kitchen", "count": 8 },
+    { "author": "Michael Chambers", "count": 6 },
+    { "author": "Alex Rosenbower", "count": 5 },
+    { "author": "Paige Spell", "count": 5 },
+    { "author": "Sean Muse", "count": 5 },
+    { "author": "Sunny Lin", "count": 4 },
+    { "author": "Krystian Serwinski", "count": 3 },
+    { "author": "Carolynn Rodon", "count": 2 },
+    { "author": "Andrea Lodigiani", "count": 2 },
+    { "author": "Melissa Cooper", "count": 2 },
+    { "author": "John Walenty", "count": 2 },
+    { "author": "Adi Thatai", "count": 1 },
+    { "author": "Emily Anastasi", "count": 1 },
+    { "author": "Emilie DeCherney", "count": 1 },
+    { "author": "Gavin Saldanha", "count": 1 },
+    { "author": "Katie Davis", "count": 1 },
+    { "author": "Laurence Judah", "count": 1 },
+    { "author": "Michal Livnat", "count": 1 },
+    { "author": "Noam Bar-Touv", "count": 1 },
+    { "author": "Alli Bordogna", "count": 1 }
+  ],
+  "recent": [
+    {
+      "date": "2026-04-30 09:22",
+      "channel": "DM · Chris Mahoney",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hello Chris! I am Nir, Pulse's owner — wanted to get some more context on your feedback on Pulse. Could you share a bit more on where specifically the experience feels too text-heavy?",
+      "permalink": "https://pendo.slack.com/archives/D0B0C2J56BH/p1777530125539549"
+    },
+    {
+      "date": "2026-04-30 09:11",
+      "channel": "#ce-pod-squad",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "is this live already? where can I see it? might want to plug it in to Pulse",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1777529473170859"
+    },
+    {
+      "date": "2026-04-30 09:00",
+      "channel": "DM · Sunny Lin",
+      "author": "Sunny Lin",
+      "snippet": "Morning Nir! I put time on your calendar because I got an ask from Sneha to put a capacity management page in Pulse. I will share more details but she wants to model it after the Lovable app I shared from Melissa Cooper.",
+      "permalink": "https://pendo.slack.com/archives/D096MTG7GN9/p1777528804141399"
+    },
+    {
+      "date": "2026-04-29 15:51",
+      "channel": "#retos-dev",
+      "author": "Paige Spell",
+      "snippet": "@Sean Muse is it possible to get the accounts for Gravin running today so I can cross check with pulse output?",
+      "permalink": "https://pendo.slack.com/archives/C0ARK2RD1HA/p1777467109202939"
+    },
+    {
+      "date": "2026-04-29 15:47",
+      "channel": "#data-gtm-intelligence",
+      "author": "Alex Rosenbower",
+      "snippet": "@Nir Shmuely can we swap the pulse bottom line with a Canary health summary for consistency?",
+      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1777466870724109"
+    },
+    {
+      "date": "2026-04-29 13:55",
+      "channel": "DM · Sunny Lin",
+      "author": "Sunny Lin",
+      "snippet": "I'd love to have a Jammy where you lead the group on Lovable. How you built pulse with it: set it up, maintaining it and incorporating the feedback loop.",
+      "permalink": "https://pendo.slack.com/archives/D096MTG7GN9/p1777460100161979"
+    },
+    {
+      "date": "2026-04-29 10:11",
+      "channel": "DM · Emily Anastasi",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey Emily! Nice to meet you! I am Nir, Pulse's owner. To your question on Encore I took a deeper look into the sub of this account and wasn't able to see the analytics usage you are referring to.",
+      "permalink": "https://pendo.slack.com/archives/D0B0GNKLC6A/p1777446690001029"
+    },
+    {
+      "date": "2026-04-29 09:59",
+      "channel": "DM · Alex Rosenbower",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "I'd love to build an agent in Pulse using Gemini Enterprise that can look across the available signals — especially call data and Pendo usage — identify the likely risk theme automatically, and map it to the right playbook for the CE.",
+      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1777445974664089"
+    },
+    {
+      "date": "2026-04-28 21:29",
+      "channel": "#pulse-external",
+      "author": "Alli Bordogna",
+      "snippet": "Hi team, I'm looking at HubSpot. They are a Predict only customer so aren't showing any engagement and therefore high risk. Is there something else we can pull into Pulse to look at usage/health?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777400973744469"
+    },
+    {
+      "date": "2026-04-28 17:15",
+      "channel": "DM · Sunny Lin",
+      "author": "Sunny Lin",
+      "snippet": "We should look into Embedding Omni into Pulse! kind of like this",
+      "permalink": "https://pendo.slack.com/archives/D096MTG7GN9/p1777385739128469"
+    },
+    {
+      "date": "2026-04-28 16:23",
+      "channel": "#data-gtm-intelligence",
+      "author": "Paige Spell",
+      "snippet": "I'll go through some vetting today with the Canary output in Pulse to the context the risk slack bot (also using canary) is giving to be sure signals align!",
+      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1777382635445939"
+    },
+    {
+      "date": "2026-04-28 16:17",
+      "channel": "#data-gtm-intelligence",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "🐤 Canary is now in live Pulse 💓! Big thanks to @zac — Canary is officially wired into Pulse, making it easier than ever to tap into customer intelligence without leaving their workflow.",
+      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1777382279970619"
+    },
+    {
+      "date": "2026-04-28 14:45",
+      "channel": "Group DM · Zac, Michael",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Canary now works in Pulse!! added it in 3 diff places with 3 diff prompts. will see how users use this now!",
+      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1777376731568479"
+    },
+    {
+      "date": "2026-04-28 13:47",
+      "channel": "Group DM · Adi, Nina, Michael",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey team! checking in to see if you were able audit some of the Data shown in Pulse. would love your sign on the platform so we can roll it out with confidence and if any gaps are surfaced to fix them promptly.",
+      "permalink": "https://pendo.slack.com/archives/C0AV9US3U0P/p1777373226090289"
+    },
+    {
+      "date": "2026-04-28 12:08",
+      "channel": "Group DM · Carolynn, Shelly",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "@Carolynn how would you like to see these in Pulse?",
+      "permalink": "https://pendo.slack.com/archives/C0AUW51BJET/p1777367319831099"
+    },
+    {
+      "date": "2026-04-27 22:30",
+      "channel": "#pulse-external",
+      "author": "Emily Anastasi",
+      "snippet": "Hi team - Can someone confirm why analytics is showing zero usage in Pulse for Encore but when I checked their account it has activity in the platform?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777318210888499"
+    },
+    {
+      "date": "2026-04-27 15:58",
+      "channel": "#canary-data-test",
+      "author": "Michael Chambers",
+      "snippet": "@Emilie We are looking to integrate canary directly in Pulse. I asked these questions to try to understand it more. I need to sync up with Zac about reaching out to the Agent in the cloud with a webhook through pulse",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1777294694225519"
+    },
+    {
+      "date": "2026-04-27 15:49",
+      "channel": "Group DM · Zac, Michael",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey @zac good morning! we are trying to get Canary into Pulse - how can we connect it? I would want to use what you have built instead of rebuilding the agent myself",
+      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1777294183430229"
+    },
+    {
+      "date": "2026-04-26 13:23",
+      "channel": "#pulse-external",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "@John Walenty @Gavin @andrea.lodigiani — this was caused by a field change in BQ that temporarily impacted how ownership was mapped in Pulse. it's now been updated and synced correctly.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777198993433549"
+    },
+    {
+      "date": "2026-04-23 22:05",
+      "channel": "#data-gtm-intelligence",
+      "author": "Emilie DeCherney",
+      "snippet": "Another interesting read (architect-agentic-future-enterprise-mcp-andres-ramirez)",
+      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1776971129392129"
+    },
+    {
+      "date": "2026-04-23 21:45",
+      "channel": "#ce-all",
+      "author": "Andrea Lodigiani",
+      "snippet": "Thanks for joining today's CE CEP Enablement session on owning the BoB transition. […] Pulse: AI account workspace for summaries, risk signals, usage insights, and next actions",
+      "permalink": "https://pendo.slack.com/archives/C3XQD5B5X/p1776969954526489"
+    },
+    {
+      "date": "2026-04-23 19:03",
+      "channel": "#pulse-external",
+      "author": "John Walenty",
+      "snippet": "Also, I had a thought and was curious if it was something we could get included in Pulse, maybe as another column in the Account Dashboard area. There was a Clause Skill created by alana.pennino that would be super useful to include there.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1776960184598379"
+    },
+    {
+      "date": "2026-04-23 18:53",
+      "channel": "#pulse-external",
+      "author": "John Walenty",
+      "snippet": "Hi All, can anyone help me understand why there is a difference between what my accounts are in SFDC and what I am seeing in Pulse? Just timing?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1776959606987679"
+    },
+    {
+      "date": "2026-04-23 16:13",
+      "channel": "DM · Sean Muse",
+      "author": "Sean Muse",
+      "snippet": "no worries looking forward to connecting soon! Pulse looks great I've explored it",
+      "permalink": "https://pendo.slack.com/archives/D09TSJJUF2P/p1776950008266739"
+    },
+    {
+      "date": "2026-04-23 13:39",
+      "channel": "DM · Alex Rosenbower",
+      "author": "Alex Rosenbower",
+      "snippet": "The CE leaders are getting ready to push their teams into Pulse as part of their enablement training today at 12pm est. I set the expectations that we're still collecting feedback and making changes through 5/1.",
+      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1776940752167789"
+    },
+    {
+      "date": "2026-04-21 23:08",
+      "channel": "#temp-pulse-feedback",
+      "author": "Adi Thatai",
+      "snippet": "Hey team! Nina and I spent some time in Pulse and have a couple thoughts. It seems like the dashboard consistently prioritizes action on the lowest health accounts in all sections. I think we should trim some of the repetition on at-risk accounts while adding more guided actions for already healthy accounts.",
+      "permalink": "https://pendo.slack.com/archives/C0AU0BANJ86/p1776802129405789"
+    },
+    {
+      "date": "2026-04-20 20:38",
+      "channel": "#pulse-external",
+      "author": "Alex Rosenbower",
+      "snippet": "hey Alli! We're going to be rolling off the pulse score in favor of leveraging Pendo Predict + a new summarization of information through a tool called Canary in the coming weeks.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1776706724492809"
+    }
+  ]
+}

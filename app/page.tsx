@@ -3,6 +3,8 @@ import {
   type RenderedWidget,
 } from "@/components/dashboard-grid";
 import { LastRefreshed } from "@/components/last-refreshed";
+import { SlackSection } from "@/components/slack-section";
+import { loadSlackSnapshot } from "@/lib/slack-snapshot";
 import {
   buildPulseContext,
   isConfigured,
@@ -159,6 +161,8 @@ export default async function Page() {
       </header>
 
       <DashboardGrid widgets={renderOrder} />
+
+      <SlackSection snapshot={loadSlackSnapshot()} />
 
       <footer className="mt-14 border-t border-pendo-mist pt-5 text-xs text-pendo-body/60">
         <div className="flex flex-wrap items-center justify-between gap-2">
