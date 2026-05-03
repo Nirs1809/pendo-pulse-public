@@ -1,0 +1,78 @@
+name: Sync Slack Pulse mentions daily
+
+# Refreshes data/slack-pulse-snapshot.json by querying the Slack API,
+# commits the change, then triggers a Vercel production redeploy so the
+# live dashboard picks up the new snapshot.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   SLACK_USER_TOKEN   xoxp-... user token with `search:read` scope
+#   VERCEL_TOKEN       Vercel access token (already used by the manual deploys)
+
+on:
+  schedule:
+    # 07:00 UTC daily = 10:00 Israel / 03:00 ET. Cron is best-effort —
+    # GitHub may delay by several minutes during peak load, which is fine
+    # for a daily aggregation.
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          # Use the default GITHUB_TOKEN for the commit, granted via
+          # `permissions: contents: write` above.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync Slack snapshot
+        env:
+          SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+        run: |
+          if [ -z "$SLACK_USER_TOKEN" ]; then
+            echo "::error::SLACK_USER_TOKEN repo secret is not set. Add it before this workflow can run."
+            exit 1
+          fi
+          node scripts/sync-slack.mjs
+
+      - name: Commit snapshot if changed
+        id: commit
+        run: |
+          git config user.name "pendo-pulse-bot"
+          git config user.email "pendo-pulse-bot@users.noreply.github.com"
+          if git diff --quiet -- data/slack-pulse-snapshot.json; then
+            echo "No changes to snapshot."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          git add data/slack-pulse-snapshot.json
+          git commit -m "chore: refresh Slack pulse snapshot ($(date -u +%Y-%m-%d))"
+          git push origin HEAD:main
+
+      - name: Trigger Vercel redeploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::warning::VERCEL_TOKEN secret is missing — snapshot was committed but no redeploy was triggered."
+            exit 0
+          fi
+          npm install --no-save vercel@latest --no-audit --no-fund --loglevel=error
+          npx vercel link --yes \
+            --project=pendo-pulse-public \
+            --scope=nir1809-2463s-projects \
+            --token="$VERCEL_TOKEN"
+          npx vercel deploy --prod --yes --token="$VERCEL_TOKEN"
