@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-06T09:32:22.926Z",
+  "generatedAt": "2026-05-07T09:42:04.118Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-06T08:44:22.708Z",
-    "oldest": "2026-04-07T14:17:30.583Z"
+    "newest": "2026-05-06T16:44:19.479Z",
+    "oldest": "2026-04-09T18:47:02.684Z"
   },
   "totals": {
-    "messages": 157,
-    "channels": 51,
+    "messages": 158,
+    "channels": 50,
     "authors": 41
   },
   "daily": [
-    {
-      "date": "2026-04-07",
-      "count": 1
-    },
     {
       "date": "2026-04-09",
       "count": 2
@@ -110,14 +106,14 @@
     },
     {
       "date": "2026-05-06",
-      "count": 1
+      "count": 3
     }
   ],
   "topChannels": [
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 21
+      "count": 22
     },
     {
       "channel": "#tiffany-novus-test",
@@ -165,6 +161,11 @@
       "count": 4
     },
     {
+      "channel": "#client-lastpass",
+      "kind": "channel",
+      "count": 3
+    },
+    {
       "channel": "DM · U055U3HNWTB",
       "kind": "dm",
       "count": 3
@@ -178,11 +179,6 @@
       "channel": "DM · Sunny Lin",
       "kind": "dm",
       "count": 3
-    },
-    {
-      "channel": "#client-lastpass",
-      "kind": "channel",
-      "count": 2
     },
     {
       "channel": "DM · Melissa Cooper",
@@ -218,7 +214,7 @@
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 39
+      "count": 38
     },
     {
       "author": "Tiffany Kitchen",
@@ -253,12 +249,16 @@
       "count": 5
     },
     {
+      "author": "Carolynn Rodon",
+      "count": 4
+    },
+    {
       "author": "Melissa Cooper",
       "count": 4
     },
     {
-      "author": "Carolynn Rodon",
-      "count": 3
+      "author": "Pamela Gutierrez",
+      "count": 2
     },
     {
       "author": "Andrea Lodigiani",
@@ -271,13 +271,23 @@
     {
       "author": "Alli Bordogna",
       "count": 2
-    },
-    {
-      "author": "Laurence Judah",
-      "count": 2
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-06 16:44",
+      "channel": "#client-lastpass",
+      "author": "Pamela Gutierrez",
+      "snippet": "Yep, that above! Just trying to align on next steps for Bekah’s leave and get a pulse check on where they’re at",
+      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778085859479649?thread_ts=1778084910.415649"
+    },
+    {
+      "date": "2026-05-06 12:44",
+      "channel": "#pulse-external",
+      "author": "Carolynn Rodon",
+      "snippet": "Hey team! For some reason Andy Galley still doesn't have accounts showing in his name in pulse. His accounts show on my <https://pendo.lightning.force.com/lightning/r/Report/00OPe00000m7J77MAE/view?queryScope=userFolders|SFDC report>.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778071476085949?thread_ts=1778071476.085949"
+    },
     {
       "date": "2026-05-06 08:44",
       "channel": "DM · U08SKMKM4S2",
@@ -613,20 +623,6 @@
       "author": "Paige Spell",
       "snippet": "We will chat more tomorrow and can clarify a lot of this then but some Ward v Canary context in Pulse: • I'm impersonating <@UQYKQ5TKP|Gavin> for this but looking at t<https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00000cZmVJIA0/view|his renewal> coming up we woul",
       "permalink": "https://pendo.slack.com/archives/C0AU0BANJ86/p1777496586826099"
-    },
-    {
-      "date": "2026-04-29 18:05",
-      "channel": "#nooks-pendo-dialer-trial",
-      "author": "Ethan Lane",
-      "snippet": "need a pulse check here",
-      "permalink": "https://pendo.slack.com/archives/C087V2US86N/p1777485953320399?thread_ts=1777485664.542059"
-    },
-    {
-      "date": "2026-04-29 18:01",
-      "channel": "DM · Andrea Lodigiani",
-      "author": "Andrea Lodigiani",
-      "snippet": "hi! i never responded to you how rude :dotted_line_face: definitely something we can reconsider with the new CE rollout. in the meantime, would you mind giving me the same permissions in pulse as <@UJ8MH0VPW|Elle>, please? Alex tried updating it but it didn't stick. thank you!",
-      "permalink": "https://pendo.slack.com/archives/D09MTB1KCS0/p1777485681099379"
     }
   ]
 }
