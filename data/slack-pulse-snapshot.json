@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-07T09:42:04.118Z",
+  "generatedAt": "2026-05-08T08:26:36.256Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-06T16:44:19.479Z",
+    "newest": "2026-05-07T19:00:48.016Z",
     "oldest": "2026-04-09T18:47:02.684Z"
   },
   "totals": {
-    "messages": 158,
-    "channels": 50,
-    "authors": 41
+    "messages": 163,
+    "channels": 52,
+    "authors": 42
   },
   "daily": [
     {
@@ -107,6 +107,10 @@
     {
       "date": "2026-05-06",
       "count": 3
+    },
+    {
+      "date": "2026-05-07",
+      "count": 5
     }
   ],
   "topChannels": [
@@ -126,14 +130,14 @@
       "count": 14
     },
     {
-      "channel": "#retos-dev",
-      "kind": "channel",
+      "channel": "DM · Michael Chambers",
+      "kind": "dm",
       "count": 10
     },
     {
-      "channel": "DM · Michael Chambers",
-      "kind": "dm",
-      "count": 9
+      "channel": "#retos-dev",
+      "kind": "channel",
+      "count": 10
     },
     {
       "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
@@ -144,6 +148,11 @@
       "channel": "#temp-pulse-feedback",
       "kind": "channel",
       "count": 7
+    },
+    {
+      "channel": "#client-lastpass",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
@@ -161,11 +170,6 @@
       "count": 4
     },
     {
-      "channel": "#client-lastpass",
-      "kind": "channel",
-      "count": 3
-    },
-    {
       "channel": "DM · U055U3HNWTB",
       "kind": "dm",
       "count": 3
@@ -179,6 +183,11 @@
       "channel": "DM · Sunny Lin",
       "kind": "dm",
       "count": 3
+    },
+    {
+      "channel": "#client-zoominfo",
+      "kind": "channel",
+      "count": 2
     },
     {
       "channel": "DM · Melissa Cooper",
@@ -204,11 +213,6 @@
       "channel": "#ce-pod-squad",
       "kind": "channel",
       "count": 2
-    },
-    {
-      "channel": "#canary-data-test",
-      "kind": "channel",
-      "count": 2
     }
   ],
   "topAuthors": [
@@ -221,15 +225,15 @@
       "count": 18
     },
     {
+      "author": "Michael Chambers",
+      "count": 12
+    },
+    {
       "author": "Alex Rosenbower",
       "count": 12
     },
     {
       "author": "Paige Spell",
-      "count": 11
-    },
-    {
-      "author": "Michael Chambers",
       "count": 11
     },
     {
@@ -257,23 +261,58 @@
       "count": 4
     },
     {
+      "author": "Ricardo Primon",
+      "count": 2
+    },
+    {
+      "author": "Jenn Lucas",
+      "count": 2
+    },
+    {
+      "author": "Taryn Feenstra",
+      "count": 2
+    },
+    {
       "author": "Pamela Gutierrez",
-      "count": 2
-    },
-    {
-      "author": "Andrea Lodigiani",
-      "count": 2
-    },
-    {
-      "author": "Emily Anastasi",
-      "count": 2
-    },
-    {
-      "author": "Alli Bordogna",
       "count": 2
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-07 19:00",
+      "channel": "#client-lastpass",
+      "author": "Ricardo Primon",
+      "snippet": "<@U022VGAC3MY|Bradley> <@U01UT54QD5H|virgil.fowler> <@U06HJFDQX8B|pamela.gutierrez> <@U09RKRYLSE7|Benigma> - Just emailed Bekah and Brayden - you are all in CC. -- TLDR: renewal is \"in motion\" on their end but we need to keep pushing. I'd recommend either <@U022VGAC3MY|Bradley> o",
+      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778180448016679"
+    },
+    {
+      "date": "2026-05-07 17:27",
+      "channel": "#proj-app-health",
+      "author": "Jenn Lucas",
+      "snippet": "<https://pendo.slack.com/archives/C040L2W848L/p1777906895278809>",
+      "permalink": "https://pendo.slack.com/archives/C0AFFGD1WCD/p1778174837849179?thread_ts=1778007001.380859"
+    },
+    {
+      "date": "2026-05-07 15:30",
+      "channel": "#client-zoominfo",
+      "author": "Taryn Feenstra",
+      "snippet": "<https://luma.com/pulse_dinner>",
+      "permalink": "https://pendo.slack.com/archives/C02JY18FAFL/p1778167854649899"
+    },
+    {
+      "date": "2026-05-07 15:30",
+      "channel": "#client-zoominfo",
+      "author": "Taryn Feenstra",
+      "snippet": "The SVP - Kristi? - is presenting at the Gainsight conference - we should invite her.",
+      "permalink": "https://pendo.slack.com/archives/C02JY18FAFL/p1778167835979279?thread_ts=1778167835.979279"
+    },
+    {
+      "date": "2026-05-07 13:20",
+      "channel": "DM · Michael Chambers",
+      "author": "Michael Chambers",
+      "snippet": "have we figured out a way to work in branches on pulse yet?",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778160019030309"
+    },
     {
       "date": "2026-05-06 16:44",
       "channel": "#client-lastpass",
@@ -298,7 +337,7 @@
     {
       "date": "2026-05-05 21:15",
       "channel": "#predict-gtm-questions",
-      "author": "Gautham Pandiyan",
+      "author": "Gautham Pandiyan - OOO until May 12",
       "snippet": "Hi <@U05NLSJBPC4|jackson.chambers> - could you find out if they are going to the Gainsight conference? If so, can you invite them to this event that <@U01PM03NBNV|jenna.mclaughlin> &amp; Jay from Balboa will be hosting? <https://luma.com/pulse_dinner> (we're also doing 1:1 meetin",
       "permalink": "https://pendo.slack.com/archives/C09ELQW7A8K/p1778015757215319?thread_ts=1778004047.710899"
     },
@@ -588,41 +627,6 @@
       "author": "Krystian Serwinski",
       "snippet": ":robot_face: Provisioning Entitlement Summary Account: Nomentia Oy Case: 00207377 — 2026-05-01 | Initial Sale | nomentia.com - New Subscription - 2026 Provisioning Review Case Owner: Cases Provisioning Queue Pendo Subscription: <https://app.eu.pendo.io/super/subs/4921063851098112",
       "permalink": "https://pendo.slack.com/archives/C0B0J93LHS5/p1777510019874649"
-    },
-    {
-      "date": "2026-04-30 00:46",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sneha Raghavan",
-      "snippet": "If we removed the \"bidirectional sync\" part of it and just had it be a reporting view that shows all their current accounts - and gives them the ability to manually add any accounts they're shadowing as additional call hours. Using Melissa's assumptions above... And then allow's ",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777510008543299"
-    },
-    {
-      "date": "2026-04-30 00:42",
-      "channel": "#prov-testing",
-      "author": "Krystian Serwinski",
-      "snippet": ":robot_face: Provisioning Entitlement Summary Account: Sapphire Digital Case: 00207483 — 2026-05-01 | Expansion | Sapphire Digital - ANON user Add on - 2026 Provisioning Review Case Owner: Cases Provisioning Queue Pendo Subscription: <https://app.pendo.io/super/subs/5116153116884",
-      "permalink": "https://pendo.slack.com/archives/C0B0J93LHS5/p1777509761082609"
-    },
-    {
-      "date": "2026-04-30 00:40",
-      "channel": "#prov-testing",
-      "author": "Krystian Serwinski",
-      "snippet": ":robot_face: Provisioning Entitlement Summary Account: Sapphire Digital Case: 00207483 — 2026-05-01 | Expansion | Sapphire Digital - ANON user Add on - 2026 Provisioning Review Case Owner: Cases Provisioning Queue Pendo Subscription: <https://app.pendo.io/super/subs/5116153116884",
-      "permalink": "https://pendo.slack.com/archives/C0B0J93LHS5/p1777509636739999"
-    },
-    {
-      "date": "2026-04-30 00:37",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sneha Raghavan",
-      "snippet": "Apparently one of my FLMs was thinking very similarly in terms of capacity modeling! She used lovable for this. No action needed from you at this point, I just wanted to show you for funsies :slightly_smiling_face:",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777509435485139"
-    },
-    {
-      "date": "2026-04-29 21:03",
-      "channel": "#temp-pulse-feedback",
-      "author": "Paige Spell",
-      "snippet": "We will chat more tomorrow and can clarify a lot of this then but some Ward v Canary context in Pulse: • I'm impersonating <@UQYKQ5TKP|Gavin> for this but looking at t<https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00000cZmVJIA0/view|his renewal> coming up we woul",
-      "permalink": "https://pendo.slack.com/archives/C0AU0BANJ86/p1777496586826099"
     }
   ]
 }
