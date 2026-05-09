@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-08T08:26:36.256Z",
+  "generatedAt": "2026-05-09T08:46:57.167Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-07T19:00:48.016Z",
-    "oldest": "2026-04-09T18:47:02.684Z"
+    "newest": "2026-05-08T23:14:40.282Z",
+    "oldest": "2026-04-10T00:59:05.491Z"
   },
   "totals": {
-    "messages": 163,
-    "channels": 52,
-    "authors": 42
+    "messages": 165,
+    "channels": 55,
+    "authors": 44
   },
   "daily": [
-    {
-      "date": "2026-04-09",
-      "count": 2
-    },
     {
       "date": "2026-04-10",
       "count": 1
@@ -111,6 +107,10 @@
     {
       "date": "2026-05-07",
       "count": 5
+    },
+    {
+      "date": "2026-05-08",
+      "count": 4
     }
   ],
   "topChannels": [
@@ -122,12 +122,12 @@
     {
       "channel": "#tiffany-novus-test",
       "kind": "channel",
-      "count": 17
+      "count": 16
     },
     {
       "channel": "DM · Alex Rosenbower",
       "kind": "dm",
-      "count": 14
+      "count": 13
     },
     {
       "channel": "DM · Michael Chambers",
@@ -185,6 +185,11 @@
       "count": 3
     },
     {
+      "channel": "#demand-gen-weekly-updates",
+      "kind": "channel",
+      "count": 2
+    },
+    {
       "channel": "#client-zoominfo",
       "kind": "channel",
       "count": 2
@@ -208,25 +213,20 @@
       "channel": "#proj-novus",
       "kind": "channel",
       "count": 2
-    },
-    {
-      "channel": "#ce-pod-squad",
-      "kind": "channel",
-      "count": 2
     }
   ],
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 38
+      "count": 37
     },
     {
       "author": "Tiffany Kitchen",
-      "count": 18
+      "count": 17
     },
     {
       "author": "Michael Chambers",
-      "count": 12
+      "count": 13
     },
     {
       "author": "Alex Rosenbower",
@@ -261,6 +261,10 @@
       "count": 4
     },
     {
+      "author": "Katie Davis",
+      "count": 2
+    },
+    {
       "author": "Ricardo Primon",
       "count": 2
     },
@@ -271,13 +275,37 @@
     {
       "author": "Taryn Feenstra",
       "count": 2
-    },
-    {
-      "author": "Pamela Gutierrez",
-      "count": 2
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-08 23:14",
+      "channel": "#client-amazon",
+      "author": "Caitlin Tittl",
+      "snippet": ":amazon: Amazon T-Rex Use Case Requirements Review Had a deep-dive working session with the Amazon team around survey workflows inside the T-Rex return grading application. Key use cases &amp; requirements learned: :clipboard: Survey Creation / Management • Team wants self-servic",
+      "permalink": "https://pendo.slack.com/archives/C0316AHJK7U/p1778282080282789?thread_ts=1778182218.836429"
+    },
+    {
+      "date": "2026-05-08 19:51",
+      "channel": "#demand-gen-weekly-updates",
+      "author": "Katie Davis",
+      "snippet": ":bar_chart: Weekly Update — Katie | Week of May 4 :chart_with_upwards_trend: North Star KPI Update Q2 marketing-sourced pipeline goal for Predict: $3.6M | Current: $192k At day 8 of 92, even pacing puts the target at ~$313k — so currently at ~61% of pace. Early days, but worth wa",
+      "permalink": "https://pendo.slack.com/archives/C0AUARULTAQ/p1778269864122519?thread_ts=1778269864.122519"
+    },
+    {
+      "date": "2026-05-08 16:04",
+      "channel": "#gtm-applied-ai",
+      "author": "Michael Chambers",
+      "snippet": "I added a Granola connector inside of pulse where users and insert their personal granola API key to have their notes added to the account information for calls they are having with their book. I need to test it with someone who has a personal API key. If you have one let me know",
+      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1778256274861309?thread_ts=1778256274.861309"
+    },
+    {
+      "date": "2026-05-08 15:45",
+      "channel": "#client-align-tech",
+      "author": "Caitlin Luna",
+      "snippet": "Follow Up - booked time Monday AND Friday: • Monday: Shandi and I can sync with them to pulse check and also talk about plan moving forward. I've invite Zoe and Jack as optional for visibility but realize command lab training and travel will keep folks from joining. • Friday WITH",
+      "permalink": "https://pendo.slack.com/archives/C04AHGDGFNY/p1778255155060559?thread_ts=1778255155.060559"
+    },
     {
       "date": "2026-05-07 19:00",
       "channel": "#client-lastpass",
@@ -599,34 +627,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "is this live already? where can I see it? might want to plug it in to Pulse",
       "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1777529473170859?thread_ts=1777473898.526079"
-    },
-    {
-      "date": "2026-04-30 06:00",
-      "channel": "DM · Sunny Lin",
-      "author": "Sunny Lin",
-      "snippet": "Morning Nir! I put time on your calendar because I got an ask from Sneha to put a capacity management page in Pulse. I will share more details but she wants to model it after the <https://lovable.dev/projects/88526af9-ea45-4c35-a95c-99772e6c0cdd?invite=true&utm_campaign=project+c",
-      "permalink": "https://pendo.slack.com/archives/D096MTG7GN9/p1777528804141399"
-    },
-    {
-      "date": "2026-04-30 01:04",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sneha Raghavan",
-      "snippet": "<@U012LTVGRFT|Melissa Cooper> can you share the Lovable app you had built with Sunny + Krystian so they can figure out how to make it update with real CE owners + SEs on the opp and possibly put it into Pulse?",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777511091737259"
-    },
-    {
-      "date": "2026-04-30 01:03",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sneha Raghavan",
-      "snippet": "If its in Pulse the benefit is the manager can sit with the CE and decide these thigns together, they input some of the weights, and it just shows when the CE logs in too",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777511007713619"
-    },
-    {
-      "date": "2026-04-30 00:46",
-      "channel": "#prov-testing",
-      "author": "Krystian Serwinski",
-      "snippet": ":robot_face: Provisioning Entitlement Summary Account: Nomentia Oy Case: 00207377 — 2026-05-01 | Initial Sale | nomentia.com - New Subscription - 2026 Provisioning Review Case Owner: Cases Provisioning Queue Pendo Subscription: <https://app.eu.pendo.io/super/subs/4921063851098112",
-      "permalink": "https://pendo.slack.com/archives/C0B0J93LHS5/p1777510019874649"
     }
   ]
 }
