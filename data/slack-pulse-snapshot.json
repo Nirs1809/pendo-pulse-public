@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-09T08:46:57.167Z",
+  "generatedAt": "2026-05-10T08:59:54.811Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
     "newest": "2026-05-08T23:14:40.282Z",
-    "oldest": "2026-04-10T00:59:05.491Z"
+    "oldest": "2026-04-12T08:16:20.897Z"
   },
   "totals": {
-    "messages": 165,
-    "channels": 55,
-    "authors": 44
+    "messages": 164,
+    "channels": 54,
+    "authors": 43
   },
   "daily": [
-    {
-      "date": "2026-04-10",
-      "count": 1
-    },
     {
       "date": "2026-04-12",
       "count": 1
