@@ -261,6 +261,15 @@ export async function buildPulseContext(): Promise<PulseContext> {
     );
   }
 
+  // CE Compass: auto-detect page + feature buttons by /compass/i in name,
+  // run two cheap aggregations to get views + clicks.
+  const ceCompass = await buildCeCompassUsage({
+    appId,
+    ts,
+    features,
+    pages,
+  });
+
   return {
     features,
     pages,
@@ -270,7 +279,97 @@ export async function buildPulseContext(): Promise<PulseContext> {
     pulseEventCounts,
     pulseVisitorsByDept,
     canaryFeatureUsage,
+    ceCompass,
   };
+}
+
+async function buildCeCompassUsage({
+  appId,
+  ts,
+  features,
+  pages,
+}: {
+  appId: number;
+  ts: { first: number; last: "now()"; period: "dayRange" };
+  features: Array<Record<string, unknown>>;
+  pages: Array<Record<string, unknown>>;
+}): Promise<import("./types").CeCompassUsage | null> {
+  const compassPages = pages.filter((p) =>
+    /compass/i.test(String(p.name ?? "")),
+  );
+  const compassFeatures = features.filter((f) =>
+    /compass/i.test(String(f.name ?? "")),
+  );
+  if (compassPages.length === 0 && compassFeatures.length === 0) return null;
+
+  // Page metrics — combined for any matching pages (usually just "CE Compass")
+  let page: import("./types").CeCompassUsage["page"] = null;
+  if (compassPages.length > 0) {
+    const ids = compassPages.map((p) => `pageId == "${String(p.id)}"`).join(" || ");
+    const r = await runAggregation("ctx-ce-compass-page-30d", [
+      { source: { pageEvents: { appId }, timeSeries: ts } },
+      { filter: ids },
+      {
+        reduce: {
+          views: { count: null },
+          visitors: { count: "visitorId" },
+        },
+      },
+    ]).catch(() => ({ rows: [] }));
+    const row = r.rows[0] ?? {};
+    page = {
+      name: String(compassPages[0].name ?? "CE Compass"),
+      views: Number(row.views ?? 0),
+      visitors: Number(row.visitors ?? 0),
+    };
+  }
+
+  // Per-feature click counts.
+  let featureRows: import("./types").CeCompassUsage["features"] = [];
+  if (compassFeatures.length > 0) {
+    const ids = compassFeatures
+      .map((f) => `featureId == "${String(f.id)}"`)
+      .join(" || ");
+    const r = await runAggregation("ctx-ce-compass-features-30d", [
+      { source: { featureEvents: { appId }, timeSeries: ts } },
+      { filter: ids },
+      {
+        group: {
+          group: ["featureId"],
+          fields: [
+            { clicks: { count: null } },
+            { visitors: { count: "visitorId" } },
+          ],
+        },
+      },
+    ]).catch(() => ({ rows: [] }));
+    const nameById = new Map(
+      compassFeatures.map((f) => [String(f.id), String(f.name ?? f.id)]),
+    );
+    const seen = new Set<string>();
+    for (const row of r.rows) {
+      const id = String(row.featureId ?? "");
+      seen.add(id);
+      featureRows.push({
+        name: nameById.get(id) ?? id,
+        clicks: Number(row.clicks ?? 0),
+        visitors: Number(row.visitors ?? 0),
+      });
+    }
+    // Surface zero-click features explicitly.
+    for (const f of compassFeatures) {
+      if (!seen.has(String(f.id))) {
+        featureRows.push({
+          name: String(f.name ?? f.id),
+          clicks: 0,
+          visitors: 0,
+        });
+      }
+    }
+    featureRows.sort((a, b) => b.clicks - a.clicks);
+  }
+
+  return { page, features: featureRows };
 }
 
 // Pretty-label for snake_case role strings; preserves common acronyms.

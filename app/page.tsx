@@ -1,3 +1,4 @@
+import { CeCompassSection } from "@/components/ce-compass-section";
 import {
   DashboardGrid,
   type RenderedWidget,
@@ -44,6 +45,7 @@ export default async function Page() {
     pulseEventCounts: new Map(),
     pulseVisitorsByDept: {},
     canaryFeatureUsage: [],
+    ceCompass: null,
   }));
 
   const widgetResults: RenderedWidget[] = await Promise.all(
@@ -161,6 +163,8 @@ export default async function Page() {
       </header>
 
       <DashboardGrid widgets={renderOrder} />
+
+      <CeCompassSection data={ctx.ceCompass} />
 
       <SlackSection snapshot={loadSlackSnapshot()} />
 

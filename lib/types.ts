@@ -17,6 +17,13 @@ export interface PulseContext {
   pulseVisitorsByDept: Record<string, Array<Record<string, unknown>>>;
   // Canary feature usage rows (already shaped for the table widget)
   canaryFeatureUsage: Array<Record<string, unknown>>;
+  // CE Compass page + feature button stats (last 30 days)
+  ceCompass: CeCompassUsage | null;
+}
+
+export interface CeCompassUsage {
+  page: { name: string; views: number; visitors: number } | null;
+  features: Array<{ name: string; clicks: number; visitors: number }>;
 }
 
 export interface ExpandableSpec {
