@@ -114,8 +114,11 @@ export async function buildPulseContext(): Promise<PulseContext> {
       { source: { featureEvents: { appId }, timeSeries: ts } },
       {
         group: {
+          // featureEvents rows are one-per-(visitor, day) — the real click
+          // count for that bucket lives in `numEvents`. Summing it matches
+          // Pendo's UI; counting rows undercounts by 3-5x.
           group: ["visitorId"],
-          fields: [{ clicks: { count: null } }],
+          fields: [{ clicks: { sum: "numEvents" } }],
         },
       },
     ])
@@ -125,8 +128,9 @@ export async function buildPulseContext(): Promise<PulseContext> {
       { source: { pageEvents: { appId }, timeSeries: ts } },
       {
         group: {
+          // Same rollup pattern as featureEvents — sum numEvents.
           group: ["visitorId"],
-          fields: [{ views: { count: null } }],
+          fields: [{ views: { sum: "numEvents" } }],
         },
       },
     ])
@@ -224,7 +228,9 @@ export async function buildPulseContext(): Promise<PulseContext> {
         group: {
           group: ["featureId"],
           fields: [
-            { clicks: { count: null } },
+            // sum numEvents not count rows — see comment in
+            // ctx-pulse-feature-clicks-per-visitor above.
+            { clicks: { sum: "numEvents" } },
             { visitors: { count: "visitorId" } },
           ],
         },
@@ -311,7 +317,9 @@ async function buildCeCompassUsage({
       { filter: ids },
       {
         reduce: {
-          views: { count: null },
+          // sum numEvents (Pendo daily-rollup pattern) — matches the
+          // "Page views" number in Pendo's UI exactly.
+          views: { sum: "numEvents" },
           visitors: { count: "visitorId" },
         },
       },
@@ -337,7 +345,7 @@ async function buildCeCompassUsage({
         group: {
           group: ["featureId"],
           fields: [
-            { clicks: { count: null } },
+            { clicks: { sum: "numEvents" } },
             { visitors: { count: "visitorId" } },
           ],
         },
