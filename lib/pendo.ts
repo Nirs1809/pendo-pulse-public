@@ -1,4 +1,5 @@
-import type { AggregationResult, PulseContext } from "./types";
+import { CE_ROSTER } from "./ce-roster";
+import type { AggregationResult, CeAdoptionStats, PulseContext } from "./types";
 
 /**
  * Minimal Pendo REST client.
@@ -276,6 +277,12 @@ export async function buildPulseContext(): Promise<PulseContext> {
     pages,
   });
 
+  // CE login adoption: full roster of CEs vs visitors active in Pulse
+  // over the last 30 days. We re-use the dept-role visitor pull (which
+  // already includes full_name) plus any other Pulse-active visitors
+  // who didn't have a department_role set.
+  const ceAdoption = await buildCeAdoptionStats({ appId, since });
+
   return {
     features,
     pages,
@@ -286,7 +293,100 @@ export async function buildPulseContext(): Promise<PulseContext> {
     pulseVisitorsByDept,
     canaryFeatureUsage,
     ceCompass,
+    ceAdoption,
   };
+}
+
+async function buildCeAdoptionStats({
+  appId,
+  since,
+}: {
+  appId: number;
+  since: number;
+}): Promise<CeAdoptionStats | null> {
+  // Pull every Pulse-active visitor's full_name in the window. Includes
+  // those without a department_role since the roster is the source of
+  // truth for who's a CE.
+  const rows = await runAggregation("ctx-pulse-active-names-30d", [
+    { source: { visitors: null } },
+    { filter: `metadata.auto_${appId}.lastvisit >= ${since}` },
+    {
+      select: {
+        visitorId: "visitorId",
+        name: "metadata.agent.full_name",
+      },
+    },
+  ])
+    .then((r) => r.rows)
+    .catch(() => []);
+
+  const activeFull = new Set<string>();
+  const activeFirstLast = new Set<string>();
+  const activeNames: string[] = [];
+  for (const r of rows) {
+    const raw = String(r.name ?? "").trim();
+    if (!raw) continue;
+    activeNames.push(raw);
+    activeFull.add(normalizeName(raw));
+    const fl = firstLast(raw);
+    if (fl) activeFirstLast.add(fl);
+  }
+
+  const loggedIn: string[] = [];
+  const notLoggedIn: string[] = [];
+  const matchedActiveKeys = new Set<string>();
+
+  for (const ce of CE_ROSTER) {
+    const full = normalizeName(ce);
+    const fl = firstLast(ce);
+    if (activeFull.has(full)) {
+      loggedIn.push(ce);
+      matchedActiveKeys.add(full);
+      if (fl) matchedActiveKeys.add(fl);
+    } else if (fl && activeFirstLast.has(fl)) {
+      loggedIn.push(ce);
+      matchedActiveKeys.add(fl);
+    } else {
+      notLoggedIn.push(ce);
+    }
+  }
+
+  // Pulse-active visitors not in the roster — surface for visibility so
+  // any typo'd roster entry or non-CE Pulse user is easy to spot.
+  const unmatchedActive: string[] = [];
+  for (const n of activeNames) {
+    const full = normalizeName(n);
+    const fl = firstLast(n);
+    if (matchedActiveKeys.has(full) || (fl && matchedActiveKeys.has(fl))) continue;
+    if (!unmatchedActive.includes(n)) unmatchedActive.push(n);
+  }
+  unmatchedActive.sort((a, b) => a.localeCompare(b));
+
+  return {
+    rosterSize: CE_ROSTER.length,
+    loggedIn: loggedIn.sort((a, b) => a.localeCompare(b)),
+    notLoggedIn: notLoggedIn.sort((a, b) => a.localeCompare(b)),
+    unmatchedActive,
+  };
+}
+
+function normalizeName(s: string): string {
+  return s
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function firstLast(s: string): string | null {
+  const parts = s
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (parts.length < 2) return null;
+  return `${normalizeName(parts[0])} ${normalizeName(parts[parts.length - 1])}`;
 }
 
 async function buildCeCompassUsage({

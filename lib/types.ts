@@ -3,7 +3,13 @@ export interface AggregationResult {
   raw?: unknown;
 }
 
-export type WidgetKind = "kpi" | "line" | "bar" | "pie" | "table";
+export type WidgetKind =
+  | "kpi"
+  | "line"
+  | "bar"
+  | "pie"
+  | "table"
+  | "adoption";
 
 export interface PulseContext {
   featureNames: Map<string, string>;
@@ -19,6 +25,17 @@ export interface PulseContext {
   canaryFeatureUsage: Array<Record<string, unknown>>;
   // CE Compass page + feature button stats (last 30 days)
   ceCompass: CeCompassUsage | null;
+  // CE login adoption: roster vs Pulse-active visitors (last 30 days)
+  ceAdoption: CeAdoptionStats | null;
+}
+
+export interface CeAdoptionStats {
+  rosterSize: number;
+  loggedIn: string[]; // names from roster who match an active visitor
+  notLoggedIn: string[]; // names from roster with no match
+  // Visitors active in Pulse who aren't in the roster — useful for
+  // catching mis-typed roster entries or non-CEs accessing Pulse.
+  unmatchedActive: string[];
 }
 
 export interface CeCompassUsage {

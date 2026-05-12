@@ -290,6 +290,18 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       }),
   },
 
+  // ─── Row 5a: CE login adoption (sub-widget under dept-role table) ────
+  {
+    id: "ce-login-adoption",
+    title: "CE login adoption · last 30 days",
+    subtitle:
+      "Roster-driven view of which CEs are still missing from Pulse. Roster lives in lib/ce-roster.ts.",
+    kind: "adoption",
+    colSpan: 3,
+    // The adoption data is wired through page.tsx; this widget renders
+    // off ctx.ceAdoption rather than building its own rows.
+  },
+
   // ─── Row 5b: Canary feature usage ────────────────────────────────────
   {
     id: "canary-features",

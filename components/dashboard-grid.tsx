@@ -1,5 +1,10 @@
-import type { ExpandableSpec, PulseWidget } from "@/lib/types";
+import type {
+  CeAdoptionStats,
+  ExpandableSpec,
+  PulseWidget,
+} from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { AdoptionWidget } from "./widgets/adoption-widget";
 import { ChartWidget } from "./widgets/chart-widget";
 import { ErrorWidget } from "./widgets/error-widget";
 import { KpiWidget } from "./widgets/kpi-widget";
@@ -12,6 +17,9 @@ export interface RenderedWidget {
   // Optional: when present, table rows whose key matches a key in
   // `rowsByKey` get an expand chevron that reveals the child rows.
   expandable?: ExpandableSpec;
+  // Optional: set on widgets with kind === "adoption" so the renderer
+  // can display roster-vs-active stats.
+  adoption?: CeAdoptionStats | null;
 }
 
 const spanClass = (w: PulseWidget) =>
@@ -32,12 +40,18 @@ export function DashboardGrid({ widgets }: { widgets: RenderedWidget[] }) {
 
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {widgets.map(({ widget, rows, error, expandable }) => (
+      {widgets.map(({ widget, rows, error, expandable, adoption }) => (
         <div key={widget.id} className={cn(spanClass(widget))}>
           {error ? (
             <ErrorWidget widget={widget} message={error} />
           ) : widget.kind === "kpi" ? (
             <KpiWidget widget={widget} rows={rows} />
+          ) : widget.kind === "adoption" ? (
+            <AdoptionWidget
+              title={widget.title}
+              subtitle={widget.subtitle}
+              data={adoption ?? null}
+            />
           ) : widget.kind === "table" ? (
             <TableWidget
               title={widget.title}

@@ -46,6 +46,7 @@ export default async function Page() {
     pulseVisitorsByDept: {},
     canaryFeatureUsage: [],
     ceCompass: null,
+    ceAdoption: null,
   }));
 
   const widgetResults: RenderedWidget[] = await Promise.all(
@@ -67,6 +68,10 @@ export default async function Page() {
             keyColumn: "Department role",
             rowsByKey: ctx.pulseVisitorsByDept,
           };
+        }
+        // Wire the CE login adoption widget to the roster-vs-active stats.
+        if (widget.id === "ce-login-adoption") {
+          result.adoption = ctx.ceAdoption;
         }
         return result;
       } catch (err) {
