@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-11T10:41:26.713Z",
+  "generatedAt": "2026-05-12T09:46:57.117Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-08T23:14:40.282Z",
-    "oldest": "2026-04-12T08:16:20.897Z"
+    "newest": "2026-05-11T19:19:48.053Z",
+    "oldest": "2026-04-13T01:18:41.659Z"
   },
   "totals": {
-    "messages": 164,
-    "channels": 54,
+    "messages": 165,
+    "channels": 53,
     "authors": 43
   },
   "daily": [
-    {
-      "date": "2026-04-12",
-      "count": 1
-    },
     {
       "date": "2026-04-13",
       "count": 7
@@ -107,6 +103,10 @@
     {
       "date": "2026-05-08",
       "count": 4
+    },
+    {
+      "date": "2026-05-11",
+      "count": 2
     }
   ],
   "topChannels": [
@@ -148,7 +148,7 @@
     {
       "channel": "#client-lastpass",
       "kind": "channel",
-      "count": 4
+      "count": 5
     },
     {
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
@@ -181,6 +181,11 @@
       "count": 3
     },
     {
+      "channel": "#gtm-applied-ai",
+      "kind": "channel",
+      "count": 2
+    },
+    {
       "channel": "#demand-gen-weekly-updates",
       "kind": "channel",
       "count": 2
@@ -204,29 +209,24 @@
       "channel": "DM · Andrea Lodigiani",
       "kind": "dm",
       "count": 2
-    },
-    {
-      "channel": "#proj-novus",
-      "kind": "channel",
-      "count": 2
     }
   ],
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 37
+      "count": 36
     },
     {
       "author": "Tiffany Kitchen",
       "count": 17
     },
     {
-      "author": "Michael Chambers",
+      "author": "Alex Rosenbower",
       "count": 13
     },
     {
-      "author": "Alex Rosenbower",
-      "count": 12
+      "author": "Michael Chambers",
+      "count": 13
     },
     {
       "author": "Paige Spell",
@@ -257,11 +257,11 @@
       "count": 4
     },
     {
-      "author": "Katie Davis",
-      "count": 2
+      "author": "Ricardo Primon",
+      "count": 3
     },
     {
-      "author": "Ricardo Primon",
+      "author": "Katie Davis",
       "count": 2
     },
     {
@@ -274,6 +274,20 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-11 19:19",
+      "channel": "#client-lastpass",
+      "author": "Ricardo Primon",
+      "snippet": "hey <@U022VGAC3MY|Bradley> - I don't have specifics on what that means tbh. This came from Bekah's slack. I think they've communicated to procurement that they are entering the renewal convos with us, but I'd be a good question to confirm with Brayden over your follow up email to",
+      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778527188053289"
+    },
+    {
+      "date": "2026-05-11 18:46",
+      "channel": "#gtm-applied-ai",
+      "author": "Alex Rosenbower",
+      "snippet": "Pendo on our stuff is THE practice! Love to see it. I know <@U03A3J57CN9|Nir Shmuely> did the same for Pulse and maybe has shared learnings on how to do this? I think <@U07M1PVP8LE|Krystian> might have it on his PG Tuesday dashboard which is Vercel too if helpful.. I'm most curio",
+      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1778525184368759?thread_ts=1778518304.094989"
+    },
     {
       "date": "2026-05-08 23:14",
       "channel": "#client-amazon",
@@ -361,7 +375,7 @@
     {
       "date": "2026-05-05 21:15",
       "channel": "#predict-gtm-questions",
-      "author": "Gautham Pandiyan - OOO until May 12",
+      "author": "Gautham Pandiyan",
       "snippet": "Hi <@U05NLSJBPC4|jackson.chambers> - could you find out if they are going to the Gainsight conference? If so, can you invite them to this event that <@U01PM03NBNV|jenna.mclaughlin> &amp; Jay from Balboa will be hosting? <https://luma.com/pulse_dinner> (we're also doing 1:1 meetin",
       "permalink": "https://pendo.slack.com/archives/C09ELQW7A8K/p1778015757215319?thread_ts=1778004047.710899"
     },
@@ -609,20 +623,6 @@
       "author": "Tiffany Kitchen",
       "snippet": ":bar_chart: Novus Daily Pulse — Wed Apr 29, 2026 External account usage on Novus Production yesterday. Headline metrics • ~70 active external accounts (vs ~17 the day before) — roughly 4x lift day-over-day • ~96 new accounts with their first visit yesterday — biggest single-day a",
       "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1777554297403539"
-    },
-    {
-      "date": "2026-04-30 06:22",
-      "channel": "DM · U08MS86956C",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hello Chris! I am Nir, Pulse's owner - wanted to get some more context on your feedback on Pulse. Could you share a bit more on where specifically the experience feels too text-heavy?",
-      "permalink": "https://pendo.slack.com/archives/D0B0C2J56BH/p1777530125539549"
-    },
-    {
-      "date": "2026-04-30 06:11",
-      "channel": "#ce-pod-squad",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "is this live already? where can I see it? might want to plug it in to Pulse",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1777529473170859?thread_ts=1777473898.526079"
     }
   ]
 }
