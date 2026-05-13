@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-12T09:46:57.117Z",
+  "generatedAt": "2026-05-13T09:49:45.318Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-11T19:19:48.053Z",
-    "oldest": "2026-04-13T01:18:41.659Z"
+    "newest": "2026-05-12T18:08:42.874Z",
+    "oldest": "2026-04-14T07:35:43.785Z"
   },
   "totals": {
-    "messages": 165,
-    "channels": 53,
-    "authors": 43
+    "messages": 163,
+    "channels": 51,
+    "authors": 40
   },
   "daily": [
-    {
-      "date": "2026-04-13",
-      "count": 7
-    },
     {
       "date": "2026-04-14",
       "count": 6
@@ -107,13 +103,17 @@
     {
       "date": "2026-05-11",
       "count": 2
+    },
+    {
+      "date": "2026-05-12",
+      "count": 5
     }
   ],
   "topChannels": [
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 22
+      "count": 21
     },
     {
       "channel": "#tiffany-novus-test",
@@ -121,14 +121,14 @@
       "count": 16
     },
     {
-      "channel": "DM · Alex Rosenbower",
-      "kind": "dm",
-      "count": 13
-    },
-    {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
-      "count": 10
+      "count": 12
+    },
+    {
+      "channel": "DM · Alex Rosenbower",
+      "kind": "dm",
+      "count": 12
     },
     {
       "channel": "#retos-dev",
@@ -138,7 +138,7 @@
     {
       "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
       "kind": "group_dm",
-      "count": 8
+      "count": 9
     },
     {
       "channel": "#temp-pulse-feedback",
@@ -181,6 +181,11 @@
       "count": 3
     },
     {
+      "channel": "DM · Sneha Raghavan",
+      "kind": "dm",
+      "count": 2
+    },
+    {
       "channel": "#gtm-applied-ai",
       "kind": "channel",
       "count": 2
@@ -204,11 +209,6 @@
       "channel": "DM · Paige Spell",
       "kind": "dm",
       "count": 2
-    },
-    {
-      "channel": "DM · Andrea Lodigiani",
-      "kind": "dm",
-      "count": 2
     }
   ],
   "topAuthors": [
@@ -221,11 +221,11 @@
       "count": 17
     },
     {
-      "author": "Alex Rosenbower",
+      "author": "Michael Chambers",
       "count": 13
     },
     {
-      "author": "Michael Chambers",
+      "author": "Alex Rosenbower",
       "count": 13
     },
     {
@@ -234,11 +234,11 @@
     },
     {
       "author": "Sunny Lin",
-      "count": 8
+      "count": 9
     },
     {
       "author": "Sneha Raghavan",
-      "count": 6
+      "count": 7
     },
     {
       "author": "Krystian Serwinski",
@@ -249,15 +249,15 @@
       "count": 5
     },
     {
-      "author": "Carolynn Rodon",
-      "count": 4
-    },
-    {
       "author": "Melissa Cooper",
       "count": 4
     },
     {
       "author": "Ricardo Primon",
+      "count": 3
+    },
+    {
+      "author": "Carolynn Rodon",
       "count": 3
     },
     {
@@ -274,6 +274,41 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-12 18:08",
+      "channel": "DM · Sneha Raghavan",
+      "author": "Sneha Raghavan",
+      "snippet": "when i go here: <https://pulse.pendoexperience.io/ce-compass> I see this:",
+      "permalink": "https://pendo.slack.com/archives/D0433QH7L9L/p1778609322874599"
+    },
+    {
+      "date": "2026-05-12 17:20",
+      "channel": "DM · Sneha Raghavan",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "hey - if you refresh Pulse you should be sorted",
+      "permalink": "https://pendo.slack.com/archives/D0433QH7L9L/p1778606448716529"
+    },
+    {
+      "date": "2026-05-12 15:48",
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "author": "Sunny Lin",
+      "snippet": "You can start playing with it now: <https://pulse.pendoexperience.io/ce-compass>",
+      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778600905963209"
+    },
+    {
+      "date": "2026-05-12 15:12",
+      "channel": "DM · Michael Chambers",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "can you set up a meeting with Andrea? to discuss success plans in pulse?<https://docs.google.com/document/d/1Ak9SJnBfi2g0gf05DLJ4QhWyn9LIgbj-OttzbK3GBP8/edit?tab=t.0>",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778598734660999"
+    },
+    {
+      "date": "2026-05-12 12:51",
+      "channel": "DM · Michael Chambers",
+      "author": "Michael Chambers",
+      "snippet": "also, i shared the two pulse docs I had pulse make me on itself",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778590300905899"
+    },
     {
       "date": "2026-05-11 19:19",
       "channel": "#client-lastpass",
@@ -588,41 +623,6 @@
       "author": "Krystian Serwinski",
       "snippet": "<https://www.linkedin.com/pulse/posthogs-next-chapter-james-hawkins-l5mce/?trackingId=nJESFId5OcKrLkzxkEJ%2FlQ%3D%3D>",
       "permalink": "https://pendo.slack.com/archives/C0GBWPBFV/p1777566696901359?thread_ts=1777566696.901359"
-    },
-    {
-      "date": "2026-04-30 16:25",
-      "channel": "#pulse-external",
-      "author": "Mckenzie Gradert (Bowden)",
-      "snippet": "Do I have my Pulse Accounts page filtered incorrectly? I know the accounts were showing last Friday, but now is blank.",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777566314410959?thread_ts=1777566314.410959"
-    },
-    {
-      "date": "2026-04-30 15:12",
-      "channel": "DM · Alex Rosenbower",
-      "author": "Alex Rosenbower",
-      "snippet": "I know there was A LOT of feedback lobbed over the wall on Pulse and just wanted to touch base v quick as I won't be able to make the meeting today. I am here to support development, enablement, and catching feedback however I can -- give me the permissions and I'll get in there ",
-      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1777561945494609"
-    },
-    {
-      "date": "2026-04-30 15:08",
-      "channel": "#retos-dev",
-      "author": "Paige Spell",
-      "snippet": "Hi all!! :meow_hi_wave: You've been selected as our pilot group for Roux, a new Slack-native alerting agent we've been building to help surface “red” accounts or Renewal Outcome Urgency eXposure directly to you (s/o Elle for the name!) What Roux does: Every Monday, Roux will send",
-      "permalink": "https://pendo.slack.com/archives/C0ARK2RD1HA/p1777561721411109?thread_ts=1777486084.332169"
-    },
-    {
-      "date": "2026-04-30 13:16",
-      "channel": "#proj-novus",
-      "author": "Tiffany Kitchen",
-      "snippet": ":bar_chart: Novus Daily Pulse — Wed Apr 29, 2026 External account usage on Novus Production yesterday. Headline metrics • ~70 active external accounts (vs ~17 the day before) — roughly 4x lift day-over-day • ~96 new accounts with their first visit yesterday — biggest single-day a",
-      "permalink": "https://pendo.slack.com/archives/C0A6TU21BTP/p1777554989593789?thread_ts=1777554989.593789"
-    },
-    {
-      "date": "2026-04-30 13:04",
-      "channel": "#tiffany-novus-test",
-      "author": "Tiffany Kitchen",
-      "snippet": ":bar_chart: Novus Daily Pulse — Wed Apr 29, 2026 External account usage on Novus Production yesterday. Headline metrics • ~70 active external accounts (vs ~17 the day before) — roughly 4x lift day-over-day • ~96 new accounts with their first visit yesterday — biggest single-day a",
-      "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1777554297403539"
     }
   ]
 }
