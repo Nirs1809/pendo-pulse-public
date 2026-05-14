@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-13T09:49:45.318Z",
+  "generatedAt": "2026-05-14T09:38:28.656Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-12T18:08:42.874Z",
-    "oldest": "2026-04-14T07:35:43.785Z"
+    "newest": "2026-05-14T09:36:59.318Z",
+    "oldest": "2026-04-15T07:44:48.536Z"
   },
   "totals": {
-    "messages": 163,
-    "channels": 51,
-    "authors": 40
+    "messages": 166,
+    "channels": 52,
+    "authors": 41
   },
   "daily": [
-    {
-      "date": "2026-04-14",
-      "count": 6
-    },
     {
       "date": "2026-04-15",
       "count": 3
@@ -107,6 +103,14 @@
     {
       "date": "2026-05-12",
       "count": 5
+    },
+    {
+      "date": "2026-05-13",
+      "count": 8
+    },
+    {
+      "date": "2026-05-14",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -126,19 +130,19 @@
       "count": 12
     },
     {
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "kind": "group_dm",
+      "count": 11
+    },
+    {
       "channel": "DM · Alex Rosenbower",
       "kind": "dm",
-      "count": 12
+      "count": 10
     },
     {
       "channel": "#retos-dev",
       "kind": "channel",
       "count": 10
-    },
-    {
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "kind": "group_dm",
-      "count": 9
     },
     {
       "channel": "#temp-pulse-feedback",
@@ -151,12 +155,17 @@
       "count": 5
     },
     {
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "kind": "group_dm",
+      "count": 4
+    },
+    {
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
       "kind": "group_dm",
       "count": 4
     },
     {
-      "channel": "#prov-testing",
+      "channel": "#TEST ACCOUNT - dont leave opps in closedwon",
       "kind": "channel",
       "count": 4
     },
@@ -166,8 +175,8 @@
       "count": 4
     },
     {
-      "channel": "DM · U055U3HNWTB",
-      "kind": "dm",
+      "channel": "#canary-data-test",
+      "kind": "channel",
       "count": 3
     },
     {
@@ -201,12 +210,7 @@
       "count": 2
     },
     {
-      "channel": "DM · Melissa Cooper",
-      "kind": "dm",
-      "count": 2
-    },
-    {
-      "channel": "DM · Paige Spell",
+      "channel": "DM · U055U3HNWTB",
       "kind": "dm",
       "count": 2
     }
@@ -214,7 +218,7 @@
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 36
+      "count": 38
     },
     {
       "author": "Tiffany Kitchen",
@@ -226,7 +230,7 @@
     },
     {
       "author": "Alex Rosenbower",
-      "count": 13
+      "count": 12
     },
     {
       "author": "Paige Spell",
@@ -234,11 +238,15 @@
     },
     {
       "author": "Sunny Lin",
-      "count": 9
+      "count": 10
     },
     {
       "author": "Sneha Raghavan",
       "count": 7
+    },
+    {
+      "author": "Melissa Cooper",
+      "count": 5
     },
     {
       "author": "Krystian Serwinski",
@@ -247,10 +255,6 @@
     {
       "author": "Sean Muse",
       "count": 5
-    },
-    {
-      "author": "Melissa Cooper",
-      "count": 4
     },
     {
       "author": "Ricardo Primon",
@@ -274,6 +278,69 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-14 09:36",
+      "channel": "#canary-data-test",
+      "author": "Simon Adler",
+      "snippet": "<@U0AGG9TUV8B> tell me about MSD and Ideagen, in pulse it is considered high churn risk, and red health. So any insights that are leading to those ratings woudl be helpful.",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1778751419318289?thread_ts=1778751419.318289"
+    },
+    {
+      "date": "2026-05-13 17:41",
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "author": "Sunny Lin",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778694068664779?thread_ts=1778694068.664779"
+    },
+    {
+      "date": "2026-05-13 17:40",
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U012LTVGRFT|Melissa Cooper> the new zero opp logic <@U03GHB4R0V6|Sunny> made is implemented in Pulse so take a look plz. Tam hours still looks like they dont make a lot of sense so fyi.",
+      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778694013950089"
+    },
+    {
+      "date": "2026-05-13 16:03",
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "my own sub - the data is <https://pendo-pulse-public.vercel.app/|shared here in this dash>",
+      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778688194992789?thread_ts=1778679884.262029"
+    },
+    {
+      "date": "2026-05-13 16:02",
+      "channel": "DM · U02SXS3U3M2",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "hey! see this <https://pendo-pulse-public.vercel.app/|link> - its an external dashboard showcasing Pulse eng",
+      "permalink": "https://pendo.slack.com/archives/D0AS81X4R1U/p1778688137754659"
+    },
+    {
+      "date": "2026-05-13 15:54",
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U0202Q8H0BA|Emilie> Not sure if it's part of the agenda but would be awesome if you could get them to either respond on the Pulse guide (what are your most pressing pain points) or any other format to get their ideas..",
+      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778687671308129?thread_ts=1778682225.541819"
+    },
+    {
+      "date": "2026-05-13 15:52",
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey <@U03GHB4R0V6|Sunny> I prefer not to intro any new tables to the app. Are all the fields used for this query exist in any of the core/ancillary opportunities ones? If so I would love if you could write the logic and I would implement it in pulse",
+      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778687549825799?thread_ts=1778679625.038679"
+    },
+    {
+      "date": "2026-05-13 13:44",
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "author": "Melissa Cooper",
+      "snippet": "Hey <@U03A3J57CN9|Nir Shmuely> - is Pulse set up in our Pendo for Employees sub or a different sub?",
+      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778679884262029?thread_ts=1778679884.262029"
+    },
+    {
+      "date": "2026-05-13 13:14",
+      "channel": "DM · Michael Chambers",
+      "author": "Michael Chambers",
+      "snippet": "<https://docs.google.com/presentation/d/1GP9WVkytqi3D3haKsu5XYq5ixfgYAoiumSF1m7FNhPo/edit?usp=sharing>",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778678052322699"
+    },
     {
       "date": "2026-05-12 18:08",
       "channel": "DM · Sneha Raghavan",
@@ -325,7 +392,7 @@
     },
     {
       "date": "2026-05-08 23:14",
-      "channel": "#client-amazon",
+      "channel": "#Amazon",
       "author": "Caitlin Tittl",
       "snippet": ":amazon: Amazon T-Rex Use Case Requirements Review Had a deep-dive working session with the Amazon team around survey workflows inside the T-Rex return grading application. Key use cases &amp; requirements learned: :clipboard: Survey Creation / Management • Team wants self-servic",
       "permalink": "https://pendo.slack.com/archives/C0316AHJK7U/p1778282080282789?thread_ts=1778182218.836429"
@@ -560,69 +627,6 @@
       "author": "Paige Spell",
       "snippet": "Hi all!! :meow_hi_wave: You've been selected as our pilot group for Roux, a new Slack-native alerting agent we've been building to help surface “red” accounts or Renewal Outcome Urgency eXposure directly to you (s/o <@UJ8MH0VPW|Elle> for the name!) What Roux does: Every Monday, R",
       "permalink": "https://pendo.slack.com/archives/C0B154MM3A6/p1777651970850979"
-    },
-    {
-      "date": "2026-05-01 13:41",
-      "channel": "DM · Melissa Cooper",
-      "author": "Melissa Cooper",
-      "snippet": "Hey Nir! How are we integrating Pulse w/ Gong? I saw a separate thread where they don't have a MCP so curious how this is getting set up",
-      "permalink": "https://pendo.slack.com/archives/D049JMCUU15/p1777642911722229"
-    },
-    {
-      "date": "2026-05-01 13:27",
-      "channel": "#client-cvs-aetna--yellow",
-      "author": "Brian Megill",
-      "snippet": "Sai’s Background &amp; New Role at CVS • Accepted new position at CVS Health (start date TBD, likely May 20-25) ◦ Will work in specialty/PBM area under new portfolio ◦ Previously built RX personalization platform (2019-2021) for patient adherence ◦ Platform targeted patients not ",
-      "permalink": "https://pendo.slack.com/archives/C08J7FC47FW/p1777642060758799"
-    },
-    {
-      "date": "2026-05-01 13:05",
-      "channel": "#tiffany-novus-test",
-      "author": "Tiffany Kitchen",
-      "snippet": ":bar_chart: Novus Daily Pulse — Thursday, Apr 30, 2026 Yesterday's external account usage on Novus Production: • Active accounts: 44 (↓ from 79 Wed, but still ~50% above the Mon–Tue baseline) • Active visitors: 114 (↓ from 236 Wed) • New accounts: 12 (↓ from 100 Wed) 7-day trend ",
-      "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1777640739285059"
-    },
-    {
-      "date": "2026-05-01 01:33",
-      "channel": "#temp-pulse-feedback",
-      "author": "Alex Rosenbower",
-      "snippet": "Canary Latest Updates: • The chat functionality from the side pane and button on the account are both dimmed and read \"Coming Soon\" and don't actually do anything when clicked • The \"Probability\" and \"Risk\" columns in the opportunity breakdown have been hidden -- only Predict Ris",
-      "permalink": "https://pendo.slack.com/archives/C0AU0BANJ86/p1777599225572349?thread_ts=1777599225.572349"
-    },
-    {
-      "date": "2026-04-30 18:44",
-      "channel": "DM · Paige Spell",
-      "author": "Paige Spell",
-      "snippet": "I meant to call this out on the call but alex asked me to relay some feedback: > I don't think we're ready for a full Canary chat experience inside of Pulse -- it's being tested among a subset of leaders in slack today and we have more to do before we're ready to fully launch it ",
-      "permalink": "https://pendo.slack.com/archives/D0APT6QNZK5/p1777574678348089"
-    },
-    {
-      "date": "2026-04-30 18:10",
-      "channel": "DM · Andrea Lodigiani",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "only way is to make you an admin and you impersonate Elle. this is the route I took so: Please log in to <https://pulse.pendoexperience.io/admin/users|Pulse> - scroll down to User Management and click the :eye: Icon to impersonate Elle. Please use the admin role with caution sinc",
-      "permalink": "https://pendo.slack.com/archives/D09MTB1KCS0/p1777572653946819"
-    },
-    {
-      "date": "2026-04-30 17:49",
-      "channel": "DM · Alex Rosenbower",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "regarding Pulse - feel free to start poking around: <https://lovable.dev/projects/4ef70ad6-a97f-4d23-9ed5-3b4003ea9e83> Work with Plan Mode and work slowly until you get the architecture. Have been working on building <https://app.pendo.io/s/5389416346288128/guides|guides> (actua",
-      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1777571375041089"
-    },
-    {
-      "date": "2026-04-30 16:47",
-      "channel": "#proj-novus",
-      "author": "Jennifer Peterson",
-      "snippet": "PostHog's CEO sharing what their future looks like with PostHog Code <https://www.linkedin.com/pulse/posthogs-next-chapter-james-hawkins-l5mce/>",
-      "permalink": "https://pendo.slack.com/archives/C0A6TU21BTP/p1777567646558889?thread_ts=1777567646.558889"
-    },
-    {
-      "date": "2026-04-30 16:31",
-      "channel": "#competition",
-      "author": "Krystian Serwinski",
-      "snippet": "<https://www.linkedin.com/pulse/posthogs-next-chapter-james-hawkins-l5mce/?trackingId=nJESFId5OcKrLkzxkEJ%2FlQ%3D%3D>",
-      "permalink": "https://pendo.slack.com/archives/C0GBWPBFV/p1777566696901359?thread_ts=1777566696.901359"
     }
   ]
 }
