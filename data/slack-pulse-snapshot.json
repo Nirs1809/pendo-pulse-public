@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-05-14T09:38:28.656Z",
+  "generatedAt": "2026-05-15T09:51:42.136Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-14T09:36:59.318Z",
-    "oldest": "2026-04-15T07:44:48.536Z"
+    "newest": "2026-05-14T19:00:55.744Z",
+    "oldest": "2026-04-15T21:35:19.978Z"
   },
   "totals": {
-    "messages": 166,
-    "channels": 52,
-    "authors": 41
+    "messages": 172,
+    "channels": 54,
+    "authors": 42
   },
   "daily": [
     {
       "date": "2026-04-15",
-      "count": 3
+      "count": 1
     },
     {
       "date": "2026-04-16",
@@ -110,7 +110,7 @@
     },
     {
       "date": "2026-05-14",
-      "count": 1
+      "count": 9
     }
   ],
   "topChannels": [
@@ -127,17 +127,17 @@
     {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
+      "count": 13
+    },
+    {
+      "channel": "DM · Alex Rosenbower",
+      "kind": "dm",
       "count": 12
     },
     {
       "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
       "kind": "group_dm",
       "count": 11
-    },
-    {
-      "channel": "DM · Alex Rosenbower",
-      "kind": "dm",
-      "count": 10
     },
     {
       "channel": "#retos-dev",
@@ -152,7 +152,7 @@
     {
       "channel": "#client-lastpass",
       "kind": "channel",
-      "count": 5
+      "count": 6
     },
     {
       "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
@@ -175,7 +175,7 @@
       "count": 4
     },
     {
-      "channel": "#canary-data-test",
+      "channel": "#canary-agent",
       "kind": "channel",
       "count": 3
     },
@@ -188,6 +188,11 @@
       "channel": "DM · Sunny Lin",
       "kind": "dm",
       "count": 3
+    },
+    {
+      "channel": "#IG Group Europe GmbH",
+      "kind": "channel",
+      "count": 2
     },
     {
       "channel": "DM · Sneha Raghavan",
@@ -208,28 +213,23 @@
       "channel": "#client-zoominfo",
       "kind": "channel",
       "count": 2
-    },
-    {
-      "channel": "DM · U055U3HNWTB",
-      "kind": "dm",
-      "count": 2
     }
   ],
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 38
+      "count": 40
     },
     {
       "author": "Tiffany Kitchen",
       "count": 17
     },
     {
-      "author": "Michael Chambers",
+      "author": "Alex Rosenbower",
       "count": 13
     },
     {
-      "author": "Alex Rosenbower",
+      "author": "Michael Chambers",
       "count": 12
     },
     {
@@ -258,29 +258,85 @@
     },
     {
       "author": "Ricardo Primon",
-      "count": 3
+      "count": 4
     },
     {
       "author": "Carolynn Rodon",
       "count": 3
     },
     {
+      "author": "Michal Livnat",
+      "count": 2
+    },
+    {
+      "author": "Emilie DeCherney",
+      "count": 2
+    },
+    {
       "author": "Katie Davis",
-      "count": 2
-    },
-    {
-      "author": "Jenn Lucas",
-      "count": 2
-    },
-    {
-      "author": "Taryn Feenstra",
       "count": 2
     }
   ],
   "recent": [
     {
+      "date": "2026-05-14 19:00",
+      "channel": "#client-lastpass",
+      "author": "Ricardo Primon",
+      "snippet": "want me to reach out to Bekah to get a pulse here and schedule that renewal follow up call?",
+      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778785255744339"
+    },
+    {
+      "date": "2026-05-14 17:41",
+      "channel": "DM · Alex Rosenbower",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "FYI: logging out for the day - was a very busy week a lot was done with great success! CE compass + Pulse major improvements like ZD and Granola, Gong Calls and much more! see you next week! have a great weekend",
+      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1778780511298619"
+    },
+    {
+      "date": "2026-05-14 17:31",
+      "channel": "DM · Michael Chambers",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Brad is good to go! I worked on getting the last call column and card (in account details page) to the right spot based on recent feedback - see <#C0AFC0VLXNH> to see it. if you can spare a few minutes to verify it accurate I would appreciate it dearly! BQ table - pendo-reporting",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778779898810959"
+    },
+    {
+      "date": "2026-05-14 16:43",
+      "channel": "#Optum",
+      "author": "Dalton Taylor",
+      "snippet": "Thought this was an intesting read on the state of healthcare EHR development and the moat trying to be created by Epic. <https://www.linkedin.com/pulse/ehr-ai-race-mike-thompson-7mloc/>",
+      "permalink": "https://pendo.slack.com/archives/C082S52ESSC/p1778777039348319?thread_ts=1778777039.348319"
+    },
+    {
+      "date": "2026-05-14 12:48",
+      "channel": "DM · Alex Rosenbower",
+      "author": "Alex Rosenbower",
+      "snippet": "Morning! The latest pulse comment from CE about non customer accounts is one we should talk about in 1:1. Given that CEs also own pre-sales process for non paying accounts we should think about how we allow the visibility. Can discuss more next week",
+      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1778762936227229?thread_ts=1778762936.227229"
+    },
+    {
+      "date": "2026-05-14 11:17",
+      "channel": "#IG Group Europe GmbH",
+      "author": "Michal Livnat",
+      "snippet": ":star:PS Engagement Update:star: Engagement Health: :large_yellow_circle: Amber Two open support tickets are awaiting customer responses, and session replay is blocked on legal sign-off. The Pulse survey is live and the iOS pairing issue is resolved, so the foundations are in pla",
+      "permalink": "https://pendo.slack.com/archives/C08V0FNSVDZ/p1778757464960249"
+    },
+    {
+      "date": "2026-05-14 11:13",
+      "channel": "DM · Michael Chambers",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "also add the zd tickes you added to pulse - nice quick win",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778757189631649"
+    },
+    {
+      "date": "2026-05-14 10:59",
+      "channel": "DM · Emilie DeCherney",
+      "author": "Emilie DeCherney",
+      "snippet": "And is it in Pulse?",
+      "permalink": "https://pendo.slack.com/archives/D097TGPQGJH/p1778756348503009"
+    },
+    {
       "date": "2026-05-14 09:36",
-      "channel": "#canary-data-test",
+      "channel": "#canary-agent",
       "author": "Simon Adler",
       "snippet": "<@U0AGG9TUV8B> tell me about MSD and Ideagen, in pulse it is considered high churn risk, and red health. So any insights that are leading to those ratings woudl be helpful.",
       "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1778751419318289?thread_ts=1778751419.318289"
@@ -571,62 +627,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "hey Melissa! we are actually not pulling directly from Gong but going through a data processing step in GCP and will pull it back in through BQ into Pulse. Any specifics you would like to get from that functionality?",
       "permalink": "https://pendo.slack.com/archives/D049JMCUU15/p1777793343411389"
-    },
-    {
-      "date": "2026-05-02 13:04",
-      "channel": "#tiffany-novus-test",
-      "author": "Tiffany Kitchen",
-      "snippet": ":wave: Novus Daily Pulse — May 1, 2026 Today's pulse couldn't be generated: no Pendo/Novus data source is currently connected to this scheduled task, and no data export was provided with the run. To restore the daily pulse, one of the following needs to be in place: • A Pendo MCP",
-      "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1777727042386819"
-    },
-    {
-      "date": "2026-05-01 18:19",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sneha Raghavan",
-      "snippet": "Thank you. I just wanted to share with FLMs that very likely this will be in Pulse for them to review.",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777659581379429"
-    },
-    {
-      "date": "2026-05-01 18:18",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sunny Lin",
-      "snippet": "I met with Nir and Melissa yesterday. I think I have a good idea of what a good V1 can look like (<https://pendo.zoom.us/rec/share/T9qwsoPtJWBAATR5GbbbyzCFve_OJGH8xkGSaRhg2-il0oQz1OEou-KQP5LQUw1T.xndkEZcV99xRpGJb|per convo> with <@U012LTVGRFT|Melissa Cooper>). <@U03A3J57CN9|Nir S",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777659531144689"
-    },
-    {
-      "date": "2026-05-01 18:13",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sneha Raghavan",
-      "snippet": "Checking in - I have not made progress against the spreadsheet view. <@U03GHB4R0V6|Sunny> <@U03A3J57CN9|Nir Shmuely> any progress on the ability to ge tit into Pulse?",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1777659231768269"
-    },
-    {
-      "date": "2026-05-01 17:34",
-      "channel": "#client-lastpass",
-      "author": "Ricardo Primon",
-      "snippet": "quick questions... who will want to own/run the call? also: can we agree on the top things we want to get out of this call? 1. pulse on intent to renew 2. who else can we talk when Bekah leaves (#1 question we need to ask Bekah imo...and ask for intros) 3. current ROI (I think th",
-      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1777656873510959?thread_ts=1777559703.553349"
-    },
-    {
-      "date": "2026-05-01 17:30",
-      "channel": "#retos-dev",
-      "author": "Paige Spell",
-      "snippet": "Will you double check the pulse links? omni and sfdc look good though",
-      "permalink": "https://pendo.slack.com/archives/C0ARK2RD1HA/p1777656643417019"
-    },
-    {
-      "date": "2026-05-01 16:38",
-      "channel": "#pulse-external",
-      "author": "Melissa Cooper",
-      "snippet": "So it looks like the contract was properly mapped for OpsRamp but it's still not showing up in Pulse. Could something have gotten lost in translation? <https://pulse.pendoexperience.io/accounts/0010a00001ML8xbAAD>",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777653485658519?thread_ts=1777478261.582589"
-    },
-    {
-      "date": "2026-05-01 16:12",
-      "channel": "#roux-pilot",
-      "author": "Paige Spell",
-      "snippet": "Hi all!! :meow_hi_wave: You've been selected as our pilot group for Roux, a new Slack-native alerting agent we've been building to help surface “red” accounts or Renewal Outcome Urgency eXposure directly to you (s/o <@UJ8MH0VPW|Elle> for the name!) What Roux does: Every Monday, R",
-      "permalink": "https://pendo.slack.com/archives/C0B154MM3A6/p1777651970850979"
     }
   ]
 }
