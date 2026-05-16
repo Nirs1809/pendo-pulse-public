@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-05-15T09:51:42.136Z",
+  "generatedAt": "2026-05-16T08:54:16.689Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-14T19:00:55.744Z",
-    "oldest": "2026-04-15T21:35:19.978Z"
+    "newest": "2026-05-15T21:48:15.289Z",
+    "oldest": "2026-04-17T12:46:20.879Z"
   },
   "totals": {
-    "messages": 172,
-    "channels": 54,
+    "messages": 170,
+    "channels": 55,
     "authors": 42
   },
   "daily": [
-    {
-      "date": "2026-04-15",
-      "count": 1
-    },
-    {
-      "date": "2026-04-16",
-      "count": 8
-    },
     {
       "date": "2026-04-17",
       "count": 1
@@ -111,13 +103,17 @@
     {
       "date": "2026-05-14",
       "count": 9
+    },
+    {
+      "date": "2026-05-15",
+      "count": 7
     }
   ],
   "topChannels": [
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 21
+      "count": 19
     },
     {
       "channel": "#tiffany-novus-test",
@@ -125,14 +121,14 @@
       "count": 16
     },
     {
-      "channel": "DM · Michael Chambers",
-      "kind": "dm",
-      "count": 13
-    },
-    {
       "channel": "DM · Alex Rosenbower",
       "kind": "dm",
-      "count": 12
+      "count": 11
+    },
+    {
+      "channel": "DM · Michael Chambers",
+      "kind": "dm",
+      "count": 11
     },
     {
       "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
@@ -142,7 +138,7 @@
     {
       "channel": "#retos-dev",
       "kind": "channel",
-      "count": 10
+      "count": 9
     },
     {
       "channel": "#temp-pulse-feedback",
@@ -175,6 +171,16 @@
       "count": 4
     },
     {
+      "channel": "#novus-plg-alerts",
+      "kind": "channel",
+      "count": 3
+    },
+    {
+      "channel": "#demand-gen-weekly-updates",
+      "kind": "channel",
+      "count": 3
+    },
+    {
       "channel": "#canary-agent",
       "kind": "channel",
       "count": 3
@@ -203,41 +209,31 @@
       "channel": "#gtm-applied-ai",
       "kind": "channel",
       "count": 2
-    },
-    {
-      "channel": "#demand-gen-weekly-updates",
-      "kind": "channel",
-      "count": 2
-    },
-    {
-      "channel": "#client-zoominfo",
-      "kind": "channel",
-      "count": 2
     }
   ],
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 40
+      "count": 37
     },
     {
       "author": "Tiffany Kitchen",
-      "count": 17
+      "count": 20
     },
     {
       "author": "Alex Rosenbower",
       "count": 13
     },
     {
+      "author": "Sunny Lin",
+      "count": 10
+    },
+    {
       "author": "Michael Chambers",
-      "count": 12
+      "count": 10
     },
     {
       "author": "Paige Spell",
-      "count": 11
-    },
-    {
-      "author": "Sunny Lin",
       "count": 10
     },
     {
@@ -261,6 +257,10 @@
       "count": 4
     },
     {
+      "author": "Katie Davis",
+      "count": 3
+    },
+    {
       "author": "Carolynn Rodon",
       "count": 3
     },
@@ -271,13 +271,58 @@
     {
       "author": "Emilie DeCherney",
       "count": 2
-    },
-    {
-      "author": "Katie Davis",
-      "count": 2
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-15 21:48",
+      "channel": "#revenue",
+      "author": "Riley Huber",
+      "snippet": "The more rolodexes the better!",
+      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1778881695289019"
+    },
+    {
+      "date": "2026-05-15 20:53",
+      "channel": "#SWBC",
+      "author": "Drew Sartain",
+      "snippet": "<@U02GT27UQQL|erica.eveld> lets swarm these folks next week..looks like some enablement would change the game here Predict has them as Critical - but if we can propose a weekly session that is pointing towards core events (shipping guides, data explorer, even using segments, api)",
+      "permalink": "https://pendo.slack.com/archives/C03U6U37QP2/p1778878411964709?thread_ts=1778878411.964709"
+    },
+    {
+      "date": "2026-05-15 20:04",
+      "channel": "#novus-plg-alerts",
+      "author": "Tiffany Kitchen",
+      "snippet": "<@U0ALUR71NS2> schedule this product pulse to run daily at 9am est in this channel. It should include a launch countdown up until the release on Wednesday, and some type of announcement that it's launch day on Wednesday the 20th. After the 20th, keep the daily reports going but d",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1778875470156739?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-15 19:59",
+      "channel": "#novus-plg-alerts",
+      "author": "Tiffany Kitchen",
+      "snippet": "<@U0ALUR71NS2> critique this product pulse against my initial ask. You're an engineer on the team looking at this. Do you care? ensure you(the engineer) care. Then look at this as if you're a product leader. Did you have high confidence in this launch and the go forward plan? I w",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1778875190623219?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-15 18:49",
+      "channel": "#novus-plg-alerts",
+      "author": "Tiffany Kitchen",
+      "snippet": "<@U0ALUR71NS2> this is a good start. I also want to know which customers I should follow up with for user interviews based on their usage. I want that to be part of the product pulse",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1778870992188239?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-15 18:46",
+      "channel": "#demand-gen-weekly-updates",
+      "author": "Katie Davis",
+      "snippet": ":bar_chart: Weekly Update — Katie | Week of May 11 :chart_with_upwards_trend: North Star KPI Update $131k in marketing-sourced pipeline for Predict (EOQ target: $3.6M). A slow pipeline week across the board — likely tied to CoTM trainings pulling attention. :rocket: What I Shippe",
+      "permalink": "https://pendo.slack.com/archives/C0AUARULTAQ/p1778870811625769"
+    },
+    {
+      "date": "2026-05-15 18:26",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "Hey team, I noticed the MAU utilization is not counting properly on various accounts. Is this a known issue? Take <https://pulse.pendoexperience.io/accounts/001j000000fiHDNAA2|Paychex as an example in Pulse>. This same <https://pendo.omniapp.co/dashboards/2f82ec77?f--pendolytics_",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778869561874499"
+    },
     {
       "date": "2026-05-14 19:00",
       "channel": "#client-lastpass",
@@ -578,55 +623,6 @@
       "author": "Vaughn Maxson",
       "snippet": "Hi team, in the Pulse account dashbaord in Licensed Modules, what do the percentages mean? i.e. if Guides Pro is at 97% - 97% of what? 97% of users are using it?! X amount created in past 30 days, etc.? <@U07H08B4D40|christian.gonzales>",
       "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777911333614949?thread_ts=1777911333.614949"
-    },
-    {
-      "date": "2026-05-04 15:01",
-      "channel": "#product-announcements",
-      "author": "Jenn Lucas",
-      "snippet": "[Analytics] App health top widget now highlight Engagement Metrics for a portfolio-wide view :tada: Launch level: 2 / Medium customer impact What is this? App Health gives you a portfolio-level view of how all your apps are performing in one place. We’ve updated the top widget to",
-      "permalink": "https://pendo.slack.com/archives/C040L2W848L/p1777906895278809"
-    },
-    {
-      "date": "2026-05-04 13:29",
-      "channel": "DM · Alex Rosenbower",
-      "author": "Alex Rosenbower",
-      "snippet": "you may know this already but Zac is OOO this week -- just FYI on some of the comments I saw you make on Pulse <> Canary stuff",
-      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1777901391510119"
-    },
-    {
-      "date": "2026-05-04 13:04",
-      "channel": "#tiffany-novus-test",
-      "author": "Tiffany Kitchen",
-      "snippet": ":wave: Novus Daily Pulse — Sunday, May 3, 2026 Today's pulse couldn't be generated — same blocker as the previous two runs: no Pendo/Novus data source is connected to this scheduled task, and no data export was attached. Status: 3rd consecutive day skipped. The pulse will resume ",
-      "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1777899889885139"
-    },
-    {
-      "date": "2026-05-03 14:53",
-      "channel": "DM · Emily Anastasi",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Thanks Emily!! If you look on the right-hand side, you’ll see the usage dates — the most recent activity was around ~5 months ago. In Pulse, we track recent usage, so this suggests that the Analytics features haven’t been actively used in the past 30 days. if you are seeing anyth",
-      "permalink": "https://pendo.slack.com/archives/D0B0GNKLC6A/p1777819982753029"
-    },
-    {
-      "date": "2026-05-03 13:04",
-      "channel": "#tiffany-novus-test",
-      "author": "Tiffany Kitchen",
-      "snippet": ":wave: Novus Daily Pulse — Saturday, May 2, 2026 Today's pulse couldn't be generated — same blocker as yesterday's run: no Pendo/Novus data source is connected to this scheduled task, and no data export was attached. Status: 2nd consecutive day skipped. The pulse will resume auto",
-      "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1777813441504679"
-    },
-    {
-      "date": "2026-05-03 07:50",
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "hey Zac - apparently Canary was only working for me on Pulse due to permission issues. Can you grant roles/run.invoker on the Cloud Run service canary-adk-dev (project pendo-reporting, region us-central1) to <mailto:lovable-bq-reader@pendo-reporting.iam.gserviceaccount.com|lovabl",
-      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1777794615430999"
-    },
-    {
-      "date": "2026-05-03 07:29",
-      "channel": "DM · Melissa Cooper",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "hey Melissa! we are actually not pulling directly from Gong but going through a data processing step in GCP and will pull it back in through BQ into Pulse. Any specifics you would like to get from that functionality?",
-      "permalink": "https://pendo.slack.com/archives/D049JMCUU15/p1777793343411389"
     }
   ]
 }
