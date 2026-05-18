@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-17T09:09:46.870Z",
+  "generatedAt": "2026-05-18T11:10:54.710Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-15T21:48:15.289Z",
+    "newest": "2026-05-18T06:53:53.938Z",
     "oldest": "2026-04-20T09:29:52.488Z"
   },
   "totals": {
-    "messages": 169,
+    "messages": 170,
     "channels": 55,
     "authors": 41
   },
@@ -103,6 +103,10 @@
     {
       "date": "2026-05-15",
       "count": 7
+    },
+    {
+      "date": "2026-05-18",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -147,12 +151,12 @@
       "count": 6
     },
     {
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
       "kind": "group_dm",
-      "count": 4
+      "count": 5
     },
     {
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
       "kind": "group_dm",
       "count": 4
     },
@@ -210,7 +214,7 @@
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 37
+      "count": 38
     },
     {
       "author": "Tiffany Kitchen",
@@ -270,6 +274,13 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-18 06:53",
+      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U02QC670XC0|zac> hey - any chance you got to this? we are blocked in Pulse for some reason...",
+      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1779087233938449?thread_ts=1777794615.430999"
+    },
     {
       "date": "2026-05-15 21:48",
       "channel": "#revenue",
@@ -612,13 +623,6 @@
       "author": "Pamela Gutierrez",
       "snippet": "<@U022VGAC3MY|Bradley> <@U08Q6TGP621|ricardo.primon> This idea works for me. I was thinking I would send over a proposed agenda, mainly focused around setting Bekah up for mat leave and filling in some of the blanks, something like this: Proposed Agenda (30 min) 1. Current Priori",
       "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1777918496847809"
-    },
-    {
-      "date": "2026-05-04 16:15",
-      "channel": "#pulse-external",
-      "author": "Vaughn Maxson",
-      "snippet": "Hi team, in the Pulse account dashbaord in Licensed Modules, what do the percentages mean? i.e. if Guides Pro is at 97% - 97% of what? 97% of users are using it?! X amount created in past 30 days, etc.? <@U07H08B4D40|christian.gonzales>",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1777911333614949?thread_ts=1777911333.614949"
     }
   ]
 }
