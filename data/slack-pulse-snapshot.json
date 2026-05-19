@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-18T11:10:54.710Z",
+  "generatedAt": "2026-05-19T10:40:28.489Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-18T06:53:53.938Z",
+    "newest": "2026-05-19T10:14:06.402Z",
     "oldest": "2026-04-20T09:29:52.488Z"
   },
   "totals": {
-    "messages": 170,
-    "channels": 55,
-    "authors": 41
+    "messages": 181,
+    "channels": 58,
+    "authors": 46
   },
   "daily": [
     {
@@ -106,14 +106,18 @@
     },
     {
       "date": "2026-05-18",
-      "count": 1
+      "count": 8
+    },
+    {
+      "date": "2026-05-19",
+      "count": 4
     }
   ],
   "topChannels": [
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 18
+      "count": 22
     },
     {
       "channel": "#tiffany-novus-test",
@@ -123,7 +127,7 @@
     {
       "channel": "DM · Alex Rosenbower",
       "kind": "dm",
-      "count": 11
+      "count": 12
     },
     {
       "channel": "DM · Michael Chambers",
@@ -196,17 +200,17 @@
       "count": 3
     },
     {
-      "channel": "#IG Group Europe GmbH",
+      "channel": "#Chick-fil-A",
       "kind": "channel",
       "count": 2
     },
     {
-      "channel": "DM · Sneha Raghavan",
-      "kind": "dm",
+      "channel": "#revenue",
+      "kind": "channel",
       "count": 2
     },
     {
-      "channel": "#gtm-applied-ai",
+      "channel": "#pulse-success-plans",
       "kind": "channel",
       "count": 2
     }
@@ -214,7 +218,7 @@
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 38
+      "count": 39
     },
     {
       "author": "Tiffany Kitchen",
@@ -222,7 +226,7 @@
     },
     {
       "author": "Alex Rosenbower",
-      "count": 13
+      "count": 15
     },
     {
       "author": "Sunny Lin",
@@ -253,6 +257,10 @@
       "count": 5
     },
     {
+      "author": "Andrea Lodigiani",
+      "count": 4
+    },
+    {
       "author": "Ricardo Primon",
       "count": 4
     },
@@ -265,15 +273,88 @@
       "count": 3
     },
     {
-      "author": "Michal Livnat",
-      "count": 2
-    },
-    {
-      "author": "Emilie DeCherney",
+      "author": "Jake Rehmann",
       "count": 2
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-19 10:14",
+      "channel": "#pulse-external",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "customer type is 2.0 and has no Bookings Account ARR and will not appear in Pulse at all. we are looking into this since we got this flagged by another CE. can you explain here in short why you are tracking accounts like this ? type 2.0 Bookings Account ARR = o <@U09SNULQ6KY|Seb ",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779185646402369?thread_ts=1779181842.435889"
+    },
+    {
+      "date": "2026-05-19 09:10",
+      "channel": "#pulse-external",
+      "author": "Sebastian Zsifkov",
+      "snippet": "Hi team, I'm looking at Craneware and they seem to have no CE in Pulse, however I see I'm their CE Owner in SFDC: <https://pendo.lightning.force.com/lightning/r/Account/001j000000fiFxMAAU/view>. Do I need to run an update of Pulse? I want to make sure I'm not missing others",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779181842435889?thread_ts=1779181842.435889"
+    },
+    {
+      "date": "2026-05-19 08:55",
+      "channel": "#pulse-external",
+      "author": "Chris Schroeck",
+      "snippet": "Hi team, when trying to access certain accounts in Pulse, the page turns completely black/blank For example <https://pulse.pendoexperience.io/accounts/0010a00001cJp21AAC> <https://pulse.pendoexperience.io/accounts/0010a00001IEZSRAA5> Also seeing an error in the console. Other acc",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779180904351269?thread_ts=1779180904.351269"
+    },
+    {
+      "date": "2026-05-19 02:52",
+      "channel": "DM · Alex Rosenbower",
+      "author": "Alex Rosenbower",
+      "snippet": "I picked up where you left off on troubleshooting MAU trends in Pulse and updated the underlying data source to be the contract time series table instead of the application time series table -- this aligns to how this was set up in Omni and will prevent double counting MAUs by lo",
+      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1779159135415589"
+    },
+    {
+      "date": "2026-05-18 20:33",
+      "channel": "#Chick-fil-A",
+      "author": "Jake Rehmann",
+      "snippet": "Pulse Application Overview • New mobile app bridging gap between restaurant operators and field staff ◦ First shared application for both audiences (vs separate tools historically) ◦ Provides contextual information around metrics with performance benchmarks ◦ Currently testing wi",
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779136417853919?thread_ts=1779136396.265509"
+    },
+    {
+      "date": "2026-05-18 20:33",
+      "channel": "#Chick-fil-A",
+      "author": "Jake Rehmann",
+      "snippet": "CFA Pulse Meeting Notes - Mat Grisham and team",
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779136396265509?thread_ts=1779136396.265509"
+    },
+    {
+      "date": "2026-05-18 19:34",
+      "channel": "#Ivanti",
+      "author": "Oz Reshef",
+      "snippet": "<@U08MNCR1MLP|Gracen McGuire> - Nishita and I had a really good call with Abihnav. these are the notes: Ivanti//Pendo (Abhinav//Oz//Nishita intro) Mon, 18 May 26 · <mailto:nishita.patel@pendo.io|nishita.patel@pendo.io>, <mailto:abhinav.tiwari@ivanti.com|abhinav.tiwari@ivanti.com>",
+      "permalink": "https://pendo.slack.com/archives/C05FWTX7XL4/p1779132889365739"
+    },
+    {
+      "date": "2026-05-18 17:59",
+      "channel": "#pulse-external",
+      "author": "Alex Rosenbower",
+      "snippet": "Hey <@U02K13AFZGC|felipe> -- thanks for calling this out. Pulse is showing you a summary at the parent level whereas in Omni you have filtered for a specific account under that Paychex customer and are seeing MAU info for the contract on that account. We'll work on aligning these",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779127175115779?thread_ts=1778869561.874499"
+    },
+    {
+      "date": "2026-05-18 17:55",
+      "channel": "#revenue",
+      "author": "Jenna McLaughlin",
+      "snippet": "Reminder Jay (Balboa) and I are crashing :bufo-who-me: Gainsight Pulse next week and have dinner lined up with some amazing folks :las-vegas: <https://pendo.lightning.force.com/lightning/r/Report/00OPe00000n4MfFMAU/view|We invited a bunch more based on the speaker list but haven’",
+      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1779126935361949"
+    },
+    {
+      "date": "2026-05-18 15:46",
+      "channel": "#pulse-success-plans",
+      "author": "Andrea Lodigiani",
+      "snippet": "Hi Michael, hi Nir - starting this channel for comms around the success plan build in pulse.",
+      "permalink": "https://pendo.slack.com/archives/C0B4LMQ9XQ9/p1779119174333839"
+    },
+    {
+      "date": "2026-05-18 15:45",
+      "channel": "#pulse-success-plans",
+      "author": "Andrea Lodigiani",
+      "snippet": "has renamed the channel from \"temp-pulse-success-plans\" to \"pulse-success-plans\"",
+      "permalink": "https://pendo.slack.com/archives/C0B4LMQ9XQ9/p1779119114276399"
+    },
     {
       "date": "2026-05-18 06:53",
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
@@ -328,7 +409,7 @@
       "channel": "#pulse-external",
       "author": "Felipe Melo",
       "snippet": "Hey team, I noticed the MAU utilization is not counting properly on various accounts. Is this a known issue? Take <https://pulse.pendoexperience.io/accounts/001j000000fiHDNAA2|Paychex as an example in Pulse>. This same <https://pendo.omniapp.co/dashboards/2f82ec77?f--pendolytics_",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778869561874499"
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778869561874499?thread_ts=1778869561.874499"
     },
     {
       "date": "2026-05-14 19:00",
@@ -546,83 +627,6 @@
       "author": "Taryn Feenstra",
       "snippet": "<https://luma.com/pulse_dinner>",
       "permalink": "https://pendo.slack.com/archives/C02JY18FAFL/p1778167854649899"
-    },
-    {
-      "date": "2026-05-07 15:30",
-      "channel": "#client-zoominfo",
-      "author": "Taryn Feenstra",
-      "snippet": "The SVP - Kristi? - is presenting at the Gainsight conference - we should invite her.",
-      "permalink": "https://pendo.slack.com/archives/C02JY18FAFL/p1778167835979279?thread_ts=1778167835.979279"
-    },
-    {
-      "date": "2026-05-07 13:20",
-      "channel": "DM · Michael Chambers",
-      "author": "Michael Chambers",
-      "snippet": "have we figured out a way to work in branches on pulse yet?",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778160019030309"
-    },
-    {
-      "date": "2026-05-06 16:44",
-      "channel": "#client-lastpass",
-      "author": "Pamela Gutierrez",
-      "snippet": "Yep, that above! Just trying to align on next steps for Bekah’s leave and get a pulse check on where they’re at",
-      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778085859479649?thread_ts=1778084910.415649"
-    },
-    {
-      "date": "2026-05-06 12:44",
-      "channel": "#pulse-external",
-      "author": "Carolynn Rodon",
-      "snippet": "Hey team! For some reason Andy Galley still doesn't have accounts showing in his name in pulse. His accounts show on my <https://pendo.lightning.force.com/lightning/r/Report/00OPe00000m7J77MAE/view?queryScope=userFolders|SFDC report>.",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778071476085949?thread_ts=1778071476.085949"
-    },
-    {
-      "date": "2026-05-06 08:44",
-      "channel": "DM · U08SKMKM4S2",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey Jamie! got your feedback on Pulse regarding the last call - I was working on getting this to pull from gong so was wandering if you could share a screenshot of where you have seen the tooltip wth the momentum info?",
-      "permalink": "https://pendo.slack.com/archives/D0B1UMPGVRT/p1778057062708389"
-    },
-    {
-      "date": "2026-05-05 21:15",
-      "channel": "#predict-gtm-questions",
-      "author": "Gautham Pandiyan",
-      "snippet": "Hi <@U05NLSJBPC4|jackson.chambers> - could you find out if they are going to the Gainsight conference? If so, can you invite them to this event that <@U01PM03NBNV|jenna.mclaughlin> &amp; Jay from Balboa will be hosting? <https://luma.com/pulse_dinner> (we're also doing 1:1 meetin",
-      "permalink": "https://pendo.slack.com/archives/C09ELQW7A8K/p1778015757215319?thread_ts=1778004047.710899"
-    },
-    {
-      "date": "2026-05-05 18:05",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sunny Lin",
-      "snippet": "Updating here! <@U03A3J57CN9|Nir Shmuely>, our one man super human has been taking <@U012LTVGRFT|Melissa Cooper> and my feedback and putting into Pulse. (:zoom:<https://pendo.zoom.us/rec/share/Fh_tmAr9VCp4fZZ4y6BcDjSwvYeQRHJ09V8QbNlI6fuJcVbFtwVf_i3wiIFSz2WE.27xAARqQuhxxa2ni|Zoom ",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778004317069989"
-    },
-    {
-      "date": "2026-05-05 16:51",
-      "channel": "DM · Alex Rosenbower",
-      "author": "Alex Rosenbower",
-      "snippet": "ultimately it is a salesforce data issue and not a Pulse / Us issue -- I will pass this along to the Sales Systems team to see if they can fix for us",
-      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1777999911928689"
-    },
-    {
-      "date": "2026-05-05 12:35",
-      "channel": "DM · U055U3HNWTB",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "hey team - another q - trying to push Pulse (lovable app) to github but getting errors. could anyone hop on a qucik call to help me debug this?",
-      "permalink": "https://pendo.slack.com/archives/D05RX34T3JB/p1777984503007519"
-    },
-    {
-      "date": "2026-05-04 20:59",
-      "channel": "Group DM · mpdm-sunny.lin--nir.shmuely--michael.chambers--alexr-1",
-      "author": "Sunny Lin",
-      "snippet": "Hello my friends!! We are changing up AI Jammy Jam towards a space where folks can get hands on experience in something they always wanted to try but haven't had a chance yet! and I'd LOVE it if you both can help us kick things off w/ Pulse. Here's what im thinking as an agenda: ",
-      "permalink": "https://pendo.slack.com/archives/C0B151GTMBR/p1777928369713579"
-    },
-    {
-      "date": "2026-05-04 18:14",
-      "channel": "#client-lastpass",
-      "author": "Pamela Gutierrez",
-      "snippet": "<@U022VGAC3MY|Bradley> <@U08Q6TGP621|ricardo.primon> This idea works for me. I was thinking I would send over a proposed agenda, mainly focused around setting Bekah up for mat leave and filling in some of the blanks, something like this: Proposed Agenda (30 min) 1. Current Priori",
-      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1777918496847809"
     }
   ]
 }
