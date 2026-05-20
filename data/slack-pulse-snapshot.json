@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-19T10:40:28.489Z",
+  "generatedAt": "2026-05-20T10:28:20.041Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-19T10:14:06.402Z",
-    "oldest": "2026-04-20T09:29:52.488Z"
+    "newest": "2026-05-20T06:59:48.810Z",
+    "oldest": "2026-04-21T14:35:00.389Z"
   },
   "totals": {
-    "messages": 181,
-    "channels": 58,
+    "messages": 178,
+    "channels": 56,
     "authors": 46
   },
   "daily": [
-    {
-      "date": "2026-04-20",
-      "count": 12
-    },
     {
       "date": "2026-04-21",
       "count": 3
@@ -110,14 +106,18 @@
     },
     {
       "date": "2026-05-19",
-      "count": 4
+      "count": 10
+    },
+    {
+      "date": "2026-05-20",
+      "count": 3
     }
   ],
   "topChannels": [
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 22
+      "count": 20
     },
     {
       "channel": "#tiffany-novus-test",
@@ -125,14 +125,14 @@
       "count": 16
     },
     {
-      "channel": "DM · Alex Rosenbower",
+      "channel": "DM · Michael Chambers",
       "kind": "dm",
       "count": 12
     },
     {
-      "channel": "DM · Michael Chambers",
+      "channel": "DM · Alex Rosenbower",
       "kind": "dm",
-      "count": 11
+      "count": 12
     },
     {
       "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
@@ -142,17 +142,17 @@
     {
       "channel": "#retos-dev",
       "kind": "channel",
-      "count": 9
-    },
-    {
-      "channel": "#temp-pulse-feedback",
-      "kind": "channel",
       "count": 7
     },
     {
       "channel": "#client-lastpass",
       "kind": "channel",
       "count": 6
+    },
+    {
+      "channel": "#Chick-fil-A",
+      "kind": "channel",
+      "count": 5
     },
     {
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
@@ -175,6 +175,11 @@
       "count": 4
     },
     {
+      "channel": "#revenue",
+      "kind": "channel",
+      "count": 3
+    },
+    {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
       "count": 3
@@ -195,30 +200,25 @@
       "count": 3
     },
     {
+      "channel": "#temp-pulse-feedback",
+      "kind": "channel",
+      "count": 3
+    },
+    {
       "channel": "DM · Sunny Lin",
       "kind": "dm",
       "count": 3
     },
     {
-      "channel": "#Chick-fil-A",
-      "kind": "channel",
-      "count": 2
-    },
-    {
-      "channel": "#revenue",
-      "kind": "channel",
-      "count": 2
-    },
-    {
-      "channel": "#pulse-success-plans",
-      "kind": "channel",
+      "channel": "DM · Miri Shapiro",
+      "kind": "dm",
       "count": 2
     }
   ],
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 39
+      "count": 37
     },
     {
       "author": "Tiffany Kitchen",
@@ -226,23 +226,27 @@
     },
     {
       "author": "Alex Rosenbower",
-      "count": 15
-    },
-    {
-      "author": "Sunny Lin",
-      "count": 10
+      "count": 13
     },
     {
       "author": "Michael Chambers",
-      "count": 10
+      "count": 11
+    },
+    {
+      "author": "Sunny Lin",
+      "count": 8
     },
     {
       "author": "Paige Spell",
-      "count": 10
+      "count": 8
     },
     {
       "author": "Sneha Raghavan",
       "count": 7
+    },
+    {
+      "author": "Ricardo Primon",
+      "count": 6
     },
     {
       "author": "Melissa Cooper",
@@ -261,8 +265,8 @@
       "count": 4
     },
     {
-      "author": "Ricardo Primon",
-      "count": 4
+      "author": "Kevin Lovinger",
+      "count": 3
     },
     {
       "author": "Katie Davis",
@@ -271,13 +275,72 @@
     {
       "author": "Carolynn Rodon",
       "count": 3
-    },
-    {
-      "author": "Jake Rehmann",
-      "count": 2
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-20 06:59",
+      "channel": "DM · Miri Shapiro",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<https://pulse.pendoexperience.io/>",
+      "permalink": "https://pendo.slack.com/archives/D0B2VE4JR1B/p1779260388810279"
+    },
+    {
+      "date": "2026-05-20 06:59",
+      "channel": "DM · Miri Shapiro",
+      "author": "Miri Shapiro",
+      "snippet": "היי, מה המצב? תוכל לשלוח לי קישור ל Pulse? תודה!",
+      "permalink": "https://pendo.slack.com/archives/D0B2VE4JR1B/p1779260362745269"
+    },
+    {
+      "date": "2026-05-20 02:23",
+      "channel": "#sev1-app-154294",
+      "author": "Ricardo Primon",
+      "snippet": "So should I follow up with you <@U013CAK5F7X|Tal Blumstein> in a couple weeks to get a pulse on where we're at?",
+      "permalink": "https://pendo.slack.com/archives/C0B3F5JG7FZ/p1779243814699839"
+    },
+    {
+      "date": "2026-05-19 20:04",
+      "channel": "#sev1-app-154294",
+      "author": "Ricardo Primon",
+      "snippet": "<@U015624EMBR|noam.bartouv> - should I reach out to you periodically to get a pulse check on the development of phase 2 or what do you recommend I do?",
+      "permalink": "https://pendo.slack.com/archives/C0B3F5JG7FZ/p1779221062684029"
+    },
+    {
+      "date": "2026-05-19 19:04",
+      "channel": "#Chick-fil-A",
+      "author": "Kevin Lovinger",
+      "snippet": "We are confirmed for a follow up next week for Pulse (new app) based on their response just now, so good momentum there. We'll be meeting next Tue at 1pm est.",
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779217495124919"
+    },
+    {
+      "date": "2026-05-19 18:51",
+      "channel": "#Chick-fil-A",
+      "author": "Kevin Lovinger",
+      "snippet": "<@U09CGF4DQMS|Jake Rehmann> moving our thread on CFA to here: I met with CFA (CPMT, Pulse, and Supportal) yesterday, but those were all virtual. I'll be meeting with CPMT in person tomorrow to get them started in their transition over to Listen, and am working toward a meeting wi",
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779216706444669"
+    },
+    {
+      "date": "2026-05-19 18:26",
+      "channel": "#revenue",
+      "author": "Jenna McLaughlin",
+      "snippet": "Tagging some reps with contacts in attendance at gainsight pulse - I will be reaching out to these folks - I would love to try and grab coffee or a quick chat with them on Wednesday while there (They are NOT attending our dinner) Please let me know ASAP if you have concerns or co",
+      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1779215203780589?thread_ts=1779126935.361949"
+    },
+    {
+      "date": "2026-05-19 15:33",
+      "channel": "#Chick-fil-A",
+      "author": "Kevin Lovinger",
+      "snippet": "Hey team, an update from this week. <@UH04WGRCZ|Emily Cutts> and I have now met with another team, Pulse, that <@U0A0HAZETED|jon.gutekunst> set up for us! Pulse is a net new application being built and launched next quarter to connect Staff and Restaurant Operator systems that ha",
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779204797110899"
+    },
+    {
+      "date": "2026-05-19 13:42",
+      "channel": "DM · Michael Chambers",
+      "author": "Michael Chambers",
+      "snippet": "they just want a dashboard widget to display their new health score in pulse",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1779198137402699"
+    },
     {
       "date": "2026-05-19 10:14",
       "channel": "#pulse-external",
@@ -339,7 +402,7 @@
       "channel": "#revenue",
       "author": "Jenna McLaughlin",
       "snippet": "Reminder Jay (Balboa) and I are crashing :bufo-who-me: Gainsight Pulse next week and have dinner lined up with some amazing folks :las-vegas: <https://pendo.lightning.force.com/lightning/r/Report/00OPe00000n4MfFMAU/view|We invited a bunch more based on the speaker list but haven’",
-      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1779126935361949"
+      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1779126935361949?thread_ts=1779126935.361949"
     },
     {
       "date": "2026-05-18 15:46",
@@ -564,69 +627,6 @@
       "author": "Michael Chambers",
       "snippet": "also, i shared the two pulse docs I had pulse make me on itself",
       "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778590300905899"
-    },
-    {
-      "date": "2026-05-11 19:19",
-      "channel": "#client-lastpass",
-      "author": "Ricardo Primon",
-      "snippet": "hey <@U022VGAC3MY|Bradley> - I don't have specifics on what that means tbh. This came from Bekah's slack. I think they've communicated to procurement that they are entering the renewal convos with us, but I'd be a good question to confirm with Brayden over your follow up email to",
-      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778527188053289"
-    },
-    {
-      "date": "2026-05-11 18:46",
-      "channel": "#gtm-applied-ai",
-      "author": "Alex Rosenbower",
-      "snippet": "Pendo on our stuff is THE practice! Love to see it. I know <@U03A3J57CN9|Nir Shmuely> did the same for Pulse and maybe has shared learnings on how to do this? I think <@U07M1PVP8LE|Krystian> might have it on his PG Tuesday dashboard which is Vercel too if helpful.. I'm most curio",
-      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1778525184368759?thread_ts=1778518304.094989"
-    },
-    {
-      "date": "2026-05-08 23:14",
-      "channel": "#Amazon",
-      "author": "Caitlin Tittl",
-      "snippet": ":amazon: Amazon T-Rex Use Case Requirements Review Had a deep-dive working session with the Amazon team around survey workflows inside the T-Rex return grading application. Key use cases &amp; requirements learned: :clipboard: Survey Creation / Management • Team wants self-servic",
-      "permalink": "https://pendo.slack.com/archives/C0316AHJK7U/p1778282080282789?thread_ts=1778182218.836429"
-    },
-    {
-      "date": "2026-05-08 19:51",
-      "channel": "#demand-gen-weekly-updates",
-      "author": "Katie Davis",
-      "snippet": ":bar_chart: Weekly Update — Katie | Week of May 4 :chart_with_upwards_trend: North Star KPI Update Q2 marketing-sourced pipeline goal for Predict: $3.6M | Current: $192k At day 8 of 92, even pacing puts the target at ~$313k — so currently at ~61% of pace. Early days, but worth wa",
-      "permalink": "https://pendo.slack.com/archives/C0AUARULTAQ/p1778269864122519?thread_ts=1778269864.122519"
-    },
-    {
-      "date": "2026-05-08 16:04",
-      "channel": "#gtm-applied-ai",
-      "author": "Michael Chambers",
-      "snippet": "I added a Granola connector inside of pulse where users and insert their personal granola API key to have their notes added to the account information for calls they are having with their book. I need to test it with someone who has a personal API key. If you have one let me know",
-      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1778256274861309?thread_ts=1778256274.861309"
-    },
-    {
-      "date": "2026-05-08 15:45",
-      "channel": "#client-align-tech",
-      "author": "Caitlin Luna",
-      "snippet": "Follow Up - booked time Monday AND Friday: • Monday: Shandi and I can sync with them to pulse check and also talk about plan moving forward. I've invite Zoe and Jack as optional for visibility but realize command lab training and travel will keep folks from joining. • Friday WITH",
-      "permalink": "https://pendo.slack.com/archives/C04AHGDGFNY/p1778255155060559?thread_ts=1778255155.060559"
-    },
-    {
-      "date": "2026-05-07 19:00",
-      "channel": "#client-lastpass",
-      "author": "Ricardo Primon",
-      "snippet": "<@U022VGAC3MY|Bradley> <@U01UT54QD5H|virgil.fowler> <@U06HJFDQX8B|pamela.gutierrez> <@U09RKRYLSE7|Benigma> - Just emailed Bekah and Brayden - you are all in CC. -- TLDR: renewal is \"in motion\" on their end but we need to keep pushing. I'd recommend either <@U022VGAC3MY|Bradley> o",
-      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778180448016679"
-    },
-    {
-      "date": "2026-05-07 17:27",
-      "channel": "#proj-app-health",
-      "author": "Jenn Lucas",
-      "snippet": "<https://pendo.slack.com/archives/C040L2W848L/p1777906895278809>",
-      "permalink": "https://pendo.slack.com/archives/C0AFFGD1WCD/p1778174837849179?thread_ts=1778007001.380859"
-    },
-    {
-      "date": "2026-05-07 15:30",
-      "channel": "#client-zoominfo",
-      "author": "Taryn Feenstra",
-      "snippet": "<https://luma.com/pulse_dinner>",
-      "permalink": "https://pendo.slack.com/archives/C02JY18FAFL/p1778167854649899"
     }
   ]
 }
