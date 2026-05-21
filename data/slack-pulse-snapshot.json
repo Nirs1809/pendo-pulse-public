@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-20T10:28:20.041Z",
+  "generatedAt": "2026-05-21T10:45:23.927Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-20T06:59:48.810Z",
-    "oldest": "2026-04-21T14:35:00.389Z"
+    "newest": "2026-05-20T20:21:19.650Z",
+    "oldest": "2026-04-22T13:04:30.341Z"
   },
   "totals": {
-    "messages": 178,
-    "channels": 56,
-    "authors": 46
+    "messages": 179,
+    "channels": 57,
+    "authors": 47
   },
   "daily": [
-    {
-      "date": "2026-04-21",
-      "count": 3
-    },
     {
       "date": "2026-04-22",
       "count": 4
@@ -110,7 +106,7 @@
     },
     {
       "date": "2026-05-20",
-      "count": 3
+      "count": 7
     }
   ],
   "topChannels": [
@@ -140,12 +136,12 @@
       "count": 11
     },
     {
-      "channel": "#retos-dev",
+      "channel": "#client-lastpass",
       "kind": "channel",
-      "count": 7
+      "count": 6
     },
     {
-      "channel": "#client-lastpass",
+      "channel": "#retos-dev",
       "kind": "channel",
       "count": 6
     },
@@ -175,6 +171,11 @@
       "count": 4
     },
     {
+      "channel": "#biz-ops",
+      "kind": "channel",
+      "count": 3
+    },
+    {
       "channel": "#revenue",
       "kind": "channel",
       "count": 3
@@ -197,11 +198,6 @@
     {
       "channel": "DM · Emily Anastasi",
       "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "#temp-pulse-feedback",
-      "kind": "channel",
       "count": 3
     },
     {
@@ -234,7 +230,7 @@
     },
     {
       "author": "Sunny Lin",
-      "count": 8
+      "count": 9
     },
     {
       "author": "Paige Spell",
@@ -257,11 +253,11 @@
       "count": 5
     },
     {
-      "author": "Sean Muse",
-      "count": 5
+      "author": "Andrea Lodigiani",
+      "count": 4
     },
     {
-      "author": "Andrea Lodigiani",
+      "author": "Sean Muse",
       "count": 4
     },
     {
@@ -278,6 +274,34 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-20 20:21",
+      "channel": "#biz-ops",
+      "author": "Carrie Chandler",
+      "snippet": "hello friends! does anyone have a recommendation for a scalable way to track custom apps through Pendo? (not P4E, but regular ol' Pendo) i know <@U03A3J57CN9|Nir Shmuely> has Pulse tracked, but managing access to subscriptions and/or creating new subscriptions for each app feels ",
+      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1779308479650989?thread_ts=1779308479.650989"
+    },
+    {
+      "date": "2026-05-20 19:12",
+      "channel": "#lovable-jammyjam",
+      "author": "Daniel Blackburn",
+      "snippet": "<@U03A3J57CN9|Nir Shmuely> <@U08NYTLMD32|michael.chambers> can either of you check the Pulse app to see if you can manage the BQ connector there? I'm wondering if our move to Lovable Enterprise broke the BQ permissions I set up for myself and all of you...I'm not seeing the conne",
+      "permalink": "https://pendo.slack.com/archives/C0B4TFHTJ58/p1779304338869619"
+    },
+    {
+      "date": "2026-05-20 18:37",
+      "channel": "#pendo-nooks-leadership-channel",
+      "author": "John Ko",
+      "snippet": "Sounds good, let's try it out for Liz McCrea and I'll keep a pulse check on how it's going for her",
+      "permalink": "https://pendo.slack.com/archives/C08AA9HGG3G/p1779302235151449?thread_ts=1779289055.529589"
+    },
+    {
+      "date": "2026-05-20 17:45",
+      "channel": "#biz-ops",
+      "author": "Sunny Lin",
+      "snippet": ":pendy-consumes-design-jam-and-makes-a-big-mess:AI JAMMY JAM NEXT WED 5/27 : Pulse and Lovable :lovable: Hands On:pendy-consumes-design-jam-and-makes-a-big-mess: (Don't know what AI Jammy is? <https://docs.google.com/document/d/11HrYxHjqPD3qitvyPlEdJ00p7nKb4Dy1vInZumQVet4/edit?ta",
+      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1779299101048369"
+    },
     {
       "date": "2026-05-20 06:59",
       "channel": "DM · Miri Shapiro",
@@ -297,7 +321,7 @@
       "channel": "#sev1-app-154294",
       "author": "Ricardo Primon",
       "snippet": "So should I follow up with you <@U013CAK5F7X|Tal Blumstein> in a couple weeks to get a pulse on where we're at?",
-      "permalink": "https://pendo.slack.com/archives/C0B3F5JG7FZ/p1779243814699839"
+      "permalink": "https://pendo.slack.com/archives/C0B3F5JG7FZ/p1779243814699839?thread_ts=1779243814.699839"
     },
     {
       "date": "2026-05-19 20:04",
@@ -560,7 +584,7 @@
     },
     {
       "date": "2026-05-13 16:02",
-      "channel": "DM · U02SXS3U3M2",
+      "channel": "DM · Carrie Chandler",
       "author": "Nir Sebastian Shmuely",
       "snippet": "hey! see this <https://pendo-pulse-public.vercel.app/|link> - its an external dashboard showcasing Pulse eng",
       "permalink": "https://pendo.slack.com/archives/D0AS81X4R1U/p1778688137754659"
@@ -599,34 +623,6 @@
       "author": "Sneha Raghavan",
       "snippet": "when i go here: <https://pulse.pendoexperience.io/ce-compass> I see this:",
       "permalink": "https://pendo.slack.com/archives/D0433QH7L9L/p1778609322874599"
-    },
-    {
-      "date": "2026-05-12 17:20",
-      "channel": "DM · Sneha Raghavan",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "hey - if you refresh Pulse you should be sorted",
-      "permalink": "https://pendo.slack.com/archives/D0433QH7L9L/p1778606448716529"
-    },
-    {
-      "date": "2026-05-12 15:48",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sunny Lin",
-      "snippet": "You can start playing with it now: <https://pulse.pendoexperience.io/ce-compass>",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778600905963209"
-    },
-    {
-      "date": "2026-05-12 15:12",
-      "channel": "DM · Michael Chambers",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "can you set up a meeting with Andrea? to discuss success plans in pulse?<https://docs.google.com/document/d/1Ak9SJnBfi2g0gf05DLJ4QhWyn9LIgbj-OttzbK3GBP8/edit?tab=t.0>",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778598734660999"
-    },
-    {
-      "date": "2026-05-12 12:51",
-      "channel": "DM · Michael Chambers",
-      "author": "Michael Chambers",
-      "snippet": "also, i shared the two pulse docs I had pulse make me on itself",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778590300905899"
     }
   ]
 }
