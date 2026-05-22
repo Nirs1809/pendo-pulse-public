@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-21T10:45:23.927Z",
+  "generatedAt": "2026-05-22T10:27:57.923Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-20T20:21:19.650Z",
-    "oldest": "2026-04-22T13:04:30.341Z"
+    "newest": "2026-05-21T21:54:05.819Z",
+    "oldest": "2026-04-23T07:58:56.222Z"
   },
   "totals": {
-    "messages": 179,
+    "messages": 185,
     "channels": 57,
-    "authors": 47
+    "authors": 48
   },
   "daily": [
-    {
-      "date": "2026-04-22",
-      "count": 4
-    },
     {
       "date": "2026-04-23",
       "count": 18
@@ -107,13 +103,17 @@
     {
       "date": "2026-05-20",
       "count": 7
+    },
+    {
+      "date": "2026-05-21",
+      "count": 10
     }
   ],
   "topChannels": [
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 20
+      "count": 23
     },
     {
       "channel": "#tiffany-novus-test",
@@ -136,12 +136,12 @@
       "count": 11
     },
     {
-      "channel": "#client-lastpass",
+      "channel": "#pod-squad-ce",
       "kind": "channel",
       "count": 6
     },
     {
-      "channel": "#retos-dev",
+      "channel": "#client-lastpass",
       "kind": "channel",
       "count": 6
     },
@@ -161,6 +161,11 @@
       "count": 4
     },
     {
+      "channel": "#roux-dev",
+      "kind": "channel",
+      "count": 4
+    },
+    {
       "channel": "#TEST ACCOUNT - dont leave opps in closedwon",
       "kind": "channel",
       "count": 4
@@ -169,6 +174,11 @@
       "channel": "#data-gtm-intelligence",
       "kind": "channel",
       "count": 4
+    },
+    {
+      "channel": "#temp-pulse-feedback",
+      "kind": "channel",
+      "count": 3
     },
     {
       "channel": "#biz-ops",
@@ -199,16 +209,6 @@
       "channel": "DM · Emily Anastasi",
       "kind": "dm",
       "count": 3
-    },
-    {
-      "channel": "DM · Sunny Lin",
-      "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "DM · Miri Shapiro",
-      "kind": "dm",
-      "count": 2
     }
   ],
   "topAuthors": [
@@ -230,11 +230,11 @@
     },
     {
       "author": "Sunny Lin",
-      "count": 9
+      "count": 10
     },
     {
       "author": "Paige Spell",
-      "count": 8
+      "count": 10
     },
     {
       "author": "Sneha Raghavan",
@@ -245,6 +245,10 @@
       "count": 6
     },
     {
+      "author": "Felipe Melo",
+      "count": 5
+    },
+    {
       "author": "Melissa Cooper",
       "count": 5
     },
@@ -253,11 +257,11 @@
       "count": 5
     },
     {
-      "author": "Andrea Lodigiani",
+      "author": "Emilie DeCherney",
       "count": 4
     },
     {
-      "author": "Sean Muse",
+      "author": "Andrea Lodigiani",
       "count": 4
     },
     {
@@ -267,13 +271,79 @@
     {
       "author": "Katie Davis",
       "count": 3
-    },
-    {
-      "author": "Carolynn Rodon",
-      "count": 3
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-21 21:54",
+      "channel": "#pod-squad-ce",
+      "author": "Emilie DeCherney",
+      "snippet": "Yeah we have a split setup - a core health dahs in Omni and then account level stuff in pulse",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1779400445819239?thread_ts=1779392316.103689"
+    },
+    {
+      "date": "2026-05-21 21:48",
+      "channel": "#pod-squad-ce",
+      "author": "Sunny Lin",
+      "snippet": "For me it’s a use case for me to experiment with but also pulse is lovable and and say we want to link to account info in there I wondered if it’s a more seamless experience",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1779400108984939?thread_ts=1779392316.103689"
+    },
+    {
+      "date": "2026-05-21 21:30",
+      "channel": "#pod-squad-ce",
+      "author": "Emilie DeCherney",
+      "snippet": "Hey CE Pod! I'd like to add a new item to our recurring agenda - adoption review! Let's review adoption metrics for: • Pulse • Account Portfolio in Omni • Roux (I know it's pilot) • Canary • Rocketlane agent (I know new!) This will help us identify where we need exec sponsorship ",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1779399035657559"
+    },
+    {
+      "date": "2026-05-21 20:57",
+      "channel": "#temp-pulse-feedback",
+      "author": "Paige Spell",
+      "snippet": "Per this question: <https://pendo.slack.com/archives/C0AFC0VLXNH/p1779391163595699> Might be worth revisiting this feedback as Canary launches! > The \"Your Day at a Glance\" and the bottom line using canary are cool and I'd like to leave them but they conflict with the risk score ",
+      "permalink": "https://pendo.slack.com/archives/C0AU0BANJ86/p1779397021221839"
+    },
+    {
+      "date": "2026-05-21 19:38",
+      "channel": "#pod-squad-ce",
+      "author": "Paige Spell",
+      "snippet": "Met with <@U03HWFBAUTZ|Liam> , <@U03GHB4R0V6|Sunny> , and <@U08NYTLMD32|michael.chambers> today to align on the Customer Health dashboard! The main focus was about developing a prototype at the exec level for how and what we will be reporting on this OKR. Metrics to include: • No",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1779392316103689?thread_ts=1779392316.103689"
+    },
+    {
+      "date": "2026-05-21 19:19",
+      "channel": "#pulse-external",
+      "author": "Visa Gopalakrishnan",
+      "snippet": "Hi Team, There is discrepancy between identified high risk account versus what is shown by Canary in[<https://pulse.pendoexperience.io/accounts/0010a00001IG0RAAA1>]",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779391163595699?thread_ts=1779391163.595699"
+    },
+    {
+      "date": "2026-05-21 15:06",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "Sorry for the large drop of reported issues. Let me know if you prefer me to report these in JIRA or some other way. I'm just starting to really dig into Pulse now and I believe the app has a lot of potential. I've also dropped a few improvement suggestions on how to make it more",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779375990952339?thread_ts=1779375990.952339"
+    },
+    {
+      "date": "2026-05-21 15:00",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "[Issue] Some accounts such as Verizon Connect (<https://pulse.pendoexperience.io/accounts/0010a00001ALhzbAAD|Pulse link>) are not displaying NPS properly. It says no responses, but one of their subs (VerizonConnect) has 8 responses in the last 6 months",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779375656203439"
+    },
+    {
+      "date": "2026-05-21 14:39",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "[Potential issue] When you expand the Predict score in the Account view, the Churn score sometimes doesn't match the actual Predict value that was initially shown (the real value is Low). <https://pulse.pendoexperience.io/accounts/0010a00001ALhzbAAD|Sample account>",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779374368664439?thread_ts=1779374368.664439"
+    },
+    {
+      "date": "2026-05-21 14:26",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "Hi Pulse team, just a heads up that I still haven't been able to connect slack channels via ID when looking at accounts. The search also is seemingly not working either",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779373584760659?thread_ts=1778071476.085949"
+    },
     {
       "date": "2026-05-20 20:21",
       "channel": "#biz-ops",
@@ -553,76 +623,6 @@
       "author": "Emilie DeCherney",
       "snippet": "And is it in Pulse?",
       "permalink": "https://pendo.slack.com/archives/D097TGPQGJH/p1778756348503009"
-    },
-    {
-      "date": "2026-05-14 09:36",
-      "channel": "#canary-agent",
-      "author": "Simon Adler",
-      "snippet": "<@U0AGG9TUV8B> tell me about MSD and Ideagen, in pulse it is considered high churn risk, and red health. So any insights that are leading to those ratings woudl be helpful.",
-      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1778751419318289?thread_ts=1778751419.318289"
-    },
-    {
-      "date": "2026-05-13 17:41",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Sunny Lin",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778694068664779?thread_ts=1778694068.664779"
-    },
-    {
-      "date": "2026-05-13 17:40",
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<@U012LTVGRFT|Melissa Cooper> the new zero opp logic <@U03GHB4R0V6|Sunny> made is implemented in Pulse so take a look plz. Tam hours still looks like they dont make a lot of sense so fyi.",
-      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778694013950089"
-    },
-    {
-      "date": "2026-05-13 16:03",
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "my own sub - the data is <https://pendo-pulse-public.vercel.app/|shared here in this dash>",
-      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778688194992789?thread_ts=1778679884.262029"
-    },
-    {
-      "date": "2026-05-13 16:02",
-      "channel": "DM · Carrie Chandler",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "hey! see this <https://pendo-pulse-public.vercel.app/|link> - its an external dashboard showcasing Pulse eng",
-      "permalink": "https://pendo.slack.com/archives/D0AS81X4R1U/p1778688137754659"
-    },
-    {
-      "date": "2026-05-13 15:54",
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<@U0202Q8H0BA|Emilie> Not sure if it's part of the agenda but would be awesome if you could get them to either respond on the Pulse guide (what are your most pressing pain points) or any other format to get their ideas..",
-      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1778687671308129?thread_ts=1778682225.541819"
-    },
-    {
-      "date": "2026-05-13 15:52",
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey <@U03GHB4R0V6|Sunny> I prefer not to intro any new tables to the app. Are all the fields used for this query exist in any of the core/ancillary opportunities ones? If so I would love if you could write the logic and I would implement it in pulse",
-      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778687549825799?thread_ts=1778679625.038679"
-    },
-    {
-      "date": "2026-05-13 13:44",
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "author": "Melissa Cooper",
-      "snippet": "Hey <@U03A3J57CN9|Nir Shmuely> - is Pulse set up in our Pendo for Employees sub or a different sub?",
-      "permalink": "https://pendo.slack.com/archives/C0B2LG8MS2C/p1778679884262029?thread_ts=1778679884.262029"
-    },
-    {
-      "date": "2026-05-13 13:14",
-      "channel": "DM · Michael Chambers",
-      "author": "Michael Chambers",
-      "snippet": "<https://docs.google.com/presentation/d/1GP9WVkytqi3D3haKsu5XYq5ixfgYAoiumSF1m7FNhPo/edit?usp=sharing>",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1778678052322699"
-    },
-    {
-      "date": "2026-05-12 18:08",
-      "channel": "DM · Sneha Raghavan",
-      "author": "Sneha Raghavan",
-      "snippet": "when i go here: <https://pulse.pendoexperience.io/ce-compass> I see this:",
-      "permalink": "https://pendo.slack.com/archives/D0433QH7L9L/p1778609322874599"
     }
   ]
 }
