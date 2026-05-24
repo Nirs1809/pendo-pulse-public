@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-05-23T09:07:58.764Z",
+  "generatedAt": "2026-05-24T09:24:51.157Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
     "newest": "2026-05-22T21:16:52.289Z",
-    "oldest": "2026-04-24T15:03:20.209Z"
+    "oldest": "2026-04-26T10:23:13.433Z"
   },
   "totals": {
-    "messages": 174,
+    "messages": 173,
     "channels": 56,
     "authors": 48
   },
   "daily": [
-    {
-      "date": "2026-04-24",
-      "count": 1
-    },
     {
       "date": "2026-04-26",
       "count": 2
@@ -156,11 +152,6 @@
       "count": 5
     },
     {
-      "channel": "#demand-gen-weekly-updates",
-      "kind": "channel",
-      "count": 4
-    },
-    {
       "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
       "kind": "group_dm",
       "count": 4
@@ -174,6 +165,11 @@
       "channel": "#TEST ACCOUNT - dont leave opps in closedwon",
       "kind": "channel",
       "count": 4
+    },
+    {
+      "channel": "#demand-gen-weekly-updates",
+      "kind": "channel",
+      "count": 3
     },
     {
       "channel": "#temp-pulse-feedback",
@@ -258,7 +254,7 @@
     },
     {
       "author": "Katie Davis",
-      "count": 4
+      "count": 3
     },
     {
       "author": "Emilie DeCherney",
