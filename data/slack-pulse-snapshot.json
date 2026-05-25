@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-24T09:24:51.157Z",
+  "generatedAt": "2026-05-25T11:15:56.818Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-22T21:16:52.289Z",
+    "newest": "2026-05-24T17:01:28.254Z",
     "oldest": "2026-04-26T10:23:13.433Z"
   },
   "totals": {
-    "messages": 173,
+    "messages": 174,
     "channels": 56,
     "authors": 48
   },
@@ -103,6 +103,10 @@
     {
       "date": "2026-05-22",
       "count": 7
+    },
+    {
+      "date": "2026-05-24",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -167,6 +171,11 @@
       "count": 4
     },
     {
+      "channel": "DM · Miri Shapiro",
+      "kind": "dm",
+      "count": 3
+    },
+    {
       "channel": "#demand-gen-weekly-updates",
       "kind": "channel",
       "count": 3
@@ -199,11 +208,6 @@
     {
       "channel": "DM · Sunny Lin",
       "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "#data-gtm-intelligence",
-      "kind": "channel",
       "count": 3
     }
   ],
@@ -270,6 +274,13 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-24 17:01",
+      "channel": "DM · Miri Shapiro",
+      "author": "Miri Shapiro",
+      "snippet": "היי ניר, מה המצב? 3 שאלות קצרות בהמשך לפגישה שלנו שבוע שעבר, כשדיברנו על הכלים שבנית, רציתי לוודא שהבנתי נכון: 1. מהתמלול של הסשן עולה כלי של QBR Generator ואני לא זוכרת במפורש כלי כזה, אבל הוא מתחבר לנקודת כאב שעלתה באחד הראיונות שהיו לנו, האם קיים כלי / פיצ׳ר כזה ב Pulls? אם כן",
+      "permalink": "https://pendo.slack.com/archives/D0B2VE4JR1B/p1779642088254129"
+    },
     {
       "date": "2026-05-22 21:16",
       "channel": "#Fortive Corp - Pendo Predict - New Subscription - 2026",
@@ -612,13 +623,6 @@
       "author": "Felipe Melo",
       "snippet": "Hey team, I noticed the MAU utilization is not counting properly on various accounts. Is this a known issue? Take <https://pulse.pendoexperience.io/accounts/001j000000fiHDNAA2|Paychex as an example in Pulse>. This same <https://pendo.omniapp.co/dashboards/2f82ec77?f--pendolytics_",
       "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778869561874499?thread_ts=1778869561.874499"
-    },
-    {
-      "date": "2026-05-14 19:00",
-      "channel": "#client-lastpass",
-      "author": "Ricardo Primon",
-      "snippet": "want me to reach out to Bekah to get a pulse here and schedule that renewal follow up call?",
-      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1778785255744339"
     }
   ]
 }
