@@ -1,40 +1,32 @@
 {
-  "generatedAt": "2026-05-25T11:15:56.818Z",
+  "generatedAt": "2026-05-27T10:59:49.274Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-24T17:01:28.254Z",
-    "oldest": "2026-04-26T10:23:13.433Z"
+    "newest": "2026-05-27T01:08:33.211Z",
+    "oldest": "2026-04-28T01:31:56.024Z"
   },
   "totals": {
-    "messages": 174,
-    "channels": 56,
-    "authors": 48
+    "messages": 262,
+    "channels": 74,
+    "authors": 68
   },
   "daily": [
     {
-      "date": "2026-04-26",
-      "count": 2
-    },
-    {
-      "date": "2026-04-27",
-      "count": 3
-    },
-    {
       "date": "2026-04-28",
-      "count": 12
+      "count": 14
     },
     {
       "date": "2026-04-29",
-      "count": 25
+      "count": 28
     },
     {
       "date": "2026-04-30",
-      "count": 20
+      "count": 22
     },
     {
       "date": "2026-05-01",
-      "count": 11
+      "count": 13
     },
     {
       "date": "2026-05-02",
@@ -46,74 +38,108 @@
     },
     {
       "date": "2026-05-04",
-      "count": 6
+      "count": 15
     },
     {
       "date": "2026-05-05",
-      "count": 4
+      "count": 7
     },
     {
       "date": "2026-05-06",
-      "count": 3
-    },
-    {
-      "date": "2026-05-07",
-      "count": 5
-    },
-    {
-      "date": "2026-05-08",
       "count": 4
     },
     {
-      "date": "2026-05-11",
-      "count": 2
+      "date": "2026-05-07",
+      "count": 7
     },
     {
-      "date": "2026-05-12",
+      "date": "2026-05-08",
+      "count": 6
+    },
+    {
+      "date": "2026-05-09",
+      "count": 1
+    },
+    {
+      "date": "2026-05-11",
       "count": 5
     },
     {
+      "date": "2026-05-12",
+      "count": 7
+    },
+    {
       "date": "2026-05-13",
-      "count": 8
+      "count": 11
     },
     {
       "date": "2026-05-14",
-      "count": 9
+      "count": 11
     },
     {
       "date": "2026-05-15",
-      "count": 7
+      "count": 19
+    },
+    {
+      "date": "2026-05-16",
+      "count": 1
+    },
+    {
+      "date": "2026-05-17",
+      "count": 1
     },
     {
       "date": "2026-05-18",
-      "count": 8
+      "count": 11
     },
     {
       "date": "2026-05-19",
-      "count": 10
+      "count": 12
     },
     {
       "date": "2026-05-20",
-      "count": 7
-    },
-    {
-      "date": "2026-05-21",
       "count": 10
     },
     {
+      "date": "2026-05-21",
+      "count": 14
+    },
+    {
       "date": "2026-05-22",
-      "count": 7
+      "count": 9
     },
     {
       "date": "2026-05-24",
+      "count": 3
+    },
+    {
+      "date": "2026-05-25",
+      "count": 1
+    },
+    {
+      "date": "2026-05-26",
+      "count": 24
+    },
+    {
+      "date": "2026-05-27",
       "count": 1
     }
   ],
   "topChannels": [
     {
+      "channel": "#novus-plg-alerts",
+      "kind": "channel",
+      "count": 37
+    },
+    {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 23
+      "count": 21
+    },
+    {
+      "channel": "#pipeline-pulse",
+      "kind": "channel",
+      "count": 20
     },
     {
       "channel": "#tiffany-novus-test",
@@ -123,7 +149,7 @@
     {
       "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
       "kind": "group_dm",
-      "count": 11
+      "count": 12
     },
     {
       "channel": "DM · Alex Rosenbower",
@@ -133,15 +159,20 @@
     {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
+      "count": 8
+    },
+    {
+      "channel": "#pod-squad-ce",
+      "kind": "channel",
       "count": 7
     },
     {
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
       "kind": "group_dm",
-      "count": 6
+      "count": 7
     },
     {
-      "channel": "#pod-squad-ce",
+      "channel": "#roux-dev",
       "kind": "channel",
       "count": 6
     },
@@ -156,19 +187,29 @@
       "count": 5
     },
     {
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "kind": "group_dm",
+      "channel": "#seo-news",
+      "kind": "channel",
       "count": 4
     },
     {
-      "channel": "#roux-dev",
-      "kind": "channel",
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
+      "kind": "group_dm",
       "count": 4
     },
     {
       "channel": "#TEST ACCOUNT - dont leave opps in closedwon",
       "kind": "channel",
       "count": 4
+    },
+    {
+      "channel": "#biz-ops",
+      "kind": "channel",
+      "count": 3
+    },
+    {
+      "channel": "#pulse-feedback",
+      "kind": "channel",
+      "count": 3
     },
     {
       "channel": "DM · Miri Shapiro",
@@ -184,41 +225,28 @@
       "channel": "#temp-pulse-feedback",
       "kind": "channel",
       "count": 3
-    },
-    {
-      "channel": "#revenue",
-      "kind": "channel",
-      "count": 3
-    },
-    {
-      "channel": "#novus-plg-alerts",
-      "kind": "channel",
-      "count": 3
-    },
-    {
-      "channel": "#canary-agent",
-      "kind": "channel",
-      "count": 3
-    },
-    {
-      "channel": "DM · Emily Anastasi",
-      "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "DM · Sunny Lin",
-      "kind": "dm",
-      "count": 3
     }
   ],
   "topAuthors": [
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 34
+      "count": 32
+    },
+    {
+      "author": "Novus",
+      "count": 31
     },
     {
       "author": "Tiffany Kitchen",
+      "count": 23
+    },
+    {
+      "author": "Lauren Alt-Kishpaugh",
       "count": 20
+    },
+    {
+      "author": "Michael Chambers",
+      "count": 10
     },
     {
       "author": "Sunny Lin",
@@ -233,16 +261,16 @@
       "count": 10
     },
     {
-      "author": "Michael Chambers",
-      "count": 9
-    },
-    {
       "author": "Sneha Raghavan",
-      "count": 7
+      "count": 8
     },
     {
       "author": "Ricardo Primon",
       "count": 6
+    },
+    {
+      "author": "Zapier",
+      "count": 5
     },
     {
       "author": "Felipe Melo",
@@ -257,23 +285,207 @@
       "count": 5
     },
     {
-      "author": "Katie Davis",
-      "count": 3
-    },
-    {
       "author": "Emilie DeCherney",
-      "count": 3
-    },
-    {
-      "author": "Kevin Lovinger",
-      "count": 3
-    },
-    {
-      "author": "Andrea Lodigiani",
-      "count": 3
+      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-27 01:08",
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "author": "Sneha Raghavan",
+      "snippet": "Can someone share how I can access compass? <http://pulse.pendoexperience.io/ce-compass|pulse.pendoexperience.io/ce-compass> just takes me to the pulse home page",
+      "permalink": "https://pendo.slack.com/archives/C0B081AA2BD/p1779844113211989"
+    },
+    {
+      "date": "2026-05-26 20:54",
+      "channel": "#roux-dev",
+      "author": "slackable.dev",
+      "snippet": "On it — full Bolt JS source with handlers, view builders, the Documented Action Plan form modal, and tests.Now the tests — TDD style for the two pieces most likely to break: `parse.ts` (view-state extraction + validation) and the view builders (Block Kit shape invariants).Now the",
+      "permalink": "https://pendo.slack.com/archives/C0ARK2RD1HA/p1779828850506049?thread_ts=1779828706.612079"
+    },
+    {
+      "date": "2026-05-26 20:51",
+      "channel": "#roux-dev",
+      "author": "slackable.dev",
+      "snippet": "Got it — I'll replicate the IQVIA opp detail modal and slot in a new **:clipboard: Documented action plan** button. Since Slack modals need a trigger_id, I'll post a small launcher card with a button that opens the modal. Let me build + validate the Block Kit JSON first.Validated",
+      "permalink": "https://pendo.slack.com/archives/C0ARK2RD1HA/p1779828708738349?thread_ts=1779828706.612079"
+    },
+    {
+      "date": "2026-05-26 19:55",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779825331355969?thread_ts=1779824392.940109"
+    },
+    {
+      "date": "2026-05-26 19:49",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779824961123039?thread_ts=1779824392.940109"
+    },
+    {
+      "date": "2026-05-26 19:39",
+      "channel": "#novus-plg-alerts",
+      "author": "Tiffany Kitchen",
+      "snippet": "<@U0ALUR71NS2> I'm releasing to open beta tomorrow. What should I measure? I want to feel prepared and confident in your reporting so that I always have a strong pulse on how customers are using the product. Can you help?",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779824392940109?thread_ts=1779824392.940109"
+    },
+    {
+      "date": "2026-05-26 19:21",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779823315386069?thread_ts=1779822645.978149"
+    },
+    {
+      "date": "2026-05-26 19:21",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779823286405549?thread_ts=1779822645.978149"
+    },
+    {
+      "date": "2026-05-26 19:16",
+      "channel": "#vo-pointclickcare-predict",
+      "author": "jay.nathan",
+      "snippet": "From call with Elaine",
+      "permalink": "https://pendo.slack.com/archives/C0B12BUSC6A/p1779823013585799"
+    },
+    {
+      "date": "2026-05-26 19:16",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": ":bar_chart: Product Pulse — Tuesday, May 26, 2026  :rocket: *T-1: Open beta launches tomorrow, Wednesday May 27, 2026.* Top-of-funnel is surging. Two things need to be true by launch: the setup_workflow_completed event anomaly is explained, and the Issues page is no longer invis",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822971906429?thread_ts=1779822645.978149"
+    },
+    {
+      "date": "2026-05-26 19:11",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822669883069?thread_ts=1779822645.978149"
+    },
+    {
+      "date": "2026-05-26 19:10",
+      "channel": "#novus-plg-alerts",
+      "author": "Tiffany Kitchen",
+      "snippet": "<@U0ALUR71NS2> do you have a daily product pulse scheduled report set up to run daily at 9am?",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822645978149?thread_ts=1779822645.978149"
+    },
+    {
+      "date": "2026-05-26 19:09",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": ":clipboard: How the Product Pulse Works  *What it is* A daily Slack report designed for a mixed audience — engineers, PMs, leaders, and designers. The goal is directive, not descriptive: every section tells someone what to do, not just what happened. It runs every day at *9am ET",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822547832719?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-26 19:07",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "Yes, the schedule is already live — daily at 9am ET. Here's today's full Product Pulse resent.",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822461138279?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-26 19:06",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822399591279?thread_ts=1779796199.301409"
+    },
+    {
+      "date": "2026-05-26 19:05",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "Product Pulse — Tuesday, May 26, 2026. T-1 day to open beta. Funnel is surging across the board. Here's what the team needs to know today.",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822344273959?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-26 19:02",
+      "channel": "#novus-plg-alerts",
+      "author": "Tiffany Kitchen",
+      "snippet": "<@U0ALUR71NS2> create the product pulse scheduled report described above. Send one to the channel now, then update me on this context daily at 9am est. as a heads up, we are releasing to open beta tomorrow 5/27",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779822169438699?thread_ts=1778870117.632229"
+    },
+    {
+      "date": "2026-05-26 16:26",
+      "channel": "#biz-ops",
+      "author": "Layne Abraham",
+      "snippet": "Thanks <@U03GHB4R0V6|Sunny>! The Pulse link takes me to the Pulse dashboard, is there a separate link to the Demo?",
+      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1779812777335709?thread_ts=1779299101.048369"
+    },
+    {
+      "date": "2026-05-26 14:57",
+      "channel": "#pod-squad-ce",
+      "author": "Emilie DeCherney",
+      "snippet": "Thanks for a great meeting and helping me power up my brain first thing after a long weekend! Here are action items from today's meeting. • Health OKR ◦ Paige, Michael &amp; Nir: ▪︎ Create Roux + action plans proposal ahead of Geoff's Friday meeting with Sneha and Bill. ▪︎ Evalua",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1779807421225989?thread_ts=1779807421.225989"
+    },
+    {
+      "date": "2026-05-26 13:46",
+      "channel": "#pulse-feedback",
+      "author": "Slack Workbot for CX",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1779803217536989"
+    },
+    {
+      "date": "2026-05-26 13:02",
+      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
+      "author": "Michael Chambers",
+      "snippet": "this explains some of the errors I saw in pulse over the weekend",
+      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1779800521067929?thread_ts=1779398875.088259"
+    },
+    {
+      "date": "2026-05-26 13:01",
+      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
+      "author": "Michael Chambers",
+      "snippet": "okay, once Nir finishes his pulse edits I'll go into pulse and correct this",
+      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1779800508112929?thread_ts=1779398875.088259"
+    },
+    {
+      "date": "2026-05-26 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**Pipeline Pulse | Tuesday, May 26** --- *Marketing S0s This Week* Total: 0 (vs. 89 prior week) | Day 2 of 5 No new marketing-sourced S0s recorded this week. Top 5 by ACV: None --- *Marketing S0 to S1 Conversions* Total this week: 1 • <https://pendo.lightning.force.com/lightning",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1779799509761029"
+    },
+    {
+      "date": "2026-05-26 12:22",
+      "channel": "DM · Michael Chambers",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "hey man just got back from Greece a few hours later than expected so wont be able to attend the pod meeting - about presenting Pulse would appreciate it if you could cover me.. <https://pendo-pulse-public.vercel.app/|use this dashboard to present the main KPI's>",
+      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1779798148097919"
+    },
+    {
+      "date": "2026-05-26 11:54",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779796447263389?thread_ts=1779796199.301409"
+    },
+    {
+      "date": "2026-05-25 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**Pipeline Pulse | Monday, May 25** --- *Marketing S0s This Week* No new marketing-sourced S0s recorded today (Day 1 of 5). Prior week closed at 89 — current pace is a full stop vs. that baseline. Worth flagging early if CRM logging or session source attribution had any weekend ",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1779713117159249"
+    },
+    {
+      "date": "2026-05-24 18:17",
+      "channel": "#jira-bugs",
+      "author": "jira",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C74R3A013/p1779646631071569"
+    },
+    {
+      "date": "2026-05-24 18:17",
+      "channel": "#jira-ops-queue",
+      "author": "jira",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C93627DSN/p1779646631009369"
+    },
     {
       "date": "2026-05-24 17:01",
       "channel": "DM · Miri Shapiro",
@@ -331,6 +543,20 @@
       "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1779458112497419?thread_ts=1779398875.088259"
     },
     {
+      "date": "2026-05-22 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=*Marketing Pipeline Pulse | Friday, May 22* --- *Marketing S0s This Week* 54 new S0s this week vs. 47 prior week — *+15% WoW* Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe000017utBlIAI/view|Squad Inc. - New Subscription - 2026> — $8M ACV — Taka",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1779453916280319"
+    },
+    {
+      "date": "2026-05-22 12:32",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Google Launches Core Update Amid I/O AI Search Overhaul *Topics Covered: :point_right:*Google Algorithm Updates,AI in Search,Content Structuring *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-google-launches-core-update-amid-i-o-ai-search-overhaul/575676",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1779453122439799"
+    },
+    {
       "date": "2026-05-21 21:54",
       "channel": "#pod-squad-ce",
       "author": "Emilie DeCherney",
@@ -357,6 +583,20 @@
       "author": "Paige Spell",
       "snippet": "Per this question: <https://pendo.slack.com/archives/C0AFC0VLXNH/p1779391163595699> Might be worth revisiting this feedback as Canary launches! > The \"Your Day at a Glance\" and the bottom line using canary are cool and I'd like to leave them but they conflict with the risk score ",
       "permalink": "https://pendo.slack.com/archives/C0AU0BANJ86/p1779397021221839?thread_ts=1779397021.221839"
+    },
+    {
+      "date": "2026-05-21 20:30",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "After adding *\"novus\"* and *\"demo\"* exclusions: **190 accounts** remain (down from 214). Showing the 25 most recently active below. :warning: *Note:* The \"novus\" filter also removed customer accounts that had *_Novus* as a suffix (e.g. Alation_Novus, GoCanvas_Novus, SymphonyTalen",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779395457890409?thread_ts=1779394153.021939"
+    },
+    {
+      "date": "2026-05-21 20:26",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "After excluding accounts containing *\"Pendo\"*, *\"test\"*, or *\"Intigriti\"* (any case): **214 accounts** remain. Showing the 25 most recently active — API pagination limits listing beyond this first page.  1. Novus_Production 2. State_Affairs 3. Novus_Demo 4. Gatofox_Lab 5. z531_S",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779395181985789?thread_ts=1779394153.021939"
     },
     {
       "date": "2026-05-21 19:38",
@@ -394,235 +634,11 @@
       "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779374368664439?thread_ts=1779374368.664439"
     },
     {
-      "date": "2026-05-21 14:26",
-      "channel": "#pulse-external",
-      "author": "Felipe Melo",
-      "snippet": "Hi Pulse team, just a heads up that I still haven't been able to connect slack channels via ID when looking at accounts. The search also is seemingly not working either",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779373584760659?thread_ts=1778071476.085949"
-    },
-    {
-      "date": "2026-05-20 20:21",
-      "channel": "#biz-ops",
-      "author": "Carrie Chandler",
-      "snippet": "hello friends! does anyone have a recommendation for a scalable way to track custom apps through Pendo? (not P4E, but regular ol' Pendo) i know <@U03A3J57CN9|Nir Shmuely> has Pulse tracked, but managing access to subscriptions and/or creating new subscriptions for each app feels ",
-      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1779308479650989?thread_ts=1779308479.650989"
-    },
-    {
-      "date": "2026-05-20 19:12",
-      "channel": "#lovable-jammyjam",
-      "author": "Daniel Blackburn",
-      "snippet": "<@U03A3J57CN9|Nir Shmuely> <@U08NYTLMD32|michael.chambers> can either of you check the Pulse app to see if you can manage the BQ connector there? I'm wondering if our move to Lovable Enterprise broke the BQ permissions I set up for myself and all of you...I'm not seeing the conne",
-      "permalink": "https://pendo.slack.com/archives/C0B4TFHTJ58/p1779304338869619"
-    },
-    {
-      "date": "2026-05-20 18:37",
-      "channel": "#pendo-nooks-leadership-channel",
-      "author": "John Ko",
-      "snippet": "Sounds good, let's try it out for Liz McCrea and I'll keep a pulse check on how it's going for her",
-      "permalink": "https://pendo.slack.com/archives/C08AA9HGG3G/p1779302235151449?thread_ts=1779289055.529589"
-    },
-    {
-      "date": "2026-05-20 17:45",
-      "channel": "#biz-ops",
-      "author": "Sunny Lin",
-      "snippet": ":pendy-consumes-design-jam-and-makes-a-big-mess:AI JAMMY JAM NEXT WED 5/27 : Pulse and Lovable :lovable: Hands On:pendy-consumes-design-jam-and-makes-a-big-mess: (Don't know what AI Jammy is? <https://docs.google.com/document/d/11HrYxHjqPD3qitvyPlEdJ00p7nKb4Dy1vInZumQVet4/edit?ta",
-      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1779299101048369"
-    },
-    {
-      "date": "2026-05-20 06:59",
-      "channel": "DM · Miri Shapiro",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<https://pulse.pendoexperience.io/>",
-      "permalink": "https://pendo.slack.com/archives/D0B2VE4JR1B/p1779260388810279"
-    },
-    {
-      "date": "2026-05-20 06:59",
-      "channel": "DM · Miri Shapiro",
-      "author": "Miri Shapiro",
-      "snippet": "היי, מה המצב? תוכל לשלוח לי קישור ל Pulse? תודה!",
-      "permalink": "https://pendo.slack.com/archives/D0B2VE4JR1B/p1779260362745269"
-    },
-    {
-      "date": "2026-05-20 02:23",
-      "channel": "#sev1-app-154294",
-      "author": "Ricardo Primon",
-      "snippet": "So should I follow up with you <@U013CAK5F7X|Tal Blumstein> in a couple weeks to get a pulse on where we're at?",
-      "permalink": "https://pendo.slack.com/archives/C0B3F5JG7FZ/p1779243814699839?thread_ts=1779243814.699839"
-    },
-    {
-      "date": "2026-05-19 20:04",
-      "channel": "#sev1-app-154294",
-      "author": "Ricardo Primon",
-      "snippet": "<@U015624EMBR|noam.bartouv> - should I reach out to you periodically to get a pulse check on the development of phase 2 or what do you recommend I do?",
-      "permalink": "https://pendo.slack.com/archives/C0B3F5JG7FZ/p1779221062684029"
-    },
-    {
-      "date": "2026-05-19 19:04",
-      "channel": "#Chick-fil-A",
-      "author": "Kevin Lovinger",
-      "snippet": "We are confirmed for a follow up next week for Pulse (new app) based on their response just now, so good momentum there. We'll be meeting next Tue at 1pm est.",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779217495124919"
-    },
-    {
-      "date": "2026-05-19 18:51",
-      "channel": "#Chick-fil-A",
-      "author": "Kevin Lovinger",
-      "snippet": "<@U09CGF4DQMS|Jake Rehmann> moving our thread on CFA to here: I met with CFA (CPMT, Pulse, and Supportal) yesterday, but those were all virtual. I'll be meeting with CPMT in person tomorrow to get them started in their transition over to Listen, and am working toward a meeting wi",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779216706444669"
-    },
-    {
-      "date": "2026-05-19 18:26",
-      "channel": "#revenue",
-      "author": "Jenna McLaughlin",
-      "snippet": "Tagging some reps with contacts in attendance at gainsight pulse - I will be reaching out to these folks - I would love to try and grab coffee or a quick chat with them on Wednesday while there (They are NOT attending our dinner) Please let me know ASAP if you have concerns or co",
-      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1779215203780589?thread_ts=1779126935.361949"
-    },
-    {
-      "date": "2026-05-19 15:33",
-      "channel": "#Chick-fil-A",
-      "author": "Kevin Lovinger",
-      "snippet": "Hey team, an update from this week. <@UH04WGRCZ|Emily Cutts> and I have now met with another team, Pulse, that <@U0A0HAZETED|jon.gutekunst> set up for us! Pulse is a net new application being built and launched next quarter to connect Staff and Restaurant Operator systems that ha",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779204797110899"
-    },
-    {
-      "date": "2026-05-19 13:42",
-      "channel": "DM · Michael Chambers",
-      "author": "Michael Chambers",
-      "snippet": "they just want a dashboard widget to display their new health score in pulse",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1779198137402699"
-    },
-    {
-      "date": "2026-05-19 10:14",
-      "channel": "#pulse-external",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "customer type is 2.0 and has no Bookings Account ARR and will not appear in Pulse at all. we are looking into this since we got this flagged by another CE. can you explain here in short why you are tracking accounts like this ? type 2.0 Bookings Account ARR = o <@U09SNULQ6KY|Seb ",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779185646402369?thread_ts=1779181842.435889"
-    },
-    {
-      "date": "2026-05-19 09:10",
-      "channel": "#pulse-external",
-      "author": "Sebastian Zsifkov",
-      "snippet": "Hi team, I'm looking at Craneware and they seem to have no CE in Pulse, however I see I'm their CE Owner in SFDC: <https://pendo.lightning.force.com/lightning/r/Account/001j000000fiFxMAAU/view>. Do I need to run an update of Pulse? I want to make sure I'm not missing others",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779181842435889?thread_ts=1779181842.435889"
-    },
-    {
-      "date": "2026-05-19 08:55",
-      "channel": "#pulse-external",
-      "author": "Chris Schroeck",
-      "snippet": "Hi team, when trying to access certain accounts in Pulse, the page turns completely black/blank For example <https://pulse.pendoexperience.io/accounts/0010a00001cJp21AAC> <https://pulse.pendoexperience.io/accounts/0010a00001IEZSRAA5> Also seeing an error in the console. Other acc",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779180904351269?thread_ts=1779180904.351269"
-    },
-    {
-      "date": "2026-05-19 02:52",
-      "channel": "DM · Alex Rosenbower",
-      "author": "Alex Rosenbower",
-      "snippet": "I picked up where you left off on troubleshooting MAU trends in Pulse and updated the underlying data source to be the contract time series table instead of the application time series table -- this aligns to how this was set up in Omni and will prevent double counting MAUs by lo",
-      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1779159135415589"
-    },
-    {
-      "date": "2026-05-18 20:33",
-      "channel": "#Chick-fil-A",
-      "author": "Jake Rehmann",
-      "snippet": "Pulse Application Overview • New mobile app bridging gap between restaurant operators and field staff ◦ First shared application for both audiences (vs separate tools historically) ◦ Provides contextual information around metrics with performance benchmarks ◦ Currently testing wi",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779136417853919?thread_ts=1779136396.265509"
-    },
-    {
-      "date": "2026-05-18 20:33",
-      "channel": "#Chick-fil-A",
-      "author": "Jake Rehmann",
-      "snippet": "CFA Pulse Meeting Notes - Mat Grisham and team",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1779136396265509?thread_ts=1779136396.265509"
-    },
-    {
-      "date": "2026-05-18 19:34",
-      "channel": "#Ivanti",
-      "author": "Oz Reshef",
-      "snippet": "<@U08MNCR1MLP|Gracen McGuire> - Nishita and I had a really good call with Abihnav. these are the notes: Ivanti//Pendo (Abhinav//Oz//Nishita intro) Mon, 18 May 26 · <mailto:nishita.patel@pendo.io|nishita.patel@pendo.io>, <mailto:abhinav.tiwari@ivanti.com|abhinav.tiwari@ivanti.com>",
-      "permalink": "https://pendo.slack.com/archives/C05FWTX7XL4/p1779132889365739"
-    },
-    {
-      "date": "2026-05-18 17:59",
-      "channel": "#pulse-external",
-      "author": "Alex Rosenbower",
-      "snippet": "Hey <@U02K13AFZGC|felipe> -- thanks for calling this out. Pulse is showing you a summary at the parent level whereas in Omni you have filtered for a specific account under that Paychex customer and are seeing MAU info for the contract on that account. We'll work on aligning these",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1779127175115779?thread_ts=1778869561.874499"
-    },
-    {
-      "date": "2026-05-18 17:55",
-      "channel": "#revenue",
-      "author": "Jenna McLaughlin",
-      "snippet": "Reminder Jay (Balboa) and I are crashing :bufo-who-me: Gainsight Pulse next week and have dinner lined up with some amazing folks :las-vegas: <https://pendo.lightning.force.com/lightning/r/Report/00OPe00000n4MfFMAU/view|We invited a bunch more based on the speaker list but haven’",
-      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1779126935361949?thread_ts=1779126935.361949"
-    },
-    {
-      "date": "2026-05-18 15:46",
-      "channel": "#pulse-success-plans",
-      "author": "Andrea Lodigiani",
-      "snippet": "Hi Michael, hi Nir - starting this channel for comms around the success plan build in pulse.",
-      "permalink": "https://pendo.slack.com/archives/C0B4LMQ9XQ9/p1779119174333839"
-    },
-    {
-      "date": "2026-05-18 15:45",
-      "channel": "#pulse-success-plans",
-      "author": "Andrea Lodigiani",
-      "snippet": "has renamed the channel from \"temp-pulse-success-plans\" to \"pulse-success-plans\"",
-      "permalink": "https://pendo.slack.com/archives/C0B4LMQ9XQ9/p1779119114276399"
-    },
-    {
-      "date": "2026-05-18 06:53",
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<@U02QC670XC0|zac> hey - any chance you got to this? we are blocked in Pulse for some reason...",
-      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1779087233938449?thread_ts=1777794615.430999"
-    },
-    {
-      "date": "2026-05-15 21:48",
-      "channel": "#revenue",
-      "author": "Riley Huber",
-      "snippet": "The more rolodexes the better!",
-      "permalink": "https://pendo.slack.com/archives/C04AZMH7K/p1778881695289019"
-    },
-    {
-      "date": "2026-05-15 20:53",
-      "channel": "#SWBC",
-      "author": "Drew Sartain",
-      "snippet": "<@U02GT27UQQL|erica.eveld> lets swarm these folks next week..looks like some enablement would change the game here Predict has them as Critical - but if we can propose a weekly session that is pointing towards core events (shipping guides, data explorer, even using segments, api)",
-      "permalink": "https://pendo.slack.com/archives/C03U6U37QP2/p1778878411964709?thread_ts=1778878411.964709"
-    },
-    {
-      "date": "2026-05-15 20:04",
-      "channel": "#novus-plg-alerts",
-      "author": "Tiffany Kitchen",
-      "snippet": "<@U0ALUR71NS2> schedule this product pulse to run daily at 9am est in this channel. It should include a launch countdown up until the release on Wednesday, and some type of announcement that it's launch day on Wednesday the 20th. After the 20th, keep the daily reports going but d",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1778875470156739?thread_ts=1778870117.632229"
-    },
-    {
-      "date": "2026-05-15 19:59",
-      "channel": "#novus-plg-alerts",
-      "author": "Tiffany Kitchen",
-      "snippet": "<@U0ALUR71NS2> critique this product pulse against my initial ask. You're an engineer on the team looking at this. Do you care? ensure you(the engineer) care. Then look at this as if you're a product leader. Did you have high confidence in this launch and the go forward plan? I w",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1778875190623219?thread_ts=1778870117.632229"
-    },
-    {
-      "date": "2026-05-15 18:49",
-      "channel": "#novus-plg-alerts",
-      "author": "Tiffany Kitchen",
-      "snippet": "<@U0ALUR71NS2> this is a good start. I also want to know which customers I should follow up with for user interviews based on their usage. I want that to be part of the product pulse",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1778870992188239?thread_ts=1778870117.632229"
-    },
-    {
-      "date": "2026-05-15 18:46",
-      "channel": "#demand-gen-weekly-updates",
-      "author": "Katie Davis",
-      "snippet": ":bar_chart: Weekly Update — Katie | Week of May 11 :chart_with_upwards_trend: North Star KPI Update $131k in marketing-sourced pipeline for Predict (EOQ target: $3.6M). A slow pipeline week across the board — likely tied to CoTM trainings pulling attention. :rocket: What I Shippe",
-      "permalink": "https://pendo.slack.com/archives/C0AUARULTAQ/p1778870811625769"
-    },
-    {
-      "date": "2026-05-15 18:26",
-      "channel": "#pulse-external",
-      "author": "Felipe Melo",
-      "snippet": "Hey team, I noticed the MAU utilization is not counting properly on various accounts. Is this a known issue? Take <https://pulse.pendoexperience.io/accounts/001j000000fiHDNAA2|Paychex as an example in Pulse>. This same <https://pendo.omniapp.co/dashboards/2f82ec77?f--pendolytics_",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1778869561874499?thread_ts=1778869561.874499"
+      "date": "2026-05-21 14:32",
+      "channel": "#pulse-feedback",
+      "author": "Slack Workbot for CX",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1779373941722109"
     }
   ]
 }
