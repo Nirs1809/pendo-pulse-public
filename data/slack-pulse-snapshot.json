@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-05-29T10:52:05.474Z",
+  "generatedAt": "2026-05-30T09:24:35.117Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-05-29T10:42:27.743Z",
-    "oldest": "2026-04-29T21:03:06.826Z"
+    "newest": "2026-05-29T21:01:38.674Z",
+    "oldest": "2026-05-01T01:33:45.572Z"
   },
   "totals": {
-    "messages": 301,
-    "channels": 78,
-    "authors": 67
+    "messages": 293,
+    "channels": 71,
+    "authors": 66
   },
   "daily": [
-    {
-      "date": "2026-04-29",
-      "count": 1
-    },
-    {
-      "date": "2026-04-30",
-      "count": 22
-    },
     {
       "date": "2026-05-01",
       "count": 13
@@ -126,34 +118,29 @@
     },
     {
       "date": "2026-05-29",
-      "count": 2
+      "count": 17
     }
   ],
   "topChannels": [
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 45
+      "count": 48
     },
     {
       "channel": "DM · Slack Workbot for CX",
       "kind": "dm",
-      "count": 42
-    },
-    {
-      "channel": "#pipeline-pulse",
-      "kind": "channel",
-      "count": 20
+      "count": 43
     },
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 19
+      "count": 20
     },
     {
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "kind": "group_dm",
-      "count": 14
+      "channel": "#pipeline-pulse",
+      "kind": "channel",
+      "count": 19
     },
     {
       "channel": "DM · Michael Chambers",
@@ -161,14 +148,14 @@
       "count": 11
     },
     {
-      "channel": "#pod-squad-ce",
-      "kind": "channel",
-      "count": 7
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "kind": "group_dm",
+      "count": 10
     },
     {
-      "channel": "DM · Alex Rosenbower",
-      "kind": "dm",
-      "count": 7
+      "channel": "#pod-squad-ce",
+      "kind": "channel",
+      "count": 9
     },
     {
       "channel": "#client-lastpass",
@@ -176,7 +163,7 @@
       "count": 6
     },
     {
-      "channel": "#roux-dev",
+      "channel": "#seo-news",
       "kind": "channel",
       "count": 5
     },
@@ -191,9 +178,14 @@
       "count": 5
     },
     {
-      "channel": "#tiffany-novus-test",
-      "kind": "channel",
+      "channel": "DM · Alex Rosenbower",
+      "kind": "dm",
       "count": 5
+    },
+    {
+      "channel": "#announcements",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#nir-me",
@@ -206,7 +198,7 @@
       "count": 4
     },
     {
-      "channel": "#seo-news",
+      "channel": "#roux-dev",
       "kind": "channel",
       "count": 4
     },
@@ -216,7 +208,12 @@
       "count": 4
     },
     {
-      "channel": "#announcements",
+      "channel": "#tiffany-novus-test",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "#alex-test",
       "kind": "channel",
       "count": 3
     },
@@ -224,36 +221,31 @@
       "channel": "#biz-ops",
       "kind": "channel",
       "count": 3
-    },
-    {
-      "channel": "#pulse-feedback",
-      "kind": "channel",
-      "count": 3
     }
   ],
   "topAuthors": [
     {
       "author": "Slack Workbot for CX",
-      "count": 45
+      "count": 46
     },
     {
       "author": "Novus",
-      "count": 37
+      "count": 39
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 37
+      "count": 33
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 20
-    },
-    {
-      "author": "Tiffany Kitchen",
-      "count": 14
+      "count": 19
     },
     {
       "author": "Michael Chambers",
+      "count": 13
+    },
+    {
+      "author": "Tiffany Kitchen",
       "count": 12
     },
     {
@@ -261,23 +253,23 @@
       "count": 9
     },
     {
-      "author": "Sneha Raghavan",
-      "count": 8
-    },
-    {
       "author": "Sunny Lin",
       "count": 8
     },
     {
       "author": "Paige Spell",
-      "count": 7
+      "count": 6
+    },
+    {
+      "author": "Zapier",
+      "count": 6
     },
     {
       "author": "Ricardo Primon",
       "count": 6
     },
     {
-      "author": "Zapier",
+      "author": "Emilie DeCherney",
       "count": 5
     },
     {
@@ -285,15 +277,120 @@
       "count": 5
     },
     {
-      "author": "Emilie DeCherney",
+      "author": "slackable.dev",
       "count": 4
     },
     {
-      "author": "Krystian Serwinski",
+      "author": "Sneha Raghavan",
       "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-05-29 21:01",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780088498674979?thread_ts=1780088069.135329"
+    },
+    {
+      "date": "2026-05-29 20:57",
+      "channel": "#alex-test",
+      "author": "slackable.dev",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B6CR0UML5/p1780088262573489?thread_ts=1780088139.083199"
+    },
+    {
+      "date": "2026-05-29 20:55",
+      "channel": "#alex-test",
+      "author": "Canary",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B6CR0UML5/p1780088140596709?thread_ts=1780088139.083199"
+    },
+    {
+      "date": "2026-05-29 20:55",
+      "channel": "#alex-test",
+      "author": "Emilie DeCherney",
+      "snippet": "<@U0B696PHHAM> let’s build an experience that leverages <@U0AGG9TUV8B> to auto generate risk reviews for the 10 largest renewals. Include a \"Document Action Plan\" button. When clicked, \"Document Action Plan\" opens a threaded Slack conversation and begins a structured intake. The ",
+      "permalink": "https://pendo.slack.com/archives/C0B6CR0UML5/p1780088139083199?thread_ts=1780088139.083199"
+    },
+    {
+      "date": "2026-05-29 20:46",
+      "channel": "#pod-squad-ce",
+      "author": "Paige Spell",
+      "snippet": ":blobby-hype: In preparation for hackathon next week, I wanted to give a little extra context to the <https://docs.google.com/presentation/d/18ZemjmRVpfw38vQoJlb-gSoK2RG2cDeacTQSU5zScjU/edit?slide=id.g3e5347ab285_3_151#slide=id.g3e5347ab285_3_151|slides Alex shared>: :blobby-hype",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1780087609173799?thread_ts=1780087609.173799"
+    },
+    {
+      "date": "2026-05-29 20:40",
+      "channel": "#pod-squad-ce",
+      "author": "Sunny Lin",
+      "snippet": "I know this is a WIP so please ALSO take this w/ a grian of salt..... we salty but in a good way hahah What i loved: • While we're gving feedback, its nice to see where you got the data from.... maybe a info would be better in the long run but for now, its easy to know where your",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1780087212153499?thread_ts=1780084389.516469"
+    },
+    {
+      "date": "2026-05-29 19:53",
+      "channel": "#pod-squad-ce",
+      "author": "Michael Chambers",
+      "snippet": "Hey team, quick update I have created a <https://pulse.pendoexperience.io/project-management|Project Management> menu example build in Pulse. Starting June 1, Customer Engineering will be taking over module implementation projects from Professional Services. With that transition ",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1780084389516469?thread_ts=1780084389.516469"
+    },
+    {
+      "date": "2026-05-29 18:37",
+      "channel": "#pulse-external",
+      "author": "Alex Rosenbower",
+      "snippet": "Hey <@U01P8H514UB|alana.pennino> the definitions for who shows up in each are different today — Pulse is focused on top users of Pendo and c360 is a blend of some usage (pre-defined power user) and the role they’ve held on previous opportunities / seniority. We can take a note to",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780079844075249?thread_ts=1780076840.012769"
+    },
+    {
+      "date": "2026-05-29 17:47",
+      "channel": "DM · Slack Workbot for CX",
+      "author": "Slack Workbot for CX",
+      "snippet": "New Pulse question draft ready for review (id 39)",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780076879000409"
+    },
+    {
+      "date": "2026-05-29 17:47",
+      "channel": "#pulse-external",
+      "author": "Alana Pennino",
+      "snippet": "Hello! AG is on Pulse's list of frequent users (for DoorDash) with a visit in April, but does not show up on Omni's list at all. Am I sorting something wrong?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780076840012769?thread_ts=1780076840.012769"
+    },
+    {
+      "date": "2026-05-29 16:28",
+      "channel": "#announcements",
+      "author": "Brooke Hallow",
+      "snippet": "New Customer: Centellic (FKA ALM + LBR) | $75,000 ARR • Module Purchased: Pulse Bundle + Agent Analytics • Rooms of the House: CPO • PBOs: Increase revenue by accelerating feature adoption to support a new enterprise pricing model transition. Reduce churn risk by giving the CS te",
+      "permalink": "https://pendo.slack.com/archives/C0CEC7Q1H/p1780072086649619?thread_ts=1780072086.649619"
+    },
+    {
+      "date": "2026-05-29 13:36",
+      "channel": "#roux-pilot",
+      "author": "Paige Spell",
+      "snippet": "We have added some more people to our pilot group! Here is a quick intro on what to expect: <@U01RE9MBAAX|Alli Bordogna> <@U08GAJYT542|denise.grove> <@U0988UC46V7|eric.wright> <@U02TE5H099Q|Dave Dallmer> <@U012LTVGRFT|Melissa Cooper> :meow_hi_wave: Every Monday, you should expect",
+      "permalink": "https://pendo.slack.com/archives/C0B154MM3A6/p1780061781570269?thread_ts=1780061781.570269"
+    },
+    {
+      "date": "2026-05-29 13:14",
+      "channel": "#novus-plg-alerts",
+      "author": "Taylor Gawinski Stern",
+      "snippet": "<https://pendo.slack.com/archives/C0ARQ7AFF8D/p1779964711870309>",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780060447039989?thread_ts=1780051347.743089"
+    },
+    {
+      "date": "2026-05-29 12:31",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Preferred Sources Expand, Gmail Brand Lift, Pichai On AI Overviews *Topics Covered: :point_right:*AI in Search *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-preferred-sources-expand-gmail-brand-lift-pichai-on-ai-overviews/577173/> *Pendo Insights::bulb:",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1780057877768899"
+    },
+    {
+      "date": "2026-05-29 11:31",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780054273600419?thread_ts=1780054181.140439"
+    },
     {
       "date": "2026-05-29 10:42",
       "channel": "#novus-plg-alerts",
@@ -538,111 +635,6 @@
       "author": "Slack Workbot for CX",
       "snippet": "New Pulse question draft ready for review (id 1)",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966654426409"
-    },
-    {
-      "date": "2026-05-28 11:10",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966601782069"
-    },
-    {
-      "date": "2026-05-28 11:09",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966594871299"
-    },
-    {
-      "date": "2026-05-28 11:09",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966543328459"
-    },
-    {
-      "date": "2026-05-28 11:08",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966535398439"
-    },
-    {
-      "date": "2026-05-28 11:08",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966481696779"
-    },
-    {
-      "date": "2026-05-28 11:07",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966474575949"
-    },
-    {
-      "date": "2026-05-28 11:07",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966422916329"
-    },
-    {
-      "date": "2026-05-28 11:06",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966414974909"
-    },
-    {
-      "date": "2026-05-28 11:06",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966363326659"
-    },
-    {
-      "date": "2026-05-28 11:05",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966356672999"
-    },
-    {
-      "date": "2026-05-28 11:05",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966303290819"
-    },
-    {
-      "date": "2026-05-28 11:04",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966295888289"
-    },
-    {
-      "date": "2026-05-28 11:04",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966243760999"
-    },
-    {
-      "date": "2026-05-28 11:03",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966235948649"
-    },
-    {
-      "date": "2026-05-28 11:03",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 1)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1779966180813629"
     }
   ]
 }
