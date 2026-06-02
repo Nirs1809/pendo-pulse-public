@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-01T12:45:18.624Z",
+  "generatedAt": "2026-06-02T11:23:53.791Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-01T12:24:59.110Z",
-    "oldest": "2026-05-03T07:29:03.411Z"
+    "newest": "2026-06-02T11:14:06.199Z",
+    "oldest": "2026-05-04T03:57:21.805Z"
   },
   "totals": {
-    "messages": 329,
-    "channels": 74,
-    "authors": 68
+    "messages": 354,
+    "channels": 75,
+    "authors": 69
   },
   "daily": [
-    {
-      "date": "2026-05-03",
-      "count": 4
-    },
     {
       "date": "2026-05-04",
       "count": 15
@@ -122,24 +118,28 @@
     },
     {
       "date": "2026-06-01",
-      "count": 37
+      "count": 43
+    },
+    {
+      "date": "2026-06-02",
+      "count": 23
     }
   ],
   "topChannels": [
     {
-      "channel": "DM · Slack Workbot for CX",
+      "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 60
+      "count": 72
     },
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 51
+      "count": 53
     },
     {
       "channel": "#nir-me",
       "kind": "channel",
-      "count": 27
+      "count": 34
     },
     {
       "channel": "#pulse-external",
@@ -149,7 +149,7 @@
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 18
+      "count": 19
     },
     {
       "channel": "DM · Michael Chambers",
@@ -167,14 +167,9 @@
       "count": 7
     },
     {
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
-      "kind": "group_dm",
-      "count": 5
-    },
-    {
       "channel": "#Chick-fil-A",
       "kind": "channel",
-      "count": 5
+      "count": 6
     },
     {
       "channel": "DM · Alex Rosenbower",
@@ -202,9 +197,19 @@
       "count": 4
     },
     {
+      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
+      "kind": "group_dm",
+      "count": 4
+    },
+    {
       "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
       "kind": "group_dm",
       "count": 4
+    },
+    {
+      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "kind": "group_dm",
+      "count": 3
     },
     {
       "channel": "DM · Nir Sebastian Shmuely",
@@ -220,37 +225,32 @@
       "channel": "#roux-dev",
       "kind": "channel",
       "count": 3
-    },
-    {
-      "channel": "#biz-ops",
-      "kind": "channel",
-      "count": 3
     }
   ],
   "topAuthors": [
     {
-      "author": "Slack Workbot for CX",
-      "count": 73
+      "author": "Pulse",
+      "count": 88
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 49
+      "count": 48
     },
     {
       "author": "Novus",
-      "count": 42
+      "count": 44
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 18
+      "count": 19
     },
     {
       "author": "Michael Chambers",
-      "count": 13
+      "count": 15
     },
     {
       "author": "Tiffany Kitchen",
-      "count": 10
+      "count": 9
     },
     {
       "author": "Alex Rosenbower",
@@ -259,6 +259,10 @@
     {
       "author": "Sunny Lin",
       "count": 7
+    },
+    {
+      "author": "slackable.dev",
+      "count": 6
     },
     {
       "author": "Emilie DeCherney",
@@ -277,36 +281,235 @@
       "count": 5
     },
     {
-      "author": "slackable.dev",
-      "count": 4
-    },
-    {
       "author": "Paige Spell",
       "count": 4
     },
     {
-      "author": "Riley Huber",
+      "author": "Sneha Raghavan",
       "count": 3
     }
   ],
   "recent": [
     {
+      "date": "2026-06-02 11:14",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780398846199079"
+    },
+    {
+      "date": "2026-06-02 11:14",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780398844451619"
+    },
+    {
+      "date": "2026-06-02 11:13",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780398838687509"
+    },
+    {
+      "date": "2026-06-02 11:05",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780398307468139?thread_ts=1780396817.431769"
+    },
+    {
+      "date": "2026-06-02 10:45",
+      "channel": "#nir-me",
+      "author": "slackable.dev",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780397118691549?thread_ts=1780397102.290409"
+    },
+    {
+      "date": "2026-06-02 10:45",
+      "channel": "#nir-me",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U0B696PHHAM> Mock up a clean Slack message from an AI helper bot named Pulse answering a teammate's product question. Layout: a short plain-English answer (one paragraph + 2-3 bullets), a subtle footer context line 'Pulse · verify before sharing externally', and an actions row ",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780397102290409?thread_ts=1780397102.290409"
+    },
+    {
+      "date": "2026-06-02 10:40",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780396817431769?thread_ts=1780396817.431769"
+    },
+    {
+      "date": "2026-06-02 10:12",
+      "channel": "#nir-me",
+      "author": "slackable.dev",
+      "snippet": "Quick answers, then the code. *1. Force re-verification?* No API for it — you have to re-trigger from the Slack app config page. The \"unverified\" state is sticky. Two ways: • Go to `<http://api.slack.com/apps|api.slack.com/apps>` → your app → *Event Subscriptions* → flip *Enable ",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395138011029?thread_ts=1780395136.876029"
+    },
+    {
+      "date": "2026-06-02 10:12",
+      "channel": "#nir-me",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U0B696PHHAM> I'm building Events IL — a Slack bot for the Pendo Herzliya office that handles event RSVPs. The bot listens for DMs and @Events IL channel mentions, runs a Claude AI agent, and replies. Current stack (broken): n8n Cloud webhook at https://pendoio.app.n8n.cloud/web",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395136876029?thread_ts=1780395136.876029"
+    },
+    {
+      "date": "2026-06-02 10:11",
+      "channel": "#nir-me",
+      "author": "Pulse",
+      "snippet": "The canary risk level (Critical / At Risk / Stable / Thriving) is decided by *Canary*, Pendo's internal AI model. Every day at 02:15 UTC, a scheduled job analyzes each account by looking at *all* available signals—contract utilization, active CREs, renewal proximity, Pendo Health",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395113906569?thread_ts=1780395111.545899"
+    },
+    {
+      "date": "2026-06-02 10:11",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "I'm not sure what \"hry\" means – could you clarify your question about Pulse? cc <@U03A3J57CN9> _Pulse bot · AI answer from current product code · verify before sharing externally_",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780395094333429?thread_ts=1780395091.743349"
+    },
+    {
+      "date": "2026-06-02 10:11",
+      "channel": "#nir-me",
+      "author": "Pulse",
+      "snippet": "This appears to be a test message in Hebrew (\"עובד?\" means \"working?\") sent via a Slack bot. This isn't a Pulse-related question I can help with. cc <@U03A3J57CN9> _Pulse bot · AI answer from current product code · verify before sharing externally_",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395062984709?thread_ts=1780395060.355789"
+    },
+    {
+      "date": "2026-06-02 10:01",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "```json { \"answer_markdown\": \"I see you wrote \"עובד?\" (Hebrew for \"working?\" or \"does it work?\"). I'm here and ready to help! If you're testing whether I can see your messages, yes — I can. If you're asking about a specific Pulse feature or have a question, feel free to ask in En",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780394489121169?thread_ts=1780394419.053679"
+    },
+    {
+      "date": "2026-06-02 07:19",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "Product adoption scores come from your contract utilization data in BigQuery. The *overall module adoption score* (what you see on account cards) reflects how many of the ~60 recent business days the customer actively used *any* Pendo module — bucketed as No Usage, Low (≤40%), Me",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384744379189?thread_ts=1780384743.053969"
+    },
+    {
+      "date": "2026-06-02 07:17",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": ":thought_balloon: _Pulse is thinking…_",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384671549879?thread_ts=1780384660.003289"
+    },
+    {
+      "date": "2026-06-02 07:17",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "The *Renewal Proximity* score is one component of Pulse's health calculation. It measures how far away an account is from its renewal date: • Accounts *more than 180 days* from renewal get the full 15 points (low urgency) • Accounts *less than 30 days* from renewal get only 2 poi",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384671206709?thread_ts=1780384660.003289"
+    },
+    {
+      "date": "2026-06-02 07:11",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "```json { \"answer_markdown\": \"*CE Compass* is Pulse's CSM capacity-planning tool for CE managers and leadership.\\n\\nIt helps you:\\n• See your team's *account workload* — hours/week per IC based on tier, expansion opportunities, transitions, and risk\\n• Spot *capacity gaps* — who'",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384264570609?thread_ts=1780384228.352529"
+    },
+    {
+      "date": "2026-06-02 07:10",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "Yes! I'm a text-based bot—I can't actually *talk* (no voice), but I'm here to help you with questions about Pulse, your accounts, or anything I can answer from the production code. Just type your question and I'll respond right here in the thread. What can I help with? _Pulse bot",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384236362319?thread_ts=1780384228.352529"
+    },
+    {
+      "date": "2026-06-02 06:54",
+      "channel": "#client-alcoa-yellow",
+      "author": "Majd Kharman",
+      "snippet": "Hi team, We (Engineering) are doing a health check on Alcoa from a mobile perspective, and we got an analysis from <#C0AGLQNQGLW> that there might be issues concerning mobile and lack of opportunity to utilize it: <https://pendo.slack.com/archives/C0AGLQNQGLW/p1779906593124119> W",
+      "permalink": "https://pendo.slack.com/archives/C02PFBN1CGN/p1780383250531159"
+    },
+    {
+      "date": "2026-06-02 06:52",
+      "channel": "#client-cisco",
+      "author": "Majd Kharman",
+      "snippet": "Hi team, We (Engineering) are doing a health check on Cisco from a mobile perspective, and we got an analysis from <#C0AGLQNQGLW> that there might be issues concerning mobile and lack of opportunity to utilize it: <https://pendo.slack.com/archives/C0AGLQNQGLW/p1779906593124119> W",
+      "permalink": "https://pendo.slack.com/archives/C010YLR0XCY/p1780383171074959"
+    },
+    {
+      "date": "2026-06-02 05:29",
+      "channel": "#team-emea-tse",
+      "author": "Koren Abdush",
+      "snippet": "• Current tickets - Waiting on Assignee: ◦ <https://pendo.zendesk.com/agent/tickets/232723|232723> - :large_green_circle: Movemedical — Batch 1 complete; customer sent Batch 2 (25 rows) + rename file (934 rows) overnight — process Batch 2 and queue the rename ◦ <https://pendo.zen",
+      "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780378194356469?thread_ts=1780378176.015019"
+    },
+    {
+      "date": "2026-06-02 02:38",
+      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "author": "Michael Chambers",
+      "snippet": "I have published the changes to Pulse and tested your view Sneha. Everything looks to be working. Let me know if you need help in the morning.",
+      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1780367897714529"
+    },
+    {
+      "date": "2026-06-02 02:36",
+      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "author": "Michael Chambers",
+      "snippet": "<@UJAD6UK5Z|sneha> Video explainer of the changes <https://app.screencast.com/N7e4Q161ZyHSP|here>.",
+      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1780367762454559"
+    },
+    {
+      "date": "2026-06-01 21:06",
+      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "author": "Sneha Raghavan",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1780348018539269"
+    },
+    {
+      "date": "2026-06-01 18:14",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780337644565269"
+    },
+    {
+      "date": "2026-06-01 18:14",
+      "channel": "#nir-me",
+      "author": "Pulse",
+      "snippet": "The *engagement pillar* (one of four components in the Pulse health score) measures *Customer Success team interaction* and *product usage depth*. It combines: • *CX Activity Signals* — CS employee engagement tracked via Gong calls, SFDC tasks, and Skilljar interactions (last 30/",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780337643020729?thread_ts=1780316522.451599"
+    },
+    {
+      "date": "2026-06-01 18:13",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780337637379079"
+    },
+    {
+      "date": "2026-06-01 16:28",
+      "channel": "#Chick-fil-A",
+      "author": "Jake Rehmann",
+      "snippet": "Chick-fil-A Deal Review Notes - Action Items • Share CFA Deal Strat &amp; Execution Blueprint in CFA recurring calendar event (tactical) • Set up QBR with CFA team, June with July 31st Renewal Date • CFA ONE - Schedule Onsite with Mobile Engineers, <@U01F4PDJGQ4|Kevin Lovinger> t",
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1780331308854969"
+    },
+    {
+      "date": "2026-06-01 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**Daily Pipeline Pulse | Monday, Jun 1** --- *Marketing S0s This Week* No marketing S0s recorded today (Day 1 of 5). Prior week closed at 66 — current week is at zero with no top opps to surface yet. Too early to flag concern, but worth watching Tuesday volume closely given last",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780317912440399"
+    },
+    {
       "date": "2026-06-01 12:24",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "The *engagement* pillar (11 points total) primarily measures CX team activity and product usage signals. It weighs: • *CX engagement* (Group 1): cs_leading_indicators like Gong calls, SFDC tasks, Skilljar activity — scoped to CS employees only • *Product usage*: visitors, events,",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780316699110939?thread_ts=1780316687.932759"
     },
     {
       "date": "2026-06-01 12:24",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
       "snippet": "*Renewal Proximity* in the Pulse score measures how close an account is to their renewal date. It's worth up to 15 points out of 100. Here's how it works: • &gt;180 days until renewal → 15 points (full) • 90-180 days → 12 points • 60-90 days → 8 points • 30-60 days → 5 points • &",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316698310129?thread_ts=1780316689.086099"
     },
     {
       "date": "2026-06-01 12:24",
-      "channel": "DM · Slack Workbot for CX",
+      "channel": "DM · Pulse",
       "author": "Nir Sebastian Shmuely",
       "snippet": "live dm retest: what is renewal proximity in the pulse score?",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316689086099?thread_ts=1780316689.086099"
@@ -316,19 +519,19 @@
       "channel": "#pulse-external",
       "author": "Carolynn Rodon",
       "snippet": "Hey crew! Anyway to get pulse refreshed? I had 3 accounts reassigned to Caitlyn on my team in SFDC last week but they aren't showing in pulse. Accounts are Duck Creek, S&amp;P, and Zellis.",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780316685956269"
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780316685956269?thread_ts=1780316685.956269"
     },
     {
       "date": "2026-06-01 12:22",
-      "channel": "DM · Slack Workbot for CX",
+      "channel": "DM · Pulse",
       "author": "Nir Sebastian Shmuely",
       "snippet": "live dm check: what is renewal proximity in the pulse score?",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316523409969"
     },
     {
       "date": "2026-06-01 12:14",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
       "snippet": "The *canary risk level* (Critical / At Risk / Stable / Thriving) is decided by *Canary*, Pendo's AI model that analyzes bottom-line health signals for each account. • A daily backfill job runs at 02:15 UTC, calling Canary for every account and storing the result in `account_canar",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316085754099?thread_ts=1780316057.114209"
     },
@@ -342,77 +545,77 @@
     {
       "date": "2026-06-01 11:53",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "*Outreach Recommendations* picks accounts using a scoring algorithm: • *Meeting recency* (35 pts max) — no meetings = higher priority • *Health status* (25 pts) — Red/Poor health adds points • *Churn risk* (30 pts) — Critical/High churn predictions boost score • *Renewal proximit",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314780673369?thread_ts=1780314751.981379"
     },
     {
       "date": "2026-06-01 11:45",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "*Renewal Radar* is a dashboard widget showing upcoming renewals in three time buckets: • *0–90 days* — renewals in the next 3 months • *90–180 days* — renewals 3–6 months out • *180–365 days* — renewals 6–12 months out Each bucket shows account count, total ARR, risk distribution",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314300275319?thread_ts=1780314269.110389"
     },
     {
       "date": "2026-06-01 11:44",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days* — meaning `pendo_last_visit` is older than 14 days ago, or missing entirely. The \"Inactive Accounts (14+ days)\" tile filters for accounts where the last Pendo visit was more than two weeks ago",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314299125789?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:44",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "```json { \"answer_markdown\": \"An account shows up as *Inactive* if it has had *no login activity in the last 14+ days*. Specifically, Pulse looks at the `pendo_last_visit` field: if it's more than 14 days ago (or never), the account appears in the Inactive list.\\n\\nYou'll see the",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314256092629?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:43",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days*. Specifically, Pulse looks at the `pendo_last_visit` field — if that date is more than 14 days ago (or if it's never been set), the account appears in the Inactive Accounts tile. You'll see th",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314239461869?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:43",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days* — meaning the `pendo_last_visit` date is more than 14 days ago (or never recorded). That's the threshold Pulse uses to flag accounts needing attention on the dashboard. You'll see them in the ",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314192131369?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:42",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days*. Pulse checks the `pendo_last_visit` field — if that date is more than 14 days ago (or never), the account appears in the Inactive Accounts card on your dashboard. Think of it as: if your cust",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314179211469?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:42",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "An account shows up as *inactive* when it has had *no login activity in the last 14 days* (or more). Specifically, we look at the `pendo_last_visit` date field; if it's older than 14 days or missing entirely, the account appears on the Inactive Accounts card and filters. The dash",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314131906879?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:41",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "An account shows up as *inactive* if it has *no login activity in the last 14 days* (no `pendo_last_visit` or last visit older than 14 days ago). The Inactive Accounts tile filters accounts where `pendo_last_visit &lt; 14 days ago` and displays them sorted by last visit date (old",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314118722799?thread_ts=1780314076.578119"
     },
     {
       "date": "2026-06-01 11:36",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "Pulse health score is a *0–100 composite* based on five pillars: • *Predict Risk* (0–30): Worst churn score across open opportunities (Critical→0, Minimal→30) • *Product Adoption* (0–25): Module adoption level (High→25, No Usage→2) • *Engagement* (0–20): Days since last Pendo vis",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313761549039?thread_ts=1780313729.177479"
     },
     {
       "date": "2026-06-01 11:35",
       "channel": "#nir-me",
-      "author": "Slack Workbot for CX",
+      "author": "Pulse",
       "snippet": "The *canary chips* you see in Pulse are *risk-level badges* that display Canary's assessment of each account. The colors/labels (e.g., Stable, Low, Medium, High, Critical) show how risky that account is based on usage &amp; health signals. • *Stable* = healthy, low-risk • *Low/Me",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313759999099?thread_ts=1780313729.587419"
     },
@@ -425,8 +628,8 @@
     },
     {
       "date": "2026-06-01 11:27",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780313225035709"
     },
@@ -436,209 +639,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "How is the Pulse Health Score calculated and what are the pillars? formatting test",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313176371049"
-    },
-    {
-      "date": "2026-06-01 11:20",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780312802709609"
-    },
-    {
-      "date": "2026-06-01 11:20",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780312801756289"
-    },
-    {
-      "date": "2026-06-01 11:19",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780312799539859"
-    },
-    {
-      "date": "2026-06-01 11:19",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780312797099479"
-    },
-    {
-      "date": "2026-06-01 11:19",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "How is the Pulse Health Score calculated and what are the pillars?",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780312778515489"
-    },
-    {
-      "date": "2026-06-01 11:17",
-      "channel": "DM · Aldo Manella",
-      "author": "Aldo Manella",
-      "snippet": "would this be part of pulse or something new you are building",
-      "permalink": "https://pendo.slack.com/archives/D078ANTM8F7/p1780312655371419"
-    },
-    {
-      "date": "2026-06-01 10:38",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "Novus Open Beta — Jun 1, 2026 :large_yellow_circle: Watch  Eight new accounts joined open beta yesterday bringing total daily actives to 46, and setup completions held steady at 12 — but new setup starts dropped 25% while alt-provider interest events *doubled week-over-week* (8 ",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780310291114319"
-    },
-    {
-      "date": "2026-06-01 09:45",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780307158893689"
-    },
-    {
-      "date": "2026-06-01 09:16",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780305365862579"
-    },
-    {
-      "date": "2026-06-01 09:15",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "How is the account health score calculated in Pulse and what does it mean? prod-q retest two",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780305304982809"
-    },
-    {
-      "date": "2026-06-01 09:09",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "What does the Pulse health score column represent and how is it calculated? prod-question test",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780304999654809"
-    },
-    {
-      "date": "2026-06-01 08:41",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780303262010369"
-    },
-    {
-      "date": "2026-06-01 08:40",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "What does the send-pulse-digest function do and how is its schedule configured? code-kb retest",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780303215837539"
-    },
-    {
-      "date": "2026-06-01 08:37",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780303020446029"
-    },
-    {
-      "date": "2026-06-01 08:37",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780303020400689"
-    },
-    {
-      "date": "2026-06-01 08:36",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "What does the send-pulse-digest function do and on what schedule does it run? code-kb test",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780302980800989"
-    },
-    {
-      "date": "2026-05-31 15:18",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780240683058349"
-    },
-    {
-      "date": "2026-05-31 15:17",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "How does Pulse decide which accounts are at risk? agent test run 3",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780240646578139"
-    },
-    {
-      "date": "2026-05-31 10:43",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780224205231729?thread_ts=1780224205.231729"
-    },
-    {
-      "date": "2026-05-31 10:24",
-      "channel": "DM · Nir Sebastian Shmuely",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": ":large_green_circle: INTERACTIVITY IS LIVE! Your click on evt_2ea71d7adefa71de just ran the full Slack → n8n loop end-to-end: • Slack delivered the payload to our webhook :white_check_mark: • Real Slack HMAC signature verified with our stored secret :white_check_mark: • Payload p",
-      "permalink": "https://pendo.slack.com/archives/D03AW76HZJ4/p1780223050040169"
-    },
-    {
-      "date": "2026-05-31 09:48",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780220883567009"
-    },
-    {
-      "date": "2026-05-31 09:46",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "What's the difference between Pulse and Predict? agent retest of DM blocks fix",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780220812177239"
-    },
-    {
-      "date": "2026-05-31 09:44",
-      "channel": "DM · Nir Sebastian Shmuely",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": ":large_green_circle: Ready-for-launch update — all 3 work items done, pushed to GitHub Commit 7d5154d on github.com/pendo-io/events_il. Three things shipped: 1. Helper token rotated :closed_lock_with_key: The old placeholder events-il-shared-2026-replace-me (which was in the gith",
-      "permalink": "https://pendo.slack.com/archives/D03AW76HZJ4/p1780220643511449"
-    },
-    {
-      "date": "2026-05-31 09:35",
-      "channel": "DM · Slack Workbot for CX",
-      "author": "Slack Workbot for CX",
-      "snippet": "New Pulse question draft ready for review (id 40)",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780220100828629"
-    },
-    {
-      "date": "2026-05-31 09:34",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "What does the Pulse score measure? -- agent smoke test, ignore",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780220091202659"
-    },
-    {
-      "date": "2026-05-31 09:32",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "[pulse-bot smoke test — Q&amp;A flow] What does the Pulse score measure?",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780219951094219"
-    },
-    {
-      "date": "2026-05-31 07:42",
-      "channel": "DM · Nir Sebastian Shmuely",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": ":large_green_circle: Monday audit complete — system is healthy, but you have 2 unfinished config items :bar_chart: Audit results (over the weekend): • :white_check_mark: All 5 Events IL workflows still active, zero errors since Friday • :white_check_mark: People Cache Refresh ran",
-      "permalink": "https://pendo.slack.com/archives/D03AW76HZJ4/p1780213348341329"
-    },
-    {
-      "date": "2026-05-31 06:58",
-      "channel": "#team-emea-tse",
-      "author": "Koren Abdush",
-      "snippet": "• New Tickets - ◦ <https://pendo.zendesk.com/agent/tickets/233081|233081> - :large_green_circle: ACS Technologies — pendo.onGuideAdvanced/pendo.onGuideDismissed not working on embedded guides, keep looping to slide 1 — customer can build test guide to reproduce — first reply need",
-      "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780210691336509?thread_ts=1780209632.381909"
-    },
-    {
-      "date": "2026-05-30 10:41",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780137699507959"
     }
   ]
 }
