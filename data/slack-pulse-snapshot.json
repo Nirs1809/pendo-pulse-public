@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-02T11:23:53.791Z",
+  "generatedAt": "2026-06-03T12:00:50.109Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-02T11:14:06.199Z",
-    "oldest": "2026-05-04T03:57:21.805Z"
+    "newest": "2026-06-03T11:11:52.901Z",
+    "oldest": "2026-05-05T05:26:39.047Z"
   },
   "totals": {
-    "messages": 354,
-    "channels": 75,
-    "authors": 69
+    "messages": 355,
+    "channels": 72,
+    "authors": 68
   },
   "daily": [
-    {
-      "date": "2026-05-04",
-      "count": 15
-    },
     {
       "date": "2026-05-05",
       "count": 7
@@ -122,7 +118,11 @@
     },
     {
       "date": "2026-06-02",
-      "count": 23
+      "count": 32
+    },
+    {
+      "date": "2026-06-03",
+      "count": 7
     }
   ],
   "topChannels": [
@@ -134,17 +134,17 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 53
+      "count": 50
     },
     {
       "channel": "#nir-me",
       "kind": "channel",
-      "count": 34
+      "count": 35
     },
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 20
+      "count": 21
     },
     {
       "channel": "#pipeline-pulse",
@@ -172,17 +172,27 @@
       "count": 6
     },
     {
-      "channel": "DM · Alex Rosenbower",
-      "kind": "dm",
-      "count": 5
-    },
-    {
-      "channel": "#client-lastpass",
+      "channel": "#pulse-dev",
       "kind": "channel",
-      "count": 5
+      "count": 4
     },
     {
-      "channel": "#announcements",
+      "channel": "DM · Miri Shapiro",
+      "kind": "dm",
+      "count": 4
+    },
+    {
+      "channel": "#team-emea-tse",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "#canary-agent",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "#pulse-feedback",
       "kind": "channel",
       "count": 4
     },
@@ -202,43 +212,33 @@
       "count": 4
     },
     {
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "kind": "group_dm",
+      "channel": "DM · Alex Rosenbower",
+      "kind": "dm",
       "count": 4
     },
     {
-      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "channel": "#client-lastpass",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
       "kind": "group_dm",
-      "count": 3
-    },
-    {
-      "channel": "DM · Nir Sebastian Shmuely",
-      "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "#alex-test",
-      "kind": "channel",
-      "count": 3
-    },
-    {
-      "channel": "#roux-dev",
-      "kind": "channel",
-      "count": 3
+      "count": 4
     }
   ],
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 88
+      "count": 89
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 48
+      "count": 50
     },
     {
       "author": "Novus",
-      "count": 44
+      "count": 41
     },
     {
       "author": "Lauren Alt-Kishpaugh",
@@ -249,19 +249,19 @@
       "count": 15
     },
     {
-      "author": "Tiffany Kitchen",
-      "count": 9
-    },
-    {
       "author": "Alex Rosenbower",
       "count": 8
     },
     {
-      "author": "Sunny Lin",
-      "count": 7
+      "author": "Tiffany Kitchen",
+      "count": 8
     },
     {
       "author": "slackable.dev",
+      "count": 6
+    },
+    {
+      "author": "Sunny Lin",
       "count": 6
     },
     {
@@ -281,15 +281,127 @@
       "count": 5
     },
     {
-      "author": "Paige Spell",
+      "author": "Koren Abdush",
       "count": 4
     },
     {
-      "author": "Sneha Raghavan",
-      "count": 3
+      "author": "Paige Spell",
+      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-03 11:11",
+      "channel": "#pulse-dev",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "CE design partner I started working with :",
+      "permalink": "https://pendo.slack.com/archives/C0AF8JGPZ5Z/p1780485112901939"
+    },
+    {
+      "date": "2026-06-03 10:40",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780483235693189?thread_ts=1780483235.693189"
+    },
+    {
+      "date": "2026-06-03 10:27",
+      "channel": "DM · Nikhil Sathyanarayana",
+      "author": "Nikhil Sathyanarayana",
+      "snippet": "Feature: the ability to export reports directly from the app. Three that would be especially useful, with a bit of context on why each is a pain to get to today: • Metadata report: currently owned by ex-TAMs. I don't have capacity to keep working on this if there are future reque",
+      "permalink": "https://pendo.slack.com/archives/D0B7L51A080/p1780482464904449"
+    },
+    {
+      "date": "2026-06-03 10:11",
+      "channel": "#pulse-dev",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "hey <@U08NYTLMD32|michael.chambers> <@UCB1X6S3T|Alex> - I teamed with on of the PD to talk about Pulse and she went and did some interviews with ce's across the company on Pulse (they are working to decide some next steps with Predict )and shared the results Its really gold mine ",
+      "permalink": "https://pendo.slack.com/archives/C0AF8JGPZ5Z/p1780481503862449?thread_ts=1780481503.862449"
+    },
+    {
+      "date": "2026-06-03 07:00",
+      "channel": "DM · Miri Shapiro",
+      "author": "Miri Shapiro",
+      "snippet": "בראיונות בגדול אני מנסה להבין מה פותר למשתמשים בעיה, מה יוצר בעיה ואיך הם מתנהלים עם הכלים הקיימים. אז לגבי pulse זה היה בעיקר מה האפליקציה נותמנת להם ומה חסר או לא עובד להם באפליקציה. כן קיבלתי פידבק ש pulse ממש הפך להיות כלי יסוד בעבודה שלהם וה״תלונות״ היו בעיקר סביב ״אני רוצה ",
+      "permalink": "https://pendo.slack.com/archives/D0B2VE4JR1B/p1780470026421819"
+    },
+    {
+      "date": "2026-06-03 05:18",
+      "channel": "#team-emea-tse",
+      "author": "Koren Abdush",
+      "snippet": "• Current tickets - Waiting on Engineering: ◦ <https://pendo.zendesk.com/agent/tickets/233090|233090> - :red_circle: Pendo Designer malfunction — escalated to engineering ◦ <https://pendo.zendesk.com/agent/tickets/233081|233081> - :red_circle: ACS Technologies — pendo.onGuideAdva",
+      "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780463891940599?thread_ts=1780463866.600939"
+    },
+    {
+      "date": "2026-06-03 05:17",
+      "channel": "#team-emea-tse",
+      "author": "Koren Abdush",
+      "snippet": "• Daily Sync:Current tickets • New tickets • Customer call - Addi Tsirulnik / FieldPulse (ticket #233043) :white_check_mark: • Customer call - Estelle Piat / PlayPlay :white_check_mark: • 1:1 w Majd :white_check_mark: • Customer call - Amey Shitole / Inspera (ticket #230339) :whi",
+      "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780463866600939?thread_ts=1780463866.600939"
+    },
+    {
+      "date": "2026-06-02 19:41",
+      "channel": "#pulse-external",
+      "author": "James Kirby",
+      "snippet": "On the summary level of Pulse, it shows that there are 11 accounts categorized as Critical Churn risk. However, when I filter the list by Critical Churn Risk I only see one account showing as a critical churn risk. • If I click to Filter, nothing actually happens to the table sor",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780429274260609?thread_ts=1780429274.260609"
+    },
+    {
+      "date": "2026-06-02 19:37",
+      "channel": "#canary-agent",
+      "author": "Carolynn Rodon",
+      "snippet": "I bet Michael/Nir could tell us if we can feed into pulse",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1780429049711139?thread_ts=1780421901.567559"
+    },
+    {
+      "date": "2026-06-02 17:20",
+      "channel": "#canary-agent",
+      "author": "Canary",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1780420846470039?thread_ts=1780420258.220299"
+    },
+    {
+      "date": "2026-06-02 15:20",
+      "channel": "#nps",
+      "author": "pendo",
+      "snippet": "New NPS Response!",
+      "permalink": "https://pendo.slack.com/archives/C1N0HQ9M5/p1780413609773699"
+    },
+    {
+      "date": "2026-06-02 12:47",
+      "channel": "#pulse-external",
+      "author": "Stephanie Huynh",
+      "snippet": "Hi Team, reviewing my accounts in Pulse and 4 accounts are showing critical churn risk, however when I click into the account the risk rating shows Low. I also verified in Salesforce and it is also showing low. Is there a delay here? Screenshots in :thread:",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780404447230289?thread_ts=1780404447.230289"
+    },
+    {
+      "date": "2026-06-02 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Tuesday, Jun 2** --- *Marketing S0s This Week* 1 new S0 so far (Day 2 of 5) — projected EOW: 3 vs. 68 last week. Significant drop worth monitoring. • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A3dEhIAJ/view|Reliance ",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780404312438849"
+    },
+    {
+      "date": "2026-06-02 12:13",
+      "channel": "DM · Sameer Khiroya",
+      "author": "Sameer Khiroya",
+      "snippet": "hey mate - sure thing! how do I use it? Just send <@U09A16BAJ1M> a message about an account? Or pulse workflow?",
+      "permalink": "https://pendo.slack.com/archives/D03BPCMCPB3/p1780402398748699"
+    },
+    {
+      "date": "2026-06-02 11:40",
+      "channel": "#pulse-feedback",
+      "author": "Alex Rosenbower",
+      "snippet": "Yes. Put a checkmark on the message to indicate that and closed out the feedback inside of pulse Let me know if there’s a better way to go about it",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1780400452450179?thread_ts=1780017702.825439"
+    },
+    {
+      "date": "2026-06-02 11:30",
+      "channel": "#nir-me",
+      "author": "Pulse",
+      "snippet": "cc <@U03A3J57CN9> I can't answer this from the code context provided. This question is asking about Cisco's specific account data (likely their mobile app adoption, iOS/Android app key usage, or mobile product entitlements). To answer, you'd need to pull up Cisco's account detail",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780399808588859?thread_ts=1780393823.747819"
+    },
     {
       "date": "2026-06-02 11:14",
       "channel": "DM · Pulse",
@@ -428,7 +540,7 @@
       "channel": "#client-cisco",
       "author": "Majd Kharman",
       "snippet": "Hi team, We (Engineering) are doing a health check on Cisco from a mobile perspective, and we got an analysis from <#C0AGLQNQGLW> that there might be issues concerning mobile and lack of opportunity to utilize it: <https://pendo.slack.com/archives/C0AGLQNQGLW/p1779906593124119> W",
-      "permalink": "https://pendo.slack.com/archives/C010YLR0XCY/p1780383171074959"
+      "permalink": "https://pendo.slack.com/archives/C010YLR0XCY/p1780383171074959?thread_ts=1780383171.074959"
     },
     {
       "date": "2026-06-02 05:29",
@@ -484,7 +596,7 @@
       "channel": "#Chick-fil-A",
       "author": "Jake Rehmann",
       "snippet": "Chick-fil-A Deal Review Notes - Action Items • Share CFA Deal Strat &amp; Execution Blueprint in CFA recurring calendar event (tactical) • Set up QBR with CFA team, June with July 31st Renewal Date • CFA ONE - Schedule Onsite with Mobile Engineers, <@U01F4PDJGQ4|Kevin Lovinger> t",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1780331308854969"
+      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1780331308854969?thread_ts=1780331308.854969"
     },
     {
       "date": "2026-06-01 12:45",
@@ -527,118 +639,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "live dm check: what is renewal proximity in the pulse score?",
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316523409969"
-    },
-    {
-      "date": "2026-06-01 12:14",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "The *canary risk level* (Critical / At Risk / Stable / Thriving) is decided by *Canary*, Pendo's AI model that analyzes bottom-line health signals for each account. • A daily backfill job runs at 02:15 UTC, calling Canary for every account and storing the result in `account_canar",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316085754099?thread_ts=1780316057.114209"
-    },
-    {
-      "date": "2026-06-01 12:00",
-      "channel": "#novus-updates",
-      "author": "AskSolo",
-      "snippet": "*Release Note for Pendo (2026-05-29 - 2026-06-01)* <https://app.asksolo.ai/release-notes-v2/4721|View the full notes> to see images and ask questions about changes &gt; *1. Signals Design and Workflow Improvements* (Authors: raplanch21, Todd Olson, Taylor Gawinski Stern, Novus) &",
-      "permalink": "https://pendo.slack.com/archives/C0ALZA8BKEF/p1780315201176879"
-    },
-    {
-      "date": "2026-06-01 11:53",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "*Outreach Recommendations* picks accounts using a scoring algorithm: • *Meeting recency* (35 pts max) — no meetings = higher priority • *Health status* (25 pts) — Red/Poor health adds points • *Churn risk* (30 pts) — Critical/High churn predictions boost score • *Renewal proximit",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314780673369?thread_ts=1780314751.981379"
-    },
-    {
-      "date": "2026-06-01 11:45",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "*Renewal Radar* is a dashboard widget showing upcoming renewals in three time buckets: • *0–90 days* — renewals in the next 3 months • *90–180 days* — renewals 3–6 months out • *180–365 days* — renewals 6–12 months out Each bucket shows account count, total ARR, risk distribution",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314300275319?thread_ts=1780314269.110389"
-    },
-    {
-      "date": "2026-06-01 11:44",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days* — meaning `pendo_last_visit` is older than 14 days ago, or missing entirely. The \"Inactive Accounts (14+ days)\" tile filters for accounts where the last Pendo visit was more than two weeks ago",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314299125789?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:44",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "```json { \"answer_markdown\": \"An account shows up as *Inactive* if it has had *no login activity in the last 14+ days*. Specifically, Pulse looks at the `pendo_last_visit` field: if it's more than 14 days ago (or never), the account appears in the Inactive list.\\n\\nYou'll see the",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314256092629?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:43",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days*. Specifically, Pulse looks at the `pendo_last_visit` field — if that date is more than 14 days ago (or if it's never been set), the account appears in the Inactive Accounts tile. You'll see th",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314239461869?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:43",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days* — meaning the `pendo_last_visit` date is more than 14 days ago (or never recorded). That's the threshold Pulse uses to flag accounts needing attention on the dashboard. You'll see them in the ",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314192131369?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:42",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "An account shows up as *inactive* if it has had *no login activity in the last 14 days*. Pulse checks the `pendo_last_visit` field — if that date is more than 14 days ago (or never), the account appears in the Inactive Accounts card on your dashboard. Think of it as: if your cust",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314179211469?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:42",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "An account shows up as *inactive* when it has had *no login activity in the last 14 days* (or more). Specifically, we look at the `pendo_last_visit` date field; if it's older than 14 days or missing entirely, the account appears on the Inactive Accounts card and filters. The dash",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314131906879?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:41",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "An account shows up as *inactive* if it has *no login activity in the last 14 days* (no `pendo_last_visit` or last visit older than 14 days ago). The Inactive Accounts tile filters accounts where `pendo_last_visit &lt; 14 days ago` and displays them sorted by last visit date (old",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780314118722799?thread_ts=1780314076.578119"
-    },
-    {
-      "date": "2026-06-01 11:36",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "Pulse health score is a *0–100 composite* based on five pillars: • *Predict Risk* (0–30): Worst churn score across open opportunities (Critical→0, Minimal→30) • *Product Adoption* (0–25): Module adoption level (High→25, No Usage→2) • *Engagement* (0–20): Days since last Pendo vis",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313761549039?thread_ts=1780313729.177479"
-    },
-    {
-      "date": "2026-06-01 11:35",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "The *canary chips* you see in Pulse are *risk-level badges* that display Canary's assessment of each account. The colors/labels (e.g., Stable, Low, Medium, High, Critical) show how risky that account is based on usage &amp; health signals. • *Stable* = healthy, low-risk • *Low/Me",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313759999099?thread_ts=1780313729.587419"
-    },
-    {
-      "date": "2026-06-01 11:35",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<@U08FRGQ249K> how is the pulse health score calculated?",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313729177479?thread_ts=1780313729.177479"
-    },
-    {
-      "date": "2026-06-01 11:27",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780313225035709"
-    },
-    {
-      "date": "2026-06-01 11:26",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "How is the Pulse Health Score calculated and what are the pillars? formatting test",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780313176371049"
     }
   ]
 }
