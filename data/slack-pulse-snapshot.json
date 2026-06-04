@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-03T12:00:50.109Z",
+  "generatedAt": "2026-06-04T10:42:28.195Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-03T11:11:52.901Z",
-    "oldest": "2026-05-05T05:26:39.047Z"
+    "newest": "2026-06-04T02:23:57.524Z",
+    "oldest": "2026-05-05T21:15:57.215Z"
   },
   "totals": {
-    "messages": 355,
-    "channels": 72,
-    "authors": 68
+    "messages": 362,
+    "channels": 75,
+    "authors": 70
   },
   "daily": [
     {
       "date": "2026-05-05",
-      "count": 7
+      "count": 1
     },
     {
       "date": "2026-05-06",
@@ -122,14 +122,18 @@
     },
     {
       "date": "2026-06-03",
-      "count": 7
+      "count": 17
+    },
+    {
+      "date": "2026-06-04",
+      "count": 3
     }
   ],
   "topChannels": [
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 72
+      "count": 73
     },
     {
       "channel": "#novus-plg-alerts",
@@ -149,7 +153,7 @@
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 19
+      "count": 18
     },
     {
       "channel": "DM · Michael Chambers",
@@ -162,14 +166,24 @@
       "count": 9
     },
     {
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "kind": "group_dm",
-      "count": 7
-    },
-    {
       "channel": "#Chick-fil-A",
       "kind": "channel",
       "count": 6
+    },
+    {
+      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
+      "kind": "group_dm",
+      "count": 6
+    },
+    {
+      "channel": "#client-lastpass",
+      "kind": "channel",
+      "count": 5
+    },
+    {
+      "channel": "#canary_alerts_dev",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#pulse-dev",
@@ -212,16 +226,6 @@
       "count": 4
     },
     {
-      "channel": "DM · Alex Rosenbower",
-      "kind": "dm",
-      "count": 4
-    },
-    {
-      "channel": "#client-lastpass",
-      "kind": "channel",
-      "count": 4
-    },
-    {
       "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
       "kind": "group_dm",
       "count": 4
@@ -230,7 +234,7 @@
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 89
+      "count": 90
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -242,7 +246,7 @@
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 19
+      "count": 18
     },
     {
       "author": "Michael Chambers",
@@ -257,15 +261,19 @@
       "count": 8
     },
     {
+      "author": "Canary Alerts",
+      "count": 7
+    },
+    {
       "author": "slackable.dev",
       "count": 6
     },
     {
-      "author": "Sunny Lin",
-      "count": 6
+      "author": "Emilie DeCherney",
+      "count": 5
     },
     {
-      "author": "Emilie DeCherney",
+      "author": "Sunny Lin",
       "count": 5
     },
     {
@@ -283,13 +291,100 @@
     {
       "author": "Koren Abdush",
       "count": 4
-    },
-    {
-      "author": "Paige Spell",
-      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-04 02:23",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1780539837524459"
+    },
+    {
+      "date": "2026-06-04 02:14",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1780539283277209"
+    },
+    {
+      "date": "2026-06-04 02:07",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1780538843891859"
+    },
+    {
+      "date": "2026-06-03 20:30",
+      "channel": "#canary_alerts_dev",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1780518651935549?thread_ts=1780518651.935549"
+    },
+    {
+      "date": "2026-06-03 20:25",
+      "channel": "#canary_alerts_dev",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1780518321695829"
+    },
+    {
+      "date": "2026-06-03 20:10",
+      "channel": "#town-hall-questions",
+      "author": "Trish Lapaglia",
+      "snippet": "Q. Todd has mentioned he doesn't pay much attention to Glassdoor reviews, but it's tough to see Pendo's ratings dip. Is leadership listening to the constructive feedback within those reviews? (Sheena Jain, live) A. So, first off, I'll start with the short answer, which is yes. We",
+      "permalink": "https://pendo.slack.com/archives/C6ZP42GAE/p1780517420468519?thread_ts=1780517227.187929"
+    },
+    {
+      "date": "2026-06-03 19:46",
+      "channel": "#canary_alerts_dev",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1780515970216379"
+    },
+    {
+      "date": "2026-06-03 19:20",
+      "channel": "#canary_alerts_dev",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1780514457836119"
+    },
+    {
+      "date": "2026-06-03 16:55",
+      "channel": "#client-lastpass",
+      "author": "Pamela Gutierrez",
+      "snippet": "Based on Bradley's notes, I'll get pulse on where they are enabling new team members and keep the analytics question on the mind",
+      "permalink": "https://pendo.slack.com/archives/C03NMCHDKDK/p1780505758126919"
+    },
+    {
+      "date": "2026-06-03 16:45",
+      "channel": "#ask-platform",
+      "author": "Zac Romandy",
+      "snippet": "remind me what SA pulse is using",
+      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1780505115393739?thread_ts=1780505040.184029"
+    },
+    {
+      "date": "2026-06-03 16:44",
+      "channel": "#ask-platform",
+      "author": "Alex Rosenbower",
+      "snippet": "moving this thread here for more visibility",
+      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1780505040184029?thread_ts=1780505040.184029"
+    },
+    {
+      "date": "2026-06-03 16:37",
+      "channel": "#workflow-errors",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U08NYTLMD32|michael.chambers> <@UCB1X6S3T|Alex> if you can spare few min to understand who changed permissions for us o pendo-reporting all bq SQL queries are failing - these are the ones informing Pulse",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1780504641763419?thread_ts=1780503827.330419"
+    },
+    {
+      "date": "2026-06-03 12:02",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780488137864329"
+    },
     {
       "date": "2026-06-03 11:11",
       "channel": "#pulse-dev",
@@ -548,97 +643,6 @@
       "author": "Koren Abdush",
       "snippet": "• Current tickets - Waiting on Assignee: ◦ <https://pendo.zendesk.com/agent/tickets/232723|232723> - :large_green_circle: Movemedical — Batch 1 complete; customer sent Batch 2 (25 rows) + rename file (934 rows) overnight — process Batch 2 and queue the rename ◦ <https://pendo.zen",
       "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780378194356469?thread_ts=1780378176.015019"
-    },
-    {
-      "date": "2026-06-02 02:38",
-      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
-      "author": "Michael Chambers",
-      "snippet": "I have published the changes to Pulse and tested your view Sneha. Everything looks to be working. Let me know if you need help in the morning.",
-      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1780367897714529"
-    },
-    {
-      "date": "2026-06-02 02:36",
-      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
-      "author": "Michael Chambers",
-      "snippet": "<@UJAD6UK5Z|sneha> Video explainer of the changes <https://app.screencast.com/N7e4Q161ZyHSP|here>.",
-      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1780367762454559"
-    },
-    {
-      "date": "2026-06-01 21:06",
-      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
-      "author": "Sneha Raghavan",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1780348018539269"
-    },
-    {
-      "date": "2026-06-01 18:14",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780337644565269"
-    },
-    {
-      "date": "2026-06-01 18:14",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "The *engagement pillar* (one of four components in the Pulse health score) measures *Customer Success team interaction* and *product usage depth*. It combines: • *CX Activity Signals* — CS employee engagement tracked via Gong calls, SFDC tasks, and Skilljar interactions (last 30/",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780337643020729?thread_ts=1780316522.451599"
-    },
-    {
-      "date": "2026-06-01 18:13",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780337637379079"
-    },
-    {
-      "date": "2026-06-01 16:28",
-      "channel": "#Chick-fil-A",
-      "author": "Jake Rehmann",
-      "snippet": "Chick-fil-A Deal Review Notes - Action Items • Share CFA Deal Strat &amp; Execution Blueprint in CFA recurring calendar event (tactical) • Set up QBR with CFA team, June with July 31st Renewal Date • CFA ONE - Schedule Onsite with Mobile Engineers, <@U01F4PDJGQ4|Kevin Lovinger> t",
-      "permalink": "https://pendo.slack.com/archives/C06QAF9E6QN/p1780331308854969?thread_ts=1780331308.854969"
-    },
-    {
-      "date": "2026-06-01 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**Daily Pipeline Pulse | Monday, Jun 1** --- *Marketing S0s This Week* No marketing S0s recorded today (Day 1 of 5). Prior week closed at 66 — current week is at zero with no top opps to surface yet. Too early to flag concern, but worth watching Tuesday volume closely given last",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780317912440399"
-    },
-    {
-      "date": "2026-06-01 12:24",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "The *engagement* pillar (11 points total) primarily measures CX team activity and product usage signals. It weighs: • *CX engagement* (Group 1): cs_leading_indicators like Gong calls, SFDC tasks, Skilljar activity — scoped to CS employees only • *Product usage*: visitors, events,",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780316699110939?thread_ts=1780316687.932759"
-    },
-    {
-      "date": "2026-06-01 12:24",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "*Renewal Proximity* in the Pulse score measures how close an account is to their renewal date. It's worth up to 15 points out of 100. Here's how it works: • &gt;180 days until renewal → 15 points (full) • 90-180 days → 12 points • 60-90 days → 8 points • 30-60 days → 5 points • &",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316698310129?thread_ts=1780316689.086099"
-    },
-    {
-      "date": "2026-06-01 12:24",
-      "channel": "DM · Pulse",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "live dm retest: what is renewal proximity in the pulse score?",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316689086099?thread_ts=1780316689.086099"
-    },
-    {
-      "date": "2026-06-01 12:24",
-      "channel": "#pulse-external",
-      "author": "Carolynn Rodon",
-      "snippet": "Hey crew! Anyway to get pulse refreshed? I had 3 accounts reassigned to Caitlyn on my team in SFDC last week but they aren't showing in pulse. Accounts are Duck Creek, S&amp;P, and Zellis.",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780316685956269?thread_ts=1780316685.956269"
-    },
-    {
-      "date": "2026-06-01 12:22",
-      "channel": "DM · Pulse",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "live dm check: what is renewal proximity in the pulse score?",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780316523409969"
     }
   ]
 }
