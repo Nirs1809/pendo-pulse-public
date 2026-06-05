@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-06-04T10:42:28.195Z",
+  "generatedAt": "2026-06-05T10:52:50.764Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-04T02:23:57.524Z",
-    "oldest": "2026-05-05T21:15:57.215Z"
+    "newest": "2026-06-05T10:38:11.031Z",
+    "oldest": "2026-05-07T12:45:13.701Z"
   },
   "totals": {
-    "messages": 362,
+    "messages": 369,
     "channels": 75,
-    "authors": 70
+    "authors": 73
   },
   "daily": [
-    {
-      "date": "2026-05-05",
-      "count": 1
-    },
-    {
-      "date": "2026-05-06",
-      "count": 4
-    },
     {
       "date": "2026-05-07",
       "count": 7
@@ -126,7 +118,11 @@
     },
     {
       "date": "2026-06-04",
-      "count": 3
+      "count": 14
+    },
+    {
+      "date": "2026-06-05",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -138,7 +134,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 50
+      "count": 52
     },
     {
       "channel": "#nir-me",
@@ -148,12 +144,12 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 21
+      "count": 20
     },
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 18
+      "count": 19
     },
     {
       "channel": "DM · Michael Chambers",
@@ -161,9 +157,19 @@
       "count": 11
     },
     {
+      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "kind": "group_dm",
+      "count": 9
+    },
+    {
       "channel": "#pod-squad-ce",
       "kind": "channel",
       "count": 9
+    },
+    {
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "kind": "channel",
+      "count": 6
     },
     {
       "channel": "#Chick-fil-A",
@@ -171,17 +177,12 @@
       "count": 6
     },
     {
-      "channel": "Group DM · mpdm-emilie.decherney--sneha--melissa.cooper--nir.shmuely--sunny.lin--krystian.serwinski-1",
-      "kind": "group_dm",
-      "count": 6
+      "channel": "#canary_alerts_dev",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#client-lastpass",
-      "kind": "channel",
-      "count": 5
-    },
-    {
-      "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 4
     },
@@ -202,11 +203,6 @@
     },
     {
       "channel": "#canary-agent",
-      "kind": "channel",
-      "count": 4
-    },
-    {
-      "channel": "#pulse-feedback",
       "kind": "channel",
       "count": 4
     },
@@ -234,23 +230,27 @@
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 90
+      "count": 89
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 50
+      "count": 49
     },
     {
       "author": "Novus",
-      "count": 41
+      "count": 43
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 18
+      "count": 19
     },
     {
       "author": "Michael Chambers",
       "count": 15
+    },
+    {
+      "author": "Canary Alerts",
+      "count": 13
     },
     {
       "author": "Alex Rosenbower",
@@ -259,10 +259,6 @@
     {
       "author": "Tiffany Kitchen",
       "count": 8
-    },
-    {
-      "author": "Canary Alerts",
-      "count": 7
     },
     {
       "author": "slackable.dev",
@@ -294,6 +290,90 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-05 10:38",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780655891031359?thread_ts=1780655891.031359"
+    },
+    {
+      "date": "2026-06-04 20:10",
+      "channel": "#competition",
+      "author": "Tom Hynds",
+      "snippet": "Hi, We're in a competitive situation against Gainsight selling into the CS function within a large travel tech company, Amadeus. It's a use case focused on reducing churn and equipping CSM's with the information they need (and currently don't have) going into their customer meeti",
+      "permalink": "https://pendo.slack.com/archives/C0GBWPBFV/p1780603822303169?thread_ts=1780603822.303169"
+    },
+    {
+      "date": "2026-06-04 14:00",
+      "channel": "#brents-core-renewals-crew",
+      "author": "Olivia McLaughlin",
+      "snippet": "if theres a CSM/CE, could we have pulse send a notification in the slack client channel? so AD, RS &amp; CE sees it?",
+      "permalink": "https://pendo.slack.com/archives/C0AV3PLBDPH/p1780581609853289?thread_ts=1780580498.171649"
+    },
+    {
+      "date": "2026-06-04 13:50",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780581014263689"
+    },
+    {
+      "date": "2026-06-04 13:47",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780580874270769?thread_ts=1780580874.270769"
+    },
+    {
+      "date": "2026-06-04 13:41",
+      "channel": "#brents-core-renewals-crew",
+      "author": "Brent Varnell",
+      "snippet": "Quick question: What's the preferred method for notifying a CSM that a renewal is 130 days out and the opportunity should be moved out of Stage 0 by the 120-day mark? Options: • Slack — but this could become noisy • Email — but it may get buried • Pulse — seems more actionable, b",
+      "permalink": "https://pendo.slack.com/archives/C0AV3PLBDPH/p1780580498171649?thread_ts=1780580498.171649"
+    },
+    {
+      "date": "2026-06-04 13:28",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780579735675189?thread_ts=1780579735.675189"
+    },
+    {
+      "date": "2026-06-04 13:25",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780579504395069"
+    },
+    {
+      "date": "2026-06-04 13:16",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780578963261169?thread_ts=1780578963.261169"
+    },
+    {
+      "date": "2026-06-04 13:09",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780578546424029?thread_ts=1780578546.424029"
+    },
+    {
+      "date": "2026-06-04 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Thursday, Jun 4** --- *Marketing S0s This Week* 41 S0s through Day 4 (projected 51 EOW vs. 71 last week — tracking ~28% below prior week) Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A9MUTIA3/view|SkyTo",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780577114821339"
+    },
+    {
+      "date": "2026-06-04 10:41",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780569696017599"
+    },
     {
       "date": "2026-06-04 02:23",
       "channel": "#test_",
@@ -559,90 +639,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "<@U0B696PHHAM> I'm building Events IL — a Slack bot for the Pendo Herzliya office that handles event RSVPs. The bot listens for DMs and @Events IL channel mentions, runs a Claude AI agent, and replies. Current stack (broken): n8n Cloud webhook at https://pendoio.app.n8n.cloud/web",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395136876029?thread_ts=1780395136.876029"
-    },
-    {
-      "date": "2026-06-02 10:11",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "The canary risk level (Critical / At Risk / Stable / Thriving) is decided by *Canary*, Pendo's internal AI model. Every day at 02:15 UTC, a scheduled job analyzes each account by looking at *all* available signals—contract utilization, active CREs, renewal proximity, Pendo Health",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395113906569?thread_ts=1780395111.545899"
-    },
-    {
-      "date": "2026-06-02 10:11",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "I'm not sure what \"hry\" means – could you clarify your question about Pulse? cc <@U03A3J57CN9> _Pulse bot · AI answer from current product code · verify before sharing externally_",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780395094333429?thread_ts=1780395091.743349"
-    },
-    {
-      "date": "2026-06-02 10:11",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "This appears to be a test message in Hebrew (\"עובד?\" means \"working?\") sent via a Slack bot. This isn't a Pulse-related question I can help with. cc <@U03A3J57CN9> _Pulse bot · AI answer from current product code · verify before sharing externally_",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395062984709?thread_ts=1780395060.355789"
-    },
-    {
-      "date": "2026-06-02 10:01",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "```json { \"answer_markdown\": \"I see you wrote \"עובד?\" (Hebrew for \"working?\" or \"does it work?\"). I'm here and ready to help! If you're testing whether I can see your messages, yes — I can. If you're asking about a specific Pulse feature or have a question, feel free to ask in En",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780394489121169?thread_ts=1780394419.053679"
-    },
-    {
-      "date": "2026-06-02 07:19",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "Product adoption scores come from your contract utilization data in BigQuery. The *overall module adoption score* (what you see on account cards) reflects how many of the ~60 recent business days the customer actively used *any* Pendo module — bucketed as No Usage, Low (≤40%), Me",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384744379189?thread_ts=1780384743.053969"
-    },
-    {
-      "date": "2026-06-02 07:17",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": ":thought_balloon: _Pulse is thinking…_",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384671549879?thread_ts=1780384660.003289"
-    },
-    {
-      "date": "2026-06-02 07:17",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "The *Renewal Proximity* score is one component of Pulse's health calculation. It measures how far away an account is from its renewal date: • Accounts *more than 180 days* from renewal get the full 15 points (low urgency) • Accounts *less than 30 days* from renewal get only 2 poi",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384671206709?thread_ts=1780384660.003289"
-    },
-    {
-      "date": "2026-06-02 07:11",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "```json { \"answer_markdown\": \"*CE Compass* is Pulse's CSM capacity-planning tool for CE managers and leadership.\\n\\nIt helps you:\\n• See your team's *account workload* — hours/week per IC based on tier, expansion opportunities, transitions, and risk\\n• Spot *capacity gaps* — who'",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384264570609?thread_ts=1780384228.352529"
-    },
-    {
-      "date": "2026-06-02 07:10",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "Yes! I'm a text-based bot—I can't actually *talk* (no voice), but I'm here to help you with questions about Pulse, your accounts, or anything I can answer from the production code. Just type your question and I'll respond right here in the thread. What can I help with? _Pulse bot",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780384236362319?thread_ts=1780384228.352529"
-    },
-    {
-      "date": "2026-06-02 06:54",
-      "channel": "#client-alcoa-yellow",
-      "author": "Majd Kharman",
-      "snippet": "Hi team, We (Engineering) are doing a health check on Alcoa from a mobile perspective, and we got an analysis from <#C0AGLQNQGLW> that there might be issues concerning mobile and lack of opportunity to utilize it: <https://pendo.slack.com/archives/C0AGLQNQGLW/p1779906593124119> W",
-      "permalink": "https://pendo.slack.com/archives/C02PFBN1CGN/p1780383250531159"
-    },
-    {
-      "date": "2026-06-02 06:52",
-      "channel": "#client-cisco",
-      "author": "Majd Kharman",
-      "snippet": "Hi team, We (Engineering) are doing a health check on Cisco from a mobile perspective, and we got an analysis from <#C0AGLQNQGLW> that there might be issues concerning mobile and lack of opportunity to utilize it: <https://pendo.slack.com/archives/C0AGLQNQGLW/p1779906593124119> W",
-      "permalink": "https://pendo.slack.com/archives/C010YLR0XCY/p1780383171074959?thread_ts=1780383171.074959"
-    },
-    {
-      "date": "2026-06-02 05:29",
-      "channel": "#team-emea-tse",
-      "author": "Koren Abdush",
-      "snippet": "• Current tickets - Waiting on Assignee: ◦ <https://pendo.zendesk.com/agent/tickets/232723|232723> - :large_green_circle: Movemedical — Batch 1 complete; customer sent Batch 2 (25 rows) + rename file (934 rows) overnight — process Batch 2 and queue the rename ◦ <https://pendo.zen",
-      "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780378194356469?thread_ts=1780378176.015019"
     }
   ]
 }
