@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-05T10:52:50.764Z",
+  "generatedAt": "2026-06-06T09:29:30.206Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-05T10:38:11.031Z",
-    "oldest": "2026-05-07T12:45:13.701Z"
+    "newest": "2026-06-06T07:06:14.072Z",
+    "oldest": "2026-05-08T12:36:29.000Z"
   },
   "totals": {
-    "messages": 369,
-    "channels": 75,
-    "authors": 73
+    "messages": 371,
+    "channels": 76,
+    "authors": 74
   },
   "daily": [
-    {
-      "date": "2026-05-07",
-      "count": 7
-    },
     {
       "date": "2026-05-08",
       "count": 6
@@ -122,7 +118,11 @@
     },
     {
       "date": "2026-06-05",
-      "count": 1
+      "count": 8
+    },
+    {
+      "date": "2026-06-06",
+      "count": 2
     }
   ],
   "topChannels": [
@@ -154,7 +154,7 @@
     {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
-      "count": 11
+      "count": 10
     },
     {
       "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
@@ -177,12 +177,17 @@
       "count": 6
     },
     {
-      "channel": "#canary_alerts_dev",
+      "channel": "#seo-news",
       "kind": "channel",
+      "count": 5
+    },
+    {
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "kind": "group_dm",
       "count": 4
     },
     {
-      "channel": "#client-lastpass",
+      "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 4
     },
@@ -203,11 +208,6 @@
     },
     {
       "channel": "#canary-agent",
-      "kind": "channel",
-      "count": 4
-    },
-    {
-      "channel": "#seo-news",
       "kind": "channel",
       "count": 4
     },
@@ -261,6 +261,10 @@
       "count": 8
     },
     {
+      "author": "Zapier",
+      "count": 6
+    },
+    {
       "author": "slackable.dev",
       "count": 6
     },
@@ -273,23 +277,82 @@
       "count": 5
     },
     {
-      "author": "Zapier",
-      "count": 5
-    },
-    {
       "author": "Felipe Melo",
-      "count": 5
-    },
-    {
-      "author": "Ricardo Primon",
       "count": 5
     },
     {
       "author": "Koren Abdush",
       "count": 4
+    },
+    {
+      "author": "Paige Spell",
+      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-06 07:06",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":brain: Bloc #3 — Gartner Agentic AI Pulse 2026: Only 41% Of Agent Rollouts Cross Positive ROI In 12 Months, 19% Never Reach Payback — And The Named Cause Is Measurement, Not The Agent. The hard buyer-pain number this channel has been missing. Per Gartner's Agentic AI Pulse 2026:",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1780729574072789?thread_ts=1780729541.713439"
+    },
+    {
+      "date": "2026-06-06 07:05",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":bar_chart: Agent Analytics Intel — Saturday 6 June 2026 (Deep-Dive) AI adoption measurement, LLM product analytics, and enterprise ROI accountability for AI agents. ────────────────────────────── :compass: The Weekend Read — This Week The Capital And The Definition Both Moved. $",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1780729541713439?thread_ts=1780729541.713439"
+    },
+    {
+      "date": "2026-06-05 18:50",
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "author": "Rufo",
+      "snippet": "ok thats what I thought, but I wanted to be clear lol. Thank you! Guess I don't have my finger on the...pulse of the busines",
+      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780685404760239"
+    },
+    {
+      "date": "2026-06-05 18:49",
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "author": "Michael Chambers",
+      "snippet": "pulse is an app built in lovable",
+      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780685344448279"
+    },
+    {
+      "date": "2026-06-05 18:14",
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "author": "Rufo",
+      "snippet": "wait sorry I meant pulse (unless lovable is what pulse is built off of, which in that case, I need to pay better attention in meetings (sorry))",
+      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780683286768059"
+    },
+    {
+      "date": "2026-06-05 17:59",
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "author": "Rufo",
+      "snippet": "Good afternoon and evening (sorry, Nir!) y'all! QQ: I was wondering how yall get data into pulse? I vaguely remember you talking about it in your pulse demo, but wanted to get the write up for my own brain. COntext: I'm building out a dataset in GBQ for a bunch of CE KPIs, but if",
+      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780682378851709"
+    },
+    {
+      "date": "2026-06-05 13:35",
+      "channel": "#geo",
+      "author": "Timothy Wilson",
+      "snippet": "<https://www.linkedin.com/posts/rosshudgens_big-news-tofu-content-is-back-if-you-search-share-7468388280732971008-xwQT/?utm_source=share&utm_medium=member_android&rcm=ACoAABswnrIB7ZM1YUt9nzNUGII_3rGnYlAQqmI|https://www.linkedin.com/posts/rosshudgens_big-news-tofu-content-is-back-",
+      "permalink": "https://pendo.slack.com/archives/CB32CQ4NR/p1780666509567319"
+    },
+    {
+      "date": "2026-06-05 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**:bar_chart: Marketing Pipeline Pulse | Friday, Jun 5** --- *Marketing S0s This Week* 54 new S0s (vs. 72 prior week, -25% WoW). Day 5 of 5 — final count. Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A9MUTIA3/view|SkyTouch Technology - Exp",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780663514606129"
+    },
+    {
+      "date": "2026-06-05 12:32",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Google tests AI visibility reports and an opt-out toggle as the UK requires new publisher controls for AI search features *Topics Covered: :point_right:*AI in Search,Google Algorithm Updates *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-google-tests-ai-",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1780662738872329"
+    },
     {
       "date": "2026-06-05 10:38",
       "channel": "#novus-plg-alerts",
@@ -576,69 +639,6 @@
       "author": "Pulse",
       "snippet": "cc <@U03A3J57CN9> I can't answer this from the code context provided. This question is asking about Cisco's specific account data (likely their mobile app adoption, iOS/Android app key usage, or mobile product entitlements). To answer, you'd need to pull up Cisco's account detail",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780399808588859?thread_ts=1780393823.747819"
-    },
-    {
-      "date": "2026-06-02 11:14",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780398846199079"
-    },
-    {
-      "date": "2026-06-02 11:14",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780398844451619"
-    },
-    {
-      "date": "2026-06-02 11:13",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1780398838687509"
-    },
-    {
-      "date": "2026-06-02 11:05",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780398307468139?thread_ts=1780396817.431769"
-    },
-    {
-      "date": "2026-06-02 10:45",
-      "channel": "#nir-me",
-      "author": "slackable.dev",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780397118691549?thread_ts=1780397102.290409"
-    },
-    {
-      "date": "2026-06-02 10:45",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<@U0B696PHHAM> Mock up a clean Slack message from an AI helper bot named Pulse answering a teammate's product question. Layout: a short plain-English answer (one paragraph + 2-3 bullets), a subtle footer context line 'Pulse · verify before sharing externally', and an actions row ",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780397102290409?thread_ts=1780397102.290409"
-    },
-    {
-      "date": "2026-06-02 10:40",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780396817431769?thread_ts=1780396817.431769"
-    },
-    {
-      "date": "2026-06-02 10:12",
-      "channel": "#nir-me",
-      "author": "slackable.dev",
-      "snippet": "Quick answers, then the code. *1. Force re-verification?* No API for it — you have to re-trigger from the Slack app config page. The \"unverified\" state is sticky. Two ways: • Go to `<http://api.slack.com/apps|api.slack.com/apps>` → your app → *Event Subscriptions* → flip *Enable ",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395138011029?thread_ts=1780395136.876029"
-    },
-    {
-      "date": "2026-06-02 10:12",
-      "channel": "#nir-me",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<@U0B696PHHAM> I'm building Events IL — a Slack bot for the Pendo Herzliya office that handles event RSVPs. The bot listens for DMs and @Events IL channel mentions, runs a Claude AI agent, and replies. Current stack (broken): n8n Cloud webhook at https://pendoio.app.n8n.cloud/web",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780395136876029?thread_ts=1780395136.876029"
     }
   ]
 }
