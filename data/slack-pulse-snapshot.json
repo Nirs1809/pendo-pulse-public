@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-06T09:29:30.206Z",
+  "generatedAt": "2026-06-07T10:09:14.178Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-06T07:06:14.072Z",
-    "oldest": "2026-05-08T12:36:29.000Z"
+    "newest": "2026-06-06T15:17:48.286Z",
+    "oldest": "2026-05-08T23:14:40.282Z"
   },
   "totals": {
-    "messages": 371,
-    "channels": 76,
-    "authors": 74
+    "messages": 369,
+    "channels": 75,
+    "authors": 73
   },
   "daily": [
     {
       "date": "2026-05-08",
-      "count": 6
+      "count": 1
     },
     {
       "date": "2026-05-09",
@@ -122,7 +122,7 @@
     },
     {
       "date": "2026-06-06",
-      "count": 2
+      "count": 5
     }
   ],
   "topChannels": [
@@ -134,7 +134,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 52
+      "count": 55
     },
     {
       "channel": "#nir-me",
@@ -149,7 +149,7 @@
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 19
+      "count": 18
     },
     {
       "channel": "DM · Michael Chambers",
@@ -177,13 +177,13 @@
       "count": 6
     },
     {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 5
-    },
-    {
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
+      "count": 4
+    },
+    {
+      "channel": "#seo-news",
+      "kind": "channel",
       "count": 4
     },
     {
@@ -238,15 +238,15 @@
     },
     {
       "author": "Novus",
-      "count": 43
+      "count": 46
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 19
+      "count": 18
     },
     {
       "author": "Michael Chambers",
-      "count": 15
+      "count": 14
     },
     {
       "author": "Canary Alerts",
@@ -261,12 +261,12 @@
       "count": 8
     },
     {
-      "author": "Zapier",
+      "author": "slackable.dev",
       "count": 6
     },
     {
-      "author": "slackable.dev",
-      "count": 6
+      "author": "Zapier",
+      "count": 5
     },
     {
       "author": "Emilie DeCherney",
@@ -290,6 +290,27 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-06 15:17",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780759068286579?thread_ts=1780742314.172089"
+    },
+    {
+      "date": "2026-06-06 13:19",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "Got it — I can see the *Daily Open Beta Launch Report* (runs at 6:32 AM ET). It's very dense. A few quick questions to nail the redesign:  1. Which sections are worth keeping? The current report has: New Signups, Activation, AI Trust &amp; Product Value, Retention Pulse, Frictio",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780751997976639?thread_ts=1780742314.172089"
+    },
+    {
+      "date": "2026-06-06 10:38",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780742314172089?thread_ts=1780742314.172089"
+    },
     {
       "date": "2026-06-06 07:06",
       "channel": "#aa-category-insights",
@@ -618,27 +639,6 @@
       "author": "Lauren Alt-Kishpaugh",
       "snippet": "=**:bar_chart: Daily Pipeline Pulse | Tuesday, Jun 2** --- *Marketing S0s This Week* 1 new S0 so far (Day 2 of 5) — projected EOW: 3 vs. 68 last week. Significant drop worth monitoring. • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A3dEhIAJ/view|Reliance ",
       "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780404312438849"
-    },
-    {
-      "date": "2026-06-02 12:13",
-      "channel": "DM · Sameer Khiroya",
-      "author": "Sameer Khiroya",
-      "snippet": "hey mate - sure thing! how do I use it? Just send <@U09A16BAJ1M> a message about an account? Or pulse workflow?",
-      "permalink": "https://pendo.slack.com/archives/D03BPCMCPB3/p1780402398748699"
-    },
-    {
-      "date": "2026-06-02 11:40",
-      "channel": "#pulse-feedback",
-      "author": "Alex Rosenbower",
-      "snippet": "Yes. Put a checkmark on the message to indicate that and closed out the feedback inside of pulse Let me know if there’s a better way to go about it",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1780400452450179?thread_ts=1780017702.825439"
-    },
-    {
-      "date": "2026-06-02 11:30",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "cc <@U03A3J57CN9> I can't answer this from the code context provided. This question is asking about Cisco's specific account data (likely their mobile app adoption, iOS/Android app key usage, or mobile product entitlements). To answer, you'd need to pull up Cisco's account detail",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1780399808588859?thread_ts=1780393823.747819"
     }
   ]
 }
