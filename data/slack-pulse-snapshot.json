@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-06-07T10:09:14.178Z",
+  "generatedAt": "2026-06-08T12:05:15.241Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
     "newest": "2026-06-06T15:17:48.286Z",
-    "oldest": "2026-05-08T23:14:40.282Z"
+    "oldest": "2026-05-11T12:45:12.147Z"
   },
   "totals": {
-    "messages": 369,
-    "channels": 75,
-    "authors": 73
+    "messages": 367,
+    "channels": 73,
+    "authors": 71
   },
   "daily": [
-    {
-      "date": "2026-05-08",
-      "count": 1
-    },
-    {
-      "date": "2026-05-09",
-      "count": 1
-    },
     {
       "date": "2026-05-11",
       "count": 5
