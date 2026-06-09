@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-08T12:05:15.241Z",
+  "generatedAt": "2026-06-09T10:37:32.668Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-06T15:17:48.286Z",
+    "newest": "2026-06-09T08:22:23.969Z",
     "oldest": "2026-05-11T12:45:12.147Z"
   },
   "totals": {
-    "messages": 367,
-    "channels": 73,
-    "authors": 71
+    "messages": 373,
+    "channels": 74,
+    "authors": 74
   },
   "daily": [
     {
@@ -115,6 +115,14 @@
     {
       "date": "2026-06-06",
       "count": 5
+    },
+    {
+      "date": "2026-06-08",
+      "count": 5
+    },
+    {
+      "date": "2026-06-09",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -126,7 +134,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 55
+      "count": 56
     },
     {
       "channel": "#nir-me",
@@ -136,12 +144,12 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 20
+      "count": 21
     },
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 18
+      "count": 19
     },
     {
       "channel": "DM · Michael Chambers",
@@ -167,6 +175,11 @@
       "channel": "#Chick-fil-A",
       "kind": "channel",
       "count": 6
+    },
+    {
+      "channel": "#pulse-feedback",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
@@ -212,17 +225,12 @@
       "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
       "kind": "group_dm",
       "count": 4
-    },
-    {
-      "channel": "Group DM · mpdm-melissa.cooper--nir.shmuely--sunny.lin-1",
-      "kind": "group_dm",
-      "count": 4
     }
   ],
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 89
+      "count": 90
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -230,11 +238,11 @@
     },
     {
       "author": "Novus",
-      "count": 46
+      "count": 47
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 18
+      "count": 19
     },
     {
       "author": "Michael Chambers",
@@ -282,6 +290,48 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-09 08:22",
+      "channel": "#pulse-external",
+      "author": "Shinobu Ohyama",
+      "snippet": "Hi Team, I would like all Japan accounts to be displayed under \"My Book\" in Pulse. Could you please let me know who I should contact to request this configuration? I would also like other Japan Functional Leaders to be able to view all Japan accounts in the same way. To help us u",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780993343969329"
+    },
+    {
+      "date": "2026-06-08 15:43",
+      "channel": "#Ticketmaster LLC",
+      "author": "Patrick Barkhordarian",
+      "snippet": "proposed refinements to next steps <@U079MMG2AS1|cutty.reynolds> my thoughts on the adjustments. Added named owners + a sponsorship ask. Split the data fix into its own step, ahead of the dashboards. Tied it to the TM1 migration. Added a 90-day re-survey. Please feel free to push",
+      "permalink": "https://pendo.slack.com/archives/C079RDYN00H/p1780933438974589?thread_ts=1780932353.882309"
+    },
+    {
+      "date": "2026-06-08 15:25",
+      "channel": "#Ticketmaster LLC",
+      "author": "Cutty Reynolds",
+      "snippet": "<@U0A81BPFGTZ|patrick.barkhordarian> Matthew and I are preparing an update for Sara (he's meeting w/ her at 3pm today). Here are the notes we're going to have him cover with her. Please feel free to review and share any additional feedback or tweaks! Usage Survey Key Takeaways. 1",
+      "permalink": "https://pendo.slack.com/archives/C079RDYN00H/p1780932353882309?thread_ts=1780932353.882309"
+    },
+    {
+      "date": "2026-06-08 13:54",
+      "channel": "#novus-plg-alerts",
+      "author": "Novus",
+      "snippet": "*New Accounts — Last 7 Days* (11 accounts, sorted by first seen)  • maivenx — first seen Jun 8 • No integrations connected • qwerty8 — first seen Jun 7 • No integrations connected • kyisaiah47 — first seen Jun 7 • No integrations connected • Institut_Teknologi_Sepu1 — first seen",
+      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780926862337189?thread_ts=1780915161.681599"
+    },
+    {
+      "date": "2026-06-08 13:24",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1780925052152409"
+    },
+    {
+      "date": "2026-06-08 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**Pipeline Pulse | Monday, Jun 8** --- *Marketing S0s This Week* No marketing S0s recorded today (Day 1 of 5). Prior week closed at 83 — significant drop to watch. Too early to flag as a trend, but worth monitoring through Tuesday before escalating. --- *Marketing S0 to S1 Conve",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780922710206819"
+    },
     {
       "date": "2026-06-06 15:17",
       "channel": "#novus-plg-alerts",
@@ -589,48 +639,6 @@
       "author": "Koren Abdush",
       "snippet": "• Daily Sync:Current tickets • New tickets • Customer call - Addi Tsirulnik / FieldPulse (ticket #233043) :white_check_mark: • Customer call - Estelle Piat / PlayPlay :white_check_mark: • 1:1 w Majd :white_check_mark: • Customer call - Amey Shitole / Inspera (ticket #230339) :whi",
       "permalink": "https://pendo.slack.com/archives/C02756LN8ES/p1780463866600939?thread_ts=1780463866.600939"
-    },
-    {
-      "date": "2026-06-02 19:41",
-      "channel": "#pulse-external",
-      "author": "James Kirby",
-      "snippet": "On the summary level of Pulse, it shows that there are 11 accounts categorized as Critical Churn risk. However, when I filter the list by Critical Churn Risk I only see one account showing as a critical churn risk. • If I click to Filter, nothing actually happens to the table sor",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780429274260609?thread_ts=1780429274.260609"
-    },
-    {
-      "date": "2026-06-02 19:37",
-      "channel": "#canary-agent",
-      "author": "Carolynn Rodon",
-      "snippet": "I bet Michael/Nir could tell us if we can feed into pulse",
-      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1780429049711139?thread_ts=1780421901.567559"
-    },
-    {
-      "date": "2026-06-02 17:20",
-      "channel": "#canary-agent",
-      "author": "Canary",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1780420846470039?thread_ts=1780420258.220299"
-    },
-    {
-      "date": "2026-06-02 15:20",
-      "channel": "#nps",
-      "author": "pendo",
-      "snippet": "New NPS Response!",
-      "permalink": "https://pendo.slack.com/archives/C1N0HQ9M5/p1780413609773699"
-    },
-    {
-      "date": "2026-06-02 12:47",
-      "channel": "#pulse-external",
-      "author": "Stephanie Huynh",
-      "snippet": "Hi Team, reviewing my accounts in Pulse and 4 accounts are showing critical churn risk, however when I click into the account the risk rating shows Low. I also verified in Salesforce and it is also showing low. Is there a delay here? Screenshots in :thread:",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780404447230289?thread_ts=1780404447.230289"
-    },
-    {
-      "date": "2026-06-02 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Tuesday, Jun 2** --- *Marketing S0s This Week* 1 new S0 so far (Day 2 of 5) — projected EOW: 3 vs. 68 last week. Significant drop worth monitoring. • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A3dEhIAJ/view|Reliance ",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780404312438849"
     }
   ]
 }
