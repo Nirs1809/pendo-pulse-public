@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-06-10T11:00:54.176Z",
+  "generatedAt": "2026-06-11T11:26:52.893Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-09T20:05:06.603Z",
-    "oldest": "2026-05-11T22:08:24.409Z"
+    "newest": "2026-06-10T13:24:10.951Z",
+    "oldest": "2026-05-13T12:45:14.972Z"
   },
   "totals": {
-    "messages": 390,
-    "channels": 73,
-    "authors": 74
+    "messages": 384,
+    "channels": 71,
+    "authors": 73
   },
   "daily": [
-    {
-      "date": "2026-05-11",
-      "count": 2
-    },
-    {
-      "date": "2026-05-12",
-      "count": 7
-    },
     {
       "date": "2026-05-13",
       "count": 11
@@ -123,13 +115,17 @@
     {
       "date": "2026-06-09",
       "count": 21
+    },
+    {
+      "date": "2026-06-10",
+      "count": 3
     }
   ],
   "topChannels": [
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 74
+      "count": 75
     },
     {
       "channel": "#novus-plg-alerts",
@@ -162,18 +158,18 @@
       "count": 11
     },
     {
-      "channel": "DM · Michael Chambers",
-      "kind": "dm",
-      "count": 10
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "kind": "group_dm",
+      "count": 8
     },
     {
       "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
       "kind": "group_dm",
-      "count": 9
+      "count": 8
     },
     {
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "kind": "group_dm",
+      "channel": "DM · Michael Chambers",
+      "kind": "dm",
       "count": 8
     },
     {
@@ -185,6 +181,11 @@
       "channel": "#Chick-fil-A",
       "kind": "channel",
       "count": 6
+    },
+    {
+      "channel": "#biz-ops",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#pulse-feedback",
@@ -220,17 +221,12 @@
       "channel": "#canary-agent",
       "kind": "channel",
       "count": 4
-    },
-    {
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
-      "kind": "group_dm",
-      "count": 4
     }
   ],
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 91
+      "count": 92
     },
     {
       "author": "Novus",
@@ -238,11 +234,11 @@
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 49
+      "count": 47
     },
     {
       "author": "Michael Chambers",
-      "count": 22
+      "count": 21
     },
     {
       "author": "Lauren Alt-Kishpaugh",
@@ -273,6 +269,10 @@
       "count": 6
     },
     {
+      "author": "Sunny Lin",
+      "count": 5
+    },
+    {
       "author": "Paige Spell",
       "count": 5
     },
@@ -281,15 +281,32 @@
       "count": 5
     },
     {
-      "author": "Sunny Lin",
-      "count": 5
-    },
-    {
       "author": "Felipe Melo",
       "count": 5
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-10 13:24",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781097850951739"
+    },
+    {
+      "date": "2026-06-10 13:22",
+      "channel": "#biz-ops",
+      "author": "Sunny Lin",
+      "snippet": "<@U08NYTLMD32|michael.chambers> - do you have access to this Pulse's Pendo analytics?? I think this is an example <https://app.pendo.io/s/5389416346288128>",
+      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1781097761445029?thread_ts=1781095970.413909"
+    },
+    {
+      "date": "2026-06-10 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**:bar_chart: Pipeline Pulse | Wednesday, Jun 10** --- *Marketing S0s This Week* 10 new S0s through Day 3 (projected EOW: 17) — notable drop vs. prior week's 82. Top opps: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001BCe7hIAD/view|Gartner - Expansion - ",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781095517068939"
+    },
     {
       "date": "2026-06-09 20:05",
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
@@ -618,27 +635,6 @@
       "author": "Canary Alerts",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780578963261169?thread_ts=1780578963.261169"
-    },
-    {
-      "date": "2026-06-04 13:09",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780578546424029?thread_ts=1780578546.424029"
-    },
-    {
-      "date": "2026-06-04 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Thursday, Jun 4** --- *Marketing S0s This Week* 41 S0s through Day 4 (projected 51 EOW vs. 71 last week — tracking ~28% below prior week) Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A9MUTIA3/view|SkyTo",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780577114821339"
-    },
-    {
-      "date": "2026-06-04 10:41",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780569696017599"
     }
   ]
 }
