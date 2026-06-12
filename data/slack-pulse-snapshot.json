@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-11T11:26:52.893Z",
+  "generatedAt": "2026-06-12T11:05:58.835Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-10T13:24:10.951Z",
-    "oldest": "2026-05-13T12:45:14.972Z"
+    "newest": "2026-06-12T00:39:52.729Z",
+    "oldest": "2026-05-14T09:36:59.318Z"
   },
   "totals": {
-    "messages": 384,
-    "channels": 71,
-    "authors": 73
+    "messages": 378,
+    "channels": 69,
+    "authors": 72
   },
   "daily": [
-    {
-      "date": "2026-05-13",
-      "count": 11
-    },
     {
       "date": "2026-05-14",
       "count": 11
@@ -119,6 +115,14 @@
     {
       "date": "2026-06-10",
       "count": 3
+    },
+    {
+      "date": "2026-06-11",
+      "count": 3
+    },
+    {
+      "date": "2026-06-12",
+      "count": 2
     }
   ],
   "topChannels": [
@@ -158,23 +162,23 @@
       "count": 11
     },
     {
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "kind": "group_dm",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "kind": "channel",
       "count": 8
     },
     {
-      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
       "count": 8
     },
     {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
-      "count": 8
+      "count": 7
     },
     {
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "kind": "channel",
+      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "kind": "group_dm",
       "count": 6
     },
     {
@@ -234,11 +238,11 @@
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 47
+      "count": 42
     },
     {
       "author": "Michael Chambers",
-      "count": 21
+      "count": 20
     },
     {
       "author": "Lauren Alt-Kishpaugh",
@@ -246,11 +250,15 @@
     },
     {
       "author": "Canary Alerts",
-      "count": 13
+      "count": 15
     },
     {
       "author": "Tiffany Kitchen",
       "count": 8
+    },
+    {
+      "author": "Rufo",
+      "count": 7
     },
     {
       "author": "Emilie DeCherney",
@@ -261,31 +269,62 @@
       "count": 7
     },
     {
-      "author": "Rufo",
-      "count": 6
-    },
-    {
       "author": "slackable.dev",
       "count": 6
-    },
-    {
-      "author": "Sunny Lin",
-      "count": 5
     },
     {
       "author": "Paige Spell",
       "count": 5
     },
     {
-      "author": "Zapier",
+      "author": "Felipe Melo",
       "count": 5
     },
     {
-      "author": "Felipe Melo",
-      "count": 5
+      "author": "Sunny Lin",
+      "count": 4
+    },
+    {
+      "author": "Zapier",
+      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-12 00:39",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781224792729749"
+    },
+    {
+      "date": "2026-06-12 00:37",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781224678112249"
+    },
+    {
+      "date": "2026-06-11 22:06",
+      "channel": "#client-command-finserv",
+      "author": "John Walenty",
+      "snippet": "Yup makes sense. She was talking about additional apps and from what I was seeing in Pulse it looked like they were either close or over.",
+      "permalink": "https://pendo.slack.com/archives/C054X45RY02/p1781215560354659"
+    },
+    {
+      "date": "2026-06-11 16:05",
+      "channel": "#ask-platform",
+      "author": "Rufo",
+      "snippet": "hey friends! Just an update for some learnings around the GBQ Connector x Lovable. I am unsure if this is best practice, so will keep on noodling over that with the team! Huge thank you as always to <@U08NYTLMD32|michael.chambers> for being a great data partner! Quick explainer o",
+      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1781193912960869?thread_ts=1781193912.960869"
+    },
+    {
+      "date": "2026-06-11 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Thursday, Jun 11** --- *Marketing S0s This Week* 25 S0s through Day 4 — projected EOW: 31 :warning: significant drop vs. prior week's 83. Top opps: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001BQwPhIAL/view|Farmers G",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781181915961689"
+    },
     {
       "date": "2026-06-10 13:24",
       "channel": "DM · Pulse",
@@ -600,41 +639,6 @@
       "author": "Canary Alerts",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780581014263689"
-    },
-    {
-      "date": "2026-06-04 13:47",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780580874270769?thread_ts=1780580874.270769"
-    },
-    {
-      "date": "2026-06-04 13:41",
-      "channel": "#brents-core-renewals-crew",
-      "author": "Brent Varnell",
-      "snippet": "Quick question: What's the preferred method for notifying a CSM that a renewal is 130 days out and the opportunity should be moved out of Stage 0 by the 120-day mark? Options: • Slack — but this could become noisy • Email — but it may get buried • Pulse — seems more actionable, b",
-      "permalink": "https://pendo.slack.com/archives/C0AV3PLBDPH/p1780580498171649?thread_ts=1780580498.171649"
-    },
-    {
-      "date": "2026-06-04 13:28",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780579735675189?thread_ts=1780579735.675189"
-    },
-    {
-      "date": "2026-06-04 13:25",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780579504395069"
-    },
-    {
-      "date": "2026-06-04 13:16",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780578963261169?thread_ts=1780578963.261169"
     }
   ]
 }
