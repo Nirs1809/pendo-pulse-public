@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-12T11:05:58.835Z",
+  "generatedAt": "2026-06-13T10:06:16.286Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-12T00:39:52.729Z",
-    "oldest": "2026-05-14T09:36:59.318Z"
+    "newest": "2026-06-12T18:56:50.067Z",
+    "oldest": "2026-05-15T10:15:20.837Z"
   },
   "totals": {
-    "messages": 378,
-    "channels": 69,
-    "authors": 72
+    "messages": 374,
+    "channels": 68,
+    "authors": 70
   },
   "daily": [
-    {
-      "date": "2026-05-14",
-      "count": 11
-    },
     {
       "date": "2026-05-15",
       "count": 19
@@ -122,7 +118,7 @@
     },
     {
       "date": "2026-06-12",
-      "count": 2
+      "count": 9
     }
   ],
   "topChannels": [
@@ -144,7 +140,7 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 22
+      "count": 23
     },
     {
       "channel": "#pipeline-pulse",
@@ -172,11 +168,6 @@
       "count": 8
     },
     {
-      "channel": "DM · Michael Chambers",
-      "kind": "dm",
-      "count": 7
-    },
-    {
       "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
       "kind": "group_dm",
       "count": 6
@@ -187,17 +178,22 @@
       "count": 6
     },
     {
+      "channel": "#seo-news",
+      "kind": "channel",
+      "count": 5
+    },
+    {
+      "channel": "DM · Michael Chambers",
+      "kind": "dm",
+      "count": 5
+    },
+    {
       "channel": "#biz-ops",
       "kind": "channel",
       "count": 4
     },
     {
       "channel": "#pulse-feedback",
-      "kind": "channel",
-      "count": 4
-    },
-    {
-      "channel": "#seo-news",
       "kind": "channel",
       "count": 4
     },
@@ -222,8 +218,8 @@
       "count": 4
     },
     {
-      "channel": "#canary-agent",
-      "kind": "channel",
+      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
+      "kind": "group_dm",
       "count": 4
     }
   ],
@@ -238,7 +234,7 @@
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 42
+      "count": 39
     },
     {
       "author": "Michael Chambers",
@@ -257,39 +253,88 @@
       "count": 8
     },
     {
+      "author": "Felipe Melo",
+      "count": 7
+    },
+    {
       "author": "Rufo",
       "count": 7
     },
     {
       "author": "Emilie DeCherney",
-      "count": 7
+      "count": 6
     },
     {
       "author": "Alex Rosenbower",
-      "count": 7
+      "count": 6
     },
     {
       "author": "slackable.dev",
       "count": 6
     },
     {
+      "author": "Zapier",
+      "count": 5
+    },
+    {
       "author": "Paige Spell",
       "count": 5
     },
     {
-      "author": "Felipe Melo",
-      "count": 5
-    },
-    {
-      "author": "Sunny Lin",
-      "count": 4
-    },
-    {
-      "author": "Zapier",
+      "author": "John Walenty",
       "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-12 18:56",
+      "channel": "#cx-internal",
+      "author": "Sneha Raghavan",
+      "snippet": ":movie_camera: Weekly video is up — theme: Prioritization! 5 minutes, worth your time. The short version: • Prioritizing today: Talk to your manager. FLMs' #1 job right now is helping you prioritize your book and your week. If your team is short-staffed (ENT West, we see you), El",
+      "permalink": "https://pendo.slack.com/archives/C3XQD5B5X/p1781290610067199"
+    },
+    {
+      "date": "2026-06-12 15:31",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "Hi Pulse team, should the entitlements section show usage/adoption even if an account doesn't own a module? <https://pulse.pendoexperience.io/accounts/0010a00001FUM8sAAH|Wiley> has no Agent Analytics Entitlement, but they are seemingly using the Free version <https://pendo.slack.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781278316751529"
+    },
+    {
+      "date": "2026-06-12 15:05",
+      "channel": "#client-wiley-yellow",
+      "author": "Felipe Melo",
+      "snippet": "Aside from that, I do agree that we should set up a call to dig deeper. I had no idea they had AA installed. Nothing shows up in Pulse",
+      "permalink": "https://pendo.slack.com/archives/C01LS4YFGMS/p1781276739507589?thread_ts=1763999176.582479"
+    },
+    {
+      "date": "2026-06-12 13:43",
+      "channel": "#client-command-finserv",
+      "author": "John Walenty",
+      "snippet": "Pulse pulls from Omini but give deeper insights around the account health. But will keep that in mind. That's for the follow up there.",
+      "permalink": "https://pendo.slack.com/archives/C054X45RY02/p1781271791921409?thread_ts=1781271500.908979"
+    },
+    {
+      "date": "2026-06-12 13:38",
+      "channel": "#client-command-finserv",
+      "author": "John Walenty",
+      "snippet": "I guess this is was threw me <@U0694J72DND|taylor.hooker> <https://pulse.pendoexperience.io/accounts/0010a00001MZZ1NAAX>",
+      "permalink": "https://pendo.slack.com/archives/C054X45RY02/p1781271500908979?thread_ts=1781271500.908979"
+    },
+    {
+      "date": "2026-06-12 12:45",
+      "channel": "#pipeline-pulse",
+      "author": "Lauren Alt-Kishpaugh",
+      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Friday, Jun 12** --- *Marketing S0s This Week* 37 new S0s this week vs. 83 prior week — significant WoW drop, worth flagging for Monday review. Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001BQig5IAD/view",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781268314839169"
+    },
+    {
+      "date": "2026-06-12 12:31",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Reddit Climbs, Clicks Drop, GBP Comes To GA4 – SEO Pulse *Topics Covered: :point_right:*Google Algorithm Updates,SERP Layout Shifts,Content Structuring *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-reddit-climbs-clicks-drop-gbp-comes-to-ga4/579029/> *Pe",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1781267497870649"
+    },
     {
       "date": "2026-06-12 00:39",
       "channel": "#iqvia-canary-alert-hackathon-demo",
@@ -590,55 +635,6 @@
       "author": "Rufo",
       "snippet": "Good afternoon and evening (sorry, Nir!) y'all! QQ: I was wondering how yall get data into pulse? I vaguely remember you talking about it in your pulse demo, but wanted to get the write up for my own brain. COntext: I'm building out a dataset in GBQ for a bunch of CE KPIs, but if",
       "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780682378851709"
-    },
-    {
-      "date": "2026-06-05 13:35",
-      "channel": "#geo",
-      "author": "Timothy Wilson",
-      "snippet": "<https://www.linkedin.com/posts/rosshudgens_big-news-tofu-content-is-back-if-you-search-share-7468388280732971008-xwQT/?utm_source=share&utm_medium=member_android&rcm=ACoAABswnrIB7ZM1YUt9nzNUGII_3rGnYlAQqmI|https://www.linkedin.com/posts/rosshudgens_big-news-tofu-content-is-back-",
-      "permalink": "https://pendo.slack.com/archives/CB32CQ4NR/p1780666509567319"
-    },
-    {
-      "date": "2026-06-05 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**:bar_chart: Marketing Pipeline Pulse | Friday, Jun 5** --- *Marketing S0s This Week* 54 new S0s (vs. 72 prior week, -25% WoW). Day 5 of 5 — final count. Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001A9MUTIA3/view|SkyTouch Technology - Exp",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780663514606129"
-    },
-    {
-      "date": "2026-06-05 12:32",
-      "channel": "#seo-news",
-      "author": "Zapier",
-      "snippet": "*Title:* Google tests AI visibility reports and an opt-out toggle as the UK requires new publisher controls for AI search features *Topics Covered: :point_right:*AI in Search,Google Algorithm Updates *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-google-tests-ai-",
-      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1780662738872329"
-    },
-    {
-      "date": "2026-06-05 10:38",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780655891031359?thread_ts=1780655891.031359"
-    },
-    {
-      "date": "2026-06-04 20:10",
-      "channel": "#competition",
-      "author": "Tom Hynds",
-      "snippet": "Hi, We're in a competitive situation against Gainsight selling into the CS function within a large travel tech company, Amadeus. It's a use case focused on reducing churn and equipping CSM's with the information they need (and currently don't have) going into their customer meeti",
-      "permalink": "https://pendo.slack.com/archives/C0GBWPBFV/p1780603822303169?thread_ts=1780603822.303169"
-    },
-    {
-      "date": "2026-06-04 14:00",
-      "channel": "#brents-core-renewals-crew",
-      "author": "Olivia McLaughlin",
-      "snippet": "if theres a CSM/CE, could we have pulse send a notification in the slack client channel? so AD, RS &amp; CE sees it?",
-      "permalink": "https://pendo.slack.com/archives/C0AV3PLBDPH/p1780581609853289?thread_ts=1780580498.171649"
-    },
-    {
-      "date": "2026-06-04 13:50",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1780581014263689"
     }
   ]
 }
