@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-13T10:06:16.286Z",
+  "generatedAt": "2026-06-14T10:30:02.380Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-12T18:56:50.067Z",
-    "oldest": "2026-05-15T10:15:20.837Z"
+    "newest": "2026-06-14T07:29:10.411Z",
+    "oldest": "2026-05-15T21:48:15.289Z"
   },
   "totals": {
-    "messages": 374,
-    "channels": 68,
-    "authors": 70
+    "messages": 358,
+    "channels": 67,
+    "authors": 69
   },
   "daily": [
     {
       "date": "2026-05-15",
-      "count": 19
+      "count": 1
     },
     {
       "date": "2026-05-16",
@@ -119,6 +119,10 @@
     {
       "date": "2026-06-12",
       "count": 9
+    },
+    {
+      "date": "2026-06-14",
+      "count": 2
     }
   ],
   "topChannels": [
@@ -130,7 +134,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 58
+      "count": 46
     },
     {
       "channel": "#nir-me",
@@ -140,17 +144,17 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 23
+      "count": 22
     },
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 19
+      "count": 18
     },
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 13
+      "count": 14
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -178,14 +182,14 @@
       "count": 6
     },
     {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 5
-    },
-    {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
       "count": 5
+    },
+    {
+      "channel": "#seo-news",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#biz-ops",
@@ -229,12 +233,12 @@
       "count": 92
     },
     {
-      "author": "Novus",
-      "count": 49
+      "author": "Nir Sebastian Shmuely",
+      "count": 40
     },
     {
-      "author": "Nir Sebastian Shmuely",
-      "count": 39
+      "author": "Novus",
+      "count": 40
     },
     {
       "author": "Michael Chambers",
@@ -242,23 +246,19 @@
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 19
+      "count": 18
     },
     {
       "author": "Canary Alerts",
       "count": 15
     },
     {
-      "author": "Tiffany Kitchen",
-      "count": 8
+      "author": "Rufo",
+      "count": 7
     },
     {
       "author": "Felipe Melo",
-      "count": 7
-    },
-    {
-      "author": "Rufo",
-      "count": 7
+      "count": 6
     },
     {
       "author": "Emilie DeCherney",
@@ -273,19 +273,37 @@
       "count": 6
     },
     {
-      "author": "Zapier",
+      "author": "Paige Spell",
       "count": 5
     },
     {
-      "author": "Paige Spell",
+      "author": "Tiffany Kitchen",
       "count": 5
     },
     {
       "author": "John Walenty",
       "count": 4
+    },
+    {
+      "author": "Zapier",
+      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-14 07:29",
+      "channel": "#pod-squad-ce",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U0202Q8H0BA|Emilie> and team, Pulse Manager View already provides managers with visibility into their direct reports (ICs and managers) along with key performance metrics. Rather than introducing additional tools and surfaces, I think we should consider consolidating metrics fr",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781422150411259?thread_ts=1781015639.149459"
+    },
+    {
+      "date": "2026-06-14 07:21",
+      "channel": "#team-phoenix",
+      "author": "Tom Meir",
+      "snippet": "good morning everyone. I noticed that when I browse <https://grammarly-pulse-check.lovable.app/> it is found as a discovery app, but we also have a managed app using that domain. that explains why we dont see all of the URLs. But do we have any idea why this scenario does not res",
+      "permalink": "https://pendo.slack.com/archives/C09K6HU7801/p1781421714561359?thread_ts=1781421714.561359"
+    },
     {
       "date": "2026-06-12 18:56",
       "channel": "#cx-internal",
@@ -621,20 +639,6 @@
       "author": "Michael Chambers",
       "snippet": "pulse is an app built in lovable",
       "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780685344448279"
-    },
-    {
-      "date": "2026-06-05 18:14",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Rufo",
-      "snippet": "wait sorry I meant pulse (unless lovable is what pulse is built off of, which in that case, I need to pay better attention in meetings (sorry))",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780683286768059"
-    },
-    {
-      "date": "2026-06-05 17:59",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Rufo",
-      "snippet": "Good afternoon and evening (sorry, Nir!) y'all! QQ: I was wondering how yall get data into pulse? I vaguely remember you talking about it in your pulse demo, but wanted to get the write up for my own brain. COntext: I'm building out a dataset in GBQ for a bunch of CE KPIs, but if",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780682378851709"
     }
   ]
 }
