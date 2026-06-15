@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-06-14T10:30:02.380Z",
+  "generatedAt": "2026-06-15T13:23:04.142Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-14T07:29:10.411Z",
-    "oldest": "2026-05-15T21:48:15.289Z"
+    "newest": "2026-06-15T13:07:29.920Z",
+    "oldest": "2026-05-17T13:00:40.425Z"
   },
   "totals": {
-    "messages": 358,
-    "channels": 67,
+    "messages": 365,
+    "channels": 68,
     "authors": 69
   },
   "daily": [
-    {
-      "date": "2026-05-15",
-      "count": 1
-    },
-    {
-      "date": "2026-05-16",
-      "count": 1
-    },
     {
       "date": "2026-05-17",
       "count": 1
@@ -122,19 +114,23 @@
     },
     {
       "date": "2026-06-14",
-      "count": 2
+      "count": 3
+    },
+    {
+      "date": "2026-06-15",
+      "count": 8
     }
   ],
   "topChannels": [
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 75
+      "count": 79
     },
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 46
+      "count": 45
     },
     {
       "channel": "#nir-me",
@@ -144,7 +140,7 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 22
+      "count": 24
     },
     {
       "channel": "#pipeline-pulse",
@@ -170,6 +166,11 @@
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
       "count": 8
+    },
+    {
+      "channel": "#pulse-dev",
+      "kind": "channel",
+      "count": 6
     },
     {
       "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
@@ -207,11 +208,6 @@
       "count": 4
     },
     {
-      "channel": "#pulse-dev",
-      "kind": "channel",
-      "count": 4
-    },
-    {
       "channel": "DM · Miri Shapiro",
       "kind": "dm",
       "count": 4
@@ -230,15 +226,15 @@
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 92
+      "count": 96
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 40
+      "count": 42
     },
     {
       "author": "Novus",
-      "count": 40
+      "count": 39
     },
     {
       "author": "Michael Chambers",
@@ -290,6 +286,69 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-15 13:07",
+      "channel": "#pulse-external",
+      "author": "Chris Schroeck",
+      "snippet": "<@U03A3J57CN9|Nir Shmuely> Thank you! Should this already be reflected in Pulse or do we have to wait for a (nightly?) refresh? At the moment, I still see end of April on most accounts, others show end of May.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781528849920699?thread_ts=1781097829.701249"
+    },
+    {
+      "date": "2026-06-15 10:57",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781521055687249"
+    },
+    {
+      "date": "2026-06-15 10:29",
+      "channel": "#p4e-at-pendo",
+      "author": "Tom Meir",
+      "snippet": "ok so this was not a bug but a misconfiguration. The definitions for lovable were set using /.* as the path regular expression, which means we only collected data on lovable as a managed app when it had something after the .dev so <https://grammarly-pulse-check.lovable.app/> will",
+      "permalink": "https://pendo.slack.com/archives/C07J4AVFCGK/p1781519363250869?thread_ts=1781268560.912179"
+    },
+    {
+      "date": "2026-06-15 09:51",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781517064156809"
+    },
+    {
+      "date": "2026-06-15 09:19",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781515146741569"
+    },
+    {
+      "date": "2026-06-15 09:19",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781515145907629"
+    },
+    {
+      "date": "2026-06-15 08:55",
+      "channel": "#pulse-external",
+      "author": "Nikhil Sathyanarayana",
+      "snippet": "Howdy Pulse Team! Can I request a replacment: \"Last TAM activity\" with \"Last CE activity\" I don't think its accurate either way as I was assigned as their TAM and spoke to them most days",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781513740332349?thread_ts=1781513740.332349"
+    },
+    {
+      "date": "2026-06-15 06:36",
+      "channel": "#pulse-dev",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U03A3J57CN9|Nir Shmuely> :memo: New proposed change from #pulse-feedback Feedback: Feature Request — Allow drag-and-drop column reordering in the Accounts view · <https://pendo.slack.com/archives/C0AKQ1YLBPD/p1780945715400799 *From:>* <mailto:james.kirby@pendo.io> Built: Added ",
+      "permalink": "https://pendo.slack.com/archives/C0AF8JGPZ5Z/p1781505398095329"
+    },
+    {
+      "date": "2026-06-14 12:13",
+      "channel": "#pulse-dev",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U03A3J57CN9|Nir Shmuely> :memo: New proposed change from #pulse-feedback Feedback: Bug — TAM and Predict score column values are swapped in the Accounts view · <https://pendo.slack.com/archives/C0AKQ1YLBPD/p1780578942125559 *From:>* <mailto:melissa.cooper@pendo.io> Built: Fixed",
+      "permalink": "https://pendo.slack.com/archives/C0AF8JGPZ5Z/p1781439221101659"
+    },
     {
       "date": "2026-06-14 07:29",
       "channel": "#pod-squad-ce",
@@ -576,69 +635,6 @@
       "author": "Novus",
       "snippet": "*New Accounts — Last 7 Days* (11 accounts, sorted by first seen)  • maivenx — first seen Jun 8 • No integrations connected • qwerty8 — first seen Jun 7 • No integrations connected • kyisaiah47 — first seen Jun 7 • No integrations connected • Institut_Teknologi_Sepu1 — first seen",
       "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780926862337189?thread_ts=1780915161.681599"
-    },
-    {
-      "date": "2026-06-08 13:24",
-      "channel": "#pulse-feedback",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1780925052152409"
-    },
-    {
-      "date": "2026-06-08 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**Pipeline Pulse | Monday, Jun 8** --- *Marketing S0s This Week* No marketing S0s recorded today (Day 1 of 5). Prior week closed at 83 — significant drop to watch. Too early to flag as a trend, but worth monitoring through Tuesday before escalating. --- *Marketing S0 to S1 Conve",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1780922710206819"
-    },
-    {
-      "date": "2026-06-06 15:17",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780759068286579?thread_ts=1780742314.172089"
-    },
-    {
-      "date": "2026-06-06 13:19",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "Got it — I can see the *Daily Open Beta Launch Report* (runs at 6:32 AM ET). It's very dense. A few quick questions to nail the redesign:  1. Which sections are worth keeping? The current report has: New Signups, Activation, AI Trust &amp; Product Value, Retention Pulse, Frictio",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780751997976639?thread_ts=1780742314.172089"
-    },
-    {
-      "date": "2026-06-06 10:38",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780742314172089?thread_ts=1780742314.172089"
-    },
-    {
-      "date": "2026-06-06 07:06",
-      "channel": "#aa-category-insights",
-      "author": "Laurence Judah",
-      "snippet": ":brain: Bloc #3 — Gartner Agentic AI Pulse 2026: Only 41% Of Agent Rollouts Cross Positive ROI In 12 Months, 19% Never Reach Payback — And The Named Cause Is Measurement, Not The Agent. The hard buyer-pain number this channel has been missing. Per Gartner's Agentic AI Pulse 2026:",
-      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1780729574072789?thread_ts=1780729541.713439"
-    },
-    {
-      "date": "2026-06-06 07:05",
-      "channel": "#aa-category-insights",
-      "author": "Laurence Judah",
-      "snippet": ":bar_chart: Agent Analytics Intel — Saturday 6 June 2026 (Deep-Dive) AI adoption measurement, LLM product analytics, and enterprise ROI accountability for AI agents. ────────────────────────────── :compass: The Weekend Read — This Week The Capital And The Definition Both Moved. $",
-      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1780729541713439?thread_ts=1780729541.713439"
-    },
-    {
-      "date": "2026-06-05 18:50",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Rufo",
-      "snippet": "ok thats what I thought, but I wanted to be clear lol. Thank you! Guess I don't have my finger on the...pulse of the busines",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780685404760239"
-    },
-    {
-      "date": "2026-06-05 18:49",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Michael Chambers",
-      "snippet": "pulse is an app built in lovable",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1780685344448279"
     }
   ]
 }
