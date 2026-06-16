@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-15T13:23:04.142Z",
+  "generatedAt": "2026-06-16T12:16:51.169Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-15T13:07:29.920Z",
-    "oldest": "2026-05-17T13:00:40.425Z"
+    "newest": "2026-06-16T11:20:23.184Z",
+    "oldest": "2026-05-18T06:53:53.938Z"
   },
   "totals": {
-    "messages": 365,
-    "channels": 68,
-    "authors": 69
+    "messages": 373,
+    "channels": 73,
+    "authors": 72
   },
   "daily": [
-    {
-      "date": "2026-05-17",
-      "count": 1
-    },
     {
       "date": "2026-05-18",
       "count": 11
@@ -118,7 +114,11 @@
     },
     {
       "date": "2026-06-15",
-      "count": 8
+      "count": 14
+    },
+    {
+      "date": "2026-06-16",
+      "count": 3
     }
   ],
   "topChannels": [
@@ -130,7 +130,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 45
+      "count": 44
     },
     {
       "channel": "#nir-me",
@@ -150,12 +150,12 @@
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 14
+      "count": 15
     },
     {
       "channel": "#data-gtm-intelligence",
       "kind": "channel",
-      "count": 11
+      "count": 12
     },
     {
       "channel": "#iqvia-canary-alert-hackathon-demo",
@@ -230,11 +230,11 @@
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 42
+      "count": 43
     },
     {
       "author": "Novus",
-      "count": 39
+      "count": 38
     },
     {
       "author": "Michael Chambers",
@@ -249,6 +249,10 @@
       "count": 15
     },
     {
+      "author": "Alex Rosenbower",
+      "count": 8
+    },
+    {
       "author": "Rufo",
       "count": 7
     },
@@ -258,10 +262,6 @@
     },
     {
       "author": "Emilie DeCherney",
-      "count": 6
-    },
-    {
-      "author": "Alex Rosenbower",
       "count": 6
     },
     {
@@ -286,6 +286,69 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-16 11:20",
+      "channel": "DM · Jonathan Rice",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "no - this is Pulse only",
+      "permalink": "https://pendo.slack.com/archives/D096R362SMA/p1781608823184679"
+    },
+    {
+      "date": "2026-06-16 10:42",
+      "channel": "#gtm-applied-ai",
+      "author": "Jonathan Rice",
+      "snippet": "2 things I'm ultimately trying to do 1. scope out what it will take to add BQ event logging to pulse -- i know that we are making updates to pulse regularly and therefore would need to also update the codebase to add BQ logging for all new features which could get cumbersome, but",
+      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1781606571002279?thread_ts=1781552517.462679"
+    },
+    {
+      "date": "2026-06-16 01:23",
+      "channel": "#pod-squad-ce",
+      "author": "Alex Rosenbower",
+      "snippet": "Hello friends! I am going to be doing my best Emilie impression tomorrow (and potentially beyond if I don’t get boo’d off stage…) — admittedly I’m playing catchup here, so I’ll be leaning on you all to keep me honest on progress &amp; next steps. I’d like to make sure we spend a ",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781573011519749"
+    },
+    {
+      "date": "2026-06-15 21:37",
+      "channel": "#client-covetrus-green",
+      "author": "Kruti Carsane",
+      "snippet": "Granola notes here: <https://notes.granola.ai/t/fe2a5f37-3f55-4946-b88e-452509075ce8-009c2hma>",
+      "permalink": "https://pendo.slack.com/archives/C02FE8MK8E5/p1781559422584599?thread_ts=1781559229.090379"
+    },
+    {
+      "date": "2026-06-15 19:46",
+      "channel": "#data-gtm-intelligence",
+      "author": "Alex Rosenbower",
+      "snippet": "<@U099B6SR8MA|zach> — FYI on Pulse <> Canary relationship",
+      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781552775975229?thread_ts=1781006268.794769"
+    },
+    {
+      "date": "2026-06-15 19:44",
+      "channel": "#ce-ops",
+      "author": "Eric Wright",
+      "snippet": "Does next renewal date on SF get auto updated? I am confused looking at <https://pendo.lightning.force.com/lightning/r/Account/0015b000025K2EkAAK/view|St Lukes>, as the field on the account level shows the renewal is past due, pulse says it renews in Jan 2028 and I can also see a",
+      "permalink": "https://pendo.slack.com/archives/C02M3S5523W/p1781552659619129"
+    },
+    {
+      "date": "2026-06-15 19:40",
+      "channel": "#gtm-applied-ai",
+      "author": "Jonathan Rice",
+      "snippet": "heyo im trying to see if Pulse is connected to github",
+      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1781552423432099"
+    },
+    {
+      "date": "2026-06-15 14:24",
+      "channel": "#subscription-provisioning",
+      "author": "Ricardo Primon",
+      "snippet": "hi team - My customer QGenda is trying to configure SCIM but aren't seeing that option under Organizational Settings. I looked a Pulse and SCIM isn't showing up for them. Can someone please help confirm this was 'turned on' for the account. Link to the opp: <https://pendo.lightni",
+      "permalink": "https://pendo.slack.com/archives/C02KTH8PGHZ/p1781533466362099?thread_ts=1781533466.362099"
+    },
+    {
+      "date": "2026-06-15 14:19",
+      "channel": "#canary-agent",
+      "author": "Canary",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1781533195381479?thread_ts=1781533193.936579"
+    },
     {
       "date": "2026-06-15 13:07",
       "channel": "#pulse-external",
@@ -375,7 +438,7 @@
       "channel": "#pulse-external",
       "author": "Felipe Melo",
       "snippet": "Hi Pulse team, should the entitlements section show usage/adoption even if an account doesn't own a module? <https://pulse.pendoexperience.io/accounts/0010a00001FUM8sAAH|Wiley> has no Agent Analytics Entitlement, but they are seemingly using the Free version <https://pendo.slack.",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781278316751529"
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781278316751529?thread_ts=1781278316.751529"
     },
     {
       "date": "2026-06-12 15:05",
@@ -572,69 +635,6 @@
       "author": "Michael Chambers",
       "snippet": "<@U02QC670XC0|zac> Yes — that's coming from the Pulse app. Confirmed source: Edge function: supabase/functions/backfill-bottom-lines/index.ts (the exact prompt is at line 136). What's driving it: a pg_cron job named backfill-bottom-lines-every-30min (migration 20260503081138_…sql",
       "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781017368539269?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 14:33",
-      "channel": "#pod-squad-ce",
-      "author": "Emilie DeCherney",
-      "snippet": "Great meeting team! HERE WE GO TO TRANSFORM CE!!! Summary of this week's actions below: • TOP priority - by 6/19, complete the CAP workflow + new health model for launch with CE org. ◦ Modeling: <@U08HXK37CS2|paige.spell> ◦ Slack workflow + formatting <@U08NYTLMD32|michael.chambe",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781015639149459?thread_ts=1781015639.149459"
-    },
-    {
-      "date": "2026-06-09 13:23",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Rufo",
-      "snippet": "Good morning (afternoon) friends! Sneha is wanting the CE KPIs that I built to go into Pulse. I know that these things can be square pegs into a round hole, so I wanted to tee y'all up a bit early to check and scope and see what the feasibility of that request is! These are the s",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1781011393218309?thread_ts=1781011393.218309"
-    },
-    {
-      "date": "2026-06-09 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**Pipeline Pulse | Tuesday, Jun 9** --- *Marketing S0s This Week* Zero S0s recorded through Day 2 of 5. Prior week closed at 83 — this is a significant drop worth monitoring as the week progresses. No top opps to surface. --- *Marketing S0 to S1 Conversions* 6 conversions this w",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781009111045289"
-    },
-    {
-      "date": "2026-06-09 12:31",
-      "channel": "#data-gtm-intelligence",
-      "author": "Michael Chambers",
-      "snippet": "Zac, I think we are using the N8N service account for pulse, I'll double check when I'm in and get back to you",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781008272754459?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 11:59",
-      "channel": "#data-gtm-intelligence",
-      "author": "Zac Romandy",
-      "snippet": "<@U08NYTLMD32|michael.chambers> <@U03A3J57CN9|Nir Shmuely> is this pulse?",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781006392715899?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 08:22",
-      "channel": "#pulse-external",
-      "author": "Shinobu Ohyama",
-      "snippet": "Hi Team, I would like all Japan accounts to be displayed under \"My Book\" in Pulse. Could you please let me know who I should contact to request this configuration? I would also like other Japan Functional Leaders to be able to view all Japan accounts in the same way. To help us u",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1780993343969329"
-    },
-    {
-      "date": "2026-06-08 15:43",
-      "channel": "#Ticketmaster LLC",
-      "author": "Patrick Barkhordarian",
-      "snippet": "proposed refinements to next steps <@U079MMG2AS1|cutty.reynolds> my thoughts on the adjustments. Added named owners + a sponsorship ask. Split the data fix into its own step, ahead of the dashboards. Tied it to the TM1 migration. Added a 90-day re-survey. Please feel free to push",
-      "permalink": "https://pendo.slack.com/archives/C079RDYN00H/p1780933438974589?thread_ts=1780932353.882309"
-    },
-    {
-      "date": "2026-06-08 15:25",
-      "channel": "#Ticketmaster LLC",
-      "author": "Cutty Reynolds",
-      "snippet": "<@U0A81BPFGTZ|patrick.barkhordarian> Matthew and I are preparing an update for Sara (he's meeting w/ her at 3pm today). Here are the notes we're going to have him cover with her. Please feel free to review and share any additional feedback or tweaks! Usage Survey Key Takeaways. 1",
-      "permalink": "https://pendo.slack.com/archives/C079RDYN00H/p1780932353882309?thread_ts=1780932353.882309"
-    },
-    {
-      "date": "2026-06-08 13:54",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "*New Accounts — Last 7 Days* (11 accounts, sorted by first seen)  • maivenx — first seen Jun 8 • No integrations connected • qwerty8 — first seen Jun 7 • No integrations connected • kyisaiah47 — first seen Jun 7 • No integrations connected • Institut_Teknologi_Sepu1 — first seen",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1780926862337189?thread_ts=1780915161.681599"
     }
   ]
 }
