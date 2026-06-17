@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-16T12:16:51.169Z",
+  "generatedAt": "2026-06-17T11:55:47.184Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-16T11:20:23.184Z",
-    "oldest": "2026-05-18T06:53:53.938Z"
+    "newest": "2026-06-17T11:05:39.613Z",
+    "oldest": "2026-05-19T02:52:15.415Z"
   },
   "totals": {
-    "messages": 373,
-    "channels": 73,
-    "authors": 72
+    "messages": 378,
+    "channels": 71,
+    "authors": 70
   },
   "daily": [
-    {
-      "date": "2026-05-18",
-      "count": 11
-    },
     {
       "date": "2026-05-19",
       "count": 12
@@ -118,19 +114,23 @@
     },
     {
       "date": "2026-06-16",
-      "count": 3
+      "count": 10
+    },
+    {
+      "date": "2026-06-17",
+      "count": 9
     }
   ],
   "topChannels": [
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 79
+      "count": 81
     },
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 44
+      "count": 43
     },
     {
       "channel": "#nir-me",
@@ -140,7 +140,7 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 24
+      "count": 28
     },
     {
       "channel": "#pipeline-pulse",
@@ -150,7 +150,7 @@
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 15
+      "count": 16
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -160,7 +160,7 @@
     {
       "channel": "#iqvia-canary-alert-hackathon-demo",
       "kind": "channel",
-      "count": 8
+      "count": 11
     },
     {
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
@@ -168,17 +168,12 @@
       "count": 8
     },
     {
-      "channel": "#pulse-dev",
-      "kind": "channel",
-      "count": 6
-    },
-    {
-      "channel": "Group DM · mpdm-sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "channel": "Group DM · mpdm-andrea.lodigiani--sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
       "kind": "group_dm",
-      "count": 6
+      "count": 7
     },
     {
-      "channel": "#Chick-fil-A",
+      "channel": "#pulse-dev",
       "kind": "channel",
       "count": 6
     },
@@ -186,6 +181,11 @@
       "channel": "DM · Michael Chambers",
       "kind": "dm",
       "count": 5
+    },
+    {
+      "channel": "#ask-platform",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#seo-news",
@@ -218,46 +218,50 @@
       "count": 4
     },
     {
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
-      "kind": "group_dm",
+      "channel": "#Chick-fil-A",
+      "kind": "channel",
       "count": 4
     }
   ],
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 96
+      "count": 98
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 43
+      "count": 44
     },
     {
       "author": "Novus",
-      "count": 38
+      "count": 37
     },
     {
       "author": "Michael Chambers",
       "count": 20
     },
     {
-      "author": "Lauren Alt-Kishpaugh",
+      "author": "Canary Alerts",
       "count": 18
     },
     {
-      "author": "Canary Alerts",
-      "count": 15
+      "author": "Lauren Alt-Kishpaugh",
+      "count": 17
+    },
+    {
+      "author": "Felipe Melo",
+      "count": 7
     },
     {
       "author": "Alex Rosenbower",
-      "count": 8
+      "count": 7
     },
     {
       "author": "Rufo",
       "count": 7
     },
     {
-      "author": "Felipe Melo",
+      "author": "Paige Spell",
       "count": 6
     },
     {
@@ -269,7 +273,7 @@
       "count": 6
     },
     {
-      "author": "Paige Spell",
+      "author": "Shinobu Ohyama",
       "count": 5
     },
     {
@@ -277,15 +281,123 @@
       "count": 5
     },
     {
-      "author": "John Walenty",
-      "count": 4
-    },
-    {
-      "author": "Zapier",
+      "author": "Sneha Raghavan",
       "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-17 11:05",
+      "channel": "#ask-platform",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey platform team — need help wiring BigQuery write auth for a Supabase edge function (same pattern Jonathan Rice set up for the rocketlane logger). Context: Pulse (the CX app) now logs usage events to <http://pendo-reporting-ops.ai|pendo-reporting-ops.ai>_event_logging.pulse_eve",
+      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1781694339613339?thread_ts=1781694339.613339"
+    },
+    {
+      "date": "2026-06-17 10:15",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781691311879899"
+    },
+    {
+      "date": "2026-06-17 09:35",
+      "channel": "DM · Jonathan Rice",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey Jonathan — nearly there on Pulse BQ logging. The table ai_event_logging.pulse_event_log is created and I've granted <mailto:pulse-bq-logger@pendo-reporting-ops.iam.gserviceaccount.com|pulse-bq-logger@pendo-reporting-ops.iam.gserviceaccount.com> BigQuery Data Editor on it. Las",
+      "permalink": "https://pendo.slack.com/archives/D096R362SMA/p1781688905462399"
+    },
+    {
+      "date": "2026-06-17 09:30",
+      "channel": "#pulse-external",
+      "author": "Shinobu Ohyama",
+      "snippet": "<@U03A3J57CN9|Nir Shmuely> Wow, that looks perfect. That's really helpful. By the way, did I dream up a TAM-level Account Utilization Report, or is there really no such report in Pulse?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781688624742269?thread_ts=1781622666.502789"
+    },
+    {
+      "date": "2026-06-17 09:00",
+      "channel": "#pulse-external",
+      "author": "Shinobu Ohyama",
+      "snippet": "Hi <@U03A3J57CN9|Nir Shmuely> Japan Function Leaders conduct a monthly Health Check review across all accounts. I have been assigned to support the operational processes that enable the Japan Functional Leaders to make data-driven decisions. As part of this responsibility, I am e",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781686820711239?thread_ts=1781622666.502789"
+    },
+    {
+      "date": "2026-06-17 07:32",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781681521394459"
+    },
+    {
+      "date": "2026-06-17 07:30",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781681407254749"
+    },
+    {
+      "date": "2026-06-17 04:53",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781671985736969"
+    },
+    {
+      "date": "2026-06-17 04:52",
+      "channel": "#pulse-external",
+      "author": "Shinobu Ohyama",
+      "snippet": "Hi Team, Today, Pulse is showing zero customer data, and I can't see any information at all. What is causing this issue?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781671962760129?thread_ts=1781671962.760129"
+    },
+    {
+      "date": "2026-06-16 21:45",
+      "channel": "Group DM · mpdm-andrea.lodigiani--sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "author": "Sneha Raghavan",
+      "snippet": "Yes - I'd liek to have Andrea Project Manage all our Pulse rollouts to make sure the messaging and expectations stays consistent. She has a good lens for what the CE is experiencing, and how best to roll thi sout.",
+      "permalink": "https://pendo.slack.com/archives/C0B8CNNE64Q/p1781646343621139"
+    },
+    {
+      "date": "2026-06-16 16:57",
+      "channel": "#client-worldpay",
+      "author": "Carolynn Rodon",
+      "snippet": "lol disregard it probs happens instantly it was in regards to this <https://pendo.slack.com/archives/C02LPK9JH5L/p1774267225787339>",
+      "permalink": "https://pendo.slack.com/archives/C02LPK9JH5L/p1781629024667319?thread_ts=1781023635.090519"
+    },
+    {
+      "date": "2026-06-16 16:15",
+      "channel": "#pod-squad-ce",
+      "author": "Paige Spell",
+      "snippet": ":slay_party: PUMP FOR THE PROGRESS THIS WEEK: :slay_party: Action items for this week below but let me know if I missed something plzzzzz!!! TOP priority - by 6/19, complete the CAP workflow + exec dash + new health model for launch with CE org. • <@U08HXK37CS2|paige.spell>: Fina",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781626530358889?thread_ts=1781626530.358889"
+    },
+    {
+      "date": "2026-06-16 15:46",
+      "channel": "#pipeline-pulse",
+      "author": "Jordan Roberts",
+      "snippet": "Did we turn off pipeline pulse?? <@U06TG57V91T|lauren.kishpaugh>",
+      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781624811672869"
+    },
+    {
+      "date": "2026-06-16 15:12",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781622724376159"
+    },
+    {
+      "date": "2026-06-16 15:11",
+      "channel": "#pulse-external",
+      "author": "Shinobu Ohyama",
+      "snippet": "Hi Pulse Team, I'm currently exploring what data and insights are available in Pulse for the Japan team and what can be accessed through the different dashboards. My understanding is that I currently only have the standard CSM role. I'd like to review the data available through t",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781622666502789?thread_ts=1781622666.502789"
+    },
+    {
+      "date": "2026-06-16 13:16",
+      "channel": "#pulse-external",
+      "author": "Felipe Melo",
+      "snippet": "No worries. I do understand it can get confusing if the section is called Entitlements and we start showing non-entitled usage. There would need to be an explicit callout or maybe even a different section. We ran into a similar situation too when we couldn't block analytics from ",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781615770771869?thread_ts=1781278316.751529"
+    },
     {
       "date": "2026-06-16 11:20",
       "channel": "DM · Jonathan Rice",
@@ -326,7 +438,7 @@
       "channel": "#ce-ops",
       "author": "Eric Wright",
       "snippet": "Does next renewal date on SF get auto updated? I am confused looking at <https://pendo.lightning.force.com/lightning/r/Account/0015b000025K2EkAAK/view|St Lukes>, as the field on the account level shows the renewal is past due, pulse says it renews in Jan 2028 and I can also see a",
-      "permalink": "https://pendo.slack.com/archives/C02M3S5523W/p1781552659619129"
+      "permalink": "https://pendo.slack.com/archives/C02M3S5523W/p1781552659619129?thread_ts=1781552659.619129"
     },
     {
       "date": "2026-06-15 19:40",
@@ -523,118 +635,6 @@
       "author": "Sunny Lin",
       "snippet": "<@U08NYTLMD32|michael.chambers> - do you have access to this Pulse's Pendo analytics?? I think this is an example <https://app.pendo.io/s/5389416346288128>",
       "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1781097761445029?thread_ts=1781095970.413909"
-    },
-    {
-      "date": "2026-06-10 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**:bar_chart: Pipeline Pulse | Wednesday, Jun 10** --- *Marketing S0s This Week* 10 new S0s through Day 3 (projected EOW: 17) — notable drop vs. prior week's 82. Top opps: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001BCe7hIAD/view|Gartner - Expansion - ",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781095517068939"
-    },
-    {
-      "date": "2026-06-09 20:05",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Michael Chambers",
-      "snippet": "i successfully moved it over to pulse as is",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1781035506603409?thread_ts=1781011393.218309"
-    },
-    {
-      "date": "2026-06-09 19:45",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1781034307975739?thread_ts=1781034040.624959"
-    },
-    {
-      "date": "2026-06-09 19:41",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Rufo",
-      "snippet": "its more like a readiness check if Sneha is like I WANT THIS IN PULSE ASAP, how ready are we lol",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1781034079989149?thread_ts=1781011393.218309"
-    },
-    {
-      "date": "2026-06-09 19:41",
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "author": "Rufo",
-      "snippet": "but if you can mainly see if this is able to be merged into pulse at a glance, that is helpful",
-      "permalink": "https://pendo.slack.com/archives/C0B8PJQALF3/p1781034066060639?thread_ts=1781011393.218309"
-    },
-    {
-      "date": "2026-06-09 18:41",
-      "channel": "#pulse-external",
-      "author": "Michael Chambers",
-      "snippet": "Felipe, checking Pulse now to see why you are getting this error. Also, I think the Slack Workbot for CX had it's name changed to \"Pulse\"",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781030472551469?thread_ts=1781027112.015189"
-    },
-    {
-      "date": "2026-06-09 18:04",
-      "channel": "#pod-squad-ce",
-      "author": "Michael Chambers",
-      "snippet": "<@U08HXK37CS2|paige.spell> Pulse Agent Score is still setup on the back end, but is not exposed anymore to users. It was the old scoring metric we had in place.",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781028255008079?thread_ts=1781020734.871069"
-    },
-    {
-      "date": "2026-06-09 17:46",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781027161684169"
-    },
-    {
-      "date": "2026-06-09 17:13",
-      "channel": "#novus-plg-alerts",
-      "author": "Novus",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0ARQ7AFF8D/p1781025181471199?thread_ts=1781024951.420969"
-    },
-    {
-      "date": "2026-06-09 17:11",
-      "channel": "#pod-squad-ce",
-      "author": "Paige Spell",
-      "snippet": "Questions/comments: • What is Pulse Agent Score?? I thought we are focused on Ward &amp; Canary (for now) to surface any scores? Maybe I'm misunderstanding this so a TLDR here would be helpful for me, sorry! • I don't see bq_accounts_core_ancillary in BigQuery <@U02QC670XC0|zac> ",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781025091367069?thread_ts=1781020734.871069"
-    },
-    {
-      "date": "2026-06-09 16:19",
-      "channel": "#data-gtm-intelligence",
-      "author": "Emilie DeCherney",
-      "snippet": "Thanks <@U08NYTLMD32|michael.chambers> <@U02QC670XC0|zac> As we build more apps like this and also build on top of the BIRDS I'm looking to understand the gotchas we need to plan for. <@U08NYTLMD32|michael.chambers> it sounds like setting this up was not planned...were there chan",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781021985928579?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 15:58",
-      "channel": "#pod-squad-ce",
-      "author": "Michael Chambers",
-      "snippet": "<@U0202Q8H0BA|Emilie> <@U08HXK37CS2|paige.spell> Risk Reporting in Pulse — Data Source Map Risk data in Pulse has three distinct sources, each feeding different surfaces. Knowing which is which is essential for your team report. 1. Canary Bottom Line (primary risk classification)",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1781020734871069?thread_ts=1781020734.871069"
-    },
-    {
-      "date": "2026-06-09 15:33",
-      "channel": "#data-gtm-intelligence",
-      "author": "Michael Chambers",
-      "snippet": "I have disabled this one as well for now. This might be good to revisit once Jonathan and I add logging to see how many account pages are actually accessed by users in Pulse like you mentioned.",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781019227762449?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 15:26",
-      "channel": "#data-gtm-intelligence",
-      "author": "Zac Romandy",
-      "snippet": "i dont think running anything against canary hourly is worthwhile. probably not even daily. there are real cost implications with that volume and really not much changes daily unless a new call or email happens (usage signals are gradual). Yesterday's gemini costs from that volum",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781018805459589?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 15:16",
-      "channel": "#data-gtm-intelligence",
-      "author": "Michael Chambers",
-      "snippet": "If it was implemented it was not intentional. Both Canary cron jobs are unscheduled and no running backfill rows remained. Canary traffic from Pulse should drop to zero within minutes — safe to revoke / re-issue the GCP binding now. What I did: • :white_check_mark: cron.unschedul",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781018173389459?thread_ts=1781006268.794769"
-    },
-    {
-      "date": "2026-06-09 15:02",
-      "channel": "#data-gtm-intelligence",
-      "author": "Michael Chambers",
-      "snippet": "<@U02QC670XC0|zac> Yes — that's coming from the Pulse app. Confirmed source: Edge function: supabase/functions/backfill-bottom-lines/index.ts (the exact prompt is at line 136). What's driving it: a pg_cron job named backfill-bottom-lines-every-30min (migration 20260503081138_…sql",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1781017368539269?thread_ts=1781006268.794769"
     }
   ]
 }
