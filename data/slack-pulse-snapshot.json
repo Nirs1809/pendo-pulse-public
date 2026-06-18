@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-17T11:55:47.184Z",
+  "generatedAt": "2026-06-18T11:13:24.263Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-17T11:05:39.613Z",
-    "oldest": "2026-05-19T02:52:15.415Z"
+    "newest": "2026-06-18T01:26:24.779Z",
+    "oldest": "2026-05-20T02:23:34.699Z"
   },
   "totals": {
-    "messages": 378,
-    "channels": 71,
+    "messages": 377,
+    "channels": 70,
     "authors": 70
   },
   "daily": [
-    {
-      "date": "2026-05-19",
-      "count": 12
-    },
     {
       "date": "2026-05-20",
       "count": 10
@@ -118,7 +114,11 @@
     },
     {
       "date": "2026-06-17",
-      "count": 9
+      "count": 14
+    },
+    {
+      "date": "2026-06-18",
+      "count": 6
     }
   ],
   "topChannels": [
@@ -130,7 +130,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 43
+      "count": 42
     },
     {
       "channel": "#nir-me",
@@ -140,12 +140,12 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 28
+      "count": 26
     },
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 18
+      "count": 17
     },
     {
       "channel": "#pod-squad-ce",
@@ -163,6 +163,11 @@
       "count": 11
     },
     {
+      "channel": "#test_",
+      "kind": "channel",
+      "count": 9
+    },
+    {
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
       "count": 8
@@ -178,8 +183,8 @@
       "count": 6
     },
     {
-      "channel": "DM · Michael Chambers",
-      "kind": "dm",
+      "channel": "#pulse-feedback",
+      "kind": "channel",
       "count": 5
     },
     {
@@ -194,11 +199,6 @@
     },
     {
       "channel": "#biz-ops",
-      "kind": "channel",
-      "count": 4
-    },
-    {
-      "channel": "#pulse-feedback",
       "kind": "channel",
       "count": 4
     },
@@ -218,42 +218,38 @@
       "count": 4
     },
     {
-      "channel": "#Chick-fil-A",
-      "kind": "channel",
+      "channel": "DM · Michael Chambers",
+      "kind": "dm",
       "count": 4
     }
   ],
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 98
+      "count": 99
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 44
+      "count": 43
     },
     {
       "author": "Novus",
-      "count": 37
+      "count": 36
+    },
+    {
+      "author": "Canary Alerts",
+      "count": 24
     },
     {
       "author": "Michael Chambers",
       "count": 20
     },
     {
-      "author": "Canary Alerts",
-      "count": 18
-    },
-    {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 17
+      "count": 16
     },
     {
       "author": "Felipe Melo",
-      "count": 7
-    },
-    {
-      "author": "Alex Rosenbower",
       "count": 7
     },
     {
@@ -262,6 +258,10 @@
     },
     {
       "author": "Paige Spell",
+      "count": 6
+    },
+    {
+      "author": "Alex Rosenbower",
       "count": 6
     },
     {
@@ -286,6 +286,83 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-18 01:26",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781745984779909"
+    },
+    {
+      "date": "2026-06-18 01:26",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781745980236699"
+    },
+    {
+      "date": "2026-06-18 01:26",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781745979372799"
+    },
+    {
+      "date": "2026-06-18 01:26",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781745978433079"
+    },
+    {
+      "date": "2026-06-18 01:26",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781745977513419"
+    },
+    {
+      "date": "2026-06-18 01:26",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781745976017429"
+    },
+    {
+      "date": "2026-06-17 18:41",
+      "channel": "#p4e-at-pendo",
+      "author": "Emily Miller",
+      "snippet": "rather than using one Lovable app in the Pendo for Pendo Employees sub that includes all *.lovable.app subdomains, a couple thoughts/recommendations for the AI experiences <@U026KRWA8KU|Jonathan Rice> and team are creating: 1. Create a new web app in the sub and then install Pend",
+      "permalink": "https://pendo.slack.com/archives/C07J4AVFCGK/p1781721685795249?thread_ts=1781268560.912179"
+    },
+    {
+      "date": "2026-06-17 18:20",
+      "channel": "#novus-gtm",
+      "author": "Mel Mosher",
+      "snippet": "hey team just wanted to pulse check this with a human",
+      "permalink": "https://pendo.slack.com/archives/C0AE7GV2V5Y/p1781720454303559"
+    },
+    {
+      "date": "2026-06-17 16:08",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1781712513719669"
+    },
+    {
+      "date": "2026-06-17 13:10",
+      "channel": "DM · Jonathan Rice",
+      "author": "Jonathan Rice",
+      "snippet": "also data is processing now but I think I tagged all existing pages and features in pulse with pendo",
+      "permalink": "https://pendo.slack.com/archives/D096R362SMA/p1781701839170629"
+    },
+    {
+      "date": "2026-06-17 12:30",
+      "channel": "#pulse-external",
+      "author": "Michael Chambers",
+      "snippet": "<@U01DV9QDQ3F|shinobu.ohyama> <@U03A3J57CN9|Nir Shmuely> I have an API key for Rocketlane where I could integrate it into Pulse and pull a report. What are the filter criteria you want to limit to in Rocketlane? Do you want me to limit it to active accounts only for example?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781699459958869?thread_ts=1781622666.502789"
+    },
     {
       "date": "2026-06-17 11:05",
       "channel": "#ask-platform",
@@ -558,83 +635,6 @@
       "author": "Felipe Melo",
       "snippet": "Aside from that, I do agree that we should set up a call to dig deeper. I had no idea they had AA installed. Nothing shows up in Pulse",
       "permalink": "https://pendo.slack.com/archives/C01LS4YFGMS/p1781276739507589?thread_ts=1763999176.582479"
-    },
-    {
-      "date": "2026-06-12 13:43",
-      "channel": "#client-command-finserv",
-      "author": "John Walenty",
-      "snippet": "Pulse pulls from Omini but give deeper insights around the account health. But will keep that in mind. That's for the follow up there.",
-      "permalink": "https://pendo.slack.com/archives/C054X45RY02/p1781271791921409?thread_ts=1781271500.908979"
-    },
-    {
-      "date": "2026-06-12 13:38",
-      "channel": "#client-command-finserv",
-      "author": "John Walenty",
-      "snippet": "I guess this is was threw me <@U0694J72DND|taylor.hooker> <https://pulse.pendoexperience.io/accounts/0010a00001MZZ1NAAX>",
-      "permalink": "https://pendo.slack.com/archives/C054X45RY02/p1781271500908979?thread_ts=1781271500.908979"
-    },
-    {
-      "date": "2026-06-12 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Friday, Jun 12** --- *Marketing S0s This Week* 37 new S0s this week vs. 83 prior week — significant WoW drop, worth flagging for Monday review. Top 5 by ACV: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001BQig5IAD/view",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781268314839169"
-    },
-    {
-      "date": "2026-06-12 12:31",
-      "channel": "#seo-news",
-      "author": "Zapier",
-      "snippet": "*Title:* Reddit Climbs, Clicks Drop, GBP Comes To GA4 – SEO Pulse *Topics Covered: :point_right:*Google Algorithm Updates,SERP Layout Shifts,Content Structuring *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-reddit-climbs-clicks-drop-gbp-comes-to-ga4/579029/> *Pe",
-      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1781267497870649"
-    },
-    {
-      "date": "2026-06-12 00:39",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781224792729749"
-    },
-    {
-      "date": "2026-06-12 00:37",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781224678112249"
-    },
-    {
-      "date": "2026-06-11 22:06",
-      "channel": "#client-command-finserv",
-      "author": "John Walenty",
-      "snippet": "Yup makes sense. She was talking about additional apps and from what I was seeing in Pulse it looked like they were either close or over.",
-      "permalink": "https://pendo.slack.com/archives/C054X45RY02/p1781215560354659"
-    },
-    {
-      "date": "2026-06-11 16:05",
-      "channel": "#ask-platform",
-      "author": "Rufo",
-      "snippet": "hey friends! Just an update for some learnings around the GBQ Connector x Lovable. I am unsure if this is best practice, so will keep on noodling over that with the team! Huge thank you as always to <@U08NYTLMD32|michael.chambers> for being a great data partner! Quick explainer o",
-      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1781193912960869?thread_ts=1781193912.960869"
-    },
-    {
-      "date": "2026-06-11 12:45",
-      "channel": "#pipeline-pulse",
-      "author": "Lauren Alt-Kishpaugh",
-      "snippet": "=**:bar_chart: Daily Pipeline Pulse | Thursday, Jun 11** --- *Marketing S0s This Week* 25 S0s through Day 4 — projected EOW: 31 :warning: significant drop vs. prior week's 83. Top opps: • <https://pendo.lightning.force.com/lightning/r/Opportunity/006Pe00001BQwPhIAL/view|Farmers G",
-      "permalink": "https://pendo.slack.com/archives/C0AMDMQKXTP/p1781181915961689"
-    },
-    {
-      "date": "2026-06-10 13:24",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1781097850951739"
-    },
-    {
-      "date": "2026-06-10 13:22",
-      "channel": "#biz-ops",
-      "author": "Sunny Lin",
-      "snippet": "<@U08NYTLMD32|michael.chambers> - do you have access to this Pulse's Pendo analytics?? I think this is an example <https://app.pendo.io/s/5389416346288128>",
-      "permalink": "https://pendo.slack.com/archives/C0A16T0QLPN/p1781097761445029?thread_ts=1781095970.413909"
     }
   ]
 }
