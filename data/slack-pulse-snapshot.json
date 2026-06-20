@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-19T11:40:02.879Z",
+  "generatedAt": "2026-06-20T10:11:56.591Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-19T04:55:34.186Z",
-    "oldest": "2026-05-21T12:45:15.279Z"
+    "newest": "2026-06-19T16:36:08.603Z",
+    "oldest": "2026-05-21T21:30:35.657Z"
   },
   "totals": {
-    "messages": 398,
+    "messages": 389,
     "channels": 68,
     "authors": 70
   },
   "daily": [
     {
       "date": "2026-05-21",
-      "count": 14
+      "count": 3
     },
     {
       "date": "2026-05-22",
@@ -118,7 +118,7 @@
     },
     {
       "date": "2026-06-19",
-      "count": 19
+      "count": 21
     }
   ],
   "topChannels": [
@@ -130,7 +130,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 41
+      "count": 39
     },
     {
       "channel": "#test_",
@@ -145,17 +145,17 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 26
+      "count": 21
     },
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 16
+      "count": 15
     },
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 16
+      "count": 15
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -183,17 +183,17 @@
       "count": 6
     },
     {
-      "channel": "#pulse-feedback",
+      "channel": "#seo-news",
       "kind": "channel",
       "count": 5
     },
     {
-      "channel": "#ask-platform",
+      "channel": "#pulse-feedback",
       "kind": "channel",
       "count": 4
     },
     {
-      "channel": "#seo-news",
+      "channel": "#ask-platform",
       "kind": "channel",
       "count": 4
     },
@@ -226,7 +226,7 @@
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 99
+      "count": 98
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -234,7 +234,7 @@
     },
     {
       "author": "Novus",
-      "count": 35
+      "count": 33
     },
     {
       "author": "Sean Muse Testing2",
@@ -250,7 +250,7 @@
     },
     {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 15
+      "count": 14
     },
     {
       "author": "Roux",
@@ -261,16 +261,8 @@
       "count": 7
     },
     {
-      "author": "Felipe Melo",
-      "count": 7
-    },
-    {
       "author": "Rufo",
       "count": 7
-    },
-    {
-      "author": "Paige Spell",
-      "count": 6
     },
     {
       "author": "Emilie DeCherney",
@@ -281,11 +273,33 @@
       "count": 6
     },
     {
+      "author": "Zapier",
+      "count": 5
+    },
+    {
       "author": "Shinobu Ohyama",
+      "count": 5
+    },
+    {
+      "author": "Tiffany Kitchen",
       "count": 5
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-19 16:36",
+      "channel": "#IG Group Europe GmbH",
+      "author": "Michal Livnat",
+      "snippet": "Engagement Health: Amber :large_yellow_circle: No change on the customer side since the 5 June update. Pendo remains deactivated and is not installed on the IG platform. Path to Green: IG resolves compliance questions, reactivates Pendo with proper consent metadata and initialisa",
+      "permalink": "https://pendo.slack.com/archives/C08V0FNSVDZ/p1781886968603249"
+    },
+    {
+      "date": "2026-06-19 12:31",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* AI Citation Share Ships, New Data Doubts LLMS.txt – SEO Pulse *Topics Covered: :point_right:*AI in Search,Google Algorithm Updates,Content Structuring *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-ai-citation-share-ships-new-data-doubts-llms-txt/579942/",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1781872281589359"
+    },
     {
       "date": "2026-06-19 04:55",
       "channel": "#test_",
@@ -621,20 +635,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "Hey Jonathan — nearly there on Pulse BQ logging. The table ai_event_logging.pulse_event_log is created and I've granted <mailto:pulse-bq-logger@pendo-reporting-ops.iam.gserviceaccount.com|pulse-bq-logger@pendo-reporting-ops.iam.gserviceaccount.com> BigQuery Data Editor on it. Las",
       "permalink": "https://pendo.slack.com/archives/D096R362SMA/p1781688905462399"
-    },
-    {
-      "date": "2026-06-17 09:30",
-      "channel": "#pulse-external",
-      "author": "Shinobu Ohyama",
-      "snippet": "<@U03A3J57CN9|Nir Shmuely> Wow, that looks perfect. That's really helpful. By the way, did I dream up a TAM-level Account Utilization Report, or is there really no such report in Pulse?",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781688624742269?thread_ts=1781622666.502789"
-    },
-    {
-      "date": "2026-06-17 09:00",
-      "channel": "#pulse-external",
-      "author": "Shinobu Ohyama",
-      "snippet": "Hi <@U03A3J57CN9|Nir Shmuely> Japan Function Leaders conduct a monthly Health Check review across all accounts. I have been assigned to support the operational processes that enable the Japan Functional Leaders to make data-driven decisions. As part of this responsibility, I am e",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781686820711239?thread_ts=1781622666.502789"
     }
   ]
 }
