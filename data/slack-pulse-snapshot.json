@@ -1,24 +1,20 @@
 {
-  "generatedAt": "2026-06-20T10:11:56.591Z",
+  "generatedAt": "2026-06-21T10:37:26.388Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
     "newest": "2026-06-19T16:36:08.603Z",
-    "oldest": "2026-05-21T21:30:35.657Z"
+    "oldest": "2026-05-22T21:16:52.289Z"
   },
   "totals": {
-    "messages": 389,
-    "channels": 68,
-    "authors": 70
+    "messages": 378,
+    "channels": 67,
+    "authors": 69
   },
   "daily": [
     {
-      "date": "2026-05-21",
-      "count": 3
-    },
-    {
       "date": "2026-05-22",
-      "count": 9
+      "count": 1
     },
     {
       "date": "2026-05-24",
@@ -145,17 +141,17 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 21
-    },
-    {
-      "channel": "#pod-squad-ce",
-      "kind": "channel",
-      "count": 15
+      "count": 17
     },
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 15
+      "count": 14
+    },
+    {
+      "channel": "#pod-squad-ce",
+      "kind": "channel",
+      "count": 12
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -185,7 +181,7 @@
     {
       "channel": "#seo-news",
       "kind": "channel",
-      "count": 5
+      "count": 4
     },
     {
       "channel": "#pulse-feedback",
@@ -241,16 +237,16 @@
       "count": 20
     },
     {
-      "author": "Michael Chambers",
-      "count": 20
-    },
-    {
       "author": "Canary Alerts",
       "count": 19
     },
     {
+      "author": "Michael Chambers",
+      "count": 17
+    },
+    {
       "author": "Lauren Alt-Kishpaugh",
-      "count": 14
+      "count": 13
     },
     {
       "author": "Roux",
@@ -265,16 +261,8 @@
       "count": 7
     },
     {
-      "author": "Emilie DeCherney",
-      "count": 6
-    },
-    {
       "author": "slackable.dev",
       "count": 6
-    },
-    {
-      "author": "Zapier",
-      "count": 5
     },
     {
       "author": "Shinobu Ohyama",
@@ -283,6 +271,14 @@
     {
       "author": "Tiffany Kitchen",
       "count": 5
+    },
+    {
+      "author": "Zapier",
+      "count": 4
+    },
+    {
+      "author": "Sneha Raghavan",
+      "count": 4
     }
   ],
   "recent": [
