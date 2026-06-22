@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-06-21T10:37:26.388Z",
+  "generatedAt": "2026-06-22T12:55:07.723Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-19T16:36:08.603Z",
-    "oldest": "2026-05-22T21:16:52.289Z"
+    "newest": "2026-06-22T12:43:02.850Z",
+    "oldest": "2026-05-24T17:01:28.254Z"
   },
   "totals": {
-    "messages": 378,
-    "channels": 67,
+    "messages": 386,
+    "channels": 66,
     "authors": 69
   },
   "daily": [
-    {
-      "date": "2026-05-22",
-      "count": 1
-    },
     {
       "date": "2026-05-24",
       "count": 3
@@ -110,18 +106,22 @@
     },
     {
       "date": "2026-06-18",
-      "count": 21
+      "count": 19
     },
     {
       "date": "2026-06-19",
       "count": 21
+    },
+    {
+      "date": "2026-06-22",
+      "count": 11
     }
   ],
   "topChannels": [
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 81
+      "count": 85
     },
     {
       "channel": "#novus-plg-alerts",
@@ -131,7 +131,7 @@
     {
       "channel": "#test_",
       "kind": "channel",
-      "count": 37
+      "count": 35
     },
     {
       "channel": "#nir-me",
@@ -174,9 +174,24 @@
       "count": 7
     },
     {
+      "channel": "#canary_alerts_dev",
+      "kind": "channel",
+      "count": 6
+    },
+    {
       "channel": "#pulse-dev",
       "kind": "channel",
       "count": 6
+    },
+    {
+      "channel": "#canary-agent",
+      "kind": "channel",
+      "count": 5
+    },
+    {
+      "channel": "#workflow-errors",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#seo-news",
@@ -194,11 +209,6 @@
       "count": 4
     },
     {
-      "channel": "#canary_alerts_dev",
-      "kind": "channel",
-      "count": 4
-    },
-    {
       "channel": "#team-emea-tse",
       "kind": "channel",
       "count": 4
@@ -207,26 +217,16 @@
       "channel": "DM · Michael Chambers",
       "kind": "dm",
       "count": 4
-    },
-    {
-      "channel": "DM · Jonathan Rice",
-      "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "#canary-agent",
-      "kind": "channel",
-      "count": 3
     }
   ],
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 98
+      "count": 105
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 42
+      "count": 43
     },
     {
       "author": "Novus",
@@ -238,7 +238,7 @@
     },
     {
       "author": "Canary Alerts",
-      "count": 19
+      "count": 17
     },
     {
       "author": "Michael Chambers",
@@ -265,6 +265,10 @@
       "count": 6
     },
     {
+      "author": "Paige Spell",
+      "count": 5
+    },
+    {
       "author": "Shinobu Ohyama",
       "count": 5
     },
@@ -273,21 +277,94 @@
       "count": 5
     },
     {
-      "author": "Zapier",
-      "count": 4
-    },
-    {
-      "author": "Sneha Raghavan",
+      "author": "Zac Romandy",
       "count": 4
     }
   ],
   "recent": [
     {
+      "date": "2026-06-22 12:43",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-22) :white_check_mark: All 13 monitored bq_* tables fresh within their windows. :information_source: bq_contract_time_series — connector-served (live via Lovable BigQuery; Supabase mirror frozen 2026-04-30 17:39 UTC) · no",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782132182850249"
+    },
+    {
+      "date": "2026-06-22 12:41",
+      "channel": "#canary-agent",
+      "author": "Zac Romandy",
+      "snippet": "<@U0AGG9TUV8B> Uberall GmbH are questioning the value they get out of Pendo compared to what they pay for. Asking for stats on usage. Replacing guides with home-built AI driven capabilities. Pulse shows everything is green, but that doesn't appear to be the sentiment. What conver",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1782132108379479?thread_ts=1782126986.513539"
+    },
+    {
+      "date": "2026-06-22 12:38",
+      "channel": "#canary_alerts_dev",
+      "author": "Paige Spell",
+      "snippet": "Not yet! I would wait to put it into Pulse. It will be ready in the next day or so. I will make sure to let you know!",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1782131939600899?thread_ts=1781808784.526449"
+    },
+    {
+      "date": "2026-06-22 11:56",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-22) :warning: *1 of 13* monitored bq_* tables stale (listed first). :x: *bq_mau_monthly_snapshots* (updated_at) — last 2026-06-10 14:52 UTC · 11.9d (limit 9d) · (no n8n feeder) :information_source: bq_contract_time_series",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782129403202869"
+    },
+    {
+      "date": "2026-06-22 11:33",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-22) :warning: *2 of 13* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* — last 2026-04-30 17:39 UTC · 52.7d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arrow_upper_righ",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782127994864439"
+    },
+    {
+      "date": "2026-06-22 11:27",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-22) :warning: *2 of 13* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* — last 2026-04-30 17:39 UTC · 52.7d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arrow_upper_righ",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1782127629520449"
+    },
+    {
+      "date": "2026-06-22 11:16",
+      "channel": "#canary-agent",
+      "author": "Simon Adler",
+      "snippet": "<@U0AGG9TUV8B> Uberall GmbH are questioning the value they get out of Pendo compared to what they pay for. Asking for stats on usage. Replacing guides with home-built AI driven capabilities. Pulse shows everything is green, but that doesn't appear to be the sentiment. What conver",
+      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1782126986513539?thread_ts=1782126986.513539"
+    },
+    {
+      "date": "2026-06-22 11:13",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-22) :warning: *2 of 13* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* — last 2026-04-30 17:39 UTC · 52.7d (limit 2d) :x: *bq_mau_monthly_snapshots* — last 2026-06-10 14:52 UTC · 11.8d (limit 9d",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1782126806231099"
+    },
+    {
+      "date": "2026-06-22 11:07",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": ":warning: *Pulse Data Freshness* — 2 of 12 bq_* sources stale (2026-06-22) • *bq_contract_time_series* (etl_run_at) — last 2026-04-30 17:39 UTC · 52.7d old · limit 2d • *bq_mau_monthly_snapshots* (updated_at) — last 2026-06-10 14:52 UTC · 11.8d old · limit 9d :information_source:",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1782126437741839"
+    },
+    {
+      "date": "2026-06-22 10:43",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": ":warning: *Pulse Data Freshness* — 12 of 19 sources stale &gt; 2d (2026-06-22) • *bq_rocketlane_time_entries* — last 2026-04-24 17:24 UTC (58.7d old) • *bq_rocketlane_projects* — last 2026-04-25 17:23 UTC (57.7d old) • *bq_rocketlane_tasks* — last 2026-04-25 17:23 UTC (57.7d old)",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1782125017384969"
+    },
+    {
+      "date": "2026-06-22 09:14",
+      "channel": "#canary_alerts_dev",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey <@U03HWFBAUTZ|Liam> <@U08HXK37CS2|paige.spell> is the data live and accurate now? And is this table safe to use as the health signal source for Pulse?",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1782119651717899?thread_ts=1781808784.526449"
+    },
+    {
       "date": "2026-06-19 16:36",
       "channel": "#IG Group Europe GmbH",
       "author": "Michal Livnat",
       "snippet": "Engagement Health: Amber :large_yellow_circle: No change on the customer side since the 5 June update. Pendo remains deactivated and is not installed on the IG platform. Path to Green: IG resolves compliance questions, reactivates Pendo with proper consent metadata and initialisa",
-      "permalink": "https://pendo.slack.com/archives/C08V0FNSVDZ/p1781886968603249"
+      "permalink": "https://pendo.slack.com/archives/C08V0FNSVDZ/p1781886968603249?thread_ts=1781886968.603249"
     },
     {
       "date": "2026-06-19 12:31",
@@ -549,88 +626,11 @@
       "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781798782685539"
     },
     {
-      "date": "2026-06-18 15:45",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781797501456199"
-    },
-    {
       "date": "2026-06-18 15:34",
       "channel": "#test_",
       "author": "Canary Alerts",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781796882222869"
-    },
-    {
-      "date": "2026-06-18 14:47",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1781794053906729"
-    },
-    {
-      "date": "2026-06-18 12:00",
-      "channel": "#novus-updates",
-      "author": "AskSolo",
-      "snippet": "&gt; Product journeys data is now computed on demand using live Pendo aggregations instead of relying on pre-computed workflow reports. This change improves data reliability and guarantees that journey paths and bottleneck statistics load correctly for your reports. &gt; *10. AI ",
-      "permalink": "https://pendo.slack.com/archives/C0ALZA8BKEF/p1781784000580089"
-    },
-    {
-      "date": "2026-06-17 18:41",
-      "channel": "#p4e-at-pendo",
-      "author": "Emily Miller",
-      "snippet": "rather than using one Lovable app in the Pendo for Pendo Employees sub that includes all *.lovable.app subdomains, a couple thoughts/recommendations for the AI experiences <@U026KRWA8KU|Jonathan Rice> and team are creating: 1. Create a new web app in the sub and then install Pend",
-      "permalink": "https://pendo.slack.com/archives/C07J4AVFCGK/p1781721685795249?thread_ts=1781268560.912179"
-    },
-    {
-      "date": "2026-06-17 18:20",
-      "channel": "#novus-gtm",
-      "author": "Mel Mosher",
-      "snippet": "hey team just wanted to pulse check this with a human",
-      "permalink": "https://pendo.slack.com/archives/C0AE7GV2V5Y/p1781720454303559?thread_ts=1781720454.303559"
-    },
-    {
-      "date": "2026-06-17 16:08",
-      "channel": "#pulse-feedback",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1781712513719669"
-    },
-    {
-      "date": "2026-06-17 13:10",
-      "channel": "DM · Jonathan Rice",
-      "author": "Jonathan Rice",
-      "snippet": "also data is processing now but I think I tagged all existing pages and features in pulse with pendo",
-      "permalink": "https://pendo.slack.com/archives/D096R362SMA/p1781701839170629"
-    },
-    {
-      "date": "2026-06-17 12:30",
-      "channel": "#pulse-external",
-      "author": "Michael Chambers",
-      "snippet": "<@U01DV9QDQ3F|shinobu.ohyama> <@U03A3J57CN9|Nir Shmuely> I have an API key for Rocketlane where I could integrate it into Pulse and pull a report. What are the filter criteria you want to limit to in Rocketlane? Do you want me to limit it to active accounts only for example?",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1781699459958869?thread_ts=1781622666.502789"
-    },
-    {
-      "date": "2026-06-17 11:05",
-      "channel": "#ask-platform",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey platform team — need help wiring BigQuery write auth for a Supabase edge function (same pattern Jonathan Rice set up for the rocketlane logger). Context: Pulse (the CX app) now logs usage events to <http://pendo-reporting-ops.ai|pendo-reporting-ops.ai>_event_logging.pulse_eve",
-      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1781694339613339?thread_ts=1781694339.613339"
-    },
-    {
-      "date": "2026-06-17 10:15",
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7N31EJ7R/p1781691311879899"
-    },
-    {
-      "date": "2026-06-17 09:35",
-      "channel": "DM · Jonathan Rice",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey Jonathan — nearly there on Pulse BQ logging. The table ai_event_logging.pulse_event_log is created and I've granted <mailto:pulse-bq-logger@pendo-reporting-ops.iam.gserviceaccount.com|pulse-bq-logger@pendo-reporting-ops.iam.gserviceaccount.com> BigQuery Data Editor on it. Las",
-      "permalink": "https://pendo.slack.com/archives/D096R362SMA/p1781688905462399"
     }
   ]
 }
