@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-06-26T10:26:09.712Z",
+  "generatedAt": "2026-06-27T09:32:54.308Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-26T09:40:50.477Z",
-    "oldest": "2026-05-28T05:01:00.332Z"
+    "newest": "2026-06-27T07:03:53.037Z",
+    "oldest": "2026-05-28T21:29:56.258Z"
   },
   "totals": {
-    "messages": 424,
-    "channels": 70,
-    "authors": 73
+    "messages": 364,
+    "channels": 68,
+    "authors": 70
   },
   "daily": [
     {
       "date": "2026-05-28",
-      "count": 68
+      "count": 1
     },
     {
       "date": "2026-05-29",
@@ -114,24 +114,33 @@
     },
     {
       "date": "2026-06-26",
+      "count": 7
+    },
+    {
+      "date": "2026-06-27",
       "count": 2
     }
   ],
   "topChannels": [
-    {
-      "channel": "DM · Pulse",
-      "kind": "dm",
-      "count": 89
-    },
     {
       "channel": "#test_",
       "kind": "channel",
       "count": 55
     },
     {
+      "channel": "DM · Pulse",
+      "kind": "dm",
+      "count": 48
+    },
+    {
       "channel": "#nir-me",
       "kind": "channel",
-      "count": 35
+      "count": 31
+    },
+    {
+      "channel": "#pulse-external",
+      "kind": "channel",
+      "count": 25
     },
     {
       "channel": "#pod-squad-ce",
@@ -141,12 +150,7 @@
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 24
-    },
-    {
-      "channel": "#pulse-external",
-      "kind": "channel",
-      "count": 23
+      "count": 18
     },
     {
       "channel": "#iqvia-canary-alert-hackathon-demo",
@@ -154,19 +158,19 @@
       "count": 13
     },
     {
-      "channel": "#data-gtm-intelligence",
+      "channel": "#workflow-errors",
       "kind": "channel",
       "count": 12
     },
     {
-      "channel": "#workflow-errors",
-      "kind": "channel",
-      "count": 11
-    },
-    {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 11
+      "count": 10
+    },
+    {
+      "channel": "#data-gtm-intelligence",
+      "kind": "channel",
+      "count": 8
     },
     {
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
@@ -174,17 +178,22 @@
       "count": 8
     },
     {
-      "channel": "DM · Michael Chambers",
-      "kind": "dm",
-      "count": 7
-    },
-    {
-      "channel": "#pulse-dev",
+      "channel": "#aa-category-insights",
       "kind": "channel",
       "count": 6
     },
     {
-      "channel": "#aa-category-insights",
+      "channel": "#seo-news",
+      "kind": "channel",
+      "count": 5
+    },
+    {
+      "channel": "DM · Michael Chambers",
+      "kind": "dm",
+      "count": 5
+    },
+    {
+      "channel": "#pulse-dev",
       "kind": "channel",
       "count": 5
     },
@@ -209,11 +218,6 @@
       "count": 4
     },
     {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 4
-    },
-    {
       "channel": "#ask-platform",
       "kind": "channel",
       "count": 4
@@ -222,19 +226,15 @@
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 115
+      "count": 75
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 52
+      "count": 41
     },
     {
       "author": "Canary Alerts",
       "count": 36
-    },
-    {
-      "author": "Novus",
-      "count": 22
     },
     {
       "author": "Sean Muse Testing2",
@@ -245,20 +245,24 @@
       "count": 19
     },
     {
-      "author": "Canary Help",
-      "count": 12
+      "author": "Novus",
+      "count": 17
     },
     {
-      "author": "Lauren Alt-Kishpaugh",
-      "count": 10
+      "author": "Canary Help",
+      "count": 12
     },
     {
       "author": "Paige Spell",
       "count": 9
     },
     {
-      "author": "Alex Rosenbower",
+      "author": "Lauren Alt-Kishpaugh",
       "count": 9
+    },
+    {
+      "author": "Alex Rosenbower",
+      "count": 8
     },
     {
       "author": "Liam Dao",
@@ -270,18 +274,67 @@
     },
     {
       "author": "Laurence Judah",
+      "count": 6
+    },
+    {
+      "author": "Zapier",
       "count": 5
     },
     {
       "author": "Shinobu Ohyama",
       "count": 5
-    },
-    {
-      "author": "Felipe Melo",
-      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-27 07:03",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":satellite_antenna: Category Pulse — Saturday 27 June 2026 • Samsung deployed ChatGPT Enterprise and Codex to all ~125,000 South Korean employees plus its DX division globally (June 21) — reversing a company-wide ChatGPT ban it imposed in 2023 after an internal source code leak —",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1782543833037299"
+    },
+    {
+      "date": "2026-06-27 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-27) :warning: *1 of 14* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-06-24 05:58 UTC · 3.0d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782536428090189"
+    },
+    {
+      "date": "2026-06-26 19:07",
+      "channel": "#pulse-external",
+      "author": "Michael Chambers",
+      "snippet": "<@U01DV9QDQ3F|shinobu.ohyama> I have created your TAM Utilization Report here in Pulse. Please look it over and let me know if it meets you needs. It's easy for me to make edits at this point. I tried to follow your spreadsheet design as well as added some dashboards to answer th",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782500875986409?thread_ts=1781622666.502789"
+    },
+    {
+      "date": "2026-06-26 16:10",
+      "channel": "#pod-squad-ce",
+      "author": "Geoff Lewis",
+      "snippet": "Thanks Andrea! We have an Exec Summary tab started <https://pulse.pendoexperience.io/customer-health-hub|here> in Pulse and have additional plans to provide broader reporting on adoption. Happy to share and discuss those in our next CE pod meeting?",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782490216003039?thread_ts=1782484188.616859"
+    },
+    {
+      "date": "2026-06-26 16:10",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1782490207358759"
+    },
+    {
+      "date": "2026-06-26 16:09",
+      "channel": "#pulse-external",
+      "author": "Hannah Hogan",
+      "snippet": "Hi Team, is there an issue with all of the Entitlements right now? I am seeing no data for Licensed Modules for J.J. Keller. They have Analytics and Guides but I see nothing, it shows no entitlements. Please help! Thank you <https://pulse.pendoexperience.io/accounts/0010a00001NQZ",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782490155622659"
+    },
+    {
+      "date": "2026-06-26 12:31",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Google Spam Update Rolls Out, AI Manipulation In Scope *Topics Covered: :point_right:*Google Algorithm Updates,AI in Search *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-google-spam-update-rolls-out-ai-manipulation-in-scope/580565/> *Pendo Insights::bul",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1782477118075979"
+    },
     {
       "date": "2026-06-26 09:40",
       "channel": "#aa-category-insights",
@@ -582,55 +635,6 @@
       "author": "Paige Spell",
       "snippet": "<@U03A3J57CN9|Nir Shmuely> <https://github.com/pendo-io/analytics-projects/blob/master/ds_models/customer_health/customer_health_prod/florence_model.py|This is prompt >for the alerts, if we want to try to match Pulse to it before Thursday!",
       "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782233323304349?thread_ts=1782226848.466379"
-    },
-    {
-      "date": "2026-06-23 16:07",
-      "channel": "DM · Sean Muse",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "No, no connection between sf and Pulse",
-      "permalink": "https://pendo.slack.com/archives/D09TSJJUF2P/p1782230835326359"
-    },
-    {
-      "date": "2026-06-23 16:02",
-      "channel": "#canary_alerts_dev",
-      "author": "Sean Muse",
-      "snippet": "sent him a message, maybe the CTA is for the user to create it from pulse etc which feeds the loop for the next day. might add some complexity so ideally we can preseed as much as possible. tbd tommorow when he sees this",
-      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1782230548023009?thread_ts=1782230477.209459"
-    },
-    {
-      "date": "2026-06-23 16:01",
-      "channel": "#canary_alerts_dev",
-      "author": "Paige Spell",
-      "snippet": "<@U03A3J57CN9|Nir Shmuely> can probably help? it sounded like he dealt with this in Pulse",
-      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1782230477209459?thread_ts=1782230477.209459"
-    },
-    {
-      "date": "2026-06-23 15:43",
-      "channel": "DM · Sean Muse",
-      "author": "Sean Muse",
-      "snippet": "Another side question is when people add a new customer channel in Pulse, does that populate Salesforce?",
-      "permalink": "https://pendo.slack.com/archives/D09TSJJUF2P/p1782229420586019"
-    },
-    {
-      "date": "2026-06-23 15:00",
-      "channel": "#pod-squad-ce",
-      "author": "Paige Spell",
-      "snippet": ":action: Pod To Do's :action: • <@U5Z1C9QFK|Geoff Lewis> ◦ Draft the Thursday enablement outline and send it to the team &amp; confirm agenda/details with Bill and Elle. ◦ Send the new Zoom invite for Thursday. • <@U09Q295MASD|Sean Muse> ◦ Pull the list of red $100k+ accounts wit",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782226848466379?thread_ts=1782226848.466379"
-    },
-    {
-      "date": "2026-06-23 14:48",
-      "channel": "#self",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "add application info to Pulse",
-      "permalink": "https://pendo.slack.com/archives/C03DA2SJ1SB/p1782226112643489"
-    },
-    {
-      "date": "2026-06-23 14:47",
-      "channel": "#pulse-external",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Just so we're all aligned, the gap in the data is expected and is working as designed. Pulse currently only includes accounts where Type = Customer, so any former customers, prospects, or other account types will not appear in Pulse. As a result, any accounts missing from Pulse a",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782226044959769?thread_ts=1782202941.202579"
     }
   ]
 }
