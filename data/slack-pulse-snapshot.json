@@ -1,24 +1,20 @@
 {
-  "generatedAt": "2026-06-27T09:32:54.308Z",
+  "generatedAt": "2026-06-28T10:07:38.114Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-27T07:03:53.037Z",
-    "oldest": "2026-05-28T21:29:56.258Z"
+    "newest": "2026-06-28T09:36:34.092Z",
+    "oldest": "2026-05-29T21:01:38.674Z"
   },
   "totals": {
-    "messages": 364,
-    "channels": 68,
-    "authors": 70
+    "messages": 349,
+    "channels": 65,
+    "authors": 65
   },
   "daily": [
     {
-      "date": "2026-05-28",
-      "count": 1
-    },
-    {
       "date": "2026-05-29",
-      "count": 17
+      "count": 1
     },
     {
       "date": "2026-05-30",
@@ -119,6 +115,10 @@
     {
       "date": "2026-06-27",
       "count": 2
+    },
+    {
+      "date": "2026-06-28",
+      "count": 2
     }
   ],
   "topChannels": [
@@ -130,7 +130,7 @@
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 48
+      "count": 47
     },
     {
       "channel": "#nir-me",
@@ -140,27 +140,27 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 25
+      "count": 24
     },
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 24
+      "count": 21
     },
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 18
+      "count": 15
+    },
+    {
+      "channel": "#workflow-errors",
+      "kind": "channel",
+      "count": 13
     },
     {
       "channel": "#iqvia-canary-alert-hackathon-demo",
       "kind": "channel",
       "count": 13
-    },
-    {
-      "channel": "#workflow-errors",
-      "kind": "channel",
-      "count": 12
     },
     {
       "channel": "#pipeline-pulse",
@@ -183,11 +183,6 @@
       "count": 6
     },
     {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 5
-    },
-    {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
       "count": 5
@@ -208,7 +203,7 @@
       "count": 5
     },
     {
-      "channel": "#alex-test",
+      "channel": "#seo-news",
       "kind": "channel",
       "count": 4
     },
@@ -221,6 +216,11 @@
       "channel": "#ask-platform",
       "kind": "channel",
       "count": 4
+    },
+    {
+      "channel": "Group DM · mpdm-andrea.lodigiani--sneha--melissa.cooper--emilie.decherney--nir.shmuely--sunny.lin--krystian.serwinski--michael.chambers-1",
+      "kind": "group_dm",
+      "count": 4
     }
   ],
   "topAuthors": [
@@ -230,7 +230,7 @@
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 41
+      "count": 42
     },
     {
       "author": "Canary Alerts",
@@ -242,30 +242,30 @@
     },
     {
       "author": "Michael Chambers",
-      "count": 19
+      "count": 18
     },
     {
       "author": "Novus",
-      "count": 17
+      "count": 15
     },
     {
       "author": "Canary Help",
       "count": 12
     },
     {
-      "author": "Paige Spell",
-      "count": 9
-    },
-    {
       "author": "Lauren Alt-Kishpaugh",
       "count": 9
     },
     {
-      "author": "Alex Rosenbower",
-      "count": 8
+      "author": "Liam Dao",
+      "count": 7
     },
     {
-      "author": "Liam Dao",
+      "author": "Paige Spell",
+      "count": 7
+    },
+    {
+      "author": "Alex Rosenbower",
       "count": 7
     },
     {
@@ -277,15 +277,29 @@
       "count": 6
     },
     {
-      "author": "Zapier",
+      "author": "Shinobu Ohyama",
       "count": 5
     },
     {
-      "author": "Shinobu Ohyama",
-      "count": 5
+      "author": "Zapier",
+      "count": 4
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-28 09:36",
+      "channel": "#pulse-external",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@U01DV9QDQ3F|shinobu.ohyama> We'd love to hear your thoughts! Our goal is to help your team in Japan become power users of Pulse, so any feedback or suggestions you can share would be greatly appreciated.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782639394092319?thread_ts=1781622666.502789"
+    },
+    {
+      "date": "2026-06-28 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-28) :warning: *1 of 14* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-06-24 05:58 UTC · 4.0d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782622825284969"
+    },
     {
       "date": "2026-06-27 07:03",
       "channel": "#aa-category-insights",
@@ -326,7 +340,7 @@
       "channel": "#pulse-external",
       "author": "Hannah Hogan",
       "snippet": "Hi Team, is there an issue with all of the Entitlements right now? I am seeing no data for Licensed Modules for J.J. Keller. They have Analytics and Guides but I see nothing, it shows no entitlements. Please help! Thank you <https://pulse.pendoexperience.io/accounts/0010a00001NQZ",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782490155622659"
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782490155622659?thread_ts=1782490155.622659"
     },
     {
       "date": "2026-06-26 12:31",
@@ -621,20 +635,6 @@
       "author": "Canary Alerts",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1782240166240969"
-    },
-    {
-      "date": "2026-06-23 17:09",
-      "channel": "#Datavant",
-      "author": "Matthew Rapp",
-      "snippet": "Context and Attendees • Datavant (Tim Hill) and Ontellus (Nicole Alcock) coordinating Entra Sync rollout • Emma (Datavant’s Entra admin) added to thread for visibility; she’ll need to make the actual changes Communication Plan • Nicole provided the user list • Advance notice requ",
-      "permalink": "https://pendo.slack.com/archives/C028PH0PZED/p1782234568054189?thread_ts=1782234563.634419"
-    },
-    {
-      "date": "2026-06-23 16:48",
-      "channel": "#pod-squad-ce",
-      "author": "Paige Spell",
-      "snippet": "<@U03A3J57CN9|Nir Shmuely> <https://github.com/pendo-io/analytics-projects/blob/master/ds_models/customer_health/customer_health_prod/florence_model.py|This is prompt >for the alerts, if we want to try to match Pulse to it before Thursday!",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782233323304349?thread_ts=1782226848.466379"
     }
   ]
 }
