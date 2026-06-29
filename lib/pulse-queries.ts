@@ -1,3 +1,4 @@
+import { consolidateDepartmentRoleCounts } from "./department-roles";
 import type { PulseContext, PulseWidget } from "./types";
 
 /**
@@ -240,13 +241,16 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       { sort: ["-visitors"] },
       { limit: 20 },
     ],
+    // Consolidate deprecated role values into the current taxonomy (e.g.
+    // `sales` → `account_owner`) and re-sum, so retired roles don't show as
+    // their own bars. See lib/department-roles.ts.
     transform: (rows) =>
-      rows.map((r) => ({
-        name: prettyLabel(
-          String(deep(r, "metadata.agent.department_role") ?? "—"),
-        ),
-        visitors: Number(r.visitors ?? 0),
-      })),
+      consolidateDepartmentRoleCounts(
+        rows.map((r) => ({
+          rawRole: String(deep(r, "metadata.agent.department_role") ?? "—"),
+          visitors: Number(r.visitors ?? 0),
+        })),
+      ).map(({ prettyRole, visitors }) => ({ name: prettyRole, visitors })),
   },
 
   // ─── Row 5: department roles logging in · last 30 days ──────────────
@@ -270,15 +274,18 @@ export const PULSE_WIDGETS: PulseWidget[] = [
       { sort: ["-visitors"] },
       { limit: 50 },
     ],
+    // Same consolidation as the bar chart above: fold deprecated roles into the
+    // current taxonomy before computing visitor totals and target coverage.
     transform: (rows) =>
-      rows.map((r) => {
-        const pretty = prettyLabel(
-          String(deep(r, "metadata.agent.department_role") ?? "—"),
-        );
-        const visitors = Number(r.visitors ?? 0);
-        const target = DEPT_TARGETS[pretty];
+      consolidateDepartmentRoleCounts(
+        rows.map((r) => ({
+          rawRole: String(deep(r, "metadata.agent.department_role") ?? "—"),
+          visitors: Number(r.visitors ?? 0),
+        })),
+      ).map(({ prettyRole, visitors }) => {
+        const target = DEPT_TARGETS[prettyRole];
         const row: Record<string, unknown> = {
-          "Department role": pretty,
+          "Department role": prettyRole,
           Visitors: visitors,
           Target: target ?? "—",
         };

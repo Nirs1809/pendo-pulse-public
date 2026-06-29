@@ -1,4 +1,5 @@
 import { CE_ROSTER } from "./ce-roster";
+import { prettyDepartmentRole } from "./department-roles";
 import type { AggregationResult, CeAdoptionStats, PulseContext } from "./types";
 
 /**
@@ -195,7 +196,9 @@ export async function buildPulseContext(): Promise<PulseContext> {
   for (const r of deptVisitorRows) {
     const rawRole = String(r.role ?? "");
     if (!rawRole) continue;
-    const key = prettyDeptLabel(rawRole);
+    // Key by the canonical role so deprecated values (e.g. `sales`) expand
+    // under their current bucket (Account Owner), matching the table rows.
+    const key = prettyDepartmentRole(rawRole);
     if (!pulseVisitorsByDept[key]) pulseVisitorsByDept[key] = [];
     pulseVisitorsByDept[key].push({
       Visitor: String(r.visitorId ?? "—"),
