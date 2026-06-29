@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-28T10:07:38.114Z",
+  "generatedAt": "2026-06-29T12:04:48.957Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-06-28T09:36:34.092Z",
-    "oldest": "2026-05-29T21:01:38.674Z"
+    "newest": "2026-06-29T10:28:41.654Z",
+    "oldest": "2026-05-31T06:58:11.336Z"
   },
   "totals": {
     "messages": 349,
@@ -12,14 +12,6 @@
     "authors": 65
   },
   "daily": [
-    {
-      "date": "2026-05-29",
-      "count": 1
-    },
-    {
-      "date": "2026-05-30",
-      "count": 1
-    },
     {
       "date": "2026-05-31",
       "count": 12
@@ -86,7 +78,7 @@
     },
     {
       "date": "2026-06-18",
-      "count": 19
+      "count": 18
     },
     {
       "date": "2026-06-19",
@@ -118,6 +110,10 @@
     },
     {
       "date": "2026-06-28",
+      "count": 3
+    },
+    {
+      "date": "2026-06-29",
       "count": 2
     }
   ],
@@ -125,7 +121,7 @@
     {
       "channel": "#test_",
       "kind": "channel",
-      "count": 55
+      "count": 54
     },
     {
       "channel": "DM · Pulse",
@@ -148,14 +144,9 @@
       "count": 21
     },
     {
-      "channel": "#novus-plg-alerts",
-      "kind": "channel",
-      "count": 15
-    },
-    {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 13
+      "count": 14
     },
     {
       "channel": "#iqvia-canary-alert-hackathon-demo",
@@ -163,9 +154,19 @@
       "count": 13
     },
     {
+      "channel": "#novus-plg-alerts",
+      "kind": "channel",
+      "count": 13
+    },
+    {
       "channel": "#pipeline-pulse",
       "kind": "channel",
       "count": 10
+    },
+    {
+      "channel": "#aa-category-insights",
+      "kind": "channel",
+      "count": 8
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -176,11 +177,6 @@
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
       "count": 8
-    },
-    {
-      "channel": "#aa-category-insights",
-      "kind": "channel",
-      "count": 6
     },
     {
       "channel": "DM · Michael Chambers",
@@ -226,7 +222,7 @@
   "topAuthors": [
     {
       "author": "Pulse",
-      "count": 75
+      "count": 76
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -238,7 +234,7 @@
     },
     {
       "author": "Sean Muse Testing2",
-      "count": 20
+      "count": 19
     },
     {
       "author": "Michael Chambers",
@@ -246,7 +242,7 @@
     },
     {
       "author": "Novus",
-      "count": 15
+      "count": 13
     },
     {
       "author": "Canary Help",
@@ -255,6 +251,10 @@
     {
       "author": "Lauren Alt-Kishpaugh",
       "count": 9
+    },
+    {
+      "author": "Laurence Judah",
+      "count": 8
     },
     {
       "author": "Liam Dao",
@@ -273,10 +273,6 @@
       "count": 7
     },
     {
-      "author": "Laurence Judah",
-      "count": 6
-    },
-    {
       "author": "Shinobu Ohyama",
       "count": 5
     },
@@ -286,6 +282,27 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-06-29 10:28",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":satellite_antenna: Category Pulse — Monday 29 June 2026 • Patronus AI raised $50M Series B to build Digital World Models — simulated environments that stress-test AI agents against realistic enterprise workflows before deployment — pre-production agent evaluation infrastructure ",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1782728921654219"
+    },
+    {
+      "date": "2026-06-29 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-06-29) :white_check_mark: All 14 monitored bq_* tables fresh within their windows. :white_check_mark: bq_mau_monthly_snapshots — last 2026-06-22 12:35 UTC · 6.7d · (no n8n feeder) :white_check_mark: bq_pendo_all_employees — ",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782709225860249"
+    },
+    {
+      "date": "2026-06-28 12:33",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":satellite_antenna: Category Pulse — Sunday 28 June 2026 • Google, Microsoft, and nine others published the Agentic Resource Discovery (ARD) v0.9 spec on June 17 — an open standard for how AI agents discover, verify, and connect to enterprise tools, backed by Cisco, Databricks, G",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1782649985147079"
+    },
     {
       "date": "2026-06-28 09:36",
       "channel": "#pulse-external",
@@ -614,27 +631,6 @@
       "author": "Liam Dao",
       "snippet": ":bufo-alarma:HOT NEWS DROP :newspaper: Geoff has dropped the presentation flow for Thursday's enablement session <https://docs.google.com/document/d/1eneZixr3Ocl7wa1aMdxANPjQECKSgNnVy8sXG-0fj6Q/edit?tab=t.0|here>! At a high level we have: 1. Slides <@U5Z1C9QFK|Geoff Lewis> <@U08H",
       "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782246112941159?thread_ts=1782246112.941159"
-    },
-    {
-      "date": "2026-06-23 20:13",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1782245628877299"
-    },
-    {
-      "date": "2026-06-23 19:39",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1782243588346499"
-    },
-    {
-      "date": "2026-06-23 18:42",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1782240166240969"
     }
   ]
 }
