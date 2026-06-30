@@ -78,4 +78,9 @@ export interface PulseWidget {
     format?: "number" | "percent" | "duration";
   };
   colSpan?: 1 | 2 | 3;
+
+  // When true, the widget is rendered with an interactive time-range
+  // control (preset windows) that refetches the series client-side via
+  // /api/dau without busting the page's ISR cache.
+  rangeControl?: boolean;
 }

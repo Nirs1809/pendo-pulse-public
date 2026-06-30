@@ -77,6 +77,42 @@ const widgets = [
     },
     { sort: ["day"] },
   ]],
+  ["pulse-dau-90d", [
+    {
+      source: {
+        events: { appId: Number(APP_ID) },
+        timeSeries: { first: ms(90), last: "now()", period: "dayRange" },
+      },
+    },
+    {
+      group: {
+        group: ["day"],
+        fields: [
+          { visitors: { count: "visitorId" } },
+          { events: { count: null } },
+        ],
+      },
+    },
+    { sort: ["day"] },
+  ]],
+  ["pulse-dau-365d", [
+    {
+      source: {
+        events: { appId: Number(APP_ID) },
+        timeSeries: { first: ms(365), last: "now()", period: "dayRange" },
+      },
+    },
+    {
+      group: {
+        group: ["day"],
+        fields: [
+          { visitors: { count: "visitorId" } },
+          { events: { count: null } },
+        ],
+      },
+    },
+    { sort: ["day"] },
+  ]],
   ["pulse-new-visitors-90d", [
     { source: { visitors: null } },
     { filter: `${APP}.firstvisit >= ${ms(90)}` },

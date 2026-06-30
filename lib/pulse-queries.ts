@@ -1,3 +1,9 @@
+import {
+  buildDauPipeline,
+  DAU_DEFAULT_DAYS,
+  dauSubtitle,
+  transformDauRows,
+} from "./dau";
 import { consolidateDepartmentRoleCounts } from "./department-roles";
 import type { PulseContext, PulseWidget } from "./types";
 
@@ -101,37 +107,18 @@ export const PULSE_WIDGETS: PulseWidget[] = [
     // their most recent day only.
     id: "pulse-dau-30d",
     title: "Daily active Pulse visitors",
-    subtitle: "Last 30 days",
+    subtitle: dauSubtitle(DAU_DEFAULT_DAYS),
     kind: "line",
     colSpan: 3,
     hints: { xField: "date", yField: "visitors" },
-    build: () => [
-      {
-        source: {
-          events: { appId: Number(APP_ID) },
-          timeSeries: {
-            first: ms(30),
-            last: "now()",
-            period: "dayRange",
-          },
-        },
-      },
-      {
-        group: {
-          group: ["day"],
-          fields: [
-            { visitors: { count: "visitorId" } },
-            { events: { count: null } },
-          ],
-        },
-      },
-      { sort: ["day"] },
-    ],
+    // Interactive: the range buttons swap the trailing window (30/90/180/
+    // 365d) and refetch via /api/dau. The build()/transform() here is the
+    // default server render (30d) and the pipeline is shared with the API
+    // route through lib/dau.ts so both stay identical.
+    rangeControl: true,
+    build: () => buildDauPipeline(DAU_DEFAULT_DAYS),
     transform: (rows) =>
-      rows.map((r) => ({
-        date: new Date(Number(r.day)).toISOString().slice(5, 10),
-        visitors: Number(r.visitors ?? 0),
-      })),
+      transformDauRows(rows) as unknown as Array<Record<string, unknown>>,
   },
   {
     id: "pulse-new-visitors-90d",

@@ -4,8 +4,10 @@ import type {
   PulseWidget,
 } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { DAU_DEFAULT_DAYS, type DauPoint } from "@/lib/dau";
 import { AdoptionWidget } from "./widgets/adoption-widget";
 import { ChartWidget } from "./widgets/chart-widget";
+import { DauChart } from "./widgets/dau-chart";
 import { ErrorWidget } from "./widgets/error-widget";
 import { KpiWidget } from "./widgets/kpi-widget";
 import { TableWidget } from "./widgets/table-widget";
@@ -44,6 +46,15 @@ export function DashboardGrid({ widgets }: { widgets: RenderedWidget[] }) {
         <div key={widget.id} className={cn(spanClass(widget))}>
           {error ? (
             <ErrorWidget widget={widget} message={error} />
+          ) : widget.rangeControl ? (
+            // Interactive time-range chart (e.g. Daily active visitors).
+            // The server render provides the default-window series; the
+            // component handles wider windows via client refetch.
+            <DauChart
+              title={widget.title}
+              initialDays={DAU_DEFAULT_DAYS}
+              initialPoints={rows as unknown as DauPoint[]}
+            />
           ) : widget.kind === "kpi" ? (
             <KpiWidget widget={widget} rows={rows} />
           ) : widget.kind === "adoption" ? (
