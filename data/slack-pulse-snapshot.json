@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-07-03T10:09:39.644Z",
+  "generatedAt": "2026-07-04T09:28:11.761Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-03T07:50:07.657Z",
-    "oldest": "2026-06-04T10:41:36.017Z"
+    "newest": "2026-07-04T05:00:31.010Z",
+    "oldest": "2026-06-05T10:38:11.031Z"
   },
   "totals": {
-    "messages": 421,
-    "channels": 164,
-    "authors": 65
+    "messages": 412,
+    "channels": 162,
+    "authors": 62
   },
   "daily": [
-    {
-      "date": "2026-06-04",
-      "count": 11
-    },
     {
       "date": "2026-06-05",
       "count": 8
@@ -114,7 +110,11 @@
     },
     {
       "date": "2026-07-03",
-      "count": 3
+      "count": 4
+    },
+    {
+      "date": "2026-07-04",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -146,7 +146,7 @@
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 17
+      "count": 18
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -154,28 +154,13 @@
       "count": 14
     },
     {
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "kind": "channel",
-      "count": 13
-    },
-    {
       "channel": "#aa-category-insights",
       "kind": "channel",
       "count": 10
     },
     {
-      "channel": "#pipeline-pulse",
-      "kind": "channel",
-      "count": 8
-    },
-    {
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
-      "count": 8
-    },
-    {
-      "channel": "#novus-plg-alerts",
-      "kind": "channel",
       "count": 8
     },
     {
@@ -184,14 +169,29 @@
       "count": 7
     },
     {
-      "channel": "#canary_alerts_dev",
+      "channel": "#iqvia-canary-alert-hackathon-demo",
       "kind": "channel",
-      "count": 5
+      "count": 7
+    },
+    {
+      "channel": "#pipeline-pulse",
+      "kind": "channel",
+      "count": 7
+    },
+    {
+      "channel": "#novus-plg-alerts",
+      "kind": "channel",
+      "count": 7
     },
     {
       "channel": "#seo-news",
       "kind": "channel",
-      "count": 4
+      "count": 5
+    },
+    {
+      "channel": "#canary_alerts_dev",
+      "kind": "channel",
+      "count": 5
     },
     {
       "channel": "#ask-platform",
@@ -222,11 +222,11 @@
   "topAuthors": [
     {
       "author": "Canary Alerts",
-      "count": 117
+      "count": 111
     },
     {
       "author": "Pulse",
-      "count": 39
+      "count": 40
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -261,10 +261,6 @@
       "count": 8
     },
     {
-      "author": "Novus",
-      "count": 8
-    },
-    {
       "author": "Emilie DeCherney",
       "count": 7
     },
@@ -273,15 +269,33 @@
       "count": 7
     },
     {
-      "author": "Lauren Alt-Kishpaugh",
+      "author": "Rufo",
       "count": 7
     },
     {
-      "author": "Rufo",
+      "author": "Novus",
       "count": 7
+    },
+    {
+      "author": "Ugne Ash",
+      "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-04 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-04) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-07-01 09:08 UTC · 2.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783141231010949"
+    },
+    {
+      "date": "2026-07-03 12:32",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Where Clicks Go, What Agents Skip, Who’s Leaving Bing – SEO Pulse *Topics Covered: :point_right:*AI in Search,Google Algorithm Updates,SERP Layout Shifts *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-where-clicks-go-what-agents-skip-whos-leaving-bing/58",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1783081955869849"
+    },
     {
       "date": "2026-07-03 07:50",
       "channel": "#sentiment-gtm-questions",
@@ -617,20 +631,6 @@
       "author": "Canary Help",
       "snippet": ":rotating_light: Help requested by <@U07QVMA8V1S> in <#C06TXV02V98> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@U07QVMA8V1S> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C06TXV02V98/p1782914377674769?thread_ts=1782914377.674769&amp;cid=C06TXV02V98>",
       "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782916166232229?thread_ts=1782916166.232229"
-    },
-    {
-      "date": "2026-07-01 14:26",
-      "channel": "#canary-help",
-      "author": "Emilie DeCherney",
-      "snippet": "<@U08HXK37CS2|paige.spell> I think the TLDR is the poor usage contract is the <https://pendo.lightning.force.com/lightning/r/Contract/800Pe00001H95j0IAB/view|one that just started a month ago>. The other<https://pendo.lightning.force.com/lightning/r/Contract/800Pf00000MUFmZIAX/vi",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782916015630909?thread_ts=1782914868.783939"
-    },
-    {
-      "date": "2026-07-01 14:19",
-      "channel": "#canary-help",
-      "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U012LTVGRFT> in <#C04USQVF2SC> Pendozers in thread: <@U09A4J9PPPY> <@U012LTVGRFT> <@U0AQHGF02N8> <@U4ARQ6603> <@U0AGG9TUV8B> :thread: <https://pendo.slack.com/archives/C04USQVF2SC/p1782914416028769?thread_ts=1782914416.028769&amp;cid=C04USQVF2",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782915583819299"
     }
   ]
 }
