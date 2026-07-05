@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-07-04T09:28:11.761Z",
+  "generatedAt": "2026-07-05T09:46:02.219Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-04T05:00:31.010Z",
-    "oldest": "2026-06-05T10:38:11.031Z"
+    "newest": "2026-07-05T05:00:27.333Z",
+    "oldest": "2026-06-06T07:05:41.713Z"
   },
   "totals": {
-    "messages": 412,
+    "messages": 406,
     "channels": 162,
     "authors": 62
   },
   "daily": [
-    {
-      "date": "2026-06-05",
-      "count": 8
-    },
     {
       "date": "2026-06-06",
       "count": 5
@@ -114,6 +110,10 @@
     },
     {
       "date": "2026-07-04",
+      "count": 2
+    },
+    {
+      "date": "2026-07-05",
       "count": 1
     }
   ],
@@ -146,7 +146,7 @@
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 18
+      "count": 19
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -157,11 +157,6 @@
       "channel": "#aa-category-insights",
       "kind": "channel",
       "count": 10
-    },
-    {
-      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
-      "kind": "group_dm",
-      "count": 8
     },
     {
       "channel": "DM · Michael Chambers",
@@ -176,22 +171,27 @@
     {
       "channel": "#pipeline-pulse",
       "kind": "channel",
-      "count": 7
+      "count": 6
     },
     {
       "channel": "#novus-plg-alerts",
       "kind": "channel",
-      "count": 7
-    },
-    {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 5
+      "count": 6
     },
     {
       "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 5
+    },
+    {
+      "channel": "#seo-news",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
+      "kind": "group_dm",
+      "count": 4
     },
     {
       "channel": "#ask-platform",
@@ -226,7 +226,7 @@
     },
     {
       "author": "Pulse",
-      "count": 40
+      "count": 41
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -234,7 +234,7 @@
     },
     {
       "author": "Michael Chambers",
-      "count": 25
+      "count": 24
     },
     {
       "author": "Canary Help",
@@ -269,19 +269,33 @@
       "count": 7
     },
     {
-      "author": "Rufo",
-      "count": 7
+      "author": "Ugne Ash",
+      "count": 6
+    },
+    {
+      "author": "Shinobu Ohyama",
+      "count": 6
     },
     {
       "author": "Novus",
-      "count": 7
-    },
-    {
-      "author": "Ugne Ash",
       "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-05 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-05) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-07-01 09:08 UTC · 3.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783227627333359"
+    },
+    {
+      "date": "2026-07-04 22:39",
+      "channel": "#cro-pipeline-daily",
+      "author": "Bill Nemesi",
+      "snippet": ":bar_chart: Daily Pipeline Digest — Friday, July 3, 2026 7:00 AM ET | Last 24 hours of movement | FQ2 FY27 (29 days left) ━━━━━━━━━━━━━━━━━━━━ :new: NEW PIPELINE — 30 opps created :moneybag: - Unite Students - P4E-2026 — $102k net ARR (GBP opp) | Stg 2 | Close: 09/30 | AE: Joan Y",
+      "permalink": "https://pendo.slack.com/archives/C0B0MNQRPPA/p1783204761331599"
+    },
     {
       "date": "2026-07-04 05:00",
       "channel": "#workflow-errors",
@@ -617,20 +631,6 @@
       "author": "Felipe Melo",
       "snippet": "[Issue] I'm looking at <https://pulse.pendoexperience.io/accounts/001Pf00000T8qASIAZ|Aptia Group> and I see a couple of issues with Entitlements showing \"insufficient data\" on modules and Top Visitors not showing. If we dig t<https://app.pendo.io/s/5668600916475904/account/Aptia|",
       "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782916373510089?thread_ts=1782916373.510089"
-    },
-    {
-      "date": "2026-07-01 14:29",
-      "channel": "#canary-help",
-      "author": "Paige Spell",
-      "snippet": "Yes! I saw! I thought the conversation with Canary was great and really appreciate Melissa's feedback! Model does consider the \"timing\"/how mature the contract is. and so does the module adoption that <@U02QC670XC0|zac> incorporate (assessing cohorts). But curious about Pulse and",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782916177159659?thread_ts=1782914868.783939"
-    },
-    {
-      "date": "2026-07-01 14:29",
-      "channel": "#canary-help",
-      "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U07QVMA8V1S> in <#C06TXV02V98> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@U07QVMA8V1S> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C06TXV02V98/p1782914377674769?thread_ts=1782914377.674769&amp;cid=C06TXV02V98>",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782916166232229?thread_ts=1782916166.232229"
     }
   ]
 }
