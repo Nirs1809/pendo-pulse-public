@@ -361,7 +361,8 @@ export const PULSE_WIDGETS: PulseWidget[] = [
  * Add more targets here as they are defined.
  */
 const DEPT_TARGETS: Record<string, number> = {
-  "Customer Engineer": 100,
+  // Manually-maintained target headcount; update by hand when it changes.
+  "Customer Engineer": 96,
 };
 
 const LABEL_ACRONYMS = new Set([
