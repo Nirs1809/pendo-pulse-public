@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-07-05T09:46:02.219Z",
+  "generatedAt": "2026-07-06T11:42:11.227Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-05T05:00:27.333Z",
-    "oldest": "2026-06-06T07:05:41.713Z"
+    "newest": "2026-07-06T11:02:43.342Z",
+    "oldest": "2026-06-08T12:45:10.206Z"
   },
   "totals": {
-    "messages": 406,
-    "channels": 162,
+    "messages": 409,
+    "channels": 163,
     "authors": 62
   },
   "daily": [
-    {
-      "date": "2026-06-06",
-      "count": 5
-    },
     {
       "date": "2026-06-08",
       "count": 5
@@ -114,7 +110,11 @@
     },
     {
       "date": "2026-07-05",
-      "count": 1
+      "count": 2
+    },
+    {
+      "date": "2026-07-06",
+      "count": 7
     }
   ],
   "topChannels": [
@@ -131,7 +131,12 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 24
+      "count": 25
+    },
+    {
+      "channel": "#workflow-errors",
+      "kind": "channel",
+      "count": 21
     },
     {
       "channel": "DM · Pulse",
@@ -142,11 +147,6 @@
       "channel": "#canary-help",
       "kind": "channel",
       "count": 20
-    },
-    {
-      "channel": "#workflow-errors",
-      "kind": "channel",
-      "count": 19
     },
     {
       "channel": "#data-gtm-intelligence",
@@ -174,14 +174,14 @@
       "count": 6
     },
     {
-      "channel": "#novus-plg-alerts",
-      "kind": "channel",
-      "count": 6
-    },
-    {
       "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 5
+    },
+    {
+      "channel": "#pulse-dev",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#seo-news",
@@ -192,6 +192,11 @@
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
       "count": 4
+    },
+    {
+      "channel": "DM · Amy Tyler",
+      "kind": "dm",
+      "count": 3
     },
     {
       "channel": "#ask-platform",
@@ -212,11 +217,6 @@
       "channel": "DM · Krystian Serwinski",
       "kind": "dm",
       "count": 3
-    },
-    {
-      "channel": "#pulse-dev",
-      "kind": "channel",
-      "count": 3
     }
   ],
   "topAuthors": [
@@ -226,11 +226,11 @@
     },
     {
       "author": "Pulse",
-      "count": 41
+      "count": 43
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 31
+      "count": 35
     },
     {
       "author": "Michael Chambers",
@@ -277,11 +277,67 @@
       "count": 6
     },
     {
-      "author": "Novus",
-      "count": 6
+      "author": "Alex Rosenbower",
+      "count": 5
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-06 11:02",
+      "channel": "#pulse-external",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Followed up on the missing-accounts gap. I went into the open-opp data in Salesforce to see if we could attribute non-customer pipeline to specific CEs. First, why the gap exists: CE Compass only pulls Customer-type accounts and the open opps on them. So customer opps count, but ",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783335763342999?thread_ts=1782202941.202579"
+    },
+    {
+      "date": "2026-07-06 10:07",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": "Pulse uses a *two-tier health scoring system*: *1. AI Score (primary)* — An AI agent analyzes 14 weighted data sources (CRM signals, product adoption, engagement, NPS, meetings, Slack sentiment, support tickets, opportunities, renewal timeline, financials, etc.) and outputs a 0–1",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783332435812779?thread_ts=1783332432.804199"
+    },
+    {
+      "date": "2026-07-06 09:55",
+      "channel": "DM · Amy Tyler",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "hey Amy - I think moving the project to WS only is blocking new emp to log in since they first need to be added to lovable ws - can we do something with it? Most of my users are from Revenue and do not need or want to access lovable in order to access Pulse thank you",
+      "permalink": "https://pendo.slack.com/archives/D03DJP825NW/p1783331710652619"
+    },
+    {
+      "date": "2026-07-06 08:51",
+      "channel": "DM · U02520BEZPX",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<https://pulse.pendoexperience.io|pulse.pendoexperience.io>",
+      "permalink": "https://pendo.slack.com/archives/D03GU4RQ8FP/p1783327889538299"
+    },
+    {
+      "date": "2026-07-06 07:09",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":bar_chart: Agent Analytics Intel — Monday 7 July 2026 AI adoption measurement, LLM product analytics, and enterprise ROI accountability for AI agents. ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ The post-holiday Monday signals converge on the same point: enterpr",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783321793427929"
+    },
+    {
+      "date": "2026-07-06 07:03",
+      "channel": "#aa-category-insights",
+      "author": "Laurence Judah",
+      "snippet": ":satellite_antenna: Category Pulse — Monday 06 July 2026 • Microsoft cancels internal Claude Code pilot after burning its annual AI budget in months — flat seat pricing masked real token consumption until usage-based billing hit; Uber reportedly hit the identical wall, exhausting",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783321403339239"
+    },
+    {
+      "date": "2026-07-06 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-06) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-07-01 09:08 UTC · 4.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783314030600379"
+    },
+    {
+      "date": "2026-07-05 10:52",
+      "channel": "#pulse-dev",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "things to work on: 1. <https://pendo.slack.com/archives/C0AFC0VLXNH/p1782914962027639|add emails to last contact> from bq emails table 2. <https://pendo.slack.com/archives/C0AKQ1YLBPD/p1782909353501699|check adp last contact>",
+      "permalink": "https://pendo.slack.com/archives/C0AF8JGPZ5Z/p1783248763672749"
+    },
     {
       "date": "2026-07-05 05:00",
       "channel": "#workflow-errors",
@@ -575,62 +631,6 @@
       "author": "Zac Romandy",
       "snippet": "yeah trying to double check this as well. I'd like the query for the contract utilization and then the high level account utilization. when i look at the new contract in pulse it shows no usage for all modules which i expect since its new. but then the older contract doesnt align",
       "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782919551258339?thread_ts=1782914868.783939"
-    },
-    {
-      "date": "2026-07-01 15:17",
-      "channel": "#canary-help",
-      "author": "Paige Spell",
-      "snippet": "Looking specifically at Truist: <https://pulse.pendoexperience.io/accounts/0010a00001fkosNAAQ|pulse.pendoexperience.io/accounts/…> in the Entitlements",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782919036886289?thread_ts=1782914868.783939"
-    },
-    {
-      "date": "2026-07-01 15:11",
-      "channel": "#canary-help",
-      "author": "Michael Chambers",
-      "snippet": "So you can see when you drill down into any of these contracts they have the module usage on the right hand side. This menu can be found in the Entitlements dropdown. Here is an example: <https://pulse.pendoexperience.io/accounts/0010a00001K6AfqAAF>",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782918684890429?thread_ts=1782914868.783939"
-    },
-    {
-      "date": "2026-07-01 15:08",
-      "channel": "#canary-help",
-      "author": "Michael Chambers",
-      "snippet": "<@U0202Q8H0BA|Emilie> Pulse looks at the contract level for usage in the Account drill down. Let me get you a screenshot",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782918481034789?thread_ts=1782914868.783939"
-    },
-    {
-      "date": "2026-07-01 15:03",
-      "channel": "#pod-squad-ce",
-      "author": "Liam Dao",
-      "snippet": "Agreed on adding it as a tile in Pulse. I can't recall what data is available here. Can someone remind me? I can look to add the tile",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782918226777379?thread_ts=1782917846.914789"
-    },
-    {
-      "date": "2026-07-01 15:01",
-      "channel": "#pod-squad-ce",
-      "author": "Geoff Lewis",
-      "snippet": "I'd probably just add it to the page we made in Pulse :shrug:",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782918095477629?thread_ts=1782917846.914789"
-    },
-    {
-      "date": "2026-07-01 14:46",
-      "channel": "#client-aptia-group",
-      "author": "Felipe Melo",
-      "snippet": "I'm trying to get some utilization info in Pulse, but running into some issues. Already reported to the Pulse team and falling back to pendo-internal to look into this We are aware of the single-person risk (Jim Hendrix). This has been an issue for years, so it's nothing new. Tay",
-      "permalink": "https://pendo.slack.com/archives/C0AJ7T65VRB/p1782917160471469?thread_ts=1782914395.439339"
-    },
-    {
-      "date": "2026-07-01 14:33",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1782916439625099"
-    },
-    {
-      "date": "2026-07-01 14:32",
-      "channel": "#pulse-external",
-      "author": "Felipe Melo",
-      "snippet": "[Issue] I'm looking at <https://pulse.pendoexperience.io/accounts/001Pf00000T8qASIAZ|Aptia Group> and I see a couple of issues with Entitlements showing \"insufficient data\" on modules and Top Visitors not showing. If we dig t<https://app.pendo.io/s/5668600916475904/account/Aptia|",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1782916373510089?thread_ts=1782916373.510089"
     }
   ]
 }
