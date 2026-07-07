@@ -27,6 +27,96 @@ export interface DauChartProps {
   initialPoints: DauPoint[];
 }
 
+interface ChartRow {
+  date: string;
+  visitors: number;
+  partial: boolean;
+  // Solid series ends at the last *complete* day; the dashed series covers
+  // only the final complete-day → today segment so "today" reads as still
+  // climbing rather than a finished total.
+  solid: number | null;
+  dashed: number | null;
+}
+
+/**
+ * Split the raw points into a solid series (complete days) and a dashed
+ * series (the trailing in-progress day). When there is no partial day the
+ * data is unchanged — everything stays solid.
+ */
+function toChartData(points: DauPoint[]): {
+  data: ChartRow[];
+  hasPartial: boolean;
+} {
+  const partialIdx = points.findIndex((p) => p.partial);
+  const hasPartial = partialIdx >= 0;
+  const data = points.map((p, i) => ({
+    date: p.date,
+    visitors: p.visitors,
+    partial: Boolean(p.partial),
+    solid: hasPartial && i === partialIdx ? null : p.visitors,
+    dashed:
+      hasPartial && (i === partialIdx - 1 || i === partialIdx)
+        ? p.visitors
+        : null,
+  }));
+  return { data, hasPartial };
+}
+
+/** Hollow ring drawn only on the in-progress (today) point. */
+function PartialDot(props: {
+  cx?: number;
+  cy?: number;
+  payload?: ChartRow;
+}) {
+  const { cx, cy, payload } = props;
+  if (cx == null || cy == null || !payload?.partial) return null;
+  return (
+    <circle
+      cx={cx}
+      cy={cy}
+      r={4.5}
+      fill="#fff"
+      stroke={PINK}
+      strokeWidth={2}
+    />
+  );
+}
+
+/** Tooltip that flags the in-progress day so a partial count is never read
+ * as a completed daily total. */
+function DauTooltip(props: {
+  active?: boolean;
+  payload?: Array<{ payload?: ChartRow }>;
+  label?: string;
+}) {
+  const { active, payload, label } = props;
+  if (!active || !payload?.length) return null;
+  const row = payload[0]?.payload;
+  if (!row) return null;
+  const value = row.visitors ?? 0;
+  return (
+    <div
+      style={{
+        border: "1px solid #eceee7",
+        borderRadius: 10,
+        background: "#fff",
+        fontSize: 12,
+        padding: "6px 10px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+      }}
+    >
+      <div style={{ color: "#7a2133", fontWeight: 600 }}>
+        {label}
+        {row.partial ? " · today, in progress" : ""}
+      </div>
+      <div style={{ color: "#DE2864" }}>
+        {value.toLocaleString()} visitor{value === 1 ? "" : "s"}
+        {row.partial ? " so far" : ""}
+      </div>
+    </div>
+  );
+}
+
 /**
  * "Daily active Pulse visitors" with preset range buttons (30/90/180/365d).
  *
@@ -95,6 +185,7 @@ export function DauChart({ title, initialDays, initialPoints }: DauChartProps) {
   useEffect(() => () => controllerRef.current?.abort(), []);
 
   const empty = points.length === 0;
+  const { data: chartData, hasPartial } = toChartData(points);
 
   return (
     <WidgetCard
@@ -125,6 +216,21 @@ export function DauChart({ title, initialDays, initialPoints }: DauChartProps) {
           <span className="ml-1 inline-flex items-center gap-1.5 text-xs text-pendo-body/50">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-pendo-pink" />
             Loading…
+          </span>
+        ) : hasPartial ? (
+          <span className="ml-auto inline-flex items-center gap-1.5 text-xs text-pendo-body/50">
+            <svg width="20" height="8" aria-hidden="true">
+              <line
+                x1="0"
+                y1="4"
+                x2="20"
+                y2="4"
+                stroke={PINK}
+                strokeWidth="2.5"
+                strokeDasharray="4 4"
+              />
+            </svg>
+            Today (in progress)
           </span>
         ) : null}
       </div>
@@ -159,7 +265,7 @@ export function DauChart({ title, initialDays, initialPoints }: DauChartProps) {
         >
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
-              data={points}
+              data={chartData}
               margin={{ top: 8, right: 16, left: 0, bottom: 8 }}
             >
               <CartesianGrid stroke="#eceee7" vertical={false} />
@@ -175,23 +281,35 @@ export function DauChart({ title, initialDays, initialPoints }: DauChartProps) {
                 allowDecimals={false}
                 tickFormatter={(v) => formatCompact(Number(v))}
               />
-              <Tooltip
-                contentStyle={{
-                  border: "1px solid #eceee7",
-                  borderRadius: 10,
-                  background: "#fff",
-                  fontSize: 12,
-                }}
-              />
+              <Tooltip content={<DauTooltip />} />
+              {/* Solid line: complete days only. */}
               <Line
                 type="monotone"
-                dataKey="visitors"
+                dataKey="solid"
                 stroke={PINK}
                 strokeWidth={2.5}
-                dot={points.length > 120 ? false : { r: 2.5, fill: PINK, stroke: PINK }}
+                connectNulls={false}
+                dot={
+                  points.length > 120 ? false : { r: 2.5, fill: PINK, stroke: PINK }
+                }
                 activeDot={{ r: 5, fill: PINK }}
                 isAnimationActive={false}
               />
+              {/* Dashed line: the final complete-day → today segment. Renders
+                  only when the trailing bucket is still in progress. */}
+              {hasPartial ? (
+                <Line
+                  type="monotone"
+                  dataKey="dashed"
+                  stroke={PINK}
+                  strokeWidth={2.5}
+                  strokeDasharray="4 4"
+                  connectNulls={false}
+                  dot={<PartialDot />}
+                  activeDot={{ r: 5, fill: PINK }}
+                  isAnimationActive={false}
+                />
+              ) : null}
             </LineChart>
           </ResponsiveContainer>
         </div>

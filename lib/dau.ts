@@ -95,6 +95,11 @@ export function buildDauPipeline(days: number): unknown[] {
 export interface DauPoint {
   date: string;
   visitors: number;
+  // True for the trailing bucket when it is the current, still-accumulating
+  // day. The chart renders this point distinctly so an in-progress count is
+  // never mistaken for a completed daily total (which is why "today" can look
+  // far lower than Pendo's live number until the day closes).
+  partial?: boolean;
 }
 
 /**
@@ -102,18 +107,33 @@ export interface DauPoint {
  * (i.e. before the app started collecting) are trimmed so long windows
  * start at first real data instead of a flat run of zeros. Interior
  * zero-days (e.g. weekends) are preserved so dips stay visible.
+ *
+ * The final bucket is flagged `partial` when it covers the current day — its
+ * visitor count is still climbing, so the UI marks it as in-progress rather
+ * than presenting it as the day's final total.
  */
 export function transformDauRows(
   rows: Array<Record<string, unknown>>,
 ): DauPoint[] {
-  const points = rows.map((r) => ({
-    day: Number(r.day),
-    date: new Date(Number(r.day)).toISOString().slice(5, 10),
-    visitors: Number(r.visitors ?? 0),
-  }));
+  const now = Date.now();
+  const points = rows.map((r) => {
+    const dayMs = Number(r.day);
+    return {
+      day: dayMs,
+      date: new Date(dayMs).toISOString().slice(5, 10),
+      visitors: Number(r.visitors ?? 0),
+      // Buckets are one day wide, so "today" is the bucket whose window
+      // [day, day + DAY_MS) contains the current instant.
+      partial: now >= dayMs && now < dayMs + DAY_MS,
+    };
+  });
 
   const firstActive = points.findIndex((p) => p.visitors > 0);
   const trimmed = firstActive <= 0 ? points : points.slice(firstActive);
 
-  return trimmed.map(({ date, visitors }) => ({ date, visitors }));
+  return trimmed.map(({ date, visitors, partial }) => ({
+    date,
+    visitors,
+    partial,
+  }));
 }

@@ -15,9 +15,11 @@ import {
 import { PULSE_WIDGETS } from "@/lib/pulse-queries";
 import type { PulseWidget } from "@/lib/types";
 
-// Revalidate the page hourly. Underlying Pendo fetches are tagged "pendo"
-// so `revalidateTag('pendo')` forces a refresh between windows.
-export const revalidate = 3600;
+// Revalidate the page every 15 minutes. Underlying Pendo fetches are tagged
+// "pendo" so `revalidateTag('pendo')` forces a refresh between windows. A
+// tighter window keeps the trailing (in-progress) day closer to Pendo's live
+// numbers than the previous hourly cache did.
+export const revalidate = 900;
 
 const SUB = process.env.PENDO_SUBSCRIPTION_ID ?? "5389416346288128";
 const DASHBOARD_ID =

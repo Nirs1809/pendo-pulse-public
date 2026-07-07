@@ -8,12 +8,12 @@ import { isConfigured, PendoApiError, runAggregation } from "@/lib/pendo";
  *
  * Drives the range buttons on the "Daily active Pulse visitors" chart:
  * the client fetches /api/dau?days=90 (etc.) and redraws. The integration
- * key stays server-side. Results are tagged "pendo" and revalidated hourly
- * so they share the same cache lifecycle as the ISR page render, and a
- * `revalidateTag('pendo')` bust refreshes both at once.
+ * key stays server-side. Results are tagged "pendo" and revalidated every
+ * 15 minutes so they share the same cache lifecycle as the ISR page render,
+ * and a `revalidateTag('pendo')` bust refreshes both at once.
  */
 export const runtime = "nodejs";
-export const revalidate = 3600;
+export const revalidate = 900;
 
 export async function GET(req: Request) {
   if (!isConfigured()) {
