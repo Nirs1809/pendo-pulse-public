@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-06T11:42:11.227Z",
+  "generatedAt": "2026-07-07T10:30:00.069Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-06T11:02:43.342Z",
+    "newest": "2026-07-07T08:06:35.263Z",
     "oldest": "2026-06-08T12:45:10.206Z"
   },
   "totals": {
-    "messages": 409,
-    "channels": 163,
-    "authors": 62
+    "messages": 552,
+    "channels": 201,
+    "authors": 64
   },
   "daily": [
     {
@@ -94,7 +94,7 @@
     },
     {
       "date": "2026-07-01",
-      "count": 128
+      "count": 127
     },
     {
       "date": "2026-07-02",
@@ -114,19 +114,28 @@
     },
     {
       "date": "2026-07-06",
-      "count": 7
+      "count": 148
+    },
+    {
+      "date": "2026-07-07",
+      "count": 3
     }
   ],
   "topChannels": [
     {
       "channel": "#test_",
       "kind": "channel",
-      "count": 40
+      "count": 46
     },
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 39
+      "count": 42
+    },
+    {
+      "channel": "#canary-help",
+      "kind": "channel",
+      "count": 28
     },
     {
       "channel": "#pulse-external",
@@ -136,16 +145,11 @@
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 21
+      "count": 22
     },
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 20
-    },
-    {
-      "channel": "#canary-help",
-      "kind": "channel",
       "count": 20
     },
     {
@@ -156,12 +160,12 @@
     {
       "channel": "#aa-category-insights",
       "kind": "channel",
-      "count": 10
+      "count": 11
     },
     {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
-      "count": 7
+      "count": 9
     },
     {
       "channel": "#iqvia-canary-alert-hackathon-demo",
@@ -179,6 +183,31 @@
       "count": 5
     },
     {
+      "channel": "#pulse-feedback",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "#International SOS – US (International SOS Assistance, Inc.)",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "#Amazon",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "#ICE Mortgage Technology, Inc.",
+      "kind": "channel",
+      "count": 4
+    },
+    {
+      "channel": "DM · Amy Tyler",
+      "kind": "dm",
+      "count": 4
+    },
+    {
       "channel": "#pulse-dev",
       "kind": "channel",
       "count": 4
@@ -192,53 +221,28 @@
       "channel": "Group DM · mpdm-matt.rufo--michael.chambers--nir.shmuely-1",
       "kind": "group_dm",
       "count": 4
-    },
-    {
-      "channel": "DM · Amy Tyler",
-      "kind": "dm",
-      "count": 3
-    },
-    {
-      "channel": "#ask-platform",
-      "kind": "channel",
-      "count": 3
-    },
-    {
-      "channel": "#ICE Mortgage Technology, Inc.",
-      "kind": "channel",
-      "count": 3
-    },
-    {
-      "channel": "Group DM · mpdm-nir.shmuely--matthew.rapp--michael.chambers-1",
-      "kind": "group_dm",
-      "count": 3
-    },
-    {
-      "channel": "DM · Krystian Serwinski",
-      "kind": "dm",
-      "count": 3
     }
   ],
   "topAuthors": [
     {
       "author": "Canary Alerts",
-      "count": 111
+      "count": 228
     },
     {
       "author": "Pulse",
-      "count": 43
+      "count": 45
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 35
-    },
-    {
-      "author": "Michael Chambers",
-      "count": 24
+      "count": 36
     },
     {
       "author": "Canary Help",
-      "count": 24
+      "count": 31
+    },
+    {
+      "author": "Michael Chambers",
+      "count": 27
     },
     {
       "author": "Sean Muse Testing2",
@@ -246,21 +250,25 @@
     },
     {
       "author": "Liam Dao",
-      "count": 15
+      "count": 16
     },
     {
       "author": "Laurence Judah",
-      "count": 10
+      "count": 11
     },
     {
       "author": "Paige Spell",
-      "count": 9
+      "count": 10
     },
     {
       "author": "Sean Muse",
       "count": 8
     },
     {
+      "author": "Alex Rosenbower",
+      "count": 7
+    },
+    {
       "author": "Emilie DeCherney",
       "count": 7
     },
@@ -269,368 +277,364 @@
       "count": 7
     },
     {
-      "author": "Ugne Ash",
+      "author": "Sneha Raghavan",
       "count": 6
     },
     {
-      "author": "Shinobu Ohyama",
+      "author": "Novus",
       "count": 6
-    },
-    {
-      "author": "Alex Rosenbower",
-      "count": 5
     }
   ],
   "recent": [
     {
-      "date": "2026-07-06 11:02",
-      "channel": "#pulse-external",
+      "date": "2026-07-07 08:06",
+      "channel": "DM · U0AMZ1VKEMN",
       "author": "Nir Sebastian Shmuely",
-      "snippet": "Followed up on the missing-accounts gap. I went into the open-opp data in Salesforce to see if we could attribute non-customer pipeline to specific CEs. First, why the gap exists: CE Compass only pulls Customer-type accounts and the open opps on them. So customer opps count, but ",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783335763342999?thread_ts=1782202941.202579"
+      "snippet": "Hey, I noticed you tried accessing <https://pulse.pendoexperience.io|Pulse>. I received an access request for the dev project, which makes me think you might be using an outdated link. Can you try the link , authenticate through the Lovable UI, and let me know if it works?",
+      "permalink": "https://pendo.slack.com/archives/D0BFM8C9M7U/p1783411595263319"
     },
     {
-      "date": "2026-07-06 10:07",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": "Pulse uses a *two-tier health scoring system*: *1. AI Score (primary)* — An AI agent analyzes 14 weighted data sources (CRM signals, product adoption, engagement, NPS, meetings, Slack sentiment, support tickets, opportunities, renewal timeline, financials, etc.) and outputs a 0–1",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783332435812779?thread_ts=1783332432.804199"
-    },
-    {
-      "date": "2026-07-06 09:55",
-      "channel": "DM · Amy Tyler",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "hey Amy - I think moving the project to WS only is blocking new emp to log in since they first need to be added to lovable ws - can we do something with it? Most of my users are from Revenue and do not need or want to access lovable in order to access Pulse thank you",
-      "permalink": "https://pendo.slack.com/archives/D03DJP825NW/p1783331710652619"
-    },
-    {
-      "date": "2026-07-06 08:51",
-      "channel": "DM · U02520BEZPX",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<https://pulse.pendoexperience.io|pulse.pendoexperience.io>",
-      "permalink": "https://pendo.slack.com/archives/D03GU4RQ8FP/p1783327889538299"
-    },
-    {
-      "date": "2026-07-06 07:09",
+      "date": "2026-07-07 07:04",
       "channel": "#aa-category-insights",
       "author": "Laurence Judah",
-      "snippet": ":bar_chart: Agent Analytics Intel — Monday 7 July 2026 AI adoption measurement, LLM product analytics, and enterprise ROI accountability for AI agents. ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ The post-holiday Monday signals converge on the same point: enterpr",
-      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783321793427929"
+      "snippet": ":satellite_antenna: Category Pulse — Tuesday 07 July 2026 • Exabeam launches Observra, an open-source telemetry standard for AI agents — normalizes agent activity (model calls, tool use, cost, errors) into one common event schema across ADK, Claude, OpenAI Agents, LangChain, and ",
+      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783407844292949"
     },
     {
-      "date": "2026-07-06 07:03",
-      "channel": "#aa-category-insights",
-      "author": "Laurence Judah",
-      "snippet": ":satellite_antenna: Category Pulse — Monday 06 July 2026 • Microsoft cancels internal Claude Code pilot after burning its annual AI budget in months — flat seat pricing masked real token consumption until usage-based billing hit; Uber reportedly hit the identical wall, exhausting",
-      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783321403339239"
-    },
-    {
-      "date": "2026-07-06 05:00",
+      "date": "2026-07-07 05:00",
       "channel": "#workflow-errors",
       "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-06) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-07-01 09:08 UTC · 4.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783314030600379"
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-07) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-06 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783400427859799"
     },
     {
-      "date": "2026-07-05 10:52",
-      "channel": "#pulse-dev",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "things to work on: 1. <https://pendo.slack.com/archives/C0AFC0VLXNH/p1782914962027639|add emails to last contact> from bq emails table 2. <https://pendo.slack.com/archives/C0AKQ1YLBPD/p1782909353501699|check adp last contact>",
-      "permalink": "https://pendo.slack.com/archives/C0AF8JGPZ5Z/p1783248763672749"
+      "date": "2026-07-06 20:12",
+      "channel": "#canary-help",
+      "author": "Canary Help",
+      "snippet": ":rotating_light: Help requested by <@U0A46GH6SG6> in <#C046CKZ1JFP> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@U0A46GH6SG6> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C046CKZ1JFP/p1783347801970079?thread_ts=1783347801.970079&amp;cid=C046CKZ1JFP>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783368753271259?thread_ts=1783368753.271259"
     },
     {
-      "date": "2026-07-05 05:00",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-05) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-07-01 09:08 UTC · 3.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783227627333359"
-    },
-    {
-      "date": "2026-07-04 22:39",
-      "channel": "#cro-pipeline-daily",
-      "author": "Bill Nemesi",
-      "snippet": ":bar_chart: Daily Pipeline Digest — Friday, July 3, 2026 7:00 AM ET | Last 24 hours of movement | FQ2 FY27 (29 days left) ━━━━━━━━━━━━━━━━━━━━ :new: NEW PIPELINE — 30 opps created :moneybag: - Unite Students - P4E-2026 — $102k net ARR (GBP opp) | Stg 2 | Close: 09/30 | AE: Joan Y",
-      "permalink": "https://pendo.slack.com/archives/C0B0MNQRPPA/p1783204761331599"
-    },
-    {
-      "date": "2026-07-04 05:00",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-04) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_contract_time_series* (etl_run_at) — last 2026-07-01 09:08 UTC · 2.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arro",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783141231010949"
-    },
-    {
-      "date": "2026-07-03 12:32",
-      "channel": "#seo-news",
-      "author": "Zapier",
-      "snippet": "*Title:* Where Clicks Go, What Agents Skip, Who’s Leaving Bing – SEO Pulse *Topics Covered: :point_right:*AI in Search,Google Algorithm Updates,SERP Layout Shifts *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-where-clicks-go-what-agents-skip-whos-leaving-bing/58",
-      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1783081955869849"
-    },
-    {
-      "date": "2026-07-03 07:50",
-      "channel": "#sentiment-gtm-questions",
-      "author": "Ugne Ash",
-      "snippet": "<https://pendo.slack.com/archives/C040L2W848L/p1782982499237389>",
-      "permalink": "https://pendo.slack.com/archives/C08HD2W3S56/p1783065007657129"
-    },
-    {
-      "date": "2026-07-03 07:49",
-      "channel": "#listen-gtm-questions",
-      "author": "Ugne Ash",
-      "snippet": "<https://pendo.slack.com/archives/C040L2W848L/p1782982499237389>",
-      "permalink": "https://pendo.slack.com/archives/C05T5KLDZ2P/p1783064993167269"
-    },
-    {
-      "date": "2026-07-03 05:00",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-03) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_contract_time_series — last 2026-07-01 09:08 UTC · 1.8d · <https://pendoio.app.n8n.cloud/workflow/QvuiOsgk8QLcJFKI|:arr",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783054832788369"
-    },
-    {
-      "date": "2026-07-02 19:32",
-      "channel": "#data-gtm-intelligence",
-      "author": "Sunny Lin",
-      "snippet": "love all of the above and +10000. Making a big deal about changes and improvement IS building trust. I think I used to e in the camp of it was just self promotion (tootin our own horns) but after conversations with CEs.... this is how they know they will get different results. I ",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1783020756851249?thread_ts=1783013090.659609"
-    },
-    {
-      "date": "2026-07-02 17:48",
-      "channel": "#data-gtm-intelligence",
-      "author": "Emilie DeCherney",
-      "snippet": "<@U03HWFBAUTZ|Liam> love the \"onboarding\" message idea! <@U08NYTLMD32|michael.chambers> awesome! I do think it's important to post to the product itself (i.e. Canary channel or inside of Pulse or Rex), but am also thinking of something central (i.e. maybe we put a canvas in the <",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1783014532166569?thread_ts=1783013090.659609"
-    },
-    {
-      "date": "2026-07-02 17:38",
-      "channel": "#data-gtm-intelligence",
-      "author": "Michael Chambers",
-      "snippet": "We wanted to add more awareness to users anytime things get added to Pulse beyond just their specific feedback notificaiton",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1783013920740729?thread_ts=1783013090.659609"
-    },
-    {
-      "date": "2026-07-02 17:38",
-      "channel": "#data-gtm-intelligence",
-      "author": "Michael Chambers",
-      "snippet": "We discussed this in our GTM meeting. Specifically for Pulse we are going to test adding a viewable update log for users, so they can see a list of all the features pushed in each week. Since we do a lot of quick Feedback responses week over week",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1783013886240839?thread_ts=1783013090.659609"
-    },
-    {
-      "date": "2026-07-02 17:24",
-      "channel": "#data-gtm-intelligence",
-      "author": "Emilie DeCherney",
-      "snippet": "My favorite line from Felipe's message above: \"speed of improvements and bug fixes that have been shipped\"! So cool that he could clock the effort we're putting in. :meow_fireeyes: As a team, we're shipping :ship: all day long! Giving some thought to how we make that super visibl",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1783013090659609?thread_ts=1783013090.659609"
-    },
-    {
-      "date": "2026-07-02 17:17",
-      "channel": "DM · Michael Chambers",
-      "author": "Michael Chambers",
-      "snippet": "Nir did you share the Github with me for Pulse yet?",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1783012672724029"
-    },
-    {
-      "date": "2026-07-02 16:29",
-      "channel": "#nps-autopilot",
-      "author": "NPS Autopilot",
-      "snippet": ":octagonal_sign: NPS flow stopped *Reason:* CE '' not found in lookup table — Slack ID missing *Payload summary:* Account: FieldPulse, Score: 10",
-      "permalink": "https://pendo.slack.com/archives/C08Q226DPT6/p1783009760453359"
-    },
-    {
-      "date": "2026-07-02 16:29",
-      "channel": "#nps",
-      "author": "pendo",
-      "snippet": "New NPS Response!",
-      "permalink": "https://pendo.slack.com/archives/C1N0HQ9M5/p1783009758613309"
-    },
-    {
-      "date": "2026-07-02 15:15",
-      "channel": "Group DM · mpdm-sean.muse--michael.chambers--nir.shmuely-1",
-      "author": "Sean Muse",
-      "snippet": "is pulse on gh?",
-      "permalink": "https://pendo.slack.com/archives/C0B4GDDQA0G/p1783005346236639"
-    },
-    {
-      "date": "2026-07-02 15:05",
-      "channel": "#data-gtm-intelligence",
-      "author": "Emilie DeCherney",
-      "snippet": "OKAY CE POD :confetti2::confetti2::confetti2::confetti2::confetti2::confetti2:",
-      "permalink": "https://pendo.slack.com/archives/C0ATZE7MPPF/p1783004711205889?thread_ts=1783004711.205889"
-    },
-    {
-      "date": "2026-07-02 14:59",
-      "channel": "#pod-squad-ce",
-      "author": "Emilie DeCherney",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783004362220869?thread_ts=1783004362.220869"
-    },
-    {
-      "date": "2026-07-02 14:57",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783004222993019"
-    },
-    {
-      "date": "2026-07-02 14:56",
-      "channel": "#pulse-external",
-      "author": "Felipe Melo",
-      "snippet": "[Kudos] Just want to give a shout out to Pulse team on speed of improvements and bug fixes that have been shipped lately. A week ago we didn't use to have any application data under subscriptions in Pulse, which is something CEs/ADs frequently need to look at to get context on th",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783004183567519"
-    },
-    {
-      "date": "2026-07-02 14:55",
-      "channel": "#pod-squad-ce",
-      "author": "Liam Dao",
-      "snippet": "Very timely question <@UJAD6UK5Z|sneha> there is a tile in pulse that was just added this morning that will show high level data on the CAP funnel (Sent -> Created -> Approved). Was just chatting with Geoff about that in another thread. I will tag you in that <@U03A3J57CN9|Nir Sh",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783004121967159?thread_ts=1783001589.485459"
-    },
-    {
-      "date": "2026-07-02 14:20",
-      "channel": "#pod-squad-ce",
-      "author": "Michael Chambers",
-      "snippet": "<@U03A3J57CN9|Nir Shmuely> were you working on something for this in Pulse? I saw some edits in there this morning that seemed related to this",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783002037194819?thread_ts=1783001589.485459"
-    },
-    {
-      "date": "2026-07-02 13:44",
-      "channel": "#pod-squad-ce",
-      "author": "Liam Dao",
-      "snippet": "<@U5Z1C9QFK|Geoff Lewis> check out this <https://pulse.pendoexperience.io/customer-health-hub|snazzy new tile> showing the funnel from Slack Sent -> CAP Created -> CAP Approved. • Find it on Canary Health Hub -> Executive Summary Dash • You can toggle between all time funnel &amp",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782999853923239?thread_ts=1782917846.914789"
-    },
-    {
-      "date": "2026-07-02 13:28",
+      "date": "2026-07-06 19:58",
       "channel": "DM · Liam Dao",
       "author": "Liam Dao",
-      "snippet": "Hey Nir! I see you are in Pulse adding some CAP information and just wanted to make sure our metrics were aligned. I have added this funnel view on teh Canary Health Hub -> Executive Summary that I was about to share out with Geoff that includes ability to see total, by renewal q",
-      "permalink": "https://pendo.slack.com/archives/D099UVD490X/p1782998882678229"
+      "snippet": "Made some minor edits to the <https://pulse.pendoexperience.io/caps-in-progress|CAPs in Progress> (added some filters, cleaned the columns etc). There seem to be a lot of topics tomorrow for the CE pod, but I will attempt to bring this up (and credit you) if time allows. If not, ",
+      "permalink": "https://pendo.slack.com/archives/D099UVD490X/p1783367901860269"
     },
     {
-      "date": "2026-07-02 12:55",
-      "channel": "DM · Amy Tyler",
-      "author": "Amy Tyler",
-      "snippet": "Hi Nir - I'm following up on Pulse. Is that site intended to be external facing or for Pendo use only? • If Pendo use only, please change the Visibility settings to <http://Pendo.io|Pendo.io> workspace only. • This week IT made a change that now allows all Pendozers to access Lov",
-      "permalink": "https://pendo.slack.com/archives/D03DJP825NW/p1782996946271869"
+      "date": "2026-07-06 19:12",
+      "channel": "#canary-help",
+      "author": "Paige Spell",
+      "snippet": "<@U09Q295MASD|Sean Muse> <@U08NYTLMD32|michael.chambers> <@U03A3J57CN9|Nir Shmuely> same thing that was surfaced here: <https://pendo.slack.com/archives/C04USQVF2SC/p1782914416028769> we need to make sure the right contract context in being surfaced.. im not sure if this is some ",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783365159829169?thread_ts=1783364720.067299"
     },
     {
-      "date": "2026-07-02 11:03",
-      "channel": "#predict-design-research",
-      "author": "Courtney Kyle",
-      "snippet": "Hey <@U093QGCB9HT|itai.carmon> — I caught up w/ <@U09459WJRJ5|alon.caspi> and <@U090EBJ3PBQ|miri.shapiro> today to just share perspective on what <@U04AZLB9D|Rahul Jain> <@U093TRU193N|kobi.stok> <@U13DGDU03|Kelsey Hughes> and I have aligned on First off: HAPPY ONE YEAR ANNIVERSAR",
-      "permalink": "https://pendo.slack.com/archives/C095HF38YH1/p1782990222183059"
-    },
-    {
-      "date": "2026-07-02 09:00",
-      "channel": "#proj-slack-and-teams",
-      "author": "Ugne Ash",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C09JNHL9TS8/p1782982821938149"
-    },
-    {
-      "date": "2026-07-02 08:58",
-      "channel": "#tmp-the-home-depot--commit-q1fy27",
-      "author": "Ugne Ash",
-      "snippet": "Good morning! A quick note that the commit feature is now available to all of our customers as of this morning <https://pendo.slack.com/archives/C040L2W848L/p1782982499237389>",
-      "permalink": "https://pendo.slack.com/archives/C0AM6A1HBMZ/p1782982702289919"
-    },
-    {
-      "date": "2026-07-02 08:56",
-      "channel": "#office-sheffield",
-      "author": "Ugne Ash",
-      "snippet": "Congratulations to <@SJ6F6TL9G|spork> for delivering a feature that was also a customer commit (The Home Depot)! :homedepot: :pendo-heartbeat:",
-      "permalink": "https://pendo.slack.com/archives/CHZ1D8BTL/p1782982601918899?thread_ts=1782982601.918899"
-    },
-    {
-      "date": "2026-07-02 08:54",
-      "channel": "#product-announcements",
-      "author": "Ugne Ash",
-      "snippet": ":listen-luva: :survey-jam: :slack: Listen &amp; Surveys | Push Responses to Slack – GA as of July 2, 2026 – New feedback lands in Slack the moment it comes in :listen-luva: :survey-jam: :slack: Admins can now connect Slack and route Listen and Survey responses straight into chose",
-      "permalink": "https://pendo.slack.com/archives/C040L2W848L/p1782982499237389"
-    },
-    {
-      "date": "2026-07-02 05:10",
+      "date": "2026-07-06 19:05",
       "channel": "#canary-help",
       "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U043S4AA9EF> in <#C08RBLQNWMT> Pendozers in thread: <@U09A4J9PPPY> <@U043S4AA9EF> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C08RBLQNWMT/p1782914411706899?thread_ts=1782914411.706899&amp;cid=C08RBLQNWMT>",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782969004192809"
+      "snippet": ":rotating_light: Help requested by <@U08HXK37CS2> in <#C010YLR0XCY> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@UA6TGE3C1> <@U08HXK37CS2> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C010YLR0XCY/p1783347831503569?thread_ts=1783347831.503569&amp;cid=C010YLR0X",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783364720067299?thread_ts=1783364720.067299"
     },
     {
-      "date": "2026-07-02 05:00",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-02) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-01 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1782968431576259"
-    },
-    {
-      "date": "2026-07-01 20:52",
-      "channel": "#ask-platform",
-      "author": "Lindy Bustabad",
-      "snippet": "<@U026S2F7U0L|Harrison> are you able to login with Google to the <https://command-pulse-dash.lovable.app|application> itself, just not see the preview in the build pane of the project?",
-      "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1782939138958999?thread_ts=1782913261.631149"
-    },
-    {
-      "date": "2026-07-01 18:04",
+      "date": "2026-07-06 18:24",
       "channel": "#pod-squad-ce",
       "author": "Sneha Raghavan",
-      "snippet": "Hey, a question. I am seeing lots of accounts with Reds on the pulse canary view, but I don't see a notice in their slack channels. Is this expected behavior? <@U0AQHGF02N8>",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782929067587229?thread_ts=1782929067.587229"
+      "snippet": "TBH I have no idea - more importantly it's not on the list of 22 in Pulse despite alerting this AM.",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783362247520309?thread_ts=1783362014.974549"
     },
     {
-      "date": "2026-07-01 17:40",
+      "date": "2026-07-06 18:19",
+      "channel": "#help_gtm_rev_hub",
+      "author": "Alex Rosenbower",
+      "snippet": "<@U02344AJF6C|jonathan.ortiz> — noticed this Strategic Brief shared skill in Claude — is this in a good spot or us to help scale? • Seeding it into our skills guide &amp; making it accessible through a centralized experience in Claude • Adding it as a workflow in Pulse • (optiona",
+      "permalink": "https://pendo.slack.com/archives/C09MN8CPQQZ/p1783361974014149?thread_ts=1782313587.469369"
+    },
+    {
+      "date": "2026-07-06 18:16",
       "channel": "#canary-help",
       "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U0AM9H3RFBN> in <#C010YLR0XCY> Pendozers in thread: <@U09A4J9PPPY> <@U07QVMA8V1S> <@U0130V2K66Q> <@U0AQHGF02N8> <@U0AGG9TUV8B> <@U0AM9H3RFBN> :thread: <https://pendo.slack.com/archives/C010YLR0XCY/p1782914389685439?thread_ts=1782914389.685439&",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782927624701419"
+      "snippet": ":rotating_light: Help requested by <@U08KRF492HH> in <#C03QCEDK469> Pendozers in thread: <@U09A4J9PPPY> <@U08KRF492HH> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C03QCEDK469/p1783347783567869?thread_ts=1783347783.567869&amp;cid=C03QCEDK469>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783361809162669"
     },
     {
-      "date": "2026-07-01 17:10",
+      "date": "2026-07-06 17:40",
       "channel": "#canary-help",
       "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U0130V2K66Q> in <#C010YLR0XCY> Pendozers in thread: <@U09A4J9PPPY> <@U07QVMA8V1S> <@U0130V2K66Q> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C010YLR0XCY/p1782914389685439?thread_ts=1782914389.685439&amp;cid=C010YLR0XCY>",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782925843102279"
+      "snippet": ":rotating_light: Help requested by <@U01P8H514UB> in <#C0253GB4RFA> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@U01P8H514UB> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C0253GB4RFA/p1783347839704309?thread_ts=1783347839.704309&amp;cid=C0253GB4RFA>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783359627712699"
     },
     {
-      "date": "2026-07-01 17:09",
-      "channel": "#request-cse-help",
-      "author": "Halie Yi",
-      "snippet": "Hey team, I know <@U0AA2P99AGM|Koren> mentioned another member is going to assist these customers. Do we have a pulse on when, as they are trying to get this issue squared away? for context we are in the midst of an expansion opportunity for guides pro (and this is a guide issue ",
-      "permalink": "https://pendo.slack.com/archives/CTHE742N7/p1782925745544299?thread_ts=1782155588.603089"
-    },
-    {
-      "date": "2026-07-01 17:05",
+      "date": "2026-07-06 17:12",
       "channel": "#pod-squad-ce",
-      "author": "Sean Muse",
-      "snippet": "forwarding this from <#C0B85BN59T6> The new <https://github.com/pendo-io/canary_alerts/blob/main/analytics.md|analytics.md> doc will help serve as a guide on how to use the contents of the logging to make a dash. Not sure what the best approach for a dash related to this would be",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1782925530267239?thread_ts=1782917846.914789"
+      "author": "Sneha Raghavan",
+      "snippet": "Another answer could be updating BOTH pulse AND the slack updates on mondays only",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783357950280289?thread_ts=1783355515.614119"
     },
     {
-      "date": "2026-07-01 16:46",
-      "channel": "#canary_alerts_dev",
-      "author": "Sean Muse",
-      "snippet": "The new <https://github.com/pendo-io/canary_alerts/blob/main/analytics.md|analytics.md> doc will help serve as a guide on how to use the contents of the logging to make a dash. Not sure what the best approach for a dash related to this would be (likely as a standalone loveable or",
-      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1782924367926269"
+      "date": "2026-07-06 16:48",
+      "channel": "#ask-pendo-brain",
+      "author": "Pendo Brain",
+      "snippet": "Embedded Guides for Pendo Adopt (OEM) Resellers  Embedded guides _are_ a real Pendo feature, but there are two important caveats for an OEM/Pendo Adopt reseller: *(1) they require Guides Pro*, and *(2) the OEM Adopt Help Center article does not explicitly confirm that embedded g",
+      "permalink": "https://pendo.slack.com/archives/C08850W7QLT/p1783356487835489?thread_ts=1783356374.885389"
     },
     {
-      "date": "2026-07-01 15:32",
+      "date": "2026-07-06 16:47",
       "channel": "#canary-help",
-      "author": "Michael Chambers",
-      "snippet": "So that Pulse loads quickly we are sending the data from BQ to Supabase then showing the supabase table",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782919933128799?thread_ts=1782914868.783939"
+      "author": "Canary Help",
+      "snippet": ":rotating_light: Help requested by <@UJAD6UK5Z> in <#C0BCZJKAJET> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@UJAD6UK5Z> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C0BCZJKAJET/p1783347793379419?thread_ts=1783347793.379419&amp;cid=C0BCZJKAJET>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783356448800439?thread_ts=1783356448.800439"
     },
     {
-      "date": "2026-07-01 15:31",
-      "channel": "#canary-help",
-      "author": "Michael Chambers",
-      "snippet": "<@U08HXK37CS2|paige.spell> <@U02QC670XC0|zac> Entitlements — Supabase (mirrored from BQ) src/hooks/useEntitlements.tsx reads from two Supabase tables that are BigQuery mirrors: • bq_contract_ancillary — pulls *_purchased_flag columns (analytics, guides, guides_pro, session_replay",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782919878435079?thread_ts=1782914868.783939"
+      "date": "2026-07-06 15:32",
+      "channel": "#agent-analytics-gtm",
+      "author": "Danielle Goh",
+      "snippet": "I was working on SpendingPulse - I think it was under business intelligence as a B2B product. Not part of any that you listed above",
+      "permalink": "https://pendo.slack.com/archives/C08TF86H54G/p1783351940333329?thread_ts=1783012020.810759"
     },
     {
-      "date": "2026-07-01 15:25",
+      "date": "2026-07-06 15:19",
       "channel": "#canary-help",
-      "author": "Zac Romandy",
-      "snippet": "yeah trying to double check this as well. I'd like the query for the contract utilization and then the high level account utilization. when i look at the new contract in pulse it shows no usage for all modules which i expect since its new. but then the older contract doesnt align",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1782919551258339?thread_ts=1782914868.783939"
+      "author": "Canary Help",
+      "snippet": ":rotating_light: Help requested by <@U0L0HDJAK> in <#C08TF43EN3Y> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@U0L0HDJAK> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C08TF43EN3Y/p1783347813039339?thread_ts=1783347813.039339&amp;cid=C08TF43EN3Y>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783351189580279?thread_ts=1783351189.580279"
+    },
+    {
+      "date": "2026-07-06 14:41",
+      "channel": "#canary-help",
+      "author": "Canary Help",
+      "snippet": ":rotating_light: Help requested by <@U012LTVGRFT> in <#C04USQVF2SC> Pendozers in thread: <@U09A4J9PPPY> <@U012LTVGRFT> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C04USQVF2SC/p1783347840995749?thread_ts=1783347840.995749&amp;cid=C04USQVF2SC>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783348887321579"
+    },
+    {
+      "date": "2026-07-06 14:38",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783348725047589"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#client-fatco",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01EUDAJRML/p1783347843226729"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#client-primrose-schools",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C05SXRB8UG4/p1783347842918719"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#client-larsontextsinc",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C04ELMCGUJX/p1783347842562429"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#AVEVA Software, LLC",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01CAH0BESG/p1783347842203399"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#International SOS – US (International SOS Assistance, Inc.)",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C07T64W4659/p1783347841862649"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#client-aurigo",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01G2SQHWBU/p1783347841344059"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#Truist Bank",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C04USQVF2SC/p1783347840995749?thread_ts=1783347840.995749"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#client-ferchau-management-gmbh",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C093JNMAK38/p1783347840663079"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#International SOS – US (International SOS Assistance, Inc.)",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C07T64W4659/p1783347840356069"
+    },
+    {
+      "date": "2026-07-06 14:24",
+      "channel": "#client-sawgrass",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C099QQ6TVMJ/p1783347840012899"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-guidewire",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0253GB4RFA/p1783347839704309?thread_ts=1783347839.704309"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-zonarsystems",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C02HZMBF10Q/p1783347839396629"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Follett School Solutions",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C08NS8Q0TKQ/p1783347839060789"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-kipu",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C032XLJUFV5/p1783347838776789"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-qualtrics-delighted",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C041NKA4AP4/p1783347838446369"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Uniphore",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C074M91JZ5Y/p1783347838097259"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-commscope",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C074GA5LLQY/p1783347837744519"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Ivanti",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C05FWTX7XL4/p1783347837416559"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Instructure",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C06ST4VEUSV/p1783347837093839?thread_ts=1783347837.093839"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Medtronic",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01QS7JT5L1/p1783347836758579"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-trendmicro",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C014Y9M13AQ/p1783347836331339?thread_ts=1783347836.331339"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-rocket-companies",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01MQ3C0K34/p1783347836020599?thread_ts=1783347836.020599"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Chartbeat",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0BDB36ESSF/p1783347835742869"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Mercury Insurance Services, LLC",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01SK1KPAM8/p1783347835422849"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-aptia-group",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AJ7T65VRB/p1783347835113979"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#Lenovo Software",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C032XAKG9U5/p1783347834830209"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-lonewolf-real-estate",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01QF20K5C4/p1783347834497299"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-15five",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01SRURKH2L/p1783347834135869"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#InvestCloud*",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C09C9DVH1LM/p1783347833822229"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-davidweekleyhomes",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C078Q28ATV0/p1783347833491769?thread_ts=1783347833.491769"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-essity",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C01G68R0YGH/p1783347833173179"
+    },
+    {
+      "date": "2026-07-06 14:23",
+      "channel": "#client-kehedistributors",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B860N0EGZ/p1783347832875589"
     }
   ]
 }
