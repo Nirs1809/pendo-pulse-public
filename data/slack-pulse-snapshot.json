@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-07-08T09:30:36.999Z",
+  "generatedAt": "2026-07-09T10:29:39.725Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-08T08:34:40.431Z",
-    "oldest": "2026-06-09T08:22:23.969Z"
+    "newest": "2026-07-09T09:35:36.172Z",
+    "oldest": "2026-06-10T12:45:17.068Z"
   },
   "totals": {
-    "messages": 588,
-    "channels": 202,
-    "authors": 63
+    "messages": 587,
+    "channels": 201,
+    "authors": 65
   },
   "daily": [
-    {
-      "date": "2026-06-09",
-      "count": 21
-    },
     {
       "date": "2026-06-10",
       "count": 3
@@ -118,14 +114,18 @@
     },
     {
       "date": "2026-07-08",
-      "count": 8
+      "count": 21
+    },
+    {
+      "date": "2026-07-09",
+      "count": 7
     }
   ],
   "topChannels": [
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 49
+      "count": 48
     },
     {
       "channel": "#test_",
@@ -135,27 +135,22 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 29
+      "count": 32
     },
     {
       "channel": "#canary-help",
       "kind": "channel",
-      "count": 28
-    },
-    {
-      "channel": "DM · Pulse",
-      "kind": "dm",
-      "count": 23
+      "count": 29
     },
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 23
+      "count": 25
     },
     {
-      "channel": "#data-gtm-intelligence",
-      "kind": "channel",
-      "count": 14
+      "channel": "DM · Pulse",
+      "kind": "dm",
+      "count": 24
     },
     {
       "channel": "#aa-category-insights",
@@ -168,12 +163,22 @@
       "count": 10
     },
     {
+      "channel": "#pulse-feedback",
+      "kind": "channel",
+      "count": 9
+    },
+    {
+      "channel": "#nir-me",
+      "kind": "channel",
+      "count": 8
+    },
+    {
       "channel": "DM · Liam Dao",
       "kind": "dm",
       "count": 7
     },
     {
-      "channel": "#nir-me",
+      "channel": "#data-gtm-intelligence",
       "kind": "channel",
       "count": 7
     },
@@ -183,22 +188,12 @@
       "count": 7
     },
     {
-      "channel": "#pulse-feedback",
-      "kind": "channel",
-      "count": 6
-    },
-    {
       "channel": "DM · Alex Rosenbower",
       "kind": "dm",
       "count": 6
     },
     {
       "channel": "#canary_alerts_dev",
-      "kind": "channel",
-      "count": 5
-    },
-    {
-      "channel": "#pipeline-pulse",
       "kind": "channel",
       "count": 5
     },
@@ -221,6 +216,11 @@
       "channel": "#Amazon",
       "kind": "channel",
       "count": 4
+    },
+    {
+      "channel": "#ICE Mortgage Technology, Inc.",
+      "kind": "channel",
+      "count": 4
     }
   ],
   "topAuthors": [
@@ -230,11 +230,11 @@
     },
     {
       "author": "Pulse",
-      "count": 58
+      "count": 63
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 43
+      "count": 49
     },
     {
       "author": "Canary Help",
@@ -242,7 +242,7 @@
     },
     {
       "author": "Michael Chambers",
-      "count": 28
+      "count": 23
     },
     {
       "author": "Liam Dao",
@@ -254,7 +254,7 @@
     },
     {
       "author": "Alex Rosenbower",
-      "count": 14
+      "count": 17
     },
     {
       "author": "Laurence Judah",
@@ -262,7 +262,7 @@
     },
     {
       "author": "Paige Spell",
-      "count": 11
+      "count": 10
     },
     {
       "author": "Felipe Melo",
@@ -274,18 +274,158 @@
     },
     {
       "author": "Shinobu Ohyama",
-      "count": 7
-    },
-    {
-      "author": "Emilie DeCherney",
-      "count": 7
+      "count": 6
     },
     {
       "author": "Sneha Raghavan",
       "count": 6
+    },
+    {
+      "author": "Ugne Ash",
+      "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-09 09:35",
+      "channel": "#cx-internal",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Pulse update: Hey team — the pendo.experience domain is currently down. This is unrelated to Pulse or Lovable. In the meantime, please use our backup domain: <https://pendo-glow-hub.lovable.app|pendo-glow-hub.lovable.app> We'll switch back once the issue with pendo.experience is ",
+      "permalink": "https://pendo.slack.com/archives/C3XQD5B5X/p1783589736172049"
+    },
+    {
+      "date": "2026-07-09 09:33",
+      "channel": "#pulse-feedback",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "<@UCB1X6S3T|Alex> Here's the full list + the queries on both sides. Pulse / Supabase view — the accounts with 0 guide count but real guide views: ``` sql SELECT account_id, account_name, total_guide_count, guide_views_last_30, guide_events_last_30 FROM bq_accounts_core_ancillary ",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783589583178349?thread_ts=1783479156.414349"
+    },
+    {
+      "date": "2026-07-09 09:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":rotating_light: *WORKFLOW ERROR* Workflow: *<https://pendoio.app.n8n.cloud/workflow/p3Eo2dEscCjliBfs|Pulse Bot — bq_core_application feeder>* Failed Node: *Execute a SQL query1*",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783587610393909"
+    },
+    {
+      "date": "2026-07-09 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-09) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-08 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783573225425849"
+    },
+    {
+      "date": "2026-07-09 04:12",
+      "channel": "#pod-squad-ce",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey team — the pendo.experience domain is currently down. This is unrelated to Pulse or Lovable. In the meantime, please use our backup domain: <https://pendo-glow-hub.lovable.app|pendo-glow-hub.lovable.app> We'll switch back once the issue with pendo.experience is resolved.",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783570322681849?thread_ts=1783570322.681849"
+    },
+    {
+      "date": "2026-07-09 04:10",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783570259763479"
+    },
+    {
+      "date": "2026-07-09 04:10",
+      "channel": "#pulse-external",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey team — the pendo.experience domain is currently down. This is unrelated to Pulse or Lovable. In the meantime, please use our backup domain: <https://pendo-glow-hub.lovable.app|pendo-glow-hub.lovable.app> We'll switch back once the issue with pendo.experience is resolved.",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783570239380239?thread_ts=1783570239.380239"
+    },
+    {
+      "date": "2026-07-08 20:15",
+      "channel": "#cx-internal",
+      "author": "Doireann Marron",
+      "snippet": "pulse is down for me",
+      "permalink": "https://pendo.slack.com/archives/C3XQD5B5X/p1783541737879849?thread_ts=1783535804.684909"
+    },
+    {
+      "date": "2026-07-08 19:35",
+      "channel": "#pod-squad-ce",
+      "author": "Michael Chambers",
+      "snippet": "<!here> Pulse appears to be down. Just the live domain, not the dev lovable domain. Claude Code says its a DNS issue. Reach out to Nir to work together on troubleshooting. Here is what Claude said: This is a DNS issue — <http://pulse.pendoexperience.io|pulse.pendoexperience.io> h",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783539324135559"
+    },
+    {
+      "date": "2026-07-08 19:30",
+      "channel": "#pulse-external",
+      "author": "Michael Chambers",
+      "snippet": "<@U03A3J57CN9|Nir Shmuely> This is a DNS issue — <http://pulse.pendoexperience.io|pulse.pendoexperience.io> has no DNS record resolving it (NXDOMAIN means the domain flat-out doesn't exist in DNS). A few things could be happening: Most likely causes: 1. DNS record was removed or ",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783539041101979?thread_ts=1783538660.679509"
+    },
+    {
+      "date": "2026-07-08 19:29",
+      "channel": "#pulse-external",
+      "author": "Michael Chambers",
+      "snippet": "This is a DNS issue — <http://pulse.pendoexperience.io|pulse.pendoexperience.io> has no DNS record resolving it (NXDOMAIN means the domain flat-out doesn't exist in DNS).",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783538961903319?thread_ts=1783538660.679509"
+    },
+    {
+      "date": "2026-07-08 19:24",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783538699396789"
+    },
+    {
+      "date": "2026-07-08 19:24",
+      "channel": "#pulse-external",
+      "author": "Charles Helms",
+      "snippet": "Hey Folks! Anyone else seeing pulse not working? <@U08NYTLMD32|michael.chambers>?",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783538660679509?thread_ts=1783538660.679509"
+    },
+    {
+      "date": "2026-07-08 14:43",
+      "channel": "#canary-help",
+      "author": "Alex Rosenbower",
+      "snippet": "Agree if we weren’t clear on that we sould — <@U08NYTLMD32|michael.chambers> and I talked about some automation in responses that Pulse uses and could help us here to re-enable and remind folks in addition to adding a emoji to indicate we got the feedback and are investigating. :",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783521811634079?thread_ts=1783521645.579679"
+    },
+    {
+      "date": "2026-07-08 13:26",
+      "channel": "#pod-squad-ce",
+      "author": "Alex Rosenbower",
+      "snippet": "Following up from yesterday with action items this week — let me know what I missed or got wrong: • Make a call on model guardrail &amp; insights to share with the group — <@U03HWFBAUTZ|Liam> &amp; <@U08HXK37CS2|paige.spell> • Alert copy update (tone update, source citations, obj",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783517178993879?thread_ts=1783517178.993879"
+    },
+    {
+      "date": "2026-07-08 12:33",
+      "channel": "#nir-me",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783513992968179"
+    },
+    {
+      "date": "2026-07-08 11:25",
+      "channel": "DM · U043S4AA9EF",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey Hiltsje — thanks for flagging the guides count. You were spot on, and it turned out to be bigger than just Xero: we traced it to an upstream data issue where the published-guide counts aren't coming through from Pendo's ingestion (even though guide activity is tracked fine). ",
+      "permalink": "https://pendo.slack.com/archives/D0BFGN2ANBH/p1783509918982789"
+    },
+    {
+      "date": "2026-07-08 11:21",
+      "channel": "#pulse-feedback",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Dug into this one — it's a real bug, and it's systemic: ~71 accounts (Xero's the example that surfaced it) show 0 published guides while having millions of guide views, which isn't possible. Traced it end to end: the guide inventory counts (guide_count / total_guide_count) come t",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783509693154319?thread_ts=1783479156.414349"
+    },
+    {
+      "date": "2026-07-08 11:19",
+      "channel": "#pulse-feedback",
+      "author": "Alex Rosenbower",
+      "snippet": "Sent a DM requesting more info from <@U043S4AA9EF|hiltsje.smilde> — should be noted in the feedback management in Pulse. Should get resolved today",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783509593136799?thread_ts=1783479192.203059"
+    },
+    {
+      "date": "2026-07-08 10:28",
+      "channel": "#pulse-external",
+      "author": "Pulse",
+      "snippet": "Pulse's Accounts report refreshes *once per day* — overnight (US time). The source is the `bq_accounts_core_ancillary` table, which syncs from Salesforce daily. If you updated an SFDC Account Owner yesterday evening JST and didn't see it at 11:00 the same day, that's expected: th",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783506492415689?thread_ts=1783497599.218149"
+    },
     {
       "date": "2026-07-08 08:34",
       "channel": "#pulse-external",
@@ -305,7 +445,7 @@
       "channel": "#pulse-external",
       "author": "Shinobu Ohyama",
       "snippet": "Hi Team How frequently is the data in the Pulse Accounts report refreshed? We updated the SFDC Account Owner from a former employee to another team member yesterday evening (JST), but the change wasn't reflected in today's 11:00 Leaders meeting. I'm just trying to understand the ",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783497599218149"
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783497599218149?thread_ts=1783497599.218149"
     },
     {
       "date": "2026-07-08 07:02",
@@ -326,7 +466,7 @@
       "channel": "#pulse-feedback",
       "author": "Pulse",
       "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783479192203059"
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783479192203059?thread_ts=1783479192.203059"
     },
     {
       "date": "2026-07-08 02:22",
@@ -495,146 +635,6 @@
       "author": "Melissa Cooper",
       "snippet": "Also just ran this value hypothesis from Pulse <https://docs.google.com/presentation/d/15NXHrzQeTFC4vTqog9OyQyAqORQChgRnnfMgDkkPygg/edit?usp=sharing|docs.google.com/presentation/d/15NXHrzQeTFC…/edit?usp=sharing> Would love to see the two come together - these criteria are what se",
       "permalink": "https://pendo.slack.com/archives/C05KM4K59FG/p1783430507332699?thread_ts=1783427562.075949"
-    },
-    {
-      "date": "2026-07-07 13:17",
-      "channel": "#pod-squad-ce",
-      "author": "Paige Spell",
-      "snippet": "I really like this!! <@U03A3J57CN9|Nir Shmuely> <@U08NYTLMD32|michael.chambers> <https://pendo.slack.com/archives/C0AFC0VLXNH/p1783428689676209>",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783430228210579?thread_ts=1783430228.210579"
-    },
-    {
-      "date": "2026-07-07 12:51",
-      "channel": "#pulse-external",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783428689676209?thread_ts=1783428689.676209"
-    },
-    {
-      "date": "2026-07-07 12:42",
-      "channel": "DM · Michael Chambers",
-      "author": "Michael Chambers",
-      "snippet": "in relation to pulse or everything?",
-      "permalink": "https://pendo.slack.com/archives/D092TQK1DA9/p1783428142847199"
-    },
-    {
-      "date": "2026-07-07 12:37",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "In Pulse, platform updates are posted as announcements by admins. To see the latest updates, look for notifications from Pulse in Slack – they're sent as direct messages with a \"What's New in Pulse\" header. You can also check your Slack DMs for past updates with screenshots and l",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783427822681049?thread_ts=1783422398.844249"
-    },
-    {
-      "date": "2026-07-07 12:36",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "I cannot understand this message clearly enough to provide a helpful answer. Could you rephrase your question about Pulse? cc <@U03A3J57CN9> _Pulse bot · AI answer from current product code · verify before sharing externally_",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783427779247249?thread_ts=1783422398.844249"
-    },
-    {
-      "date": "2026-07-07 11:26",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "It’s in **Account → Value** in Pulse — look for the **Value Hypothesis** section/report there. If you don’t see it on a specific account, tell me which one and I’ll sanity-check whether it’s a permissions/rollout thing.",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783423585276489?thread_ts=1783422398.844249"
-    },
-    {
-      "date": "2026-07-07 11:25",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "Ah love that idea — a one-click CSV export right from the Accounts page would be super handy for quick offline sorting/sharing. :raised_hands: Could you drop that in the in-app **Feedback** widget in Pulse too so it gets routed to the team with context? I’ll +1 it on my side as w",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783423526970289?thread_ts=1783422398.844249"
-    },
-    {
-      "date": "2026-07-07 11:25",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "Canary Health Score is the account-level risk signal in Pulse — it rolls up a few key indicators into a simple status: **Expand / Stable / At Risk** so you can quickly spot where to dig in. Main difference from the old Pulse score: **Canary is a directional health category (not a",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783423526771459?thread_ts=1783422398.844249"
-    },
-    {
-      "date": "2026-07-07 11:06",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783422398844249?thread_ts=1783422398.844249"
-    },
-    {
-      "date": "2026-07-07 11:01",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783422068166249"
-    },
-    {
-      "date": "2026-07-07 10:35",
-      "channel": "DM · Liam Dao",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "all cards are now clickable to show underlying accounts with pulse account details page and slack link",
-      "permalink": "https://pendo.slack.com/archives/D099UVD490X/p1783420531532199"
-    },
-    {
-      "date": "2026-07-07 08:06",
-      "channel": "DM · U0AMZ1VKEMN",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey, I noticed you tried accessing <https://pulse.pendoexperience.io|Pulse>. I received an access request for the dev project, which makes me think you might be using an outdated link. Can you try the link , authenticate through the Lovable UI, and let me know if it works?",
-      "permalink": "https://pendo.slack.com/archives/D0BFM8C9M7U/p1783411595263319"
-    },
-    {
-      "date": "2026-07-07 07:04",
-      "channel": "#aa-category-insights",
-      "author": "Laurence Judah",
-      "snippet": ":satellite_antenna: Category Pulse — Tuesday 07 July 2026 • Exabeam launches Observra, an open-source telemetry standard for AI agents — normalizes agent activity (model calls, tool use, cost, errors) into one common event schema across ADK, Claude, OpenAI Agents, LangChain, and ",
-      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783407844292949"
-    },
-    {
-      "date": "2026-07-07 05:00",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-07) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-06 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783400427859799"
-    },
-    {
-      "date": "2026-07-06 20:12",
-      "channel": "#canary-help",
-      "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U0A46GH6SG6> in <#C046CKZ1JFP> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@U0A46GH6SG6> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C046CKZ1JFP/p1783347801970079?thread_ts=1783347801.970079&amp;cid=C046CKZ1JFP>",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783368753271259?thread_ts=1783368753.271259"
-    },
-    {
-      "date": "2026-07-06 19:58",
-      "channel": "DM · Liam Dao",
-      "author": "Liam Dao",
-      "snippet": "Made some minor edits to the <https://pulse.pendoexperience.io/caps-in-progress|CAPs in Progress> (added some filters, cleaned the columns etc). There seem to be a lot of topics tomorrow for the CE pod, but I will attempt to bring this up (and credit you) if time allows. If not, ",
-      "permalink": "https://pendo.slack.com/archives/D099UVD490X/p1783367901860269"
-    },
-    {
-      "date": "2026-07-06 19:12",
-      "channel": "#canary-help",
-      "author": "Paige Spell",
-      "snippet": "<@U09Q295MASD|Sean Muse> <@U08NYTLMD32|michael.chambers> <@U03A3J57CN9|Nir Shmuely> same thing that was surfaced here: <https://pendo.slack.com/archives/C04USQVF2SC/p1782914416028769> we need to make sure the right contract context in being surfaced.. im not sure if this is some ",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783365159829169?thread_ts=1783364720.067299"
-    },
-    {
-      "date": "2026-07-06 19:05",
-      "channel": "#canary-help",
-      "author": "Canary Help",
-      "snippet": ":rotating_light: Help requested by <@U08HXK37CS2> in <#C010YLR0XCY> Pendozers in thread: <@U09A4J9PPPY> <@U0AGG9TUV8B> <@UA6TGE3C1> <@U08HXK37CS2> <@U0AQHGF02N8> :thread: <https://pendo.slack.com/archives/C010YLR0XCY/p1783347831503569?thread_ts=1783347831.503569&amp;cid=C010YLR0X",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783364720067299?thread_ts=1783364720.067299"
-    },
-    {
-      "date": "2026-07-06 18:24",
-      "channel": "#pod-squad-ce",
-      "author": "Sneha Raghavan",
-      "snippet": "TBH I have no idea - more importantly it's not on the list of 22 in Pulse despite alerting this AM.",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783362247520309?thread_ts=1783362014.974549"
-    },
-    {
-      "date": "2026-07-06 18:19",
-      "channel": "#help_gtm_rev_hub",
-      "author": "Alex Rosenbower",
-      "snippet": "<@U02344AJF6C|jonathan.ortiz> — noticed this Strategic Brief shared skill in Claude — is this in a good spot or us to help scale? • Seeding it into our skills guide &amp; making it accessible through a centralized experience in Claude • Adding it as a workflow in Pulse • (optiona",
-      "permalink": "https://pendo.slack.com/archives/C09MN8CPQQZ/p1783361974014149?thread_ts=1782313587.469369"
     }
   ]
 }
