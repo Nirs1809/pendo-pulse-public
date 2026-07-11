@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-10T10:28:14.077Z",
+  "generatedAt": "2026-07-11T08:54:35.711Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-10T09:00:10.445Z",
-    "oldest": "2026-06-11T12:45:15.961Z"
+    "newest": "2026-07-11T05:00:32.384Z",
+    "oldest": "2026-06-11T22:06:00.354Z"
   },
   "totals": {
-    "messages": 603,
+    "messages": 609,
     "channels": 209,
     "authors": 75
   },
   "daily": [
     {
       "date": "2026-06-11",
-      "count": 3
+      "count": 1
     },
     {
       "date": "2026-06-12",
@@ -118,14 +118,18 @@
     },
     {
       "date": "2026-07-10",
-      "count": 2
+      "count": 9
+    },
+    {
+      "date": "2026-07-11",
+      "count": 1
     }
   ],
   "topChannels": [
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 48
+      "count": 53
     },
     {
       "channel": "#test_",
@@ -145,7 +149,7 @@
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 27
+      "count": 28
     },
     {
       "channel": "DM · Pulse",
@@ -193,9 +197,19 @@
       "count": 6
     },
     {
+      "channel": "#seo-news",
+      "kind": "channel",
+      "count": 5
+    },
+    {
       "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 5
+    },
+    {
+      "channel": "#tiffany-novus-test",
+      "kind": "channel",
+      "count": 4
     },
     {
       "channel": "#cx-internal",
@@ -211,16 +225,6 @@
       "channel": "#gtm-applied-ai",
       "kind": "channel",
       "count": 4
-    },
-    {
-      "channel": "#International SOS – US (International SOS Assistance, Inc.)",
-      "kind": "channel",
-      "count": 4
-    },
-    {
-      "channel": "#Amazon",
-      "kind": "channel",
-      "count": 4
     }
   ],
   "topAuthors": [
@@ -230,7 +234,7 @@
     },
     {
       "author": "Pulse",
-      "count": 66
+      "count": 67
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -242,19 +246,19 @@
     },
     {
       "author": "Michael Chambers",
-      "count": 23
+      "count": 24
     },
     {
       "author": "Liam Dao",
       "count": 20
     },
     {
-      "author": "Sean Muse Testing2",
+      "author": "Alex Rosenbower",
       "count": 19
     },
     {
-      "author": "Alex Rosenbower",
-      "count": 18
+      "author": "Sean Muse Testing2",
+      "count": 19
     },
     {
       "author": "Laurence Judah",
@@ -262,7 +266,11 @@
     },
     {
       "author": "Paige Spell",
-      "count": 10
+      "count": 11
+    },
+    {
+      "author": "Sneha Raghavan",
+      "count": 8
     },
     {
       "author": "Felipe Melo",
@@ -277,15 +285,67 @@
       "count": 6
     },
     {
-      "author": "Sneha Raghavan",
-      "count": 6
-    },
-    {
       "author": "Ugne Ash",
       "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-11 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-11) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_core_application* (synced_at) — last 2026-07-08 09:00 UTC · 2.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/p3Eo2dEscCjliBfs|:arrow_upp",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783746032384589"
+    },
+    {
+      "date": "2026-07-10 22:15",
+      "channel": "#pod-squad-ce",
+      "author": "Michael Chambers",
+      "snippet": "The old <https://pulse.pendoexperience.io/admin/dashboard|Pulse domain> is back up and running. Thanks to <@U2XRPU34N|Andy Grimm>",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783721744031179"
+    },
+    {
+      "date": "2026-07-10 20:38",
+      "channel": "#tiffany-novus-test",
+      "author": "Tiffany Kitchen",
+      "snippet": ":crescent_moon: NOVUS EOD · Fri Jul 10 Linear Cycle 13 · Granola Jul 10 · Novus MCP unavailable (connector needs reconnect)  HEADLINE Cycle 13 closes tomorrow with 68 of 158 done (43%) — scope grew 40% mid-cycle (113→158) and 90 issues are still open. The call today: what ships,",
+      "permalink": "https://pendo.slack.com/archives/C0AQQJ3RE6T/p1783715884707659?thread_ts=1783715884.707659"
+    },
+    {
+      "date": "2026-07-10 18:16",
+      "channel": "#pod-squad-ce",
+      "author": "Alex Rosenbower",
+      "snippet": "Following up on actions items this week — if your name is listed please provide an update in the thread if your item is not crossed out! • Make a call on model guardrail &amp; insights to share with the group — <@U03HWFBAUTZ|Liam> &amp; <@U08HXK37CS2|paige.spell> • Alert copy upd",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783707368299249?thread_ts=1783707368.299249"
+    },
+    {
+      "date": "2026-07-10 17:48",
+      "channel": "#pod-squad-ce",
+      "author": "Paige Spell",
+      "snippet": "What I can see through the model output is that Lightspeed was scored Stable when the original alerts went out and it was also Stable for this week's run.. It has been teetering between Stable and At Risk. Today it's At Risk though, which is probably why you see that in Pulse. Th",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783705698372309?thread_ts=1783704846.441479"
+    },
+    {
+      "date": "2026-07-10 15:48",
+      "channel": "#pod-squad-ce",
+      "author": "Sneha Raghavan",
+      "snippet": "FYI -- this means that whatever was stopping pulse from working should be fixed too",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783698497276329?thread_ts=1783698497.276329"
+    },
+    {
+      "date": "2026-07-10 13:31",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Google Adds Social Reporting; Mueller Warns Against Markdown *Topics Covered: :point_right:*Google Algorithm Updates,Technical SEO *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-google-adds-social-reporting-mueller-warns-against-markdown/581946/> *Pendo ",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1783690299164869"
+    },
+    {
+      "date": "2026-07-10 13:21",
+      "channel": "#pod-squad-ce",
+      "author": "Sneha Raghavan",
+      "snippet": "how do i pull this health score at scale outside of pulse -- is there a bq snapshot table",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783689700327719?thread_ts=1783689700.327719"
+    },
     {
       "date": "2026-07-10 09:00",
       "channel": "#workflow-errors",
@@ -579,62 +639,6 @@
       "author": "Shinobu Ohyama",
       "snippet": "Hi Team How frequently is the data in the Pulse Accounts report refreshed? We updated the SFDC Account Owner from a former employee to another team member yesterday evening (JST), but the change wasn't reflected in today's 11:00 Leaders meeting. I'm just trying to understand the ",
       "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783497599218149?thread_ts=1783497599.218149"
-    },
-    {
-      "date": "2026-07-08 07:02",
-      "channel": "#aa-category-insights",
-      "author": "Laurence Judah",
-      "snippet": ":satellite_antenna: Category Pulse — Wednesday 08 July 2026 • Microsoft begins routing Excel and Word prompts to its own in-house MAI models instead of OpenAI/Anthropic — the largest AI buyer on the planet is now actively cost-optimizing which model answers a given prompt, the ex",
-      "permalink": "https://pendo.slack.com/archives/C0AN583HLK0/p1783494166520369"
-    },
-    {
-      "date": "2026-07-08 05:00",
-      "channel": "#workflow-errors",
-      "author": "Pulse",
-      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-08) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-07 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
-      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783486827706449"
-    },
-    {
-      "date": "2026-07-08 02:53",
-      "channel": "#pulse-feedback",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783479192203059?thread_ts=1783479192.203059"
-    },
-    {
-      "date": "2026-07-08 02:22",
-      "channel": "#pulse-feedback",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783477359662809"
-    },
-    {
-      "date": "2026-07-08 00:38",
-      "channel": "#canary-agent",
-      "author": "Canary",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0AGLQNQGLW/p1783471081080369?thread_ts=1783471080.071679"
-    },
-    {
-      "date": "2026-07-07 19:25",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783452309727809"
-    },
-    {
-      "date": "2026-07-07 19:24",
-      "channel": "#pulse-external",
-      "author": "Felipe Melo",
-      "snippet": "Did we phase out the Predict score being displayed in Pulse in favor of Canary?",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783452286857559?thread_ts=1783452286.857559"
-    },
-    {
-      "date": "2026-07-07 18:51",
-      "channel": "#pod-squad-ce",
-      "author": "Liam Dao",
-      "snippet": "Sharing on behalf of the work the <@U03A3J57CN9|Nir Shmuely> did to built this, but the Action Plan tab has been added to the Canary Health Hub in Pulse. Check it out <https://pulse.pendoexperience.io/customer-health-hub|Here>! What is this? • An area to see high level metrics of",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783450260738879"
     }
   ]
 }
