@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-07-11T08:54:35.711Z",
+  "generatedAt": "2026-07-12T09:09:07.958Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-11T05:00:32.384Z",
-    "oldest": "2026-06-11T22:06:00.354Z"
+    "newest": "2026-07-12T07:18:10.777Z",
+    "oldest": "2026-06-14T07:21:54.561Z"
   },
   "totals": {
-    "messages": 609,
-    "channels": 209,
-    "authors": 75
+    "messages": 606,
+    "channels": 208,
+    "authors": 73
   },
   "daily": [
-    {
-      "date": "2026-06-11",
-      "count": 1
-    },
-    {
-      "date": "2026-06-12",
-      "count": 9
-    },
     {
       "date": "2026-06-14",
       "count": 3
@@ -114,7 +106,7 @@
     },
     {
       "date": "2026-07-09",
-      "count": 24
+      "count": 23
     },
     {
       "date": "2026-07-10",
@@ -122,7 +114,11 @@
     },
     {
       "date": "2026-07-11",
-      "count": 1
+      "count": 2
+    },
+    {
+      "date": "2026-07-12",
+      "count": 7
     }
   ],
   "topChannels": [
@@ -139,7 +135,12 @@
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 34
+      "count": 33
+    },
+    {
+      "channel": "#workflow-errors",
+      "kind": "channel",
+      "count": 30
     },
     {
       "channel": "#canary-help",
@@ -147,19 +148,19 @@
       "count": 29
     },
     {
-      "channel": "#workflow-errors",
-      "kind": "channel",
-      "count": 28
-    },
-    {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 25
+      "count": 27
     },
     {
       "channel": "#aa-category-insights",
       "kind": "channel",
       "count": 12
+    },
+    {
+      "channel": "#nir-me",
+      "kind": "channel",
+      "count": 10
     },
     {
       "channel": "#pulse-feedback",
@@ -172,11 +173,6 @@
       "count": 10
     },
     {
-      "channel": "#nir-me",
-      "kind": "channel",
-      "count": 8
-    },
-    {
       "channel": "DM · Liam Dao",
       "kind": "dm",
       "count": 7
@@ -187,19 +183,9 @@
       "count": 7
     },
     {
-      "channel": "#iqvia-canary-alert-hackathon-demo",
-      "kind": "channel",
-      "count": 7
-    },
-    {
       "channel": "DM · Alex Rosenbower",
       "kind": "dm",
       "count": 6
-    },
-    {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 5
     },
     {
       "channel": "#canary_alerts_dev",
@@ -207,12 +193,22 @@
       "count": 5
     },
     {
+      "channel": "#iqvia-canary-alert-hackathon-demo",
+      "kind": "channel",
+      "count": 5
+    },
+    {
+      "channel": "#cx-internal",
+      "kind": "channel",
+      "count": 4
+    },
+    {
       "channel": "#tiffany-novus-test",
       "kind": "channel",
       "count": 4
     },
     {
-      "channel": "#cx-internal",
+      "channel": "#seo-news",
       "kind": "channel",
       "count": 4
     },
@@ -230,11 +226,11 @@
   "topAuthors": [
     {
       "author": "Canary Alerts",
-      "count": 228
+      "count": 226
     },
     {
       "author": "Pulse",
-      "count": 67
+      "count": 74
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -269,19 +265,19 @@
       "count": 11
     },
     {
-      "author": "Sneha Raghavan",
-      "count": 8
-    },
-    {
-      "author": "Felipe Melo",
-      "count": 8
-    },
-    {
       "author": "Sean Muse",
       "count": 8
     },
     {
+      "author": "Sneha Raghavan",
+      "count": 7
+    },
+    {
       "author": "Shinobu Ohyama",
+      "count": 6
+    },
+    {
+      "author": "Felipe Melo",
       "count": 6
     },
     {
@@ -290,6 +286,62 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-12 07:18",
+      "channel": "#cx-internal",
+      "author": "Pulse",
+      "snippet": ":alert: Pulse is back online with the original domain: <https://pulse.pendoexperience.io/>",
+      "permalink": "https://pendo.slack.com/archives/C3XQD5B5X/p1783840690777799"
+    },
+    {
+      "date": "2026-07-12 07:07",
+      "channel": "#pulse-external",
+      "author": "Pulse",
+      "snippet": ":alert: Pulse is back online with the original domain: <https://pulse.pendoexperience.io/>",
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783840029083819"
+    },
+    {
+      "date": "2026-07-12 06:51",
+      "channel": "#nir-me",
+      "author": "Pulse",
+      "snippet": ":alert: Pulse is back online with the original domain: <https://pulse.pendoexperience.io/>",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783839098972019"
+    },
+    {
+      "date": "2026-07-12 06:49",
+      "channel": "#nir-me",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": ":alert: Pulse is back online with the original domain: <https://pulse.pendoexperience.io/|pulse.pendoexperience.io>",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783838967812079"
+    },
+    {
+      "date": "2026-07-12 06:44",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783838696186199"
+    },
+    {
+      "date": "2026-07-12 06:43",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783838638876579"
+    },
+    {
+      "date": "2026-07-12 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-12) :warning: *1 of 16* monitored bq_* tables stale (listed first). :x: *bq_core_application* (synced_at) — last 2026-07-08 09:00 UTC · 3.8d (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/p3Eo2dEscCjliBfs|:arrow_upp",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783832423630379"
+    },
+    {
+      "date": "2026-07-11 09:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":rotating_light: *WORKFLOW ERROR* Workflow: *<https://pendoio.app.n8n.cloud/workflow/p3Eo2dEscCjliBfs|Pulse Bot — bq_core_application feeder>* Failed Node: *Execute a SQL query1*",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783760410523799"
+    },
     {
       "date": "2026-07-11 05:00",
       "channel": "#workflow-errors",
@@ -522,13 +574,6 @@
       "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783570259763479"
     },
     {
-      "date": "2026-07-09 04:10",
-      "channel": "#pulse-external",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey team — the pendo.experience domain is currently down. This is unrelated to Pulse or Lovable. In the meantime, please use our backup domain: <https://pendo-glow-hub.lovable.app|pendo-glow-hub.lovable.app> We'll switch back once the issue with pendo.experience is resolved.",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783570239380239?thread_ts=1783570239.380239"
-    },
-    {
       "date": "2026-07-08 20:15",
       "channel": "#cx-internal",
       "author": "Doireann Marron",
@@ -590,55 +635,6 @@
       "author": "Pulse",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783513992968179"
-    },
-    {
-      "date": "2026-07-08 11:25",
-      "channel": "DM · U043S4AA9EF",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey Hiltsje — thanks for flagging the guides count. You were spot on, and it turned out to be bigger than just Xero: we traced it to an upstream data issue where the published-guide counts aren't coming through from Pendo's ingestion (even though guide activity is tracked fine). ",
-      "permalink": "https://pendo.slack.com/archives/D0BFGN2ANBH/p1783509918982789"
-    },
-    {
-      "date": "2026-07-08 11:21",
-      "channel": "#pulse-feedback",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Dug into this one — it's a real bug, and it's systemic: ~71 accounts (Xero's the example that surfaced it) show 0 published guides while having millions of guide views, which isn't possible. Traced it end to end: the guide inventory counts (guide_count / total_guide_count) come t",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783509693154319?thread_ts=1783479156.414349"
-    },
-    {
-      "date": "2026-07-08 11:19",
-      "channel": "#pulse-feedback",
-      "author": "Alex Rosenbower",
-      "snippet": "Sent a DM requesting more info from <@U043S4AA9EF|hiltsje.smilde> — should be noted in the feedback management in Pulse. Should get resolved today",
-      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1783509593136799?thread_ts=1783479192.203059"
-    },
-    {
-      "date": "2026-07-08 10:28",
-      "channel": "#pulse-external",
-      "author": "Pulse",
-      "snippet": "Pulse's Accounts report refreshes *once per day* — overnight (US time). The source is the `bq_accounts_core_ancillary` table, which syncs from Salesforce daily. If you updated an SFDC Account Owner yesterday evening JST and didn't see it at 11:00 the same day, that's expected: th",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783506492415689?thread_ts=1783497599.218149"
-    },
-    {
-      "date": "2026-07-08 08:34",
-      "channel": "#pulse-external",
-      "author": "Nikhil Sathyanarayana",
-      "snippet": "metadata audit as part of pulse would be super helpful especially for larger accounts where we have to keep our laptops on for hours it'd be great to have it run in the background when triggered in pulse and emailed to us when completed",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783499680431939?thread_ts=1783428689.676209"
-    },
-    {
-      "date": "2026-07-08 08:01",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783497662265489"
-    },
-    {
-      "date": "2026-07-08 07:59",
-      "channel": "#pulse-external",
-      "author": "Shinobu Ohyama",
-      "snippet": "Hi Team How frequently is the data in the Pulse Accounts report refreshed? We updated the SFDC Account Owner from a former employee to another team member yesterday evening (JST), but the change wasn't reflected in today's 11:00 Leaders meeting. I'm just trying to understand the ",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783497599218149?thread_ts=1783497599.218149"
     }
   ]
 }
