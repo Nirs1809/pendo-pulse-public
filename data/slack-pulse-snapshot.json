@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-12T09:09:07.958Z",
+  "generatedAt": "2026-07-13T10:34:18.958Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-12T07:18:10.777Z",
+    "newest": "2026-07-13T09:14:00.628Z",
     "oldest": "2026-06-14T07:21:54.561Z"
   },
   "totals": {
-    "messages": 606,
-    "channels": 208,
-    "authors": 73
+    "messages": 612,
+    "channels": 211,
+    "authors": 74
   },
   "daily": [
     {
@@ -118,7 +118,11 @@
     },
     {
       "date": "2026-07-12",
-      "count": 7
+      "count": 8
+    },
+    {
+      "date": "2026-07-13",
+      "count": 5
     }
   ],
   "topChannels": [
@@ -140,7 +144,7 @@
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 30
+      "count": 31
     },
     {
       "channel": "#canary-help",
@@ -153,14 +157,14 @@
       "count": 27
     },
     {
-      "channel": "#aa-category-insights",
+      "channel": "#nir-me",
       "kind": "channel",
       "count": 12
     },
     {
-      "channel": "#nir-me",
+      "channel": "#aa-category-insights",
       "kind": "channel",
-      "count": 10
+      "count": 12
     },
     {
       "channel": "#pulse-feedback",
@@ -230,11 +234,11 @@
     },
     {
       "author": "Pulse",
-      "count": 74
+      "count": 75
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 51
+      "count": 53
     },
     {
       "author": "Canary Help",
@@ -286,6 +290,48 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-13 09:14",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783934040628249?thread_ts=1783934040.223609"
+    },
+    {
+      "date": "2026-07-13 09:14",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EkD2zAAF|Enterprise Holdings, Inc>* — Score *9/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783934040223609?thread_ts=1783934040.223609"
+    },
+    {
+      "date": "2026-07-13 09:02",
+      "channel": "DM · U02HVJXSR5W",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "hey regarding Pulse access - you should have it with no request needed here :<https://pulse.pendoexperience.io|pulse.pendoexperience.io> Is that the link you used?",
+      "permalink": "https://pendo.slack.com/archives/D04JQU9KHEV/p1783933370220829"
+    },
+    {
+      "date": "2026-07-13 08:48",
+      "channel": "DM · Paige Spell",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "alerting - a mechanism we previously had also in Pulse...",
+      "permalink": "https://pendo.slack.com/archives/D0APT6QNZK5/p1783932502003629"
+    },
+    {
+      "date": "2026-07-13 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-13) :white_check_mark: All 16 monitored bq_* tables fresh within their windows. :white_check_mark: bq_contract_ancillary — last 2026-07-12 04:01 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/pbfzv7ZCwlp7sKZ7|:arrow",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1783918826953369"
+    },
+    {
+      "date": "2026-07-12 18:20",
+      "channel": "#OpenText Inc.",
+      "author": "Kyle Burke",
+      "snippet": "<https://www.linkedin.com/pulse/missing-layer-agent-observability-business-omar-sharif-844pe?utm_source=share&utm_medium=member_ios&utm_campaign=share_via|https://www.linkedin.com/pulse/missing-layer-agent-observability-business-omar-sharif-844pe?utm_source=share&amp;utm_medium=m",
+      "permalink": "https://pendo.slack.com/archives/C021QF64BAP/p1783880430743089"
+    },
     {
       "date": "2026-07-12 07:18",
       "channel": "#cx-internal",
@@ -593,48 +639,6 @@
       "author": "Michael Chambers",
       "snippet": "<@U03A3J57CN9|Nir Shmuely> This is a DNS issue — <http://pulse.pendoexperience.io|pulse.pendoexperience.io> has no DNS record resolving it (NXDOMAIN means the domain flat-out doesn't exist in DNS). A few things could be happening: Most likely causes: 1. DNS record was removed or ",
       "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783539041101979?thread_ts=1783538660.679509"
-    },
-    {
-      "date": "2026-07-08 19:29",
-      "channel": "#pulse-external",
-      "author": "Michael Chambers",
-      "snippet": "This is a DNS issue — <http://pulse.pendoexperience.io|pulse.pendoexperience.io> has no DNS record resolving it (NXDOMAIN means the domain flat-out doesn't exist in DNS).",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783538961903319?thread_ts=1783538660.679509"
-    },
-    {
-      "date": "2026-07-08 19:24",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1783538699396789"
-    },
-    {
-      "date": "2026-07-08 19:24",
-      "channel": "#pulse-external",
-      "author": "Charles Helms",
-      "snippet": "Hey Folks! Anyone else seeing pulse not working? <@U08NYTLMD32|michael.chambers>?",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1783538660679509?thread_ts=1783538660.679509"
-    },
-    {
-      "date": "2026-07-08 14:43",
-      "channel": "#canary-help",
-      "author": "Alex Rosenbower",
-      "snippet": "Agree if we weren’t clear on that we sould — <@U08NYTLMD32|michael.chambers> and I talked about some automation in responses that Pulse uses and could help us here to re-enable and remind folks in addition to adding a emoji to indicate we got the feedback and are investigating. :",
-      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1783521811634079?thread_ts=1783521645.579679"
-    },
-    {
-      "date": "2026-07-08 13:26",
-      "channel": "#pod-squad-ce",
-      "author": "Alex Rosenbower",
-      "snippet": "Following up from yesterday with action items this week — let me know what I missed or got wrong: • Make a call on model guardrail &amp; insights to share with the group — <@U03HWFBAUTZ|Liam> &amp; <@U08HXK37CS2|paige.spell> • Alert copy update (tone update, source citations, obj",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1783517178993879?thread_ts=1783517178.993879"
-    },
-    {
-      "date": "2026-07-08 12:33",
-      "channel": "#nir-me",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1783513992968179"
     }
   ]
 }
