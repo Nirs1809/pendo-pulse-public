@@ -1,24 +1,20 @@
 {
-  "generatedAt": "2026-07-15T09:16:57.481Z",
+  "generatedAt": "2026-07-16T09:21:22.943Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-15T05:43:17.247Z",
-    "oldest": "2026-06-15T21:37:02.584Z"
+    "newest": "2026-07-16T06:32:22.005Z",
+    "oldest": "2026-06-16T21:45:43.621Z"
   },
   "totals": {
-    "messages": 816,
-    "channels": 228,
-    "authors": 74
+    "messages": 838,
+    "channels": 227,
+    "authors": 72
   },
   "daily": [
     {
-      "date": "2026-06-15",
-      "count": 1
-    },
-    {
       "date": "2026-06-16",
-      "count": 10
+      "count": 1
     },
     {
       "date": "2026-06-17",
@@ -126,34 +122,38 @@
     },
     {
       "date": "2026-07-15",
-      "count": 5
+      "count": 30
+    },
+    {
+      "date": "2026-07-16",
+      "count": 7
     }
   ],
   "topChannels": [
     {
       "channel": "#nir-me",
       "kind": "channel",
-      "count": 96
+      "count": 120
     },
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 60
+      "count": 58
     },
     {
       "channel": "#test_",
       "kind": "channel",
-      "count": 50
+      "count": 52
     },
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 33
+      "count": 34
     },
     {
       "channel": "#pulse-external",
       "kind": "channel",
-      "count": 32
+      "count": 30
     },
     {
       "channel": "#canary-help",
@@ -234,19 +234,19 @@
   "topAuthors": [
     {
       "author": "Canary Alerts",
-      "count": 337
+      "count": 339
     },
     {
       "author": "NPS Autopilot",
-      "count": 87
+      "count": 111
     },
     {
       "author": "Pulse",
-      "count": 74
+      "count": 75
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 54
+      "count": 53
     },
     {
       "author": "Canary Help",
@@ -262,7 +262,7 @@
     },
     {
       "author": "Alex Rosenbower",
-      "count": 20
+      "count": 19
     },
     {
       "author": "Sean Muse Testing2",
@@ -274,7 +274,7 @@
     },
     {
       "author": "Paige Spell",
-      "count": 11
+      "count": 10
     },
     {
       "author": "Sean Muse",
@@ -285,15 +285,239 @@
       "count": 7
     },
     {
-      "author": "Felipe Melo",
+      "author": "Sneha Raghavan",
       "count": 7
     },
     {
-      "author": "Shinobu Ohyama",
-      "count": 7
+      "author": "Felipe Melo",
+      "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-16 06:32",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784183542005019?thread_ts=1784183541.793079"
+    },
+    {
+      "date": "2026-07-16 06:32",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001D9pzbAAB|Global Payments Direct, Inc.>* — Score *7/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784183541793079?thread_ts=1784183541.793079"
+    },
+    {
+      "date": "2026-07-16 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-16) :white_check_mark: All 17 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-15 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1784178034495679"
+    },
+    {
+      "date": "2026-07-16 04:08",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784174896319489?thread_ts=1784174896.124689"
+    },
+    {
+      "date": "2026-07-16 04:08",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0015b0000213MmJAAU|Svava Technologies Pte Ltd>* — Score *5/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784174896124689?thread_ts=1784174896.124689"
+    },
+    {
+      "date": "2026-07-16 03:13",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784171635934639?thread_ts=1784171635.734579"
+    },
+    {
+      "date": "2026-07-16 03:13",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001rYEtLAAW|MSD Animal Health - IL>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784171635734579?thread_ts=1784171635.734579"
+    },
+    {
+      "date": "2026-07-15 23:12",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1784157120659239"
+    },
+    {
+      "date": "2026-07-15 23:11",
+      "channel": "#test_",
+      "author": "Canary Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1784157092286279"
+    },
+    {
+      "date": "2026-07-15 22:00",
+      "channel": "#ts-escalations",
+      "author": "Josh Royse",
+      "snippet": "here's the link to one of the specific surveys for the Pulse app, the first one that I saw this on (not the same as attached video above): <https://app.pendo.io/s/6275127791452160/guides/w4OSlM8P5n7ewysuNSwH5f0_HbI|app.pendo.io/s/6275127791452160/guides/…>",
+      "permalink": "https://pendo.slack.com/archives/C01GZN979FX/p1784152857464129?thread_ts=1784150843.490679"
+    },
+    {
+      "date": "2026-07-15 21:32",
+      "channel": "#ts-escalations",
+      "author": "Josh Royse",
+      "snippet": "on web apps, clicking into the text box just does nothing to actually allow typing to happen... on Mobile, it initiates the keyboard but then it goes away, again as if that's not actually a box that accepts text. In the Pulse app within the THD sub I saw this on first this mornin",
+      "permalink": "https://pendo.slack.com/archives/C01GZN979FX/p1784151143805869?thread_ts=1784150843.490679"
+    },
+    {
+      "date": "2026-07-15 19:26",
+      "channel": "DM · Pulse",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1784143561166089"
+    },
+    {
+      "date": "2026-07-15 18:54",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784141692640159?thread_ts=1784141692.451879"
+    },
+    {
+      "date": "2026-07-15 18:54",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001C4Y7UAAV|Workato, Inc.>* — Score *2/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784141692451879?thread_ts=1784141692.451879"
+    },
+    {
+      "date": "2026-07-15 17:50",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784137851420519?thread_ts=1784137851.240489"
+    },
+    {
+      "date": "2026-07-15 17:50",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001GD69cAAD|Enterprise Security Group CA Inc.>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784137851240489?thread_ts=1784137851.240489"
+    },
+    {
+      "date": "2026-07-15 16:55",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784134533720889?thread_ts=1784134533.477489"
+    },
+    {
+      "date": "2026-07-15 16:55",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001boPYLAA2|MatrixCare Inc>* — Score *7/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784134533477489?thread_ts=1784134533.477489"
+    },
+    {
+      "date": "2026-07-15 16:23",
+      "channel": "#jira-nag",
+      "author": "Statusbot",
+      "snippet": ":merge: Merged: pull request <https://github.com/pendo-io/Insert-iOS-SDK/pull/2523|Insert-iOS-SDK/2523> onto `APP-140633_ios27` _APP-160817 iOS 27 guide screenshot-gallery tool_ from lorin-tadmor merged by lorin-tadmor *merged by committer* lorin-tadmor",
+      "permalink": "https://pendo.slack.com/archives/C3ZP7FJFN/p1784132621324929"
+    },
+    {
+      "date": "2026-07-15 16:22",
+      "channel": "#jira-nag",
+      "author": "Statusbot",
+      "snippet": ":arrows_clockwise: Updated: pull request <https://github.com/pendo-io/Insert-iOS-SDK/pull/2523|Insert-iOS-SDK/2523> onto `APP-140633_ios27` _APP-160817 iOS 27 guide screenshot-gallery tool_ from lorin-tadmor",
+      "permalink": "https://pendo.slack.com/archives/C3ZP7FJFN/p1784132568094919"
+    },
+    {
+      "date": "2026-07-15 16:09",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784131759478479?thread_ts=1784131759.286789"
+    },
+    {
+      "date": "2026-07-15 16:09",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001dhUJpAAM|Proficient Health>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784131759286789?thread_ts=1784131759.286789"
+    },
+    {
+      "date": "2026-07-15 14:47",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784126857944569?thread_ts=1784126857.744049"
+    },
+    {
+      "date": "2026-07-15 14:47",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001hYMV3AAO|National Oilwell Varco (NOV)>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784126857744049?thread_ts=1784126857.744049"
+    },
+    {
+      "date": "2026-07-15 14:30",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784125838970849?thread_ts=1784125838.755229"
+    },
+    {
+      "date": "2026-07-15 14:30",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiHFGAA2|McGraw Hill LLC>* — Score *8/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784125838755229?thread_ts=1784125838.755229"
+    },
+    {
+      "date": "2026-07-15 10:03",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784109819912489?thread_ts=1784109819.717179"
+    },
+    {
+      "date": "2026-07-15 10:03",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiH79AAE|Adobe Ad Cloud>* — Score *5/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784109819717179?thread_ts=1784109819.717179"
+    },
+    {
+      "date": "2026-07-15 09:45",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784108716395169?thread_ts=1784108716.180229"
+    },
+    {
+      "date": "2026-07-15 09:45",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiHUEAA2|Globoforce Limited (Trading as Workhuman)>* — Score *2/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784108716180229?thread_ts=1784108716.180229"
+    },
+    {
+      "date": "2026-07-15 09:45",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784108703836599?thread_ts=1784108703.648539"
+    },
+    {
+      "date": "2026-07-15 09:45",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001xfakGAAQ|THRON S.p.A>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784108703648539?thread_ts=1784108703.648539"
+    },
     {
       "date": "2026-07-15 05:43",
       "channel": "#nir-me",
@@ -397,7 +621,7 @@
       "channel": "#pulse-external",
       "author": "Felipe Melo",
       "snippet": "[Issue] Some modules are showing \"Low utilization\" when it should be medium according the tooltip percentage threshold definition. <https://pulse.pendoexperience.io/accounts/0010a00001FUM8sAAH|Sample account>",
-      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1784052576390079"
+      "permalink": "https://pendo.slack.com/archives/C0AFC0VLXNH/p1784052576390079?thread_ts=1784052576.390079"
     },
     {
       "date": "2026-07-14 17:26",
@@ -419,230 +643,6 @@
       "author": "NPS Autopilot",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784048758041569?thread_ts=1784048757.793679"
-    },
-    {
-      "date": "2026-07-14 17:05",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j000000cLbJBAA0|UKG Inc.>* — Score *10/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784048757793679?thread_ts=1784048757.793679"
-    },
-    {
-      "date": "2026-07-14 15:40",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784043612034199?thread_ts=1784043611.861169"
-    },
-    {
-      "date": "2026-07-14 15:40",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001ZZ8OpAAL|Ensora Health>* — Score *7/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784043611861169?thread_ts=1784043611.861169"
-    },
-    {
-      "date": "2026-07-14 14:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040239776949?thread_ts=1784040239.379919"
-    },
-    {
-      "date": "2026-07-14 14:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EkD2zAAF|Enterprise Holdings, Inc>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040239379919?thread_ts=1784040239.379919"
-    },
-    {
-      "date": "2026-07-14 14:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040220799699?thread_ts=1784040220.398259"
-    },
-    {
-      "date": "2026-07-14 14:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001zHsKcAAK|Reading Horizons>* — Score *4/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040220398259?thread_ts=1784040220.398259"
-    },
-    {
-      "date": "2026-07-14 14:42",
-      "channel": "#pod-squad-ce",
-      "author": "Sunny Lin",
-      "snippet": "would it be possible to see adoption by page? Not urgent but would love to see which part of pulse is driving the adoption",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784040134970699?thread_ts=1784039787.113879"
-    },
-    {
-      "date": "2026-07-14 14:42",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040128902149?thread_ts=1784040128.483389"
-    },
-    {
-      "date": "2026-07-14 14:42",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040128483389?thread_ts=1784040128.483389"
-    },
-    {
-      "date": "2026-07-14 14:41",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040085050459?thread_ts=1784040084.650669"
-    },
-    {
-      "date": "2026-07-14 14:41",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EkD2zAAF|Enterprise Holdings, Inc>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040084650669?thread_ts=1784040084.650669"
-    },
-    {
-      "date": "2026-07-14 14:41",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040066084139?thread_ts=1784040065.704919"
-    },
-    {
-      "date": "2026-07-14 14:41",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001zHsKcAAK|Reading Horizons>* — Score *4/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784040065704919?thread_ts=1784040065.704919"
-    },
-    {
-      "date": "2026-07-14 14:39",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784039974044499?thread_ts=1784039973.625859"
-    },
-    {
-      "date": "2026-07-14 14:39",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784039973625859?thread_ts=1784039973.625859"
-    },
-    {
-      "date": "2026-07-14 14:38",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1784039930360129"
-    },
-    {
-      "date": "2026-07-14 14:36",
-      "channel": "#pod-squad-ce",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "<https://pendo-pulse-public.vercel.app/|pendo-pulse-public.vercel.app> <@U03GHB4R0V6|Sunny>",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784039787113879?thread_ts=1784039787.113879"
-    },
-    {
-      "date": "2026-07-14 14:31",
-      "channel": "#pod-squad-ce",
-      "author": "Sunny Lin",
-      "snippet": "<@U03A3J57CN9|Nir Shmuely> - can you share that pulse adoption site you just pulled? would love to check it out",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784039517181489"
-    },
-    {
-      "date": "2026-07-14 14:28",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784039319618809?thread_ts=1784039319.243899"
-    },
-    {
-      "date": "2026-07-14 14:28",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784039319243899?thread_ts=1784039319.243899"
-    },
-    {
-      "date": "2026-07-14 14:20",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784038804247579?thread_ts=1784038803.804869"
-    },
-    {
-      "date": "2026-07-14 14:20",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784038803804869?thread_ts=1784038803.804869"
-    },
-    {
-      "date": "2026-07-14 14:18",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784038682716819?thread_ts=1784038682.339509"
-    },
-    {
-      "date": "2026-07-14 14:18",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784038682339509?thread_ts=1784038682.339509"
-    },
-    {
-      "date": "2026-07-14 14:11",
-      "channel": "#pod-squad-ce",
-      "author": "Geoff Lewis",
-      "snippet": "<@UCB1X6S3T|Alex> sawgrass has a ClosedCAP in Pulse? Do you know what this means?",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784038306717079?thread_ts=1784036398.318569"
-    },
-    {
-      "date": "2026-07-14 14:07",
-      "channel": "DM · Liam Dao",
-      "author": "Liam Dao",
-      "snippet": "I want to add a chart to Pulse real quick, are you still in pulse/ do I need to be mindful of a clash?",
-      "permalink": "https://pendo.slack.com/archives/D099UVD490X/p1784038051274359"
-    },
-    {
-      "date": "2026-07-14 13:40",
-      "channel": "#pod-squad-ce",
-      "author": "Emilie DeCherney",
-      "snippet": "Hi (rep name)! We're collecting feedback on the new Canary Action Plan process launched last Monday. Would you be willing to share your take? • Have you reviewed the alerts sent to the client channel? <https://pendo.slack.com/archives/C015MN6JPQA/p1783962696831929> • If you hit G",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784036420235349?thread_ts=1784036398.318569"
-    },
-    {
-      "date": "2026-07-14 13:10",
-      "channel": "DM · Alex Rosenbower",
-      "author": "Alex Rosenbower",
-      "snippet": "I tagged you in on a 1 minute quick share of adoption and feedback on Pulse for today’s CE meeting, just FYI. Mind bringing current WAU and how that’s trending over time? + highlighting the next steps on building out pre-sale data into Pulse?",
-      "permalink": "https://pendo.slack.com/archives/D09915AGEBD/p1784034651991049"
-    },
-    {
-      "date": "2026-07-14 12:28",
-      "channel": "#pod-squad-ce",
-      "author": "Alex Rosenbower",
-      "snippet": "Morning Pod Squad! Putting together a rough agenda based on what I’m aware of for today’s discussion — please do add anything relevant here • CH OKR Follow-ups ◦ Quick <#C0BCST28H9D> review — who’s on first for the latest? <@UCB1X6S3T|Alex> ◦ CAP feedback &amp; interviews — I sta",
-      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784032121506499?thread_ts=1784032121.506499"
-    },
-    {
-      "date": "2026-07-14 11:31",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j000000rF0MhAAK|hibob>* — Score *10/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784028664507149?thread_ts=1784028664.507149"
-    },
-    {
-      "date": "2026-07-14 11:22",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784028179381429?thread_ts=1784028179.213039"
     }
   ]
 }
