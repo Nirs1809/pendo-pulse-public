@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-17T09:15:42.406Z",
+  "generatedAt": "2026-07-18T08:53:59.042Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-17T07:39:44.851Z",
-    "oldest": "2026-06-18T12:00:00.580Z"
+    "newest": "2026-07-18T05:00:33.059Z",
+    "oldest": "2026-06-18T23:07:01.486Z"
   },
   "totals": {
-    "messages": 854,
-    "channels": 225,
-    "authors": 71
+    "messages": 849,
+    "channels": 223,
+    "authors": 70
   },
   "daily": [
     {
       "date": "2026-06-18",
-      "count": 17
+      "count": 1
     },
     {
       "date": "2026-06-19",
@@ -122,14 +122,18 @@
     },
     {
       "date": "2026-07-17",
-      "count": 11
+      "count": 21
+    },
+    {
+      "date": "2026-07-18",
+      "count": 1
     }
   ],
   "topChannels": [
     {
       "channel": "#nir-me",
       "kind": "channel",
-      "count": 134
+      "count": 140
     },
     {
       "channel": "#pod-squad-ce",
@@ -139,17 +143,17 @@
     {
       "channel": "#test_",
       "kind": "channel",
-      "count": 52
+      "count": 39
     },
     {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 35
+      "count": 36
     },
     {
       "channel": "#canary-help",
       "kind": "channel",
-      "count": 29
+      "count": 30
     },
     {
       "channel": "#pulse-external",
@@ -192,6 +196,11 @@
       "count": 7
     },
     {
+      "channel": "#gtm-applied-ai",
+      "kind": "channel",
+      "count": 6
+    },
+    {
       "channel": "#International SOS – US (International SOS Assistance, Inc.)",
       "kind": "channel",
       "count": 6
@@ -207,7 +216,7 @@
       "count": 6
     },
     {
-      "channel": "#gtm-applied-ai",
+      "channel": "#seo-news",
       "kind": "channel",
       "count": 5
     },
@@ -220,25 +229,20 @@
       "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 5
-    },
-    {
-      "channel": "#canary-agent",
-      "kind": "channel",
-      "count": 4
     }
   ],
   "topAuthors": [
     {
       "author": "Canary Alerts",
-      "count": 342
+      "count": 341
     },
     {
       "author": "NPS Autopilot",
-      "count": 125
+      "count": 131
     },
     {
       "author": "Pulse",
-      "count": 76
+      "count": 77
     },
     {
       "author": "Nir Sebastian Shmuely",
@@ -261,23 +265,23 @@
       "count": 19
     },
     {
-      "author": "Sean Muse Testing2",
-      "count": 19
-    },
-    {
       "author": "Laurence Judah",
       "count": 12
     },
     {
       "author": "Paige Spell",
-      "count": 10
+      "count": 11
     },
     {
       "author": "Sean Muse",
-      "count": 9
+      "count": 8
     },
     {
       "author": "Emilie DeCherney",
+      "count": 8
+    },
+    {
+      "author": "Sean Muse Testing2",
       "count": 8
     },
     {
@@ -290,6 +294,83 @@
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-18 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-18) :white_check_mark: All 17 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-17 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1784350833059589"
+    },
+    {
+      "date": "2026-07-17 18:28",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784312882305969?thread_ts=1784312882.111559"
+    },
+    {
+      "date": "2026-07-17 18:28",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001GCzY6AAL|Healthesystems>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784312882111559?thread_ts=1784312882.111559"
+    },
+    {
+      "date": "2026-07-17 15:22",
+      "channel": "#canary-help",
+      "author": "Paige Spell",
+      "snippet": "GREAT Q! You wouldn't know it by looking in SFDC but after some :canary-investigato: we determined to exclude this one: <https://pendo.slack.com/archives/C06ST4VEUSV/p1783347837093839>",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1784301740430419?thread_ts=1784301266.009069"
+    },
+    {
+      "date": "2026-07-17 15:18",
+      "channel": "#gtm-applied-ai",
+      "author": "Alex Rosenbower",
+      "snippet": "hey team — does anyone know how to access the dev backend of this <https://pendo-ai-ignite.lovable.app/workflows|GTM Workflows Lovable App>? We get periodic requests in the help channel to provide access to a workflow. I’d like to figure out how to update this to point to Pulse o",
+      "permalink": "https://pendo.slack.com/archives/C0AT56EG36Z/p1784301517594739?thread_ts=1784301517.594739"
+    },
+    {
+      "date": "2026-07-17 15:18",
+      "channel": "DM · Nikhil Sathyanarayana",
+      "author": "Nikhil Sathyanarayana",
+      "snippet": "hey mate how do I turn these off for a channel ?",
+      "permalink": "https://pendo.slack.com/archives/D0B7L51A080/p1784301491325239"
+    },
+    {
+      "date": "2026-07-17 13:45",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784295914187849?thread_ts=1784295913.982539"
+    },
+    {
+      "date": "2026-07-17 13:45",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiEyNAAU|Pluralsight>* — Score *9/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784295913982539?thread_ts=1784295913.982539"
+    },
+    {
+      "date": "2026-07-17 12:50",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784292633780139?thread_ts=1784292633.586559"
+    },
+    {
+      "date": "2026-07-17 12:50",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/001j000000LUaUpAAL|SAGE GLOBAL SERVICES LIMITED>* — Score *4/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784292633586559?thread_ts=1784292633.586559"
+    },
+    {
+      "date": "2026-07-17 12:32",
+      "channel": "#seo-news",
+      "author": "Zapier",
+      "snippet": "*Title:* Google On Canonical Fixes; Mueller On Hidden Links And A/B Tests – SEO Pulse *Topics Covered: :point_right:*Google Algorithm Updates,Technical SEO *URL::computer: *<https://www.searchenginejournal.com/seo-pulse-google-on-canonical-fixes-mueller-on-hidden-links/582671/> *",
+      "permalink": "https://pendo.slack.com/archives/C097WE2LPJP/p1784291542668969"
+    },
     {
       "date": "2026-07-17 07:39",
       "channel": "#nir-me",
@@ -562,83 +643,6 @@
       "author": "Canary Alerts",
       "snippet": "",
       "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1784157120659239"
-    },
-    {
-      "date": "2026-07-15 23:11",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1784157092286279"
-    },
-    {
-      "date": "2026-07-15 22:00",
-      "channel": "#ts-escalations",
-      "author": "Josh Royse",
-      "snippet": "here's the link to one of the specific surveys for the Pulse app, the first one that I saw this on (not the same as attached video above): <https://app.pendo.io/s/6275127791452160/guides/w4OSlM8P5n7ewysuNSwH5f0_HbI|app.pendo.io/s/6275127791452160/guides/…>",
-      "permalink": "https://pendo.slack.com/archives/C01GZN979FX/p1784152857464129?thread_ts=1784150843.490679"
-    },
-    {
-      "date": "2026-07-15 21:32",
-      "channel": "#ts-escalations",
-      "author": "Josh Royse",
-      "snippet": "on web apps, clicking into the text box just does nothing to actually allow typing to happen... on Mobile, it initiates the keyboard but then it goes away, again as if that's not actually a box that accepts text. In the Pulse app within the THD sub I saw this on first this mornin",
-      "permalink": "https://pendo.slack.com/archives/C01GZN979FX/p1784151143805869?thread_ts=1784150843.490679"
-    },
-    {
-      "date": "2026-07-15 19:26",
-      "channel": "DM · Pulse",
-      "author": "Pulse",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/D08FRGZB68M/p1784143561166089"
-    },
-    {
-      "date": "2026-07-15 18:54",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784141692640159?thread_ts=1784141692.451879"
-    },
-    {
-      "date": "2026-07-15 18:54",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001C4Y7UAAV|Workato, Inc.>* — Score *2/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784141692451879?thread_ts=1784141692.451879"
-    },
-    {
-      "date": "2026-07-15 17:50",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784137851420519?thread_ts=1784137851.240489"
-    },
-    {
-      "date": "2026-07-15 17:50",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001GD69cAAD|Enterprise Security Group CA Inc.>* — Score *10/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784137851240489?thread_ts=1784137851.240489"
-    },
-    {
-      "date": "2026-07-15 16:55",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784134533720889?thread_ts=1784134533.477489"
-    },
-    {
-      "date": "2026-07-15 16:55",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001boPYLAA2|MatrixCare Inc>* — Score *7/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784134533477489?thread_ts=1784134533.477489"
-    },
-    {
-      "date": "2026-07-15 16:23",
-      "channel": "#jira-nag",
-      "author": "Statusbot",
-      "snippet": ":merge: Merged: pull request <https://github.com/pendo-io/Insert-iOS-SDK/pull/2523|Insert-iOS-SDK/2523> onto `APP-140633_ios27` _APP-160817 iOS 27 guide screenshot-gallery tool_ from lorin-tadmor merged by lorin-tadmor *merged by committer* lorin-tadmor",
-      "permalink": "https://pendo.slack.com/archives/C3ZP7FJFN/p1784132621324929"
     }
   ]
 }
