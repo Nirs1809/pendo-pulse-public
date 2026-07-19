@@ -1,25 +1,17 @@
 {
-  "generatedAt": "2026-07-18T08:53:59.042Z",
+  "generatedAt": "2026-07-19T09:10:11.035Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-18T05:00:33.059Z",
-    "oldest": "2026-06-18T23:07:01.486Z"
+    "newest": "2026-07-19T05:00:27.030Z",
+    "oldest": "2026-06-22T09:14:11.717Z"
   },
   "totals": {
-    "messages": 849,
+    "messages": 828,
     "channels": 223,
-    "authors": 70
+    "authors": 69
   },
   "daily": [
-    {
-      "date": "2026-06-18",
-      "count": 1
-    },
-    {
-      "date": "2026-06-19",
-      "count": 21
-    },
     {
       "date": "2026-06-22",
       "count": 14
@@ -127,6 +119,10 @@
     {
       "date": "2026-07-18",
       "count": 1
+    },
+    {
+      "date": "2026-07-19",
+      "count": 1
     }
   ],
   "topChannels": [
@@ -141,14 +137,9 @@
       "count": 60
     },
     {
-      "channel": "#test_",
-      "kind": "channel",
-      "count": 39
-    },
-    {
       "channel": "#workflow-errors",
       "kind": "channel",
-      "count": 36
+      "count": 37
     },
     {
       "channel": "#canary-help",
@@ -164,6 +155,11 @@
       "channel": "DM · Pulse",
       "kind": "dm",
       "count": 25
+    },
+    {
+      "channel": "#test_",
+      "kind": "channel",
+      "count": 19
     },
     {
       "channel": "#aa-category-insights",
@@ -216,11 +212,6 @@
       "count": 6
     },
     {
-      "channel": "#seo-news",
-      "kind": "channel",
-      "count": 5
-    },
-    {
       "channel": "#ICE Mortgage Technology, Inc.",
       "kind": "channel",
       "count": 5
@@ -229,6 +220,11 @@
       "channel": "#canary_alerts_dev",
       "kind": "channel",
       "count": 5
+    },
+    {
+      "channel": "#seo-news",
+      "kind": "channel",
+      "count": 4
     }
   ],
   "topAuthors": [
@@ -242,15 +238,11 @@
     },
     {
       "author": "Pulse",
-      "count": 77
+      "count": 78
     },
     {
       "author": "Nir Sebastian Shmuely",
       "count": 52
-    },
-    {
-      "author": "Canary Help",
-      "count": 31
     },
     {
       "author": "Michael Chambers",
@@ -262,6 +254,10 @@
     },
     {
       "author": "Alex Rosenbower",
+      "count": 19
+    },
+    {
+      "author": "Canary Help",
       "count": 19
     },
     {
@@ -281,19 +277,26 @@
       "count": 8
     },
     {
-      "author": "Sean Muse Testing2",
-      "count": 8
-    },
-    {
       "author": "Felipe Melo",
       "count": 6
     },
     {
       "author": "Sneha Raghavan",
       "count": 6
+    },
+    {
+      "author": "Ugne Ash",
+      "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-19 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-19) :white_check_mark: All 17 monitored bq_* tables fresh within their windows. :white_check_mark: bq_subscription_ancillary — last 2026-07-18 06:00 UTC · 1.0d · <https://pendoio.app.n8n.cloud/workflow/fmnpTvl2NDVi6MVS|:a",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1784437227030949"
+    },
     {
       "date": "2026-07-18 05:00",
       "channel": "#workflow-errors",
@@ -636,13 +639,6 @@
       "author": "NPS Autopilot",
       "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001rYEtLAAW|MSD Animal Health - IL>* — Score *10/10* · more details + actions in thread ↓",
       "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784171635734579?thread_ts=1784171635.734579"
-    },
-    {
-      "date": "2026-07-15 23:12",
-      "channel": "#test_",
-      "author": "Canary Alerts",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B7ZDTS5UM/p1784157120659239"
     }
   ]
 }
