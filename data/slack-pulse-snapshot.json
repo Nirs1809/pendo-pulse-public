@@ -1,21 +1,17 @@
 {
-  "generatedAt": "2026-07-22T09:32:53.604Z",
+  "generatedAt": "2026-07-23T09:29:43.198Z",
   "query": "pulse",
   "windowDays": 30,
   "range": {
-    "newest": "2026-07-22T05:00:37.446Z",
-    "oldest": "2026-06-23T06:10:52.226Z"
+    "newest": "2026-07-23T07:29:40.760Z",
+    "oldest": "2026-06-24T05:00:24.780Z"
   },
   "totals": {
-    "messages": 976,
-    "channels": 229,
-    "authors": 72
+    "messages": 971,
+    "channels": 227,
+    "authors": 71
   },
   "daily": [
-    {
-      "date": "2026-06-23",
-      "count": 24
-    },
     {
       "date": "2026-06-24",
       "count": 16
@@ -102,11 +98,11 @@
     },
     {
       "date": "2026-07-15",
-      "count": 28
+      "count": 19
     },
     {
       "date": "2026-07-16",
-      "count": 27
+      "count": 24
     },
     {
       "date": "2026-07-17",
@@ -130,7 +126,11 @@
     },
     {
       "date": "2026-07-22",
-      "count": 2
+      "count": 25
+    },
+    {
+      "date": "2026-07-23",
+      "count": 8
     }
   ],
   "topChannels": [
@@ -142,7 +142,7 @@
     {
       "channel": "#pod-squad-ce",
       "kind": "channel",
-      "count": 60
+      "count": 64
     },
     {
       "channel": "#workflow-errors",
@@ -152,17 +152,17 @@
     {
       "channel": "#canary-help",
       "kind": "channel",
-      "count": 30
-    },
-    {
-      "channel": "#pulse-external",
-      "kind": "channel",
-      "count": 27
+      "count": 31
     },
     {
       "channel": "DM · Pulse",
       "kind": "dm",
-      "count": 24
+      "count": 22
+    },
+    {
+      "channel": "#pulse-external",
+      "kind": "channel",
+      "count": 21
     },
     {
       "channel": "#test_",
@@ -170,19 +170,19 @@
       "count": 19
     },
     {
+      "channel": "#pulse-feedback",
+      "kind": "channel",
+      "count": 16
+    },
+    {
       "channel": "#aa-category-insights",
       "kind": "channel",
-      "count": 13
+      "count": 12
     },
     {
       "channel": "DM · Michael Chambers",
       "kind": "dm",
       "count": 12
-    },
-    {
-      "channel": "#pulse-feedback",
-      "kind": "channel",
-      "count": 9
     },
     {
       "channel": "#Truist Bank",
@@ -191,11 +191,6 @@
     },
     {
       "channel": "#International SOS – US (International SOS Assistance, Inc.)",
-      "kind": "channel",
-      "count": 8
-    },
-    {
-      "channel": "#iqvia-canary-alert-hackathon-demo",
       "kind": "channel",
       "count": 8
     },
@@ -211,6 +206,11 @@
     },
     {
       "channel": "#gtm-applied-ai",
+      "kind": "channel",
+      "count": 6
+    },
+    {
+      "channel": "#iqvia-canary-alert-hackathon-demo",
       "kind": "channel",
       "count": 6
     },
@@ -238,7 +238,7 @@
   "topAuthors": [
     {
       "author": "Canary Alerts",
-      "count": 434
+      "count": 432
     },
     {
       "author": "NPS Autopilot",
@@ -246,11 +246,11 @@
     },
     {
       "author": "Pulse",
-      "count": 75
+      "count": 79
     },
     {
       "author": "Nir Sebastian Shmuely",
-      "count": 57
+      "count": 55
     },
     {
       "author": "Michael Chambers",
@@ -270,34 +270,251 @@
     },
     {
       "author": "Laurence Judah",
-      "count": 13
+      "count": 12
     },
     {
       "author": "Paige Spell",
-      "count": 13
+      "count": 11
+    },
+    {
+      "author": "Emilie DeCherney",
+      "count": 9
     },
     {
       "author": "Novus",
       "count": 8
     },
     {
+      "author": "Sneha Raghavan",
+      "count": 7
+    },
+    {
       "author": "Sean Muse",
-      "count": 8
-    },
-    {
-      "author": "Emilie DeCherney",
-      "count": 8
-    },
-    {
-      "author": "Felipe Melo",
       "count": 6
     },
     {
-      "author": "Sneha Raghavan",
+      "author": "Ugne Ash",
       "count": 6
     }
   ],
   "recent": [
+    {
+      "date": "2026-07-23 07:29",
+      "channel": "DM · Nikhil Sathyanarayana",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "Hey Nikhil — shipped a new Metadata Audit tool in Pulse and you're flagged on for it. Could use your help testing it before it goes wider. What it does: grades a subscription's visitor/account metadata per app (flags fields that are blank, mostly-empty, dropped, or wrong-format),",
+      "permalink": "https://pendo.slack.com/archives/D0B7L51A080/p1784791780760489?thread_ts=1784791780.760489"
+    },
+    {
+      "date": "2026-07-23 07:13",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784790797450559?thread_ts=1784746339.339269"
+    },
+    {
+      "date": "2026-07-23 07:13",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784790797098479?thread_ts=1784746419.460489"
+    },
+    {
+      "date": "2026-07-23 07:13",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784790796578989?thread_ts=1784746560.303839"
+    },
+    {
+      "date": "2026-07-23 07:13",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784790796210239?thread_ts=1784746743.065199"
+    },
+    {
+      "date": "2026-07-23 07:13",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784790795849239?thread_ts=1784747072.345639"
+    },
+    {
+      "date": "2026-07-23 07:13",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784790795497859?thread_ts=1784747880.576149"
+    },
+    {
+      "date": "2026-07-23 05:00",
+      "channel": "#workflow-errors",
+      "author": "Pulse",
+      "snippet": ":bar_chart: *Pulse Data Freshness — Daily Digest* (2026-07-23) :warning: *1 of 20* monitored bq_* tables stale (listed first). :x: *bq_ce_opportunity_metrics* (etl_run_date) — last never · no data (limit 2d) · <https://pendoio.app.n8n.cloud/workflow/AYDlbjYRASR68CMU|:arrow_upper_",
+      "permalink": "https://pendo.slack.com/archives/C0A9GQGUJB0/p1784782830754789"
+    },
+    {
+      "date": "2026-07-22 20:47",
+      "channel": "#pod-squad-ce",
+      "author": "Alex Rosenbower",
+      "snippet": "1. :+1: do we want to simply remove or repoint these to new module adoption metrics? 2. Do we already know if we’re still showing old anywhere in Pulse today or do we need to go in and check?",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784753278571279?thread_ts=1784743268.706159"
+    },
+    {
+      "date": "2026-07-22 19:50",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784749829451389?thread_ts=1784749829.252679"
+    },
+    {
+      "date": "2026-07-22 19:50",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/001j000000uwyunAAA|U.S. Bank National Association>* — Score *8/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784749829252679?thread_ts=1784749829.252679"
+    },
+    {
+      "date": "2026-07-22 19:39",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784749169626829?thread_ts=1784749169.435679"
+    },
+    {
+      "date": "2026-07-22 19:39",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001cJqGwAAK|Paragon Intel>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784749169435679?thread_ts=1784749169.435679"
+    },
+    {
+      "date": "2026-07-22 18:58",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784746728254969?thread_ts=1784746728.073869"
+    },
+    {
+      "date": "2026-07-22 18:58",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j000000a8qPTAAY|Net Health Systems Inc>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784746728073869?thread_ts=1784746728.073869"
+    },
+    {
+      "date": "2026-07-22 18:53",
+      "channel": "#pulse-feedback",
+      "author": "Pulse",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0AKQ1YLBPD/p1784746419460489?thread_ts=1784746419.460489"
+    },
+    {
+      "date": "2026-07-22 18:01",
+      "channel": "#pod-squad-ce",
+      "author": "Liam Dao",
+      "snippet": "Wanted to bring this back up as we ran out of time during CE pod this week, but we still have multiple module adoption metrics out there that i think would be nice to consolidate. Would love any pushback or confirmations on the thought below Current Rec is to 1. Remove old module",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784743268706159?thread_ts=1784743268.706159"
+    },
+    {
+      "date": "2026-07-22 17:42",
+      "channel": "#pod-squad-ce",
+      "author": "Alex Rosenbower",
+      "snippet": "<@U07B4T1LHG9|andrea.lodigiani> Pulse Feedback button in the bottom left is a great place to provide feedback / ask questions about anything in Pulse. If you already have those summarized somewhere feel free to drop them in here. We can use Thursday’s meeting to open back up the ",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784742174265489?thread_ts=1784730946.740279"
+    },
+    {
+      "date": "2026-07-22 17:10",
+      "channel": "#pod-squad-ce",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "not in Pulse but would be happy to scope and build it once its decided what goes on it and where to source it from. <@U08NYTLMD32|michael.chambers> , <@UCB1X6S3T|Alex> for vis",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784740252455989?thread_ts=1784730946.740279"
+    },
+    {
+      "date": "2026-07-22 16:28",
+      "channel": "#canary-help",
+      "author": "Emilie DeCherney",
+      "snippet": "This guy shows \"Approve CAP\" , but I don't see a canvas on this channel. Wondering where that lil started CAP went?",
+      "permalink": "https://pendo.slack.com/archives/C0BCST28H9D/p1784737731540629"
+    },
+    {
+      "date": "2026-07-22 16:24",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784737464567649?thread_ts=1784737464.379719"
+    },
+    {
+      "date": "2026-07-22 16:24",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiF8kAAE|Phreesia>* — Score *5/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784737464379719?thread_ts=1784737464.379719"
+    },
+    {
+      "date": "2026-07-22 16:18",
+      "channel": "#pod-squad-ce",
+      "author": "Nir Sebastian Shmuely",
+      "snippet": "same report is availabe in Pulse for ce managers <@U07B4T1LHG9|andrea.lodigiani> <@UJAD6UK5Z|sneha>",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784737094857069?thread_ts=1784730946.740279"
+    },
+    {
+      "date": "2026-07-22 16:08",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784736484291339?thread_ts=1784736484.111579"
+    },
+    {
+      "date": "2026-07-22 16:08",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j0000015kLEEAA2|Avvance>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784736484111579?thread_ts=1784736484.111579"
+    },
+    {
+      "date": "2026-07-22 15:40",
+      "channel": "#canary_alerts_dev",
+      "author": "Paige Spell",
+      "snippet": "Can you share examples of opps that had the competitor mention and how removing the playbooks changes the output? Idk if this is a good example: <https://pendo.slack.com/archives/C04USQVF2SC/p1783347840995749>",
+      "permalink": "https://pendo.slack.com/archives/C0B85BN59T6/p1784734805081179?thread_ts=1784644439.046349"
+    },
+    {
+      "date": "2026-07-22 14:57",
+      "channel": "#pod-squad-ce",
+      "author": "Sneha Raghavan",
+      "snippet": "<@U07B4T1LHG9|andrea.lodigiani> <@U09GCH3KLHW|Rufo> made <https://lovable.dev/projects/99bded81-69fd-4213-b327-954e2cd41761?magic_link=mc_1e26aa34-9cc8-4c4c-96c9-6c85d722a2e0|this> one for us -- it is pretty handy and i was using it a fair amount. it just needs someone to finaliz",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784732254874459?thread_ts=1784730946.740279"
+    },
+    {
+      "date": "2026-07-22 14:35",
+      "channel": "#pod-squad-ce",
+      "author": "Andrea Lodigiani",
+      "snippet": "Hi team! question(s). The CE org still doens't have any dashboarding for KPIs, leading metrics, and activity. Is that something your team would help us build in pulse? is that already on your roadmap?",
+      "permalink": "https://pendo.slack.com/archives/C0B0Q9RCQHF/p1784730946740279?thread_ts=1784730946.740279"
+    },
+    {
+      "date": "2026-07-22 14:02",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784728947270479?thread_ts=1784728947.002389"
+    },
+    {
+      "date": "2026-07-22 14:02",
+      "channel": "#nir-me",
+      "author": "NPS Autopilot",
+      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j000000TQ60jAAD|Sprout Social, Inc>* — Score *10/10* · more details + actions in thread ↓",
+      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784728947002389?thread_ts=1784728947.002389"
+    },
+    {
+      "date": "2026-07-22 13:00",
+      "channel": "#new-application-notifications",
+      "author": "Workato Alerts",
+      "snippet": "",
+      "permalink": "https://pendo.slack.com/archives/C06TBM5RA5V/p1784725237134959"
+    },
     {
       "date": "2026-07-22 05:00",
       "channel": "#workflow-errors",
@@ -430,223 +647,6 @@
       "author": "Nir Sebastian Shmuely",
       "snippet": "Thanks <@U02QC670XC0|zac> :pray: all four already exist on the Opportunity object, so this is a mirroring ask, not a create one. Could we get these flowing into pendolytics_core.opportunity / opportunity__ancillary so Pulse can mirror them: • Eval end/start: Free_Trial_End_Date__",
       "permalink": "https://pendo.slack.com/archives/C0B5DTEPZKM/p1784652675431929?thread_ts=1784622057.935439"
-    },
-    {
-      "date": "2026-07-21 16:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784652212492339?thread_ts=1784652212.253889"
-    },
-    {
-      "date": "2026-07-21 16:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiFPDAA2|Decision Lens>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784652212253889?thread_ts=1784652212.253889"
-    },
-    {
-      "date": "2026-07-21 16:42",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784652128167229?thread_ts=1784652127.981699"
-    },
-    {
-      "date": "2026-07-21 16:42",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EhqUUAAZ|OpenText Inc.>* — Score *10/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784652127981699?thread_ts=1784652127.981699"
-    },
-    {
-      "date": "2026-07-21 15:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784648583336819?thread_ts=1784648583.133509"
-    },
-    {
-      "date": "2026-07-21 15:43",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/001j000000ZANLPAA5|RELX Group, plc>* — Score *8/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784648583133509?thread_ts=1784648583.133509"
-    },
-    {
-      "date": "2026-07-21 14:44",
-      "channel": "Group DM · mpdm-nir.shmuely--zac.romandy--michael.chambers-1",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Hey Zac — yep, retry loop's fixed. It was our stale-while-revalidate path fanning out into a regen storm whenever upstream failed. Put a hard loop guard in: max one background refresh per account (30-min cooldown), we now record the attempt timestamp even on failure so a persiste",
-      "permalink": "https://pendo.slack.com/archives/C0AKJU86MSP/p1784645083267819"
-    },
-    {
-      "date": "2026-07-21 14:37",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644662897369?thread_ts=1784644662.548599"
-    },
-    {
-      "date": "2026-07-21 14:37",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EkD2zAAF|Enterprise Holdings, Inc>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644662548599?thread_ts=1784644662.548599"
-    },
-    {
-      "date": "2026-07-21 14:37",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644640913809?thread_ts=1784644640.553889"
-    },
-    {
-      "date": "2026-07-21 14:37",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001zHsKcAAK|Reading Horizons>* — Score *4/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644640553889?thread_ts=1784644640.553889"
-    },
-    {
-      "date": "2026-07-21 14:35",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644533723109?thread_ts=1784644533.340019"
-    },
-    {
-      "date": "2026-07-21 14:35",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644533340019?thread_ts=1784644533.340019"
-    },
-    {
-      "date": "2026-07-21 14:33",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644392683789?thread_ts=1784644392.288629"
-    },
-    {
-      "date": "2026-07-21 14:33",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EkD2zAAF|Enterprise Holdings, Inc>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644392288629?thread_ts=1784644392.288629"
-    },
-    {
-      "date": "2026-07-21 14:32",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644369310629?thread_ts=1784644368.931969"
-    },
-    {
-      "date": "2026-07-21 14:32",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001zHsKcAAK|Reading Horizons>* — Score *4/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644368931969?thread_ts=1784644368.931969"
-    },
-    {
-      "date": "2026-07-21 14:30",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644258642119?thread_ts=1784644258.215419"
-    },
-    {
-      "date": "2026-07-21 14:30",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784644258215419?thread_ts=1784644258.215419"
-    },
-    {
-      "date": "2026-07-21 13:10",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784639433258929?thread_ts=1784639433.066799"
-    },
-    {
-      "date": "2026-07-21 13:10",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_yellow_circle: *<https://pulse.pendoexperience.io/accounts/001j000000fiHABAA2|The Retail Equation, Inc. d/b/a Appriss Retail>* — Score *8/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784639433066799?thread_ts=1784639433.066799"
-    },
-    {
-      "date": "2026-07-21 12:59",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784638789113359?thread_ts=1784638788.817619"
-    },
-    {
-      "date": "2026-07-21 12:59",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001GD61iAAD|Thomson Reuters Holdings Inc.>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784638788817619?thread_ts=1784638788.817619"
-    },
-    {
-      "date": "2026-07-21 12:46",
-      "channel": "#data-bot-beta",
-      "author": "Data Bot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0A7DUZ12T1/p1784637990019039?thread_ts=1784637988.123509"
-    },
-    {
-      "date": "2026-07-21 12:34",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784637284801409?thread_ts=1784637284.414219"
-    },
-    {
-      "date": "2026-07-21 12:34",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":large_green_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001EkD2zAAF|Enterprise Holdings, Inc>* — Score *9/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784637284414219?thread_ts=1784637284.414219"
-    },
-    {
-      "date": "2026-07-21 12:34",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784637264908479?thread_ts=1784637264.537249"
-    },
-    {
-      "date": "2026-07-21 12:34",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0015b00001zHsKcAAK|Reading Horizons>* — Score *4/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784637264537249?thread_ts=1784637264.537249"
-    },
-    {
-      "date": "2026-07-21 12:32",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": "",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784637164201289?thread_ts=1784637163.843639"
-    },
-    {
-      "date": "2026-07-21 12:32",
-      "channel": "#nir-me",
-      "author": "NPS Autopilot",
-      "snippet": ":red_circle: *<https://pulse.pendoexperience.io/accounts/0010a00001FSqP8AAL|Walmart Inc.>* — Score *3/10* · more details + actions in thread ↓",
-      "permalink": "https://pendo.slack.com/archives/C0B1JKUV091/p1784637163843639?thread_ts=1784637163.843639"
-    },
-    {
-      "date": "2026-07-21 12:13",
-      "channel": "DM · Nikhil Sathyanarayana",
-      "author": "Nir Sebastian Shmuely",
-      "snippet": "Following up on the metadata audit — before I scope pulling it into Pulse, I want to understand how it actually works end to end rather than guessing from the repo. Mind walking me through it? Flow • Run start to finish: what do you kick it off with (a sub ID? a list of subs?), w",
-      "permalink": "https://pendo.slack.com/archives/D0B7L51A080/p1784636002872829"
     }
   ]
 }
